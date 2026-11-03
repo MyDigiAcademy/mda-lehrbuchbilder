@@ -1,0 +1,90 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Warum <strong>Datensicherung</strong> in Konstruktion und Planung so wichtig ist</p></li>
+<li><p>Wie du Dateien mit fester <strong>Ordnerstruktur</strong> und klarer <strong>Namenskonvention</strong> ablegst</p></li>
+<li><p>Wie sich <strong>Version</strong>, <strong>Revision</strong> und <strong>Freigabestatus</strong> unterscheiden</p></li>
+<li><p>Wie du Daten <strong>sicher speicherst</strong> und was ein <strong>PDM-System</strong> leistet</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> hält <strong>Mia</strong> zwei Zeichnungen der <strong>Lagerplatte</strong> in den Händen. Sie sehen fast gleich aus. Dazu kommt ein <strong>Kundenwunsch</strong>: Eine Bohrung soll größer werden. Ausbilderin <strong>Frau Engel</strong> fragt: Welche Zeichnung ist aktuell, und wie dokumentieren wir die Änderung? Kurz gesagt: Wie bleibt jeder Stand nachvollziehbar?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F7M9cmgau2PsjkfgwHkYg8-img.webp?alt=media&amp;token=a95caf3d-a063-4844-a0ac-e415f9ff37ec" alt="" data-display="full-width">
+<h2>💾 Warum Datensicherung?</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Risiko</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiele</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Datenverlust</strong></p></td><td colspan="1" rowspan="1"><p>Ein Absturz, eine defekte Festplatte oder ein versehentlich gelöschter Ordner, und die Arbeit von Tagen ist weg.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Falscher Stand</strong></p></td><td colspan="1" rowspan="1"><p>Die Werkstatt fertigt nach einer alten Zeichnung, oder die Baustelle baut nach einem alten Plan.</p></td></tr>
+</tbody></table></div>
+<p>Beides wird <strong>teuer</strong>: Es gibt <strong>Ausschuss</strong>, <strong>Nacharbeit</strong> und <strong>Verzögerungen</strong>. Im schlimmsten Fall passt ein Bauteil nicht, und eine ganze Anlage steht still.</p>
+<h2>🗂️ Ablage und Dateinamen</h2>
+<p>Ordnung beginnt bei der <strong>Ablage</strong>:</p>
+<ul>
+<li><p><strong>Feste Ordnerstruktur:</strong> Jedes Projekt bekommt dieselbe Gliederung. Beim Projekt Lagerbock z. B. getrennte Ordner für <strong>CAD-Modelle</strong>, <strong>Zeichnungen</strong>, <strong>Berechnungen</strong> und <strong>Dokumente</strong>.</p></li>
+<li><p><strong>Namenskonvention:</strong> Dateinamen bestehen aus <strong>Sachnummer + Benennung</strong>. Die Datei der Lagerplatte heißt also <strong>100-245_Lagerplatte</strong>.</p></li>
+<li><p><strong>Gleiche Regeln für alle:</strong> Nutzen alle im Team dieselben Regeln, findet jeder jede Datei, auch wenn du mal im Urlaub bist.</p></li>
+</ul>
+<p><strong>Achtung:</strong> Namen wie „neu“, „final“ oder „final2“ haben in der Ablage nichts zu suchen. Sie sagen nichts darüber aus, welcher Stand wirklich gilt.</p>
+<h2>🔢 Version und Revision</h2>
+<p>In vielen Betrieben gilt diese Unterscheidung:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Begriff</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Kennzeichnung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Version</strong></p></td><td colspan="1" rowspan="1"><p>Zwischenstand, der beim Arbeiten entsteht, z. B. bei jedem Speichern oder Einchecken</p></td><td colspan="1" rowspan="1"><p>Intern, z. B. in der Datenverwaltung</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Revision</strong></p></td><td colspan="1" rowspan="1"><p>Geänderter Stand, der wieder freigegeben wird</p></td><td colspan="1" rowspan="1"><p><strong>Änderungsindex</strong> A, B, C im Schriftfeld</p></td></tr>
+</tbody></table></div>
+<p>In der <strong>Änderungstabelle</strong> steht für jeden Index, <strong>was</strong> geändert wurde, <strong>wann</strong> und <strong>von wem</strong>. Bei Mias Lagerplatte sieht das so aus:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Index</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Änderung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Datum</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Name</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>A</p></td><td colspan="1" rowspan="1"><p>Erstausgabe</p></td><td colspan="1" rowspan="1"><p>12.03.</p></td><td colspan="1" rowspan="1"><p>Mia</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>B</strong></p></td><td colspan="1" rowspan="1"><p><strong>Bohrung Ø8 auf Ø10 geändert</strong></p></td><td colspan="1" rowspan="1"><p><strong>30.10.</strong></p></td><td colspan="1" rowspan="1"><p><strong>Mia</strong></p></td></tr>
+</tbody></table></div>
+<p>Im <strong>Schriftfeld</strong> stehen Benennung <strong>Lagerplatte</strong>, Sachnummer <strong>100-245</strong> und der aktuelle Index <strong>B</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FREEhaGCGDKi4nwrafAD1I-img.webp?alt=media&amp;token=af041b88-6b3b-4209-a7a6-2c8148600379" alt="" data-display="full-width">
+<h2>🚦 Der Freigabestatus</h2>
+<p>Jedes Dokument hat außerdem einen <strong>Freigabestatus</strong>. Er durchläuft drei Stufen:</p>
+<ol>
+<li><p><strong>In Arbeit:</strong> Daran wird noch konstruiert.</p></li>
+<li><p><strong>Geprüft:</strong> Eine zweite Person hat es kontrolliert.</p></li>
+<li><p><strong>Freigegeben:</strong> Es darf verwendet werden.</p></li>
+</ol>
+<p><strong>In die Fertigung oder auf die Baustelle geht nur, was freigegeben ist.</strong> Den Status siehst du meist im Schriftfeld oder in der Datenverwaltung.</p>
+<h2>🔒 Daten sicher speichern</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Baustein</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was er leistet</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Server</strong></p></td><td colspan="1" rowspan="1"><p>Zentrale Ablage im Betrieb, nicht nur auf deinem eigenen Rechner</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Backup</strong></p></td><td colspan="1" rowspan="1"><p>Regelmäßige Kopie der Daten, am besten zusätzlich an einem anderen Ort</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Cloud</strong></p></td><td colspan="1" rowspan="1"><p>Zugriff von überall. Dafür gelten die Regeln deines Betriebs.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zugriffsrechte</strong></p></td><td colspan="1" rowspan="1"><p>Legen fest, wer Daten nur lesen und wer sie ändern darf. So kann niemand aus Versehen eine freigegebene Zeichnung überschreiben.</p></td></tr>
+</tbody></table></div>
+<h2>🖥️ Ausblick: PDM-Systeme</h2>
+<p>In vielen Betrieben gibt es ein <strong>PDM-System</strong>. PDM steht für <strong>Produktdatenmanagement</strong>.</p>
+<ul>
+<li><p><strong>Verwaltet automatisch:</strong> Dateien, Versionen und Freigaben.</p></li>
+<li><p><strong>Verhindert Konflikte:</strong> Zwei Personen können nicht gleichzeitig dieselbe Datei ändern.</p></li>
+</ul>
+<p>Mit PDM-Systemen arbeitest du später in der Ausbildung noch genauer.</p>
+<h2>🔧 Revision B für die Lagerplatte</h2>
+<p>Zurück zum Kundenwunsch: Die Bohrung soll von <strong>Ø8</strong> auf <strong>Ø10 mm</strong> vergrößert werden. Mia geht so vor:</p>
+<ol>
+<li><p><strong>Revision B anlegen:</strong> Mia legt die neue Revision an und ändert das Modell, Bohrung Ø8 auf Ø10.</p></li>
+<li><p><strong>Dokumentieren:</strong> In der Änderungstabelle trägt sie ein, <strong>was</strong> geändert wurde, <strong>wann</strong> und <strong>wer</strong>: „Bohrung Ø8 auf Ø10 geändert“, Datum, Name.</p></li>
+<li><p><strong>Prüfen und freigeben:</strong> Frau Engel prüft die Zeichnung, dann wird sie freigegeben.</p></li>
+<li><p><strong>Index A ungültig kennzeichnen:</strong> Die alte Zeichnung wird als <strong>ungültig</strong> markiert, damit niemand mehr danach arbeitet.</p></li>
+</ol>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FNy9PRQp1PPHrL0dMuaDUh-img.webp?alt=media&amp;token=a2b56e4c-9e3b-4dbf-9d48-38c45bfb153a" alt="" data-display="full-width">
+<h2>🛠️ Übung: Index und Freigabe</h2>
+<p><strong>Aufgabe 1:</strong> Eine freigegebene Zeichnung hat den Index <strong>B</strong>. Der Kunde wünscht noch eine Änderung. Welchen Index bekommt sie?</p>
+<p><strong>Aufgabe 2:</strong> Darf eine Zeichnung mit dem Status <strong>„in Arbeit“</strong> in die Werkstatt?</p>
+<p><strong>Lösung:</strong></p>
+<ul>
+<li><p>Aufgabe 1: den Index <strong>C</strong>, also den nächsten Buchstaben.</p></li>
+<li><p>Aufgabe 2: <strong>Nein.</strong> In die Werkstatt gehen nur freigegebene Stände.</p></li>
+</ul>
+<blockquote><p>Jede Änderung bekommt einen Index und einen Eintrag in der Änderungstabelle.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia sucht im Projektordner nach der Datei 100-245_Lagerplatte und findet sofort den gültigen Stand mit Index A. Für den Kundenwunsch legt sie Revision B an, ändert die Bohrung von Ø8 auf Ø10 und füllt die Änderungstabelle aus. Frau Engel prüft und gibt frei. Die Zeichnung mit Index A wird als ungültig gekennzeichnet. 💪 Die Werkstatt fertigt garantiert nach dem richtigen Stand.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Feste <strong>Ablagestruktur</strong> und <strong>Dateinamen mit Sachnummer und Benennung</strong>. <strong>Revisionen</strong> bekommen einen Änderungsindex in Schriftfeld und Änderungstabelle. <strong>Nur freigegebene Stände</strong> gehen in Fertigung oder auf die Baustelle. Daten <strong>zentral speichern</strong>, regelmäßig <strong>sichern</strong> und <strong>Rechte vergeben</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Fragen: <strong>Unterschied Version und Revision?</strong> Version = Zwischenstand beim Arbeiten, Revision = geänderter, freigegebener Stand mit Index. <strong>Was gehört in die Änderungstabelle?</strong> Index, Änderung, Datum und Name. <strong>Welche Stufen hat der Freigabestatus?</strong> In Arbeit, geprüft, freigegeben. Und: Der alte Stand wird nach einer Revision als ungültig gekennzeichnet.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Nenne zwei Gründe für eine sorgfältige Datensicherung.</summary><div data-type="detailsContent"><p>✅ Datenverlust (Absturz, defekte Festplatte, gelöschter Ordner) und falsche Stände (Fertigung nach alter Zeichnung). Beides führt zu Ausschuss, Nacharbeit und Verzögerungen.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Wie lautet der Dateiname der Lagerplatte nach der Namenskonvention, und warum ist „final2“ ungeeignet?</summary><div data-type="detailsContent"><p>✅ 100-245_Lagerplatte, also Sachnummer und Benennung. „final2“ sagt nichts über das Teil oder den gültigen Stand aus.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was ist der Unterschied zwischen einer Version und einer Revision?</summary><div data-type="detailsContent"><p>✅ Eine Version ist ein Zwischenstand beim Arbeiten, z. B. beim Speichern oder Einchecken. Eine Revision ist ein geänderter Stand, der wieder freigegeben wird und einen Änderungsindex (A, B, C) im Schriftfeld bekommt.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wozu dienen Zugriffsrechte?</summary><div data-type="detailsContent"><p>✅ Sie legen fest, wer Daten nur lesen und wer sie ändern darf. So kann niemand versehentlich eine freigegebene Zeichnung überschreiben.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was passiert mit der alten Zeichnung, nachdem Revision B freigegeben ist?</summary><div data-type="detailsContent"><p>✅ Die Zeichnung mit Index A wird als ungültig gekennzeichnet, damit niemand mehr danach arbeitet.</p></div></details>
+<p></p>

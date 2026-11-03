@@ -1,0 +1,96 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Welche <strong>Beanspruchungsarten</strong> es gibt: <strong>Zug</strong>, <strong>Druck</strong> und <strong>Scherung</strong></p></li>
+<li><p>Wie du <strong>Normalspannung</strong> und <strong>Scherspannung</strong> berechnest</p></li>
+<li><p>Wie du die <strong>zulässige Spannung</strong> mit einer <strong>Sicherheitszahl</strong> bestimmst</p></li>
+<li><p>Wie du <strong>Bolzen auf Scherung</strong> nachrechnest, auslegst und ihre Höchstkraft bestimmst</p></li>
+</ul>
+<p>👋 In der <strong>Muster Maschinenbau GmbH</strong> wird ein <strong>Gabelgelenk</strong> gebaut. Ein <strong>Bolzen mit Ø 10 mm</strong> verbindet Gabel und Lasche. <strong>Herr Krause</strong> gibt <strong>Mia</strong> den Auftrag: Am Gelenk ziehen <strong>12 kN</strong>. Rechne nach, ob der Bolzen das aushält. Mia hält das Gelenk in der Hand und fragt sich, wie man so etwas rechnet. Der Schlüssel ist die <strong>Spannung im Bauteil</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FB_pJ3rsxXuniqt_HZon83-img.webp?alt=media&amp;token=2c61bfa6-321f-4db7-acc8-acac42f62be0" alt="" data-display="full-width">
+<h2>↔️ Die Beanspruchungsarten</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beanspruchung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was passiert?</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiele</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zug</strong></p></td><td colspan="1" rowspan="1"><p>Zwei Kräfte ziehen das Bauteil <strong>auseinander</strong>.</p></td><td colspan="1" rowspan="1"><p>Zugstab, Schraube</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Druck</strong></p></td><td colspan="1" rowspan="1"><p>Die Kräfte drücken das Bauteil <strong>zusammen</strong>.</p></td><td colspan="1" rowspan="1"><p>Stütze</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Scherung</strong></p></td><td colspan="1" rowspan="1"><p>Zwei Kräfte wirken <strong>versetzt gegeneinander</strong> und wollen das Bauteil abscheren, wie bei einer Schere.</p></td><td colspan="1" rowspan="1"><p>Bolzen, Stifte, Niete</p></td></tr>
+</tbody></table></div>
+<p>Außerdem gibt es noch <strong>Biegung</strong> und <strong>Torsion</strong>. Diese beiden Arten sind aber nicht Thema dieser Lektion.</p>
+<h2>📐 Die Spannung</h2>
+<p>Wie stark ein Bauteil belastet wird, sagt dir die <strong>Spannung</strong>. Sie ist immer <strong>Kraft durch Fläche</strong>:</p>
+<ul>
+<li><p><strong>Zug und Druck:</strong> <strong>Normalspannung σ</strong> (Sigma). σ = F : A, dabei ist A die Querschnittsfläche.</p></li>
+<li><p><strong>Scherung:</strong> <strong>Scherspannung τ</strong> (Tau). τ = F : A, dabei ist A die Fläche, die abgeschert wird.</p></li>
+</ul>
+<p>Die Einheit ist in beiden Fällen <strong>N/mm²</strong>.</p>
+<h2>📈 Streckgrenze und Zugfestigkeit</h2>
+<p>Wie viel Spannung ein Werkstoff aushält, zeigt das <strong>Spannungs-Dehnungs-Diagramm</strong> aus dem <strong>Zugversuch</strong>. Darin ist die Spannung σ über der Dehnung ε aufgetragen.</p>
+<ul>
+<li><p><strong>Streckgrenze R<sub>e</sub>:</strong> Bis hierhin verformt sich der Werkstoff <strong>elastisch</strong>. Nimmst du die Kraft weg, federt er zurück. Darüber bleibt er <strong>dauerhaft verformt</strong>.</p></li>
+<li><p><strong>Zugfestigkeit R<sub>m</sub>:</strong> die <strong>höchste Spannung</strong>, die der Werkstoff erträgt. Danach schnürt die Probe ein und reißt.</p></li>
+<li><p><strong>Meist entscheidend: R<sub>e</sub>.</strong> Bei Bauteilen soll keine bleibende Verformung auftreten. Bei <strong>S235</strong> liegt die Streckgrenze zum Beispiel bei <strong>235 N/mm²</strong>.</p></li>
+</ul>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FB2nv0uMKuqWcwNyPhPgOn-img.webp?alt=media&amp;token=66e3f412-cfc3-485b-9113-298dda09454c" alt="" data-display="full-width">
+<h2>🛡️ Sicherheit und zulässige Spannung</h2>
+<p>Bis an die Streckgrenze wird nie gerechnet. Du brauchst eine <strong>Sicherheit</strong>. Die zulässige Spannung ist:</p>
+<p><strong>σ<sub>zul</sub> = R<sub>e</sub> : ν</strong> (ν, gesprochen Ny, ist die Sicherheitszahl)</p>
+<p><strong>Beispiel:</strong> S235 mit R<sub>e</sub> = 235 N/mm² und Sicherheit ν = 1,5:</p>
+<p>σ<sub>zul</sub> = 235 N/mm² : 1,5 ≈ <strong>157 N/mm²</strong></p>
+<p>Die Sicherheit deckt <strong>Ungenauigkeiten</strong> bei Kräften, Werkstoff und Fertigung ab.</p>
+<h2>🧮 Zug und Druck berechnen</h2>
+<p><strong>Zug:</strong> Ein Rundstab mit Ø 12 mm wird mit F = 10 kN auf Zug belastet.</p>
+<ol>
+<li><p>Kraft umrechnen: 10 kN = 10.000 N</p></li>
+<li><p>Fläche: A = π · (12 mm)² : 4 ≈ 113 mm²</p></li>
+<li><p>Zugspannung: σ = 10.000 N : 113 mm² ≈ <strong>88 N/mm²</strong></p></li>
+</ol>
+<p>Bei S235 mit 157 N/mm² zulässig gilt 88 N/mm² ≤ 157 N/mm². Der Stab hält.</p>
+<p><strong>Druck:</strong> Ein Vierkant mit 20 × 20 mm trägt F = 50 kN.</p>
+<p>σ = 50.000 N : 400 mm² = <strong>125 N/mm²</strong> ≤ 157 N/mm². Auch das ist zulässig.</p>
+<h2>✂️ Einschnittig und zweischnittig</h2>
+<p>Bei Bolzen und Stiften kommt es darauf an, wie viele <strong>Scherflächen</strong> es gibt:</p>
+<ul>
+<li><p><strong>Einschnittig:</strong> Zwei Bleche liegen aufeinander. Der Bolzen kann nur an <strong>einer Stelle</strong> abscheren. Die volle Kraft F wirkt auf eine Fläche.</p></li>
+<li><p><strong>Zweischnittig:</strong> Eine Lasche sitzt in einer Gabel. Der Bolzen müsste an <strong>zwei Stellen gleichzeitig</strong> abscheren. Die Kraft verteilt sich auf zwei Flächen, jede trägt F/2.</p></li>
+</ul>
+<p>Deshalb zählt bei zweischnittigen Verbindungen die <strong>doppelte Querschnittsfläche</strong>: <strong>A = 2 · π · d² : 4</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FpwUaqB8fOD---LGPovXvd-img.webp?alt=media&amp;token=f079af46-9485-4231-951c-9c7594f32561" alt="" data-display="full-width">
+<h2>🔩 Mias Bolzen nachrechnen</h2>
+<p>Gegeben: d = 10 mm, zweischnittig, F = 12 kN = 12.000 N.</p>
+<ol>
+<li><p>Querschnittsfläche eines Bolzens: π · (10 mm)² : 4 ≈ 78,5 mm²</p></li>
+<li><p>Zweischnittig zählt doppelt: A = 2 · 78,5 mm² = <strong>157 mm²</strong></p></li>
+<li><p>Scherspannung: τ = 12.000 N : 157 mm² ≈ <strong>76 N/mm²</strong></p></li>
+</ol>
+<h2>✅ Der Festigkeitsnachweis</h2>
+<p>Die Regel lautet: <strong>vorhandene Spannung ≤ zulässige Spannung</strong>.</p>
+<p>Für den Bolzen sind <strong>100 N/mm²</strong> zulässig. Vorhanden sind rund 76 N/mm². Es gilt 76 N/mm² ≤ 100 N/mm²: <strong>Der Bolzen hält.</strong></p>
+<p>Wäre die Spannung zu groß, hilft ein <strong>größerer Durchmesser</strong> oder ein <strong>festerer Werkstoff</strong>.</p>
+<h2>📏 Mindestdurchmesser bestimmen</h2>
+<p>Oft rechnest du andersherum: Wie dick muss der Bolzen mindestens sein? Dafür stellst du die Formel um.</p>
+<ol>
+<li><p>Nötige Fläche: A<sub>erf</sub> = F : τ<sub>zul</sub> = 12.000 N : 100 N/mm² = 120 mm²</p></li>
+<li><p>Zweischnittig: je Scherfläche 120 mm² : 2 = <strong>60 mm²</strong></p></li>
+<li><p>Aus π · d² : 4 = 60 mm² folgt d = √(4 · 60 mm² : π) ≈ <strong>8,7 mm</strong></p></li>
+<li><p>Du wählst den nächsten passenden Bolzendurchmesser, zum Beispiel <strong>Ø 10 mm</strong>. Genau den hat Mias Gelenk.</p></li>
+</ol>
+<h2>🏋️ Höchstzulässige Kraft</h2>
+<p>Die dritte Richtung: Welche Kraft darf Mias Bolzen höchstens tragen? Du stellst die Formel nach F um:</p>
+<p><strong>F<sub>zul</sub> = τ<sub>zul</sub> · A</strong> = 100 N/mm² · 157 mm² = 15.700 N ≈ <strong>15,7 kN</strong></p>
+<p>Mit 12 kN bleibt Mia also unter der zulässigen Kraft. Spannung, Fläche oder Kraft: <strong>Mit einer Formel rechnest du in alle drei Richtungen.</strong></p>
+<h2>⚠️ Typische Rechenfehler</h2>
+<ul>
+<li><p><strong>kN nicht umgerechnet:</strong> Wird die Kraft nicht von Kilonewton in Newton umgerechnet, ist das Ergebnis um den Faktor 1.000 falsch.</p></li>
+<li><p><strong>Nur eine Fläche:</strong> Bei zweischnittigen Verbindungen wird vergessen, die Fläche zu verdoppeln. Dann ist die Spannung doppelt so hoch wie in Wirklichkeit.</p></li>
+<li><p><strong>R<sub>m</sub> statt R<sub>e</sub>:</strong> Wird die Zugfestigkeit statt der Streckgrenze eingesetzt, ist die zulässige Spannung zu hoch. Das Bauteil verformt sich womöglich bleibend.</p></li>
+</ul>
+<blockquote><p>Zweischnittig verdoppelt die tragende Fläche. Und immer gilt: vorhanden ≤ zulässig.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia legt Herrn Krause ihre Rechnung vor: Der Bolzen Ø 10 mm im Gabelgelenk ist zweischnittig, die tragende Fläche beträgt 157 mm². Bei 12 kN entsteht eine Scherspannung von rund 76 N/mm², zulässig sind 100 N/mm². Der Bolzen dürfte sogar bis 15,7 kN belastet werden, nötig wären mindestens 8,7 mm Durchmesser. 💪 Das Gelenk kann wie geplant gebaut werden.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Bauteile werden auf <strong>Zug, Druck, Scherung, Biegung</strong> oder <strong>Torsion</strong> beansprucht. Spannung ist <strong>Kraft durch Fläche</strong>: σ oder τ = F : A in N/mm². Die zulässige Spannung ist <strong>σ<sub>zul</sub> = R<sub>e</sub> : ν</strong>. Zweischnittig zählt die <strong>doppelte Fläche</strong>. Und immer gilt: <strong>vorhanden ≤ zulässig</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Rechne zuerst alle Kräfte in <strong>Newton</strong> um. Prüfe dann, ob die Verbindung <strong>einschnittig</strong> oder <strong>zweischnittig</strong> ist. Setze für die zulässige Spannung die <strong>Streckgrenze R<sub>e</sub></strong> ein, nicht die Zugfestigkeit. Schreib den Nachweis am Ende immer als Vergleich hin, zum Beispiel 76 N/mm² ≤ 100 N/mm².</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Derselbe Bolzen mit Ø 10 mm und 12 kN, aber nur einschnittig. Hält er bei τ<sub>zul</sub> = 100 N/mm²?</summary><div data-type="detailsContent"><p>✅ τ = 12.000 N : 78,5 mm² ≈ 153 N/mm². Das ist mehr als 100 N/mm². Der Bolzen hält nicht.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Ein Werkstoff hat R<sub>e</sub> = 300 N/mm², die Sicherheit ist ν = 2. Wie groß ist die zulässige Spannung?</summary><div data-type="detailsContent"><p>✅ σ<sub>zul</sub> = 300 N/mm² : 2 = 150 N/mm².</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was ist der Unterschied zwischen Streckgrenze und Zugfestigkeit?</summary><div data-type="detailsContent"><p>✅ Bis zur Streckgrenze R<sub>e</sub> verformt sich der Werkstoff elastisch und federt zurück, darüber bleibt er dauerhaft verformt. Die Zugfestigkeit R<sub>m</sub> ist die höchste Spannung, danach schnürt die Probe ein und reißt.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Ein Vierkant 20 × 20 mm trägt 50 kN auf Druck. Wie groß ist die Druckspannung?</summary><div data-type="detailsContent"><p>✅ σ = 50.000 N : 400 mm² = 125 N/mm².</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Warum zählt bei einer zweischnittigen Verbindung die doppelte Fläche?</summary><div data-type="detailsContent"><p>✅ Der Bolzen müsste an zwei Stellen gleichzeitig abscheren. Die Kraft verteilt sich auf zwei Scherflächen, jede trägt nur F/2.</p></div></details>
+<p></p>

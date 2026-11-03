@@ -1,0 +1,98 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie sich <strong>native</strong> und <strong>neutrale Formate</strong> unterscheiden</p></li>
+<li><p>Wofür du <strong>STEP</strong>, <strong>DXF/DWG</strong>, <strong>IFC</strong> und <strong>STL</strong> verwendest</p></li>
+<li><p>Wie du Daten als <strong>PDF</strong> oder <strong>3D-PDF</strong> an Kunden weitergibst</p></li>
+<li><p>Wie du <strong>typische Probleme</strong> beim Import und Export vermeidest</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> hat <strong>Mia</strong> (Technische Produktdesignerin in Ausbildung) von einem <strong>Zulieferer</strong> eine <strong>STEP-Datei</strong> bekommen. Das Teil soll in ihre Baugruppe. <strong>Tim</strong> (Technischer Systemplaner in Ausbildung) hat vom <strong>Architekten</strong> ein <strong>Gebäudemodell im Format IFC</strong> erhalten. Darauf soll er die Heizung planen. Beide fragen sich: Was steckt in diesen Dateien, und was geht dabei verloren? Und was tust du, wenn dein Kunde mit einem ganz anderen CAD-Programm arbeitet als du?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FITnieq_8e2G82pXSDzUpa-img.webp?alt=media&amp;token=c2f5a481-65bf-4f19-b1e4-155884f180af" alt="" data-display="full-width">
+<h2>🔀 Natives und neutrales Format</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Natives Format</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Neutrales Format</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Was ist das?</strong></p></td><td colspan="1" rowspan="1"><p>Das eigene Format deines CAD-Systems</p></td><td colspan="1" rowspan="1"><p>Ein Format für den Austausch</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Inhalt</strong></p></td><td colspan="1" rowspan="1"><p>Alles: Modellbaum, Features und Maße</p></td><td colspan="1" rowspan="1"><p>Je nach Format vor allem die Geometrie</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wer kann es lesen?</strong></p></td><td colspan="1" rowspan="1"><p>Vollständig nur dasselbe Programm</p></td><td colspan="1" rowspan="1"><p>Viele Programme können es lesen und schreiben</p></td></tr>
+</tbody></table></div>
+<p>Beim Austausch <strong>exportiert der Absender</strong> in ein neutrales Format, der <strong>Empfänger importiert</strong> es. Deine eigene Arbeit speicherst du aber <strong>immer im nativen Format</strong>, damit nichts verloren geht.</p>
+<h2>⚙️ STEP: 3D im Maschinenbau</h2>
+<p>Im Maschinenbau ist <strong>STEP</strong> das wichtigste Format für den <strong>3D-Austausch</strong>.</p>
+<ul>
+<li><p><strong>Natives Modell:</strong> Es hat einen Modellbaum mit Skizze, Extrusion, Bohrung und Fase.</p></li>
+<li><p><strong>STEP-Datei:</strong> Darin steckt nur noch die <strong>Geometrie</strong>, also ein fertiger Körper. Die <strong>Feature-Historie ist weg</strong>.</p></li>
+</ul>
+<p>Ändern kannst du so ein Teil nur noch <strong>eingeschränkt</strong>. Zum <strong>Einbauen in eine Baugruppe</strong> reicht es aber völlig.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FEbgvbyAgRff_hjGLbXWvh-img.webp?alt=media&amp;token=630978fe-0ba4-45fc-8d29-82c6920ac205" alt="" data-display="full-width">
+<h2>📐 DXF und DWG: 2D-Austausch</h2>
+<ul>
+<li><p><strong>Inhalt:</strong> reine <strong>2D-Geometrie</strong>, also Linien, Kreise und Bögen.</p></li>
+<li><p><strong>Laserschneiden:</strong> typisch ist z. B. die <strong>Kontur</strong> für eine Laserschneidanlage.</p></li>
+<li><p><strong>Grundrisse:</strong> In der Gebäudetechnik werden Grundrisse oft so ausgetauscht.</p></li>
+</ul>
+<p><strong>Hinweis:</strong> <strong>DWG</strong> ist eigentlich ein natives Format, wird aber sehr häufig zum Austausch genutzt.</p>
+<h2>🏢 IFC: Austausch für BIM</h2>
+<p><strong>IFC</strong> steht für <strong>Industry Foundation Classes</strong>. Es ist das <strong>offene Austauschformat für BIM</strong>, also für digitale Gebäudemodelle.</p>
+<ul>
+<li><p><strong>Bauteile mit Informationen:</strong> IFC enthält nicht nur Geometrie, sondern z. B. eine <strong>Wand mit Material und Dicke</strong>.</p></li>
+<li><p><strong>Alle Gewerke:</strong> Architektur, technische Gebäudeausrüstung (<strong>TGA</strong>) und Tragwerksplanung arbeiten an einem <strong>gemeinsamen Modell</strong>.</p></li>
+</ul>
+<h2>🖨️ STL: Format für den 3D-Druck</h2>
+<p><strong>STL</strong> beschreibt die Oberfläche eines Körpers mit vielen kleinen <strong>Dreiecken</strong>. Rundungen sind also nicht exakt wie bei STEP, sondern <strong>angenähert</strong>.</p>
+<ul>
+<li><p><strong>Feines Netz:</strong> genauere Form, aber größere Datei.</p></li>
+<li><p><strong>Grobes Netz:</strong> kleinere Datei, aber eckige Rundungen.</p></li>
+</ul>
+<p>STL ist <strong>ideal für den Drucker</strong>, aber <strong>nicht zum Weiterkonstruieren</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FjKWW8mb2WTok0RQbJ03FZ-img.webp?alt=media&amp;token=f845ef4d-1efb-4e93-b5f7-c51c0ab033e6" alt="" data-display="full-width">
+<h2>📑 PDF und 3D-PDF für Kunden</h2>
+<p>Kunden ohne CAD erreichst du mit PDF-Dateien:</p>
+<ul>
+<li><p><strong>PDF:</strong> Zeichnungen lassen sich überall <strong>öffnen und drucken</strong>, aber nicht verändern.</p></li>
+<li><p><strong>3D-PDF:</strong> Der Kunde kann das Modell <strong>drehen</strong> und von allen Seiten ansehen, ganz ohne CAD-Programm.</p></li>
+</ul>
+<p>PDF ist zum <strong>Anschauen</strong> gedacht, nicht zum Weiterkonstruieren.</p>
+<h2>⚠️ Typische Probleme beim Austausch</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Problem</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Falsche Einheiten</strong></p></td><td colspan="1" rowspan="1"><p>Eine Datei in Zoll wird als Millimeter gelesen. Das Teil ist plötzlich <strong>25,4-mal zu klein</strong> (1 Zoll = 25,4 mm).</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Toleranzen</strong></p></td><td colspan="1" rowspan="1"><p>Toleranzen und andere Angaben gehen bei neutralen Formaten oft verloren.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Flächenfehler</strong></p></td><td colspan="1" rowspan="1"><p>Nach dem Import fehlen Flächen, oder es entstehen Lücken.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Versionsstand</strong></p></td><td colspan="1" rowspan="1"><p>Jemand arbeitet mit einer alten Datei weiter.</p></td></tr>
+</tbody></table></div>
+<p>Deshalb gilt: <strong>Prüf jeden Import.</strong></p>
+<h2>📥 Mia und Tim importieren</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Schritt</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Mia: STEP</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Tim: IFC</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>1</strong></p></td><td colspan="1" rowspan="1"><p>STEP-Datei des Zulieferers importieren</p></td><td colspan="1" rowspan="1"><p>IFC-Modell des Architekten importieren</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>2</strong></p></td><td colspan="1" rowspan="1"><p>Einheiten und Geometrie prüfen</p></td><td colspan="1" rowspan="1"><p>Als Grundlage nutzen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>3</strong></p></td><td colspan="1" rowspan="1"><p>In die Baugruppe einbauen</p></td><td colspan="1" rowspan="1"><p>Heizkörper und Rohrleitungen darin planen</p></td></tr>
+</tbody></table></div>
+<p>Ändert der Architekt später etwas, bekommt Tim eine <strong>neue IFC-Datei</strong> und gleicht seine Planung damit ab.</p>
+<h2>📤 Richtig exportieren</h2>
+<p>Beim Export entscheiden ein paar Einstellungen, ob der Empfänger mit der Datei arbeiten kann:</p>
+<ol>
+<li><p><strong>Einheit:</strong> Im Maschinenbau und in der Gebäudetechnik meist <strong>Millimeter</strong>.</p></li>
+<li><p><strong>Formatversion:</strong> Wähle eine Version, die der Empfänger lesen kann. Frag im Zweifel vorher nach.</p></li>
+<li><p><strong>STL-Genauigkeit:</strong> Für saubere Rundungen brauchst du ein <strong>feineres Netz</strong>.</p></li>
+<li><p><strong>Dateiname:</strong> klarer Name mit <strong>Sachnummer</strong> und <strong>Revisionsstand</strong>. So weiß jeder, welchen Stand er vor sich hat.</p></li>
+</ol>
+<h2>🛠️ Übung: Welches Format passt?</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fall</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Format</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Begründung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>Kunde ohne CAD will das Modell von allen Seiten ansehen</p></td><td colspan="1" rowspan="1"><p><strong>3D-PDF</strong></p></td><td colspan="1" rowspan="1"><p>Modell drehen ohne CAD-Programm</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>Architekt schickt das Gebäudemodell für die Heizungsplanung</p></td><td colspan="1" rowspan="1"><p><strong>IFC</strong></p></td><td colspan="1" rowspan="1"><p>Offenes BIM-Format mit Bauteilinformationen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>Zulieferer übernimmt ein Gehäuse in seine eigene Baugruppe</p></td><td colspan="1" rowspan="1"><p><strong>STEP</strong></p></td><td colspan="1" rowspan="1"><p>Er arbeitet vielleicht mit einem ganz anderen CAD-System</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>Blechkontur für die Laserschneidanlage</p></td><td colspan="1" rowspan="1"><p><strong>DXF</strong></p></td><td colspan="1" rowspan="1"><p>Es geht um eine 2D-Kontur</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>Halter für den 3D-Drucker</p></td><td colspan="1" rowspan="1"><p><strong>STL</strong></p></td><td colspan="1" rowspan="1"><p>Dreiecksnetz für den 3D-Druck</p></td></tr>
+</tbody></table></div>
+<blockquote><p>Das Format richtet sich danach, was der Empfänger mit den Daten machen will.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia importiert die STEP-Datei des Zulieferers. Beim Prüfen fällt ihr auf, dass das Teil winzig ist: Die Datei war in Zoll angelegt. Sie stellt die Einheit beim Import richtig ein, kontrolliert die Flächen und baut das Teil in ihre Baugruppe ein. Ihr eigenes Gehäuse schickt sie als STEP zurück, Dateiname mit Sachnummer und Revisionsstand. 💪 Der Zulieferer kann sofort damit arbeiten.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>Natives Format</strong> mit Historie, <strong>neutrales Format</strong> für den Austausch. <strong>STEP</strong> für 3D, <strong>DXF</strong> für 2D, <strong>IFC</strong> für BIM, <strong>STL</strong> für den 3D-Druck. <strong>PDF</strong> und <strong>3D-PDF</strong> zum Anschauen für Kunden. Nach jedem Import <strong>Einheiten, Geometrie und Version</strong> prüfen.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Zuordnungsaufgabe: Format zum Einsatzzweck. Merke dir außerdem, <strong>was verloren geht</strong>: Bei STEP fehlt die Feature-Historie, bei STL sind Rundungen nur angenähert, bei neutralen Formaten gehen oft Toleranzen verloren. Und: Zoll als Millimeter gelesen macht ein Teil <strong>25,4-mal zu klein</strong>.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Warum speicherst du deine eigene Arbeit immer im nativen Format?</summary><div data-type="detailsContent"><p>✅ Nur das native Format enthält alles: Modellbaum, Features und Maße. In neutralen Formaten geht die Historie verloren.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Was steckt in einer STEP-Datei, und was fehlt?</summary><div data-type="detailsContent"><p>✅ Die Geometrie als fertiger Körper. Die Feature-Historie fehlt, deshalb ist das Teil nur eingeschränkt änderbar. Zum Einbauen in eine Baugruppe reicht es.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was unterscheidet IFC von einem reinen Geometrieformat?</summary><div data-type="detailsContent"><p>✅ IFC enthält Bauteile mit Informationen, z. B. eine Wand mit Material und Dicke. So arbeiten Architektur, TGA und Tragwerksplanung an einem gemeinsamen Modell.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Warum eignet sich STL nicht zum Weiterkonstruieren?</summary><div data-type="detailsContent"><p>✅ STL beschreibt die Oberfläche mit Dreiecken. Rundungen sind nur angenähert, es gibt keine exakte Geometrie und keine Features.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Worauf achtest du beim Export?</summary><div data-type="detailsContent"><p>✅ Einheit (meist Millimeter), eine Formatversion, die der Empfänger lesen kann, bei STL die Genauigkeit des Netzes und einen klaren Dateinamen mit Sachnummer und Revisionsstand.</p></div></details>
+<p></p>

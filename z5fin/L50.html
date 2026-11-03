@@ -1,0 +1,80 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Welche <strong>Probleme</strong> entstehen, wenn ein Betrieb <strong>ohne PDM</strong> arbeitet</p></li>
+<li><p>Was <strong>zentrale Datenhaltung</strong> mit <strong>Metadaten</strong> bedeutet</p></li>
+<li><p>Wie du mit <strong>Check-out</strong>, <strong>Check-in</strong>, <strong>Versionen</strong> und dem <strong>Freigabeworkflow</strong> arbeitest</p></li>
+<li><p>Wie <strong>PDM</strong> und <strong>ERP-System</strong> zusammenarbeiten und was PDM sonst noch regelt</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> sucht <strong>Mia</strong>, Auszubildende im Bereich Konstruktion, die Zeichnung einer <strong>Welle</strong>. Sie findet zwei Dateien, die fast gleich aussehen. Die eine liegt auf dem Netzlaufwerk, die andere im Ordner eines Kollegen. Welche ist die richtige? Ihre Ausbilderin <strong>Frau Engel</strong> lacht: Genau für solche Fälle gibt es im Betrieb das <strong>PDM-System</strong>. Doch was ist das eigentlich, und wie arbeitest du damit?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F-pkaxQkphOxOtHqrDifYe-img.webp?alt=media&amp;token=4373289c-6fb4-4712-b6e3-94d0c475e3d7" alt="" data-display="full-width">
+<h2>⚠️ Probleme ohne PDM</h2>
+<p>Ohne ein gemeinsames System zur Datenverwaltung passieren in der Konstruktion immer wieder die gleichen Fehler:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Problem</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was passiert?</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Doppelte Dateien</strong></p></td><td colspan="1" rowspan="1"><p>Jeder speichert eine Kopie dort, wo er sie gerade braucht: auf dem eigenen Rechner, im Netzlaufwerk oder als Mailanhang. Es gibt Kopien an vielen Orten.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Falsche Stände</strong></p></td><td colspan="1" rowspan="1"><p>Niemand weiß sicher, welche Datei aktuell ist. Es wird mit veralteten Ständen gearbeitet.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Verlorene Daten</strong></p></td><td colspan="1" rowspan="1"><p>Zwei Personen ändern gleichzeitig dieselbe Datei und überschreiben sich gegenseitig ihre Arbeit.</p></td></tr>
+</tbody></table></div>
+<h2>🗄️ Zentrale Datenhaltung mit Metadaten</h2>
+<p><strong>PDM</strong> steht für <strong>Produktdatenmanagement</strong>. Die Lösung für die genannten Probleme ist eine <strong>zentrale Datenhaltung</strong>: Alle <strong>Modelle</strong>, <strong>Zeichnungen</strong> und <strong>Dokumente</strong> liegen an einem einzigen Ort, nämlich im PDM-System. Dazu gehören auch <strong>Berechnungen</strong> und <strong>Datenblätter von Kaufteilen</strong>.</p>
+<p>Zu jeder Datei speichert das System <strong>Metadaten</strong>. Das sind <strong>Daten über die Datei</strong>. Für Mias Welle sieht das zum Beispiel so aus:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Metadatum</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiel Welle</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Sachnummer</strong></p></td><td colspan="1" rowspan="1"><p>4711-020</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Benennung</strong></p></td><td colspan="1" rowspan="1"><p>Welle</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Werkstoff</strong></p></td><td colspan="1" rowspan="1"><p>C45</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Status</strong></p></td><td colspan="1" rowspan="1"><p>freigegeben</p></td></tr>
+</tbody></table></div>
+<p>Über diese Metadaten findest du jedes Teil <strong>schnell wieder</strong>, zum Beispiel über die Sachnummer. Du musst nicht mehr in Ordnern suchen und rätseln, welche Datei die richtige ist.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FmruErwQiQ4gKzHLLrRN_H-img.webp?alt=media&amp;token=bdfc6189-768a-469c-b313-7e3fd0f0a0b8" alt="" data-display="full-width">
+<h2>🔒 Auschecken und Einchecken</h2>
+<p>Wie verhindert PDM, dass sich zwei Personen gegenseitig überschreiben? Mit einem einfachen Ablauf in drei Schritten:</p>
+<ol>
+<li><p><strong>Check-out:</strong> Willst du ein Teil ändern, checkst du es aus. Ab jetzt ist es für andere <strong>gesperrt</strong>. Sie können es <strong>ansehen</strong>, aber <strong>nicht ändern</strong>.</p></li>
+<li><p><strong>Bearbeiten:</strong> Du änderst das Teil in Ruhe. Niemand kann dir in der Zwischenzeit etwas überschreiben.</p></li>
+<li><p><strong>Check-in:</strong> Du checkst das Teil wieder ein. Das System speichert eine <strong>neue Version</strong>, und die <strong>Sperre wird aufgehoben</strong>.</p></li>
+</ol>
+<p>So bearbeitet immer <strong>nur eine Person</strong> ein Teil zur gleichen Zeit.</p>
+<h2>🔁 Versionen und Freigabeworkflow</h2>
+<p>Bei vielen Änderungen behältst du über <strong>Versionen</strong> den Überblick: Jedes Einchecken erzeugt eine neue Version. Die <strong>alten Versionen bleiben erhalten</strong>. So kannst du jederzeit nachsehen, was geändert wurde.</p>
+<p>Bevor ein Teil gefertigt werden darf, durchläuft es einen <strong>Freigabeprozess</strong>, auch <strong>Workflow</strong> genannt:</p>
+<ol>
+<li><p><strong>In Arbeit:</strong> Das Teil wird konstruiert oder geändert.</p></li>
+<li><p><strong>Prüfung:</strong> Eine <strong>zweite Person</strong> prüft die Konstruktion, zum Beispiel die Teamleitung. Findet sie Fehler, geht das Teil <strong>zurück in Arbeit</strong>.</p></li>
+<li><p><strong>Freigegeben:</strong> Erst nach erfolgreicher Prüfung bekommt das Teil diesen Status.</p></li>
+</ol>
+<p><strong>Wichtig:</strong> Nur <strong>freigegebene Stände</strong> gehen in die Fertigung.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F8bHZgE0-UatOm-iHIpCbG-img.webp?alt=media&amp;token=c14a018a-c28c-43d3-90ea-a2065010ba01" alt="" data-display="full-width">
+<h2>🔗 PDM und ERP arbeiten zusammen</h2>
+<p>Das PDM-System ist eng mit dem <strong>ERP-System</strong> verbunden. Beide haben unterschiedliche Aufgaben:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>System</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was entsteht dort?</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>PDM</strong></p></td><td colspan="1" rowspan="1"><p>Konstruktionsdaten: Modelle, Zeichnungen und die Stückliste</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>ERP</strong></p></td><td colspan="1" rowspan="1"><p>Artikel, Bestellungen und Fertigungsaufträge</p></td></tr>
+</tbody></table></div>
+<p>Beide Systeme sind <strong>verknüpft</strong>. Die <strong>Stückliste</strong> und die <strong>Artikeldaten</strong> werden übertragen, ohne dass jemand sie abtippen muss. Das spart Zeit und verhindert Tippfehler.</p>
+<h2>🛠️ Eine Änderung läuft durch</h2>
+<p>So sieht eine Konstruktionsänderung bei der Muster Technik GmbH in der Praxis aus:</p>
+<ol>
+<li><p><strong>Mia ändert die Welle:</strong> Sie checkt die Welle aus, ändert einen Durchmesser und checkt sie als neue Version wieder ein.</p></li>
+<li><p><strong>Freigabeworkflow:</strong> Frau Engel prüft die Änderung und gibt sie frei.</p></li>
+<li><p><strong>Fertigungsstückliste im ERP:</strong> Der neue Stand landet automatisch in der Fertigungsstückliste. Die Fertigung arbeitet sofort mit dem richtigen Stand.</p></li>
+</ol>
+<h2>🗃️ Archiv, Rechte und Sicherung</h2>
+<p>PDM kann noch mehr:</p>
+<ul>
+<li><p><strong>Archivierung:</strong> Alte Stände werden archiviert. Auch nach Jahren findest du heraus, wie ein Teil früher ausgesehen hat.</p></li>
+<li><p><strong>Zugriffsrechte:</strong> Nicht jeder darf alles ändern oder freigeben. Ein Azubi kann zum Beispiel konstruieren, aber nicht selbst freigeben.</p></li>
+<li><p><strong>Datensicherung:</strong> Regelmäßige Sicherungen sorgen dafür, dass keine Konstruktionsdaten verloren gehen.</p></li>
+</ul>
+<blockquote><p>Ein Ort für alle Daten, eine Person pro Änderung und nur freigegebene Stände in die Fertigung.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia sucht die Welle jetzt nicht mehr in Ordnern, sondern gibt im PDM-System die Sachnummer 4711-020 ein. Sofort sieht sie den aktuellen, freigegebenen Stand. Für die Änderung des Durchmessers checkt sie die Welle aus, ändert sie und checkt sie wieder ein. Frau Engel prüft und gibt frei. 💪 Die Fertigung bekommt den neuen Stand automatisch über das ERP-System und arbeitet nicht mehr mit einer alten Kopie.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>PDM verhindert <strong>doppelte Dateien, falsche Stände und verlorene Daten</strong> durch <strong>zentrale Datenhaltung mit Metadaten</strong>. Mit <strong>Check-out und Check-in</strong> bearbeitet immer nur eine Person ein Teil. <strong>Versionen und Freigabeworkflow</strong> sorgen dafür, dass nur geprüfte Stände in die Fertigung gehen. PDM ist mit dem <strong>ERP</strong> verknüpft und regelt <strong>Archivierung, Zugriffsrechte und Datensicherung</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Fragen: <strong>Was sind Metadaten?</strong> Daten über eine Datei, z. B. Sachnummer, Benennung, Werkstoff und Status. <strong>Warum kann jemand eine Datei nicht speichern?</strong> Sie ist von einer anderen Person ausgecheckt und deshalb gesperrt. <strong>Welche Stände gehen in die Fertigung?</strong> Nur freigegebene. Merke dir auch die Reihenfolge im Workflow: in Arbeit, Prüfung, freigegeben.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Nenne drei Probleme, die ohne PDM entstehen.</summary><div data-type="detailsContent"><p>✅ Doppelte Dateien (Kopien an vielen Orten), falsche Stände (niemand weiß, welche Datei aktuell ist) und verlorene Daten (zwei Personen überschreiben sich gegenseitig).</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Tim will eine Zeichnung ändern, kann sie aber nicht speichern. Was ist wahrscheinlich der Grund?</summary><div data-type="detailsContent"><p>✅ Eine andere Person hat die Zeichnung ausgecheckt. Damit ist sie für Tim gesperrt. Er kann sie ansehen, aber nicht ändern.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was passiert beim Einchecken eines Teils?</summary><div data-type="detailsContent"><p>✅ Das System speichert eine neue Version, die alten Versionen bleiben erhalten, und die Sperre wird aufgehoben.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Beschreibe den Freigabeworkflow. Was passiert, wenn bei der Prüfung ein Fehler gefunden wird?</summary><div data-type="detailsContent"><p>✅ Das Teil hat zuerst den Status in Arbeit. Dann prüft eine zweite Person, z. B. die Teamleitung. Findet sie einen Fehler, geht das Teil zurück in Arbeit. Erst danach bekommt es den Status freigegeben.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Wie gelangt eine freigegebene Stückliste in die Fertigung?</summary><div data-type="detailsContent"><p>✅ Über die Verknüpfung von PDM und ERP-System. Stückliste und Artikeldaten werden automatisch übertragen, ohne dass jemand sie abtippen muss.</p></div></details>
+<p></p>

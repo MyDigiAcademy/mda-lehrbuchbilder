@@ -1,0 +1,69 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie die <strong>statische Kollisionsprüfung</strong> Durchdringungen in einer Baugruppe findet</p></li>
+<li><p>Wie du echte <strong>Fehler</strong> von <strong>gewollten Überdeckungen</strong> unterscheidest</p></li>
+<li><p>Wie du <strong>Freiheitsgrade</strong> festlegst, <strong>Bewegungen simulierst</strong> und <strong>dynamisch</strong> auf Kollisionen prüfst</p></li>
+<li><p>Wie du die <strong>Ergebnisse dokumentierst</strong></p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> ist der erste <strong>Prototyp</strong> eines <strong>Gehäuses mit Klappe</strong> da. <strong>Mia</strong> öffnet die Klappe und merkt: Kurz vor der Endlage <strong>stößt sie an das Gehäuse</strong>. Ihre Ausbilderin <strong>Frau Engel</strong> sagt: Das hätte uns die <strong>Bewegungssimulation im CAD</strong> schon vorher gezeigt, bevor das erste Teil gefertigt war. Wie prüft Mia eine Baugruppe auf Kollisionen?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F7RpV8dE7-yVvXXKGScfLE-img.webp?alt=media&amp;token=7ae420b0-b692-49d9-81d4-2b58c9510fa4" alt="" data-display="full-width">
+<h2>🔍 Die statische Kollisionsprüfung</h2>
+<p><strong>Statisch</strong> heißt: Die Baugruppe <strong>steht still</strong>. Du startest die Prüfung für die <strong>ganze Baugruppe</strong> oder nur für <strong>ausgewählte Teile</strong>.</p>
+<ol>
+<li><p><strong>Suchen:</strong> Das Programm sucht alle Stellen, an denen sich zwei Bauteile <strong>durchdringen</strong>. Beispiel: Eine Welle mit <strong>Ø 23 mm</strong> ist in eine Bohrung mit <strong>Ø 18 mm</strong> gesetzt. Das geht in der Realität nicht.</p></li>
+<li><p><strong>Markieren:</strong> Das Programm markiert das <strong>Volumen der Durchdringung farbig</strong>.</p></li>
+<li><p><strong>Auflisten:</strong> Alle Kollisionen erscheinen in einer <strong>Liste</strong>.</p></li>
+</ol>
+<p><strong>Aber Vorsicht:</strong> Nicht jede Überschneidung ist ein Fehler.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FsIsqv2r1bC0jPBMpoXeRa-img.webp?alt=media&amp;token=8d937d6a-89ea-4984-97f4-a04eb82eb789" alt="" data-display="full-width">
+<h2>✅ Gewollte Überdeckungen</h2>
+<p>Manche Überdeckungen sind <strong>bewusst so konstruiert</strong>:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fall</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Warum überschneiden sich die Teile?</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Presssitz</strong></p></td><td colspan="1" rowspan="1"><p>Er hat bewusst ein kleines <strong>Übermaß</strong>: Die Welle ist etwas dicker als die Bohrung, damit sie fest sitzt.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Gewinde</strong></p></td><td colspan="1" rowspan="1"><p>Gewinde werden im Modell meist <strong>vereinfacht</strong>. Die Schraube hat den vollen <strong>Nenndurchmesser</strong> und überschneidet sich mit dem <strong>Kernloch</strong> der Gewindebohrung.</p></td></tr>
+</tbody></table></div>
+<p>Solche Stellen erkennst du und <strong>blendest sie in der Prüfung aus</strong> oder <strong>markierst sie als gewollt</strong>. Dann bleiben nur die <strong>echten Fehler</strong> übrig.</p>
+<h2>🧭 Freiheitsgrade festlegen</h2>
+<p>Für eine Bewegung musst du festlegen, <strong>wie sich ein Teil bewegen darf</strong>.</p>
+<ul>
+<li><p>Ein <strong>freier Körper im Raum</strong> hat <strong>6 Freiheitsgrade</strong>: <strong>3 Verschiebungen</strong> entlang X, Y und Z und <strong>3 Drehungen</strong> um diese Achsen.</p></li>
+<li><p>Mit <strong>Baugruppenbedingungen</strong> nimmst du Freiheitsgrade weg, zum Beispiel wenn zwei Flächen aufeinander liegen oder zwei Achsen fluchten.</p></li>
+<li><p>Für die <strong>Klappe am Scharnier</strong> bleibt genau <strong>1 Freiheitsgrad</strong> übrig: die <strong>Drehung um die Scharnierachse</strong>.</p></li>
+</ul>
+<h2>🎬 Bewegung simulieren</h2>
+<p>Jetzt gibst du der Bewegung einen <strong>Antrieb</strong>, zum Beispiel einen Winkel, der sich langsam ändert. Das Programm berechnet dann <strong>jede Zwischenstellung</strong>. Dabei legst du fest und prüfst:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Begriff</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Endlagen</strong></p></td><td colspan="1" rowspan="1"><p>wie weit sich ein Teil maximal bewegen darf</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Hub</strong></p></td><td colspan="1" rowspan="1"><p>bei einem Zylinder der Weg zwischen den Endlagen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Schwenkbereich</strong></p></td><td colspan="1" rowspan="1"><p>bei einer Klappe oder einem Hebel der Winkel</p></td></tr>
+</tbody></table></div>
+<h2>⚡ Die dynamische Kollisionsprüfung</h2>
+<p>Während der Bewegung läuft die <strong>dynamische Kollisionsprüfung</strong>: Das Programm prüft <strong>in jeder Stellung</strong>, ob sich Teile berühren oder durchdringen.</p>
+<p>Bei Mias Klappe zeigt sich das Problem: Die <strong>Endlage liegt bei 110°</strong>. <strong>Ab 90°</strong> dreht die Klappe mit ihrer <strong>Unterkante in die Rückwand</strong>. Genau das hat Mia am Prototyp gesehen. Die Simulation hätte es <strong>vorher erkannt</strong>, statt erst am Prototyp.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FAtGmxrSL6Japn4Bmj-SsC-img.webp?alt=media&amp;token=6cc8421d-f9f1-4288-b7ce-f8523f705618" alt="" data-display="full-width">
+<h2>🔧 Anschlag versetzen</h2>
+<ul>
+<li><p><strong>Neue Endlage:</strong> Mia versetzt den <strong>Anschlag</strong>. Die Klappe stoppt jetzt schon bei <strong>85°</strong>.</p></li>
+<li><p><strong>Freiraum:</strong> Eine neue Simulation zeigt: In der ganzen Bewegung bleibt Freiraum zwischen Klappe und Gehäuse.</p></li>
+<li><p><strong>Erneut prüfen:</strong> Wichtig ist, dass du <strong>nach jeder Änderung</strong> erneut prüfst.</p></li>
+</ul>
+<h2>📝 Ergebnisse dokumentieren</h2>
+<ol>
+<li><p><strong>Kollision festhalten:</strong> welche Kollisionen gefunden wurden, zum Beispiel mit einem Bild und einer kurzen Beschreibung</p></li>
+<li><p><strong>Änderung beschreiben:</strong> was an der Konstruktion geändert wurde, hier der versetzte Anschlag</p></li>
+<li><p><strong>Ergebnis der neuen Prüfung:</strong> das Ergebnis der erneuten Prüfung notieren</p></li>
+</ol>
+<p>So ist für alle <strong>nachvollziehbar</strong>, warum die Konstruktion so aussieht. Und bei einer späteren Änderung weiß jeder, worauf er achten muss.</p>
+<blockquote><p>Erst echte Fehler von gewollten Überdeckungen trennen, dann bewerten.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia startet zuerst die statische Prüfung der Gehäusebaugruppe. Die gemeldeten Überschneidungen an den Schrauben markiert sie als gewollt, weil die Gewinde vereinfacht modelliert sind. Dann legt sie die Klappe mit Baugruppenbedingungen so fest, dass nur die Drehung um die Scharnierachse bleibt, und lässt den Winkel bis zur Endlage laufen. Die dynamische Prüfung meldet ab 90° eine Kollision mit der Rückwand. Mia versetzt den Anschlag auf 85°, prüft erneut und dokumentiert Kollision, Änderung und Ergebnis. 💪 Beim nächsten Prototyp geht die Klappe frei auf.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Die <strong>statische Kollisionsprüfung</strong> findet Durchdringungen in der stehenden Baugruppe. <strong>Gewollte Überdeckungen</strong> wie Presssitz und Gewinde blendest du aus. Mit <strong>Freiheitsgraden</strong> und <strong>Endlagen</strong> simulierst du Bewegungen und prüfst dabei <strong>dynamisch</strong> auf Kollisionen. Ergebnisse <strong>dokumentieren</strong>, Konstruktion anpassen und <strong>erneut prüfen</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Frage: <strong>Wie viele Freiheitsgrade</strong> hat ein freier Körper? 6, nämlich 3 Verschiebungen und 3 Drehungen. Eine Klappe am Scharnier hat nur noch <strong>1</strong>. Und: Eine gemeldete Überschneidung an einem Gewinde oder Presssitz ist <strong>kein Fehler</strong>, sondern gewollt.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Die Prüfung meldet eine Überschneidung zwischen einer Schraube und ihrer Gewindebohrung. Ist das ein Fehler?</summary><div data-type="detailsContent"><p>✅ Nein. Das ist eine gewollte Überdeckung, weil das Gewinde vereinfacht modelliert ist: Die Schraube hat den vollen Nenndurchmesser und überschneidet sich mit dem Kernloch.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Wie viele Freiheitsgrade bleiben einer Klappe an einem Scharnier?</summary><div data-type="detailsContent"><p>✅ Ein Freiheitsgrad, nämlich die Drehung um die Scharnierachse.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was unterscheidet die statische von der dynamischen Kollisionsprüfung?</summary><div data-type="detailsContent"><p>✅ Die statische Prüfung untersucht die stehende Baugruppe auf Durchdringungen. Die dynamische Prüfung läuft während einer Bewegungssimulation und prüft in jeder Stellung, ob sich Teile berühren oder durchdringen.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was ist der Hub, was der Schwenkbereich?</summary><div data-type="detailsContent"><p>✅ Der Hub ist bei einem Zylinder der Weg zwischen den Endlagen. Der Schwenkbereich ist bei einer Klappe oder einem Hebel der Winkel zwischen den Endlagen.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was gehört in die Dokumentation einer Kollisionsprüfung?</summary><div data-type="detailsContent"><p>✅ Die gefundenen Kollisionen (z. B. Bild und kurze Beschreibung), die Änderung an der Konstruktion (z. B. versetzter Anschlag) und das Ergebnis der erneuten Prüfung.</p></div></details>
+<p></p>

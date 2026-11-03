@@ -1,0 +1,79 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie die <strong>Bottom-up-Konstruktion</strong> funktioniert</p></li>
+<li><p>Wie die <strong>Top-down-Konstruktion</strong> mit <strong>externen Referenzen</strong> funktioniert</p></li>
+<li><p>Wie du mit einem <strong>Skelettmodell</strong> als zentraler Steuergeometrie arbeitest</p></li>
+<li><p>Welche <strong>Vorteile</strong> und <strong>Risiken</strong> es gibt und wie du <strong>Bezüge sauber setzt</strong></p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> soll <strong>Mia</strong> ein <strong>Getriebegehäuse</strong> mit <strong>Welle</strong> und <strong>zwei Lagern</strong> konstruieren. Ausbilderin <strong>Frau Engel</strong> skizziert die Idee am Whiteboard. Die Lage von Welle und Lagern steht schon fest, das Gehäuse muss dazu passen. Mia fragt sich: Konstruiere ich erst jedes Teil einzeln oder alles zusammen? Fange ich mit den Einzelteilen an oder mit dem großen Ganzen? Dafür gibt es zwei Methoden.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FRGk_YQA16b5-_h5vLPb-K-img.webp?alt=media&amp;token=44ccc2a8-5de7-472c-88b1-e4cb4d3adda2" alt="" data-display="full-width">
+<h2>⬆️ Bottom-up: von unten nach oben</h2>
+<ol>
+<li><p><strong>Einzelteile zuerst:</strong> Du konstruierst jedes Teil für sich, in einer <strong>eigenen Datei</strong> und <strong>unabhängig</strong> von den anderen.</p></li>
+<li><p><strong>Dann zusammensetzen:</strong> Danach setzt du die Teile in der <strong>Baugruppe</strong> zusammen und richtest sie mit <strong>Baugruppenbedingungen</strong> aus.</p></li>
+<li><p><strong>Gut für:</strong> <strong>Normteile</strong>, <strong>Kaufteile</strong> und <strong>Wiederholteile</strong>, die es schon gibt.</p></li>
+</ol>
+<p>Jedes Teil bleibt dabei <strong>für sich verständlich</strong> und lässt sich leicht in anderen Baugruppen <strong>wiederverwenden</strong>.</p>
+<h2>⬇️ Top-down: von oben nach unten</h2>
+<ol>
+<li><p><strong>Von der Baugruppe aus:</strong> Du konstruierst die Teile direkt im <strong>Zusammenbau</strong>, also im <strong>Kontext</strong> der anderen Teile.</p></li>
+<li><p><strong>Externe Referenz:</strong> Du beziehst dich auf die Geometrie anderer Teile, zum Beispiel auf den <strong>Durchmesser eines Lagers</strong>. So eine Verbindung heißt <strong>externe Referenz</strong>.</p></li>
+<li><p><strong>Automatisch angepasst:</strong> Ändert sich das Lager, passt sich das Gehäuse automatisch an.</p></li>
+</ol>
+<h2>⚖️ Der Vergleich</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bottom-up</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Top-down</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Start</strong></p></td><td colspan="1" rowspan="1"><p>Einzelteil</p></td><td colspan="1" rowspan="1"><p>Baugruppe</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Bezüge</strong></p></td><td colspan="1" rowspan="1"><p>Teile unabhängig voneinander</p></td><td colspan="1" rowspan="1"><p>Teile hängen über externe Referenzen zusammen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Änderung</strong></p></td><td colspan="1" rowspan="1"><p>Jedes Teil wird einzeln geändert.</p></td><td colspan="1" rowspan="1"><p>Verknüpfte Teile passen sich automatisch an.</p></td></tr>
+</tbody></table></div>
+<p>Genau die automatische Anpassung ist bei Top-down <strong>Stärke und Schwäche zugleich</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2Fve4QRS_BenwbhTt3TMS89-img.webp?alt=media&amp;token=effbc660-78d9-4931-8448-a2fe8894b30c" alt="" data-display="full-width">
+<h2>🦴 Das Skelettmodell</h2>
+<p>Bei Top-down arbeitest du oft mit einem <strong>Skelettmodell</strong>, auch <strong>Layoutmodell</strong> genannt. Es enthält nur die wichtigsten <strong>Linien, Ebenen und Punkte</strong>.</p>
+<ul>
+<li><p><strong>Skelett:</strong> Bei Mias Getriebe sind das die <strong>Wellenachse</strong> und die beiden <strong>Lagerpositionen</strong> mit dem <strong>Lagerabstand</strong>.</p></li>
+<li><p><strong>Welle und Lager</strong> richten sich nach diesem Skelett.</p></li>
+<li><p><strong>Gehäuse:</strong> Auch das Gehäuse wird vom Skelett abgeleitet.</p></li>
+</ul>
+<p>Das Skelett ist also die <strong>zentrale Steuergeometrie</strong> der ganzen Baugruppe.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FE3JzuZp5pWxI6V1G2lbSj-img.webp?alt=media&amp;token=71e5a1e2-1d93-4265-949b-438261807fb6" alt="" data-display="full-width">
+<h2>🔧 Eine Änderung im Skelett</h2>
+<p>Was bringt das bei einer Änderung? Stell dir vor, der <strong>Lagerabstand</strong> muss größer werden:</p>
+<ol>
+<li><p><strong>1 Maß ändern:</strong> Du änderst nur ein einziges Maß im Skelettmodell.</p></li>
+<li><p><strong>Welle und Lager:</strong> Die Welle wird länger, die Lager wandern mit.</p></li>
+<li><p><strong>Gehäuse:</strong> Das Gehäuse passt sich ebenfalls an.</p></li>
+</ol>
+<p>Ohne Skelett müsstest du <strong>jedes Teil einzeln</strong> ändern.</p>
+<h2>✅ Vorteile und Risiken von Top-down</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Vorteil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Risiko</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>Teile <strong>passen von Anfang an zusammen</strong> und lassen sich <strong>schnell gemeinsam anpassen</strong>.</p></td><td colspan="1" rowspan="1"><p><strong>Ungewollte Abhängigkeiten:</strong> Änderst du ein Teil, ändern sich womöglich andere mit, ohne dass du es merkst.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>Eine Änderung an einer Stelle wirkt auf alle verknüpften Teile.</p></td><td colspan="1" rowspan="1"><p><strong>Viele externe Referenzen:</strong> Solche Teile lassen sich schlecht in anderen Baugruppen wiederverwenden.</p></td></tr>
+</tbody></table></div>
+<h2>🔀 Mischformen in der Praxis</h2>
+<p>In der Praxis werden beide Methoden <strong>gemischt</strong>. So auch bei Mia:</p>
+<ul>
+<li><p><strong>Gehäuse: top-down.</strong> Es wird an die Lage von Welle und Lagern angepasst.</p></li>
+<li><p><strong>Normteile: bottom-up.</strong> Schrauben und die Lager selbst kommen als fertige Teile dazu, zum Beispiel aus der <strong>Normteilbibliothek</strong> oder vom <strong>Hersteller</strong>.</p></li>
+</ul>
+<p>So nutzt Mia die <strong>Stärken beider Methoden</strong>.</p>
+<h2>🧭 Gute Praxis mit Bezügen</h2>
+<ol>
+<li><p><strong>Bewusst setzen:</strong> Setze Bezüge am besten auf das <strong>Skelettmodell</strong> und nicht auf beliebige Kanten anderer Teile.</p></li>
+<li><p><strong>Dokumentieren:</strong> Verwende <strong>klare Namen im Modellbaum</strong> und schreib eine <strong>kurze Notiz</strong>.</p></li>
+<li><p><strong>Prüfen:</strong> Kontrolliere nach Änderungen, ob <strong>alle Referenzen noch stimmen</strong>.</p></li>
+</ol>
+<p>So bleibt die Baugruppe <strong>für alle nachvollziehbar</strong>.</p>
+<blockquote><p>Top-down für Teile, die zusammenpassen müssen, bottom-up für fertige Teile.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia legt zuerst ein Skelettmodell mit Wellenachse und den beiden Lagerpositionen an. Welle und Gehäuse leitet sie davon ab, die Lager und Schrauben holt sie bottom-up aus der Normteilbibliothek und vom Hersteller. Als Frau Engel einen größeren Lagerabstand braucht, ändert Mia nur ein Maß im Skelett: Welle, Lager und Gehäuse passen sich an. 💪 Danach prüft sie im Modellbaum, ob alle Referenzen noch stimmen.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>Bottom-up</strong> heißt: erst die Einzelteile konstruieren, dann zusammensetzen. <strong>Top-down</strong> heißt: Teile im Kontext der Baugruppe mit Bezug auf andere Teile konstruieren. Das <strong>Skelettmodell</strong> ist die zentrale Steuergeometrie, Änderungen dort wirken auf alle Teile. In der Praxis <strong>mischst</strong> du beide Methoden und setzt Bezüge <strong>bewusst und dokumentiert</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Fragen: <strong>Was ist eine externe Referenz?</strong> Ein Bezug auf die Geometrie eines anderen Teils. <strong>Welche Methode für Normteile?</strong> Bottom-up. <strong>Welches Risiko hat Top-down?</strong> Ungewollte Abhängigkeiten und schlechte Wiederverwendbarkeit. Nenne beim Vergleich immer Start, Bezüge und Verhalten bei Änderungen.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Mit welcher Methode kommen Normteile wie Schrauben in die Baugruppe?</summary><div data-type="detailsContent"><p>✅ Bottom-up, als fertige Einzelteile, zum Beispiel aus der Normteilbibliothek oder vom Hersteller.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Was enthält ein Skelettmodell?</summary><div data-type="detailsContent"><p>✅ Die zentrale Steuergeometrie, also nur die wichtigsten Achsen, Ebenen und Positionen, zum Beispiel Wellenachse und Lagerpositionen mit Lagerabstand.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was ist eine externe Referenz?</summary><div data-type="detailsContent"><p>✅ Ein Bezug auf die Geometrie eines anderen Teils, zum Beispiel auf den Durchmesser eines Lagers. Ändert sich das Lager, passt sich das abhängige Teil automatisch an.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Nenne zwei Risiken der Top-down-Konstruktion.</summary><div data-type="detailsContent"><p>✅ Ungewollte Abhängigkeiten, weil sich bei einer Änderung andere Teile unbemerkt mitändern. Und Teile mit vielen externen Referenzen lassen sich schlecht in anderen Baugruppen wiederverwenden.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Wie arbeitest du sauber mit Bezügen?</summary><div data-type="detailsContent"><p>✅ Bezüge bewusst auf das Skelettmodell setzen statt auf beliebige Kanten, sie mit klaren Namen im Modellbaum und einer kurzen Notiz dokumentieren und nach Änderungen prüfen, ob alle Referenzen noch stimmen.</p></div></details>
+<p></p>

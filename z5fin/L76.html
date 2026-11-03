@@ -1,0 +1,105 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie du den <strong>Kanalquerschnitt</strong> aus Volumenstrom und Geschwindigkeit berechnest</p></li>
+<li><p>Wann du <strong>Rundrohre</strong> und wann <strong>Rechteckkanäle</strong> einsetzt</p></li>
+<li><p>Wie du den <strong>Druckverlust</strong> eines Kanalnetzes und den <strong>ungünstigsten Strang</strong> ermittelst</p></li>
+<li><p>Wie du den <strong>Betriebspunkt</strong> des Ventilators findest</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> plant <strong>Tim</strong> die Wohnungslüftung für ein <strong>Mehrfamilienhaus</strong>. Durch den Hauptkanal sollen <strong>300 m³ Luft pro Stunde</strong> strömen. <strong>Frau Engel</strong> gibt ihm den Auftrag: „Bemiss den Kanal und ermittle den Druckverlust, damit wir den Ventilator auslegen können.“ Tims Frage: Wie dick muss der Kanal sein, damit die Luft ankommt, aber nicht pfeift?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2Fv8hNHHy2WV7jYu2iJl64y-img.webp?alt=media&amp;token=c3a69836-87c1-4bb9-9f81-288376e84e51" alt="" data-display="full-width">
+<h2>📐 Querschnitt und Durchmesser</h2>
+<p>Alles beginnt mit einer einfachen Formel. Der <strong>Querschnitt A</strong> ist der <strong>Volumenstrom V̇</strong> geteilt durch die <strong>Geschwindigkeit v</strong>:</p>
+<p><strong>A = V̇ : v</strong></p>
+<p>Aus dem Querschnitt eines runden Kanals berechnest du den <strong>Durchmesser</strong>:</p>
+<p><strong>d = √(4 × A : π)</strong></p>
+<p><strong>Achtung Einheiten:</strong> Den Volumenstrom setzt du in <strong>m³/s</strong> ein, nicht in m³/h. Dafür teilst du durch 3.600.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FfKHBEdF_fCYoA41lCZvcq-img.webp?alt=media&amp;token=08b20ec7-bdfc-46ef-b8b9-c1191c742e32" alt="" data-display="full-width">
+<h2>💨 Welche Geschwindigkeit?</h2>
+<ul>
+<li><p><strong>Schneller:</strong> Der Kanal wird kleiner, aber es wird <strong>lauter</strong> und der <strong>Druckverlust steigt</strong>.</p></li>
+<li><p><strong>Wohnungsbau:</strong> niedrige Geschwindigkeiten, meist etwa <strong>2 bis 3 m/s</strong>. Auch die Luftdurchlässe in den Räumen werden laut, wenn die Luft zu schnell ankommt.</p></li>
+<li><p><strong>Große Anlagen:</strong> zum Beispiel in Industriehallen sind höhere Geschwindigkeiten üblich.</p></li>
+</ul>
+<h2>🧮 Tims Rechnung für den Hauptkanal</h2>
+<p>Tim rechnet mit <strong>v = 3 m/s</strong>:</p>
+<ol>
+<li><p><strong>Volumenstrom umrechnen:</strong> V̇ = 300 m³/h : 3.600 s/h ≈ <strong>0,0833 m³/s</strong></p></li>
+<li><p><strong>Querschnitt:</strong> A = 0,0833 m³/s : 3 m/s ≈ <strong>0,0278 m²</strong></p></li>
+<li><p><strong>Durchmesser:</strong> d = √(4 × 0,0278 m² : π) ≈ <strong>0,188 m</strong>, also 188 mm</p></li>
+<li><p><strong>Nennweite wählen:</strong> Tim rundet auf die nächste Größe auf: <strong>DN 200</strong>. Die Luft strömt dann mit rund <strong>2,65 m/s</strong>.</p></li>
+</ol>
+<h2>⬜ Rund oder rechteckig?</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Kanalform</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Eigenschaften</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einsatz</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rundrohr</strong></p></td><td colspan="1" rowspan="1"><p>Dicht, günstig, strömungsgünstig</p></td><td colspan="1" rowspan="1"><p>Im Wohnungsbau am häufigsten</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rechteckkanal</strong></p></td><td colspan="1" rowspan="1"><p>Flache Bauform mit den Seiten a × b</p></td><td colspan="1" rowspan="1"><p>Wenn wenig Höhe da ist, zum Beispiel unter einer Decke</p></td></tr>
+</tbody></table></div>
+<p>Für den Druckverlust rechnest du den Rechteckkanal in einen <strong>gleichwertigen Durchmesser</strong> um:</p>
+<p><strong>d<sub>gl</sub> = 2 × a × b : (a + b)</strong></p>
+<p>Beispiel: 250 × 150 mm ergibt 2 × 250 × 150 : 400 ≈ <strong>188 mm</strong>.</p>
+<h2>📉 Der Druckverlust</h2>
+<p>Auf ihrem Weg verliert die Luft Druck. Es gilt:</p>
+<p><strong>Δp = R × l + Z</strong></p>
+<ul>
+<li><p><strong>Reibung R × l:</strong> Reibung an der Kanalwand. R ist das Druckgefälle in Pa/m, das du aus einem <strong>Diagramm</strong> abliest, l ist die Länge in m.</p></li>
+<li><p><strong>Einzelwiderstände Z:</strong> Bögen, Abzweige und Gitter, zusammengefasst in Pa.</p></li>
+</ul>
+<p><strong>Beispiel Strang A:</strong> 20 m × 0,5 Pa/m = 10 Pa Reibung. Dazu kommen 40 Pa Einzelwiderstände.</p>
+<p>Δp = 20 m × 0,5 Pa/m + 40 Pa = <strong>50 Pa</strong></p>
+<h2>🧭 Der ungünstigste Strang</h2>
+<p>Ein Kanalnetz hat viele Stränge. Für den Ventilator zählt:</p>
+<ol>
+<li><p><strong>Ungünstigster Strang:</strong> der Strang mit dem <strong>größten Druckverlust</strong>, meist der längste mit den meisten Bögen.</p></li>
+<li><p><strong>Anlagendruckverlust:</strong> Der Druckverlust dieses Strangs ist der Druck, den der Ventilator schaffen muss.</p></li>
+<li><p><strong>Kürzere Stränge:</strong> Sie haben weniger Druckverlust und werden später bei der <strong>Einregulierung</strong> angeglichen.</p></li>
+</ol>
+<h2>🛠️ Übung: Welcher Strang zählt?</h2>
+<ul>
+<li><p><strong>Strang A:</strong> 20 m, R = 0,5 Pa/m, Z = 40 Pa, also <strong>50 Pa</strong></p></li>
+<li><p><strong>Strang B:</strong> 12 m, R = 0,5 Pa/m, Z = 25 Pa, also 12 × 0,5 + 25 = <strong>31 Pa</strong></p></li>
+</ul>
+<p>Strang A hat mit 50 Pa den größeren Druckverlust. Er ist der <strong>ungünstigste Strang</strong> und bestimmt den Anlagendruckverlust. In Strang B baut Tim später die Differenz von 50 − 31 = <strong>19 Pa</strong> mit einer <strong>Drosselklappe</strong> ab.</p>
+<h2>⚙️ Der Betriebspunkt des Ventilators</h2>
+<p>Zum Schluss wählt Tim den Ventilator aus. Dafür vergleicht er zwei Kennlinien im Diagramm mit dem <strong>Volumenstrom V̇</strong> waagerecht und dem <strong>Druck Δp</strong> senkrecht:</p>
+<ul>
+<li><p><strong>Anlagenkennlinie:</strong> Je mehr Luft strömt, desto größer ist der Druckverlust.</p></li>
+<li><p><strong>Ventilatorkennlinie:</strong> Sie zeigt, wie viel Druck der Ventilator bei welchem Volumenstrom liefert.</p></li>
+<li><p><strong>Betriebspunkt:</strong> Hier schneiden sich beide Linien. Dort muss der Ventilator den gewünschten Volumenstrom liefern.</p></li>
+</ul>
+<p>Liegt der Betriebspunkt <strong>zu weit links</strong>, kommt zu wenig Luft an.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FtBXJk_bdhIpoFbslZRG-7-img.webp?alt=media&amp;token=3d69b80a-57df-4801-bf48-a4aae48fc1d4" alt="" data-display="full-width">
+<h2>🔀 Zweites Beispiel: Zweigleitung</h2>
+<p>Zu einem Raum sollen <strong>150 m³/h</strong> mit <strong>2,5 m/s</strong> strömen:</p>
+<ol>
+<li><p>V̇ = 150 : 3.600 ≈ <strong>0,0417 m³/s</strong></p></li>
+<li><p>A = 0,0417 : 2,5 ≈ <strong>0,0167 m²</strong></p></li>
+<li><p>d = √(4 × 0,0167 : π) ≈ <strong>0,146 m</strong>, also 146 mm</p></li>
+<li><p>Gewählt: <strong>DN 150</strong>, die Luft strömt dann mit rund <strong>2,36 m/s</strong>.</p></li>
+</ol>
+<h2>📦 Beispiel Rechteckkanal</h2>
+<p>Unter der Decke ist wenig Platz. Für die 300 m³/h nimmt Tim deshalb einen <strong>Rechteckkanal 250 × 150 mm</strong>:</p>
+<ul>
+<li><p><strong>Querschnitt:</strong> A = 0,25 m × 0,15 m = <strong>0,0375 m²</strong></p></li>
+<li><p><strong>Geschwindigkeit:</strong> v = 0,0833 m³/s : 0,0375 m² ≈ <strong>2,22 m/s</strong></p></li>
+</ul>
+<p>Für den Druckverlust nimmt er den gleichwertigen Durchmesser <strong>d<sub>gl</sub> = 188 mm</strong> und die Geschwindigkeit <strong>2,22 m/s</strong>. So kann er das Diagramm für runde Rohre nutzen.</p>
+<h2>🚫 Typische Fehler</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fehler</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Nicht umgerechnet</strong></p></td><td colspan="1" rowspan="1"><p>m³/h statt m³/s eingesetzt: Der Querschnitt wird 3.600-mal zu groß.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Radius statt Durchmesser</strong></p></td><td colspan="1" rowspan="1"><p>Falscher Wert in der Kreisformel</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Abgerundet</strong></p></td><td colspan="1" rowspan="1"><p>Die Luft strömt zu schnell, es wird laut.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Z vergessen</strong></p></td><td colspan="1" rowspan="1"><p>Ohne Einzelwiderstände wird der Ventilator zu schwach.</p></td></tr>
+</tbody></table></div>
+<p>Geh deine Rechnung zum Schluss noch einmal mit allen Einheiten durch.</p>
+<blockquote><p>Runde immer auf die nächstgrößere Nennweite auf, nie auf die kleinere.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Tim bemisst den Hauptkanal für 300 m³/h mit 3 m/s: 188 mm errechnet, DN 200 gewählt, tatsächlich 2,65 m/s. Strang A ist mit 50 Pa der ungünstigste Strang, Strang B mit 31 Pa bekommt eine Drosselklappe für 19 Pa. Frau Engel wählt mit diesen Werten einen Ventilator, dessen Kennlinie die Anlagenkennlinie genau beim gewünschten Volumenstrom schneidet. 💪 So kommt überall genug Luft an, und nichts pfeift.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>A = V̇ : v</strong>, mit V̇ in <strong>m³/s</strong>. Im Wohnungsbau gelten <strong>niedrige Geschwindigkeiten</strong> wegen der Geräusche. Der Druckverlust ist <strong>Δp = R × l + Z</strong>, der <strong>ungünstigste Strang</strong> ist maßgebend. Der <strong>Betriebspunkt</strong> liegt im Schnitt von Anlagen- und Ventilatorkennlinie.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Bei Kanalberechnungen gibt es oft Punkte für jeden Zwischenschritt: <strong>Umrechnung in m³/s</strong>, <strong>Querschnitt</strong>, <strong>Durchmesser</strong>, <strong>gewählte Nennweite</strong> und <strong>tatsächliche Geschwindigkeit</strong>. Schreib alle Schritte mit Einheiten auf. Beim Rechteckkanal brauchst du die Formel <strong>d<sub>gl</sub> = 2ab : (a + b)</strong>.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> 200 m³/h sollen mit 2,5 m/s strömen. Welcher Durchmesser ergibt sich, und welche Nennweite wählst du?</summary><div data-type="detailsContent"><p>✅ 200 : 3.600 ≈ 0,0556 m³/s. A = 0,0556 : 2,5 ≈ 0,0222 m². d = √(4 × 0,0222 : π) ≈ 0,168 m, also 168 mm. Gewählt wird DN 180.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Welchen gleichwertigen Durchmesser hat ein Rechteckkanal mit 300 × 200 mm?</summary><div data-type="detailsContent"><p>✅ d<sub>gl</sub> = 2 × 300 × 200 : 500 = 240 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Warum wählst du im Wohnungsbau niedrige Luftgeschwindigkeiten?</summary><div data-type="detailsContent"><p>✅ Hohe Geschwindigkeiten machen Kanal und Luftdurchlässe laut und erhöhen den Druckverlust. Im Wohnungsbau nimmst du deshalb meist etwa 2 bis 3 m/s.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Welcher Strang bestimmt den Anlagendruckverlust?</summary><div data-type="detailsContent"><p>✅ Der ungünstigste Strang, also der mit dem größten Druckverlust. Meist ist es der längste mit den meisten Bögen.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was ist der Betriebspunkt eines Ventilators?</summary><div data-type="detailsContent"><p>✅ Der Schnittpunkt von Anlagenkennlinie und Ventilatorkennlinie. Dort muss der Ventilator den gewünschten Volumenstrom liefern. Liegt er zu weit links, kommt zu wenig Luft an.</p></div></details>
+<p></p>

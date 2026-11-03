@@ -1,0 +1,82 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was die <strong>Fertigung</strong> von deinem <strong>3D-Modell</strong> braucht</p></li>
+<li><p>Wie du <strong>Toleranzen</strong> richtig modellierst und die <strong>Toleranzmitte</strong> berechnest</p></li>
+<li><p>Wie du <strong>Werkstück-Nullpunkt</strong>, <strong>Rohteil</strong> und <strong>Spannflächen</strong> mit der Fertigung abstimmst</p></li>
+<li><p>In welchem <strong>Format</strong> du Daten übergibst und wie du <strong>Änderungen</strong> sauber verwaltest</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> hat <strong>Mia</strong> eine <strong>Lagerplatte</strong> konstruiert. Gefertigt wird sie auf der <strong>CNC-Fräsmaschine</strong>. Der Maschinenbediener programmiert das Teil im <strong>CAM-System</strong> direkt aus Mias 3D-Modell. Ausbilderin <strong>Frau Engel</strong> macht ihr klar: Dein Modell ist jetzt die Grundlage für die Fertigung. Jeder Fehler darin landet im Bauteil. Wie bereitet Mia ihren Datensatz also richtig auf?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FRlNXANJ_QxQ0_sXgKTJp5-img.webp?alt=media&amp;token=d5692125-649b-4dd2-aeb3-3639ec39178f" alt="" data-display="full-width">
+<h2>🏭 Was die Fertigung von dir braucht</h2>
+<p>Damit das CAM-System aus deinem Modell ein Programm erzeugen kann, muss dein Datensatz drei Dinge liefern:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Anforderung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was heißt das?</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Warum?</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Sauberes Volumenmodell</strong></p></td><td colspan="1" rowspan="1"><p>Geschlossen, ohne Lücken und ohne doppelte Flächen</p></td><td colspan="1" rowspan="1"><p>Sonst kann das CAM-System keine <strong>Werkzeugwege</strong> berechnen.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Richtige Maße</strong></p></td><td colspan="1" rowspan="1"><p>Nennmaß oder Toleranzmitte</p></td><td colspan="1" rowspan="1"><p>Das CAM fertigt genau auf das Maß, das im Modell steht.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Werkstoff</strong></p></td><td colspan="1" rowspan="1"><p>Im Modell hinterlegt</p></td><td colspan="1" rowspan="1"><p>Davon hängen <strong>Werkzeuge</strong> und <strong>Schnittdaten</strong> ab.</p></td></tr>
+</tbody></table></div>
+<h2>🎯 Toleranzmitte an der Passbohrung</h2>
+<p>Ein Beispiel: eine <strong>Passbohrung Ø 20 H7</strong>. Die Toleranz H7 bedeutet hier: 0 bis +0,021 mm. Die Bohrung darf also zwischen <strong>20,000 mm</strong> (Mindestmaß) und <strong>20,021 mm</strong> (Höchstmaß) groß sein.</p>
+<p>Welches Maß modellierst du, damit das CAM genau in die Mitte fertigt? Die <strong>Toleranzmitte</strong> berechnest du so:</p>
+<ol>
+<li><p>Toleranzbreite halbieren: 0,021 : 2 = 0,0105 mm</p></li>
+<li><p>Zum Nennmaß addieren: 20 + 0,0105 = <strong>20,0105 mm</strong></p></li>
+</ol>
+<p><strong>Achtung:</strong> Modellierst du nur das Nennmaß 20 mm, fertigt das CAM genau an der <strong>unteren Grenze</strong>. Jede kleine Abweichung macht die Bohrung dann zu klein.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FQrWIui6e2SyL4hJTs3F7S-img.webp?alt=media&amp;token=372cd1ea-cd4e-4f1a-bfb2-7bfbb0c5ebbc" alt="" data-display="full-width">
+<h2>🔩 Zweites Beispiel: Welle Ø 20 g6</h2>
+<p>Bei einer Welle funktioniert es genauso. Hier liegt das Toleranzfeld aber <strong>unter dem Nennmaß</strong>. Die Toleranz g6 bedeutet bei Ø 20: −0,020 bis −0,007 mm. Die Grenzmaße sind also <strong>19,980 mm</strong> und <strong>19,993 mm</strong>.</p>
+<p>Die Toleranzmitte ist der Mittelwert der beiden Grenzmaße:</p>
+<p>(19,980 + 19,993) : 2 = 39,973 : 2 = <strong>19,9865 mm</strong></p>
+<p><strong>Typischer Fehler:</strong> Die Welle wird mit genau 20,000 mm modelliert. Dieses Maß liegt <strong>außerhalb der Toleranz</strong>, die Welle würde also zu dick gefertigt.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Passmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Mindestmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Höchstmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Toleranzmitte</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Bohrung Ø 20 H7</strong></p></td><td colspan="1" rowspan="1"><p>20,000 mm</p></td><td colspan="1" rowspan="1"><p>20,021 mm</p></td><td colspan="1" rowspan="1"><p><strong>20,0105 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Welle Ø 20 g6</strong></p></td><td colspan="1" rowspan="1"><p>19,980 mm</p></td><td colspan="1" rowspan="1"><p>19,993 mm</p></td><td colspan="1" rowspan="1"><p><strong>19,9865 mm</strong></p></td></tr>
+</tbody></table></div>
+<h2>🔀 Toleranzen übergeben: zwei Wege</h2>
+<ul>
+<li><p><strong>Weg 1: Toleranzmitte modellieren.</strong> Wichtige Maße modellierst du direkt auf Mitte, so wie bei der Passbohrung.</p></li>
+<li><p><strong>Weg 2: Nennmaß modellieren.</strong> Du übergibst die Toleranzen eindeutig, zum Beispiel in der Zeichnung oder als Angaben direkt am 3D-Modell. Der Programmierer setzt die Toleranz dann im CAM um.</p></li>
+</ul>
+<p><strong>Wichtig:</strong> Welcher Weg gilt, sprichst du mit der Fertigung ab. Sonst wird die Toleranz <strong>doppelt</strong> oder <strong>gar nicht</strong> berücksichtigt.</p>
+<h2>📍 Werkstück-Nullpunkt und Bezüge</h2>
+<p>Der <strong>Werkstück-Nullpunkt</strong> ist der Punkt, von dem aus das CNC-Programm alle Wege beschreibt. Bei Mias Lagerplatte liegt er an der <strong>linken vorderen Ecke</strong>.</p>
+<ul>
+<li><p>Am besten liegt der Nullpunkt dort, wo auch die <strong>Bemaßung in der Zeichnung beginnt</strong>, also an den <strong>Bezügen</strong>. Dann passen Modell, Zeichnung und Programm zusammen.</p></li>
+<li><p>Stimme den Nullpunkt mit dem <strong>Programmierer</strong> ab, bevor er mit dem Programm beginnt.</p></li>
+</ul>
+<h2>🧱 Rohteil und Spannflächen</h2>
+<p>Auch das <strong>Rohteil</strong> spielt eine Rolle. Es ist größer als das fertige Teil und hat ein <strong>Aufmaß</strong>, das beim Fräsen abgetragen wird.</p>
+<p>Außerdem muss das Teil in der Maschine <strong>gespannt</strong> werden, zum Beispiel im <strong>Schraubstock</strong>. Dafür braucht es geeignete <strong>Spannflächen</strong>. Sie müssen:</p>
+<ul>
+<li><p><strong>groß</strong> genug sein,</p></li>
+<li><p><strong>parallel</strong> genug sein,</p></li>
+<li><p>und sie dürfen <strong>in dieser Aufspannung nicht bearbeitet</strong> werden müssen.</p></li>
+</ul>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FTbpiSsNobq4TSGzxnMi6Q-img.webp?alt=media&amp;token=e452da04-6d92-471b-afc7-83c0bfe01c30" alt="" data-display="full-width">
+<h2>💾 Daten im richtigen Format</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Format</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Eigenschaft</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Wann?</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>STEP</strong></p></td><td colspan="1" rowspan="1"><p>Neutrales Austauschformat, fast jedes CAD- und CAM-System kann es lesen. Übertragen wird nur die <strong>Geometrie</strong>, die <strong>Konstruktionshistorie</strong> mit allen Parametern geht verloren.</p></td><td colspan="1" rowspan="1"><p>Bei unterschiedlichen Systemen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Natives Format</strong></p></td><td colspan="1" rowspan="1"><p>Alle Informationen bleiben erhalten.</p></td><td colspan="1" rowspan="1"><p>Wenn Konstruktion und Fertigung mit demselben System arbeiten</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zeichnung als PDF</strong></p></td><td colspan="1" rowspan="1"><p>Toleranzen, Oberflächen und Hinweise auf einen Blick</p></td><td colspan="1" rowspan="1"><p>Immer als <strong>Referenz</strong> mitgeben</p></td></tr>
+</tbody></table></div>
+<h2>🔄 Änderungsmanagement</h2>
+<p>Was passiert, wenn sich am Teil etwas ändert?</p>
+<ol>
+<li><p><strong>Gleicher Stand:</strong> Modell und Zeichnung müssen immer zusammenpassen.</p></li>
+<li><p><strong>Änderungsindex:</strong> Jede Änderung bekommt einen neuen Index, zum Beispiel von <strong>A auf B</strong>.</p></li>
+<li><p><strong>Alte Stände ungültig:</strong> Veraltete Stände werden für ungültig erklärt. So fertigt niemand versehentlich nach einem alten Modell.</p></li>
+</ol>
+<blockquote><p>Das CAM fertigt, was im Modell steht: Modelliere deine Maße bewusst.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia prüft ihr Modell der Lagerplatte: Das Volumen ist geschlossen, der Werkstoff ist hinterlegt. Mit dem Maschinenbediener vereinbart sie, die Passbohrung Ø 20 H7 auf Toleranzmitte 20,0105 mm zu modellieren. Den Werkstück-Nullpunkt legen beide an die linke vordere Ecke, wo auch die Bemaßung beginnt. Sie übergibt eine STEP-Datei und die Zeichnung als PDF, beide mit Änderungsindex A. 💪 So fertigt die CNC-Maschine genau das richtige Teil.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Die Fertigung braucht ein <strong>sauberes Volumenmodell</strong>, die <strong>richtigen Maße</strong> und den <strong>Werkstoff</strong>. Modelliere die <strong>Toleranzmitte</strong> oder übergib Toleranzen eindeutig und sprich das mit der Fertigung ab. Stimme <strong>Nullpunkt, Rohteil und Spannflächen</strong> gemeinsam ab. Übergib <strong>STEP</strong> oder das <strong>native Format</strong>, die Zeichnung als Referenz und immer den gleichen Änderungsstand.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Rechne die <strong>Toleranzmitte</strong> sicher: Mindestmaß plus Höchstmaß, geteilt durch 2. Achte bei Wellen wie g6 darauf, dass das Toleranzfeld <strong>unter</strong> dem Nennmaß liegt. Und merk dir: <strong>STEP</strong> überträgt nur die Geometrie, die Konstruktionshistorie geht verloren.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Eine Bohrung hat Ø 30 H7, also 0 bis +0,021 mm. Welches Maß modellierst du für die Toleranzmitte?</summary><div data-type="detailsContent"><p>✅ 0,021 : 2 = 0,0105 mm, also 30 + 0,0105 = 30,0105 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Welches neutrale Format können fast alle CAD- und CAM-Systeme lesen, und was geht dabei verloren?</summary><div data-type="detailsContent"><p>✅ STEP. Übertragen wird nur die Geometrie, die Konstruktionshistorie mit allen Parametern geht verloren.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Warum ist es ein Fehler, eine Welle Ø 20 g6 mit genau 20,000 mm zu modellieren?</summary><div data-type="detailsContent"><p>✅ Bei g6 liegt das Toleranzfeld unter dem Nennmaß (19,980 bis 19,993 mm). 20,000 mm liegt außerhalb der Toleranz, die Welle würde zu dick gefertigt. Richtig wäre die Toleranzmitte 19,9865 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wo sollte der Werkstück-Nullpunkt am besten liegen?</summary><div data-type="detailsContent"><p>✅ Dort, wo auch die Bemaßung in der Zeichnung beginnt, also an den Bezügen. Dann passen Modell, Zeichnung und Programm zusammen. Abgestimmt wird er mit dem Programmierer, bevor er das Programm erstellt.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Welche Anforderungen müssen Spannflächen erfüllen?</summary><div data-type="detailsContent"><p>✅ Sie müssen groß und parallel genug sein und dürfen in dieser Aufspannung nicht bearbeitet werden müssen.</p></div></details>
+<p></p>

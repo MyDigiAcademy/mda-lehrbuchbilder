@@ -1,0 +1,92 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie du mit dem <strong>Bohrungsfeature</strong> Durchgangsbohrungen, Gewinde und Senkungen anlegst</p></li>
+<li><p>Wann du <strong>Fasen</strong> und <strong>Rundungen</strong> setzt</p></li>
+<li><p>Wie du Elemente mit <strong>Mustern</strong>, <strong>Spiegeln</strong> und der <strong>Wandung</strong> effizient aufbaust</p></li>
+<li><p>Warum <strong>Formelemente</strong> wertvoller sind als reine Skizzengeometrie</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> hat <strong>Mia</strong> einen <strong>Flansch</strong> vor sich. Er bekommt <strong>sechs Gewindebohrungen M8</strong> auf einem <strong>Lochkreis Ø100 mm</strong>. Ausbilderin <strong>Frau Engel</strong> gibt ihr einen Tipp: Bau die Bohrungen mit <strong>Formelementen</strong> auf, nicht mit Kreisen in der Skizze. Mia fragt sich: Wo ist da eigentlich der Unterschied? Warum zeichnet man eine Gewindebohrung im CAD nicht einfach als Kreis?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FjaXQqcRV4c0GrGuus5uHq-img.webp?alt=media&amp;token=c843d22b-8c08-4283-9fc5-f52b367be38e" alt="" data-display="full-width">
+<h2>🕳️ Das Bohrungsfeature</h2>
+<p>Für Bohrungen gibt es ein eigenes Formelement, das <strong>Bohrungsfeature</strong>. Es ist mehr als ein runder Ausschnitt, denn es <strong>weiß, welche Art von Bohrung</strong> es ist.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bohrungsart</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>So legst du sie an</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Durchgangsbohrung</strong></p></td><td colspan="1" rowspan="1"><p>Du wählst einfach <strong>Durchmesser</strong> und <strong>Tiefe</strong>. Viele Programme bieten <strong>Normbohrungen</strong> an, z. B. Durchgangslöcher passend zur Schraube.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Gewindebohrung</strong></p></td><td colspan="1" rowspan="1"><p>Das Programm legt das <strong>Kernloch</strong> automatisch an. Für <strong>M8</strong> sind das <strong>Ø6,8 mm</strong>. Das Gewinde selbst ist als <strong>Information</strong> hinterlegt.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Senkung</strong></p></td><td colspan="1" rowspan="1"><p>Zum Beispiel eine <strong>Kegelsenkung 90°</strong> für <strong>Senkschrauben</strong>.</p></td></tr>
+</tbody></table></div>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FF6ImDFYehkIyhBAsCTGy6-img.webp?alt=media&amp;token=3b8f6e8e-e333-446f-987b-cc042538a58c" alt="" data-display="full-width">
+<h2>📐 Fase und Rundung</h2>
+<p>Kanten werden selten scharf gelassen. Zwei Formelemente brechen sie:</p>
+<ul>
+<li><p><strong>Fase:</strong> bricht die Kante <strong>schräg</strong> ab, z. B. <strong>2 × 45°</strong>, also 2 mm unter 45°.</p></li>
+<li><p><strong>Rundung:</strong> macht die Kante <strong>rund</strong>, z. B. mit einem Radius <strong>R3</strong>, also 3 mm.</p></li>
+</ul>
+<p><strong>Wichtig ist die Reihenfolge:</strong> Fasen und Rundungen kommen <strong>ans Ende des Modellaufbaus</strong>. Setzt du sie zu früh, gehen sie bei späteren Änderungen leicht kaputt.</p>
+<h2>🔁 Muster: ein Element, viele Kopien</h2>
+<p>Viele Bauteile haben gleiche Elemente mehrfach, zum Beispiel <strong>Bohrungen</strong>, <strong>Rippen</strong> oder <strong>Nuten</strong>. Dafür gibt es <strong>Muster</strong>: Du modellierst <strong>ein Element</strong>, das Muster vervielfältigt es.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Muster</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Funktion</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Eingaben</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Linear</strong></p></td><td colspan="1" rowspan="1"><p>Elemente in einer Reihe</p></td><td colspan="1" rowspan="1"><p>Abstand und Anzahl</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Kreisförmig</strong></p></td><td colspan="1" rowspan="1"><p>Elemente um eine Achse verteilt, z. B. ein Lochkreis</p></td><td colspan="1" rowspan="1"><p>Anzahl und Gesamtwinkel</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Entlang Kurve</strong></p></td><td colspan="1" rowspan="1"><p>Elemente folgen einer beliebigen Linie</p></td><td colspan="1" rowspan="1"><p>Kurve, Anzahl bzw. Abstand</p></td></tr>
+</tbody></table></div>
+<p>Der große Vorteil: <strong>Änderst du das erste Element, ändern sich alle anderen mit.</strong></p>
+<h2>🪞 Spiegeln</h2>
+<p>Ist ein Bauteil <strong>symmetrisch</strong>, hilft dir das <strong>Spiegeln</strong>. Typisch sind <strong>Halter</strong> oder <strong>Gehäuse</strong>, die links und rechts gleich sind.</p>
+<ol>
+<li><p>Du wählst eine <strong>Spiegelebene</strong>, meist eine <strong>Mittelebene</strong> des Bauteils.</p></li>
+<li><p>Du modellierst nur <strong>eine Hälfte</strong> und spiegelst sie.</p></li>
+</ol>
+<p>Jede Änderung an der einen Hälfte wirkt auch auf die andere.</p>
+<h2>📦 Wandung oder Schale</h2>
+<p>Für Gehäuse gibt es die <strong>Wandung</strong>, oft auch <strong>Schale</strong> genannt. Sie höhlt einen <strong>massiven Körper</strong> aus:</p>
+<ul>
+<li><p>Du gibst eine <strong>Wandstärke</strong> an, die dann <strong>überall gleich</strong> ist.</p></li>
+<li><p>Du wählst die <strong>Fläche</strong>, die <strong>offen bleiben</strong> soll, z. B. die Seite für den Deckel.</p></li>
+</ul>
+<p>So wird aus einem Quader in einem einzigen Schritt ein Gehäuse.</p>
+<h2>💡 Warum Formelemente statt Skizzengeometrie?</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Vorteil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Information</strong></p></td><td colspan="1" rowspan="1"><p>Gewinde, Senkung oder Tiefe sind gespeichert, nicht nur die Form. Bei einem Kreis in der Skizze wüsste niemand, dass hier ein Gewinde hin soll.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zeichnung</strong></p></td><td colspan="1" rowspan="1"><p>Die Information geht in die Zeichnung über. Ein Gewinde wird dort <strong>normgerecht dargestellt</strong> und kann direkt bemaßt werden.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Fertigung</strong></p></td><td colspan="1" rowspan="1"><p><strong>Kernloch</strong> und <strong>Gewindetiefe</strong> sind eindeutig festgelegt.</p></td></tr>
+</tbody></table></div>
+<h2>⚙️ Mias Flansch mit Lochkreis</h2>
+<ol>
+<li><p><strong>Eine Bohrung:</strong> Mia setzt eine einzige <strong>Gewindebohrung M8</strong> als Bohrungsfeature.</p></li>
+<li><p><strong>Lage:</strong> Ihr Mittelpunkt liegt auf dem <strong>Lochkreis Ø100</strong>, also <strong>r = 50 mm</strong> von der Achse entfernt.</p></li>
+<li><p><strong>Kreismuster:</strong> Sie wählt ein kreisförmiges Muster um die Flanschachse mit <strong>6 Elementen auf 360°</strong>.</p></li>
+<li><p><strong>Teilung:</strong> Der Winkel zwischen zwei Bohrungen beträgt 360° : 6 = <strong>60°</strong>.</p></li>
+</ol>
+<p>Weil alle Bohrungen echte Gewindebohrungen sind, erscheinen sie später richtig in der Zeichnung.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F-j2sbRM8KZa_Md5-WnEdj-img.webp?alt=media&amp;token=98033e53-d6f3-47a7-961e-6bbab427ed92" alt="" data-display="full-width">
+<h2>📏 Übung: Lineares Muster und der Zaunpfahl-Fehler</h2>
+<p>Eine Leiste bekommt <strong>5 Bohrungen</strong> in einer Reihe. Im Muster stellst du die Anzahl 5 und den Abstand <strong>25 mm</strong> ein. Wie weit liegen die erste und die letzte Bohrung auseinander?</p>
+<p><strong>Lösung:</strong> Zwischen 5 Bohrungen liegen nur <strong>4 Abstände</strong>. 4 × 25 mm = <strong>100 mm</strong>, nicht 125 mm. Diesen <strong>Zaunpfahl-Fehler</strong> machen viele. Zähl also immer die <strong>Lücken</strong>, nicht die Bohrungen.</p>
+<h2>⚠️ Drei typische Fehler</h2>
+<ul>
+<li><p><strong>Kreis statt Bohrung:</strong> Die Gewindebohrung ist nur als Kreis in der Skizze gezeichnet. Dann fehlt das Gewinde in Zeichnung und Stückliste.</p></li>
+<li><p><strong>Fase zu früh:</strong> Ändert sich später eine Kante, schlägt das Feature fehl.</p></li>
+<li><p><strong>Kopiert statt gemustert:</strong> Ändert sich eine Bohrung, musst du alle anderen einzeln von Hand nachziehen. Das kostet viel Zeit.</p></li>
+</ul>
+<h2>🛠️ Übung: Lochkreis und Reihenfolge</h2>
+<p><strong>Aufgabe 1:</strong> Ein Flansch soll <strong>8 Bohrungen</strong> auf einem Lochkreis bekommen. Welcher Winkel liegt zwischen zwei Bohrungen?</p>
+<p><strong>Aufgabe 2:</strong> Wann im Modellaufbau setzt du Fasen und Rundungen?</p>
+<p><strong>Lösung:</strong></p>
+<ul>
+<li><p>Aufgabe 1: 360° : 8 = <strong>45°</strong>.</p></li>
+<li><p>Aufgabe 2: <strong>am Ende</strong> des Modellaufbaus.</p></li>
+</ul>
+<blockquote><p>Ein Element modellieren, dann mustern oder spiegeln: So wirken Änderungen überall.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia setzt eine Gewindebohrung M8 auf den Lochkreis Ø100 und mustert sie sechsmal auf 360°. Später wünscht der Kunde M10 statt M8. Mia ändert nur die erste Bohrung, und alle sechs passen sich an. Das Kernloch wird automatisch angepasst, und in der Zeichnung erscheinen die Gewinde normgerecht. 💪 Die Fasen am Flanschrand hat sie zum Schluss gesetzt, deshalb bleibt alles stabil.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Bohrungen setzt du mit dem <strong>Bohrungsfeature</strong>, das Kernloch kommt automatisch. <strong>Fasen und Rundungen</strong> kommen ans Ende. <strong>Muster</strong> und <strong>Spiegeln</strong> vervielfältigen Elemente, Änderungen wirken überall. <strong>Formelemente</strong> tragen Information für Zeichnung und Fertigung.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Rechnungen: <strong>Teilungswinkel</strong> = 360° : Anzahl der Bohrungen (6 Bohrungen: 60°, 8 Bohrungen: 45°). <strong>Abstand erste bis letzte Bohrung</strong> = (Anzahl minus 1) × Abstand. Und: Das Kernloch für <strong>M8</strong> hat <strong>Ø6,8 mm</strong>. Der Radius des Lochkreises ist der halbe Lochkreisdurchmesser.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was ist der Unterschied zwischen einem Bohrungsfeature und einem Kreis in der Skizze?</summary><div data-type="detailsContent"><p>✅ Das Bohrungsfeature trägt Information wie Gewinde, Senkung und Tiefe. Diese geht in Zeichnung, Stückliste und Fertigung über. Ein Kreis in der Skizze ist nur Geometrie.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Welchen Durchmesser hat das Kernloch für ein Gewinde M8?</summary><div data-type="detailsContent"><p>✅ 6,8 mm. Das Bohrungsfeature legt es automatisch an.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Eine Leiste hat 5 Bohrungen im Abstand von 25 mm. Wie weit liegen erste und letzte Bohrung auseinander?</summary><div data-type="detailsContent"><p>✅ 4 Abstände × 25 mm = 100 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wie gehst du beim Spiegeln vor und was ist der Vorteil?</summary><div data-type="detailsContent"><p>✅ Spiegelebene wählen (meist eine Mittelebene), eine Hälfte modellieren und spiegeln. Änderungen an der einen Hälfte wirken auch auf die andere.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was gibst du bei der Wandung (Schale) an?</summary><div data-type="detailsContent"><p>✅ Die Wandstärke, die überall gleich ist, und die Fläche, die offen bleiben soll, z. B. die Seite für den Deckel.</p></div></details>
+<p></p>

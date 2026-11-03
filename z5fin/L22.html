@@ -1,0 +1,114 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie du ein <strong>Blechteil im CAD</strong> mit dem Blechmodul anlegst</p></li>
+<li><p>Wie du die <strong>gestreckte Länge</strong> mit dem <strong>Korrekturwert v</strong> und mit dem <strong>k-Faktor</strong> berechnest</p></li>
+<li><p>Was eine <strong>Biegezeichnung</strong> enthalten muss</p></li>
+<li><p>Wie du die Kontur als <strong>DXF-Datei</strong> für den Zuschnitt ausgibst und kontrollierst</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> soll <strong>Mia</strong> einen <strong>Winkelhalter</strong> aus <strong>2 mm dickem Stahlblech</strong> konstruieren. Ihre Ausbilderin <strong>Frau Engel</strong> zeigt ihr einen flachen <strong>Zuschnitt</strong>. Genau so ein Teil schneidet der Laser aus, danach wird es gebogen. Mia fragt sich: Wie lang muss der Zuschnitt sein, damit der Winkel nach dem Biegen stimmt? Und wie bekommt die Werkstatt alle Angaben, die sie dafür braucht?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FV75HyPcU_sxJ7NWkYaO0p-img.webp?alt=media&amp;token=058eaf75-c5ea-4403-ae42-4df501963c94" alt="" data-display="full-width">
+<h2>⚙️ Das Blechmodul einrichten</h2>
+<p>Für Blechteile hat dein CAD-Programm ein eigenes <strong>Blechmodul</strong>. Bevor du modellierst, legst du dort drei Grundeinstellungen fest:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einstellung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Blechdicke s</strong></p></td><td colspan="1" rowspan="1"><p>Dicke des Blechs, bei Mias Halter s = 2 mm</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Biegeradius r</strong></p></td><td colspan="1" rowspan="1"><p>Gilt für alle Biegungen im Teil</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Biegetabelle</strong></p></td><td colspan="1" rowspan="1"><p>Aus ihr holt sich das Programm die Werte für die Abwicklung</p></td></tr>
+</tbody></table></div>
+<p>Diese Grundeinstellungen legst du <strong>einmal am Anfang</strong> fest. Das Modell rechnet dann jede Biegung gleich.</p>
+<h2>🧩 Das Teil mit Blech-Features aufbauen</h2>
+<p>Danach baust du das Teil mit speziellen <strong>Blech-Features</strong> auf:</p>
+<ul>
+<li><p><strong>Lasche:</strong> erzeugt eine flache Grundfläche in Blechdicke.</p></li>
+<li><p><strong>Kante:</strong> biegt an einer Seite einen Schenkel an. Den <strong>Winkel</strong> gibst du vor, der <strong>Radius</strong> kommt automatisch aus den Grundeinstellungen.</p></li>
+<li><p><strong>Freischnitt:</strong> setzt du dort, wo zwei Biegungen an einer Ecke zusammentreffen. So <strong>reißt das Blech</strong> an der Ecke nicht ein.</p></li>
+</ul>
+<h2>📏 Die gestreckte Länge mit dem Korrekturwert</h2>
+<p>Jetzt kommt die wichtigste Frage: <strong>Wie lang ist der Zuschnitt?</strong> Mias Winkel hat <strong>90°</strong>. Die Schenkel sind <strong>außen 50 mm und 30 mm</strong> lang, das Blech ist <strong>2 mm</strong> dick, der Biegeradius beträgt <strong>2 mm</strong>.</p>
+<p>Addierst du nur die Außenmaße, wird der Zuschnitt <strong>zu lang</strong>. Denn in der Biegung wird das Blech gedehnt. Deshalb ziehst du einen <strong>Korrekturwert v</strong> ab. Diesen Wert findest du in der Tabelle, hier sind es <strong>v = 3,5 mm</strong>.</p>
+<p>Die Formel lautet:</p>
+<p><strong>L = a + b − v</strong></p>
+<p>Für Mias Winkelhalter mit a = 50 mm, b = 30 mm und v = 3,5 mm:</p>
+<p><strong>L = 50 mm + 30 mm − 3,5 mm = 76,5 mm</strong></p>
+<p>Das ist die <strong>gestreckte Länge</strong>, also die Länge des flachen Zuschnitts.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FtLnCYsiZBKma091hovXgY-img.webp?alt=media&amp;token=2691d0d4-e163-4743-a2f3-7e2f905f521f" alt="" data-display="full-width">
+<h2>🌀 Neutrale Faser und k-Faktor</h2>
+<p>Statt mit dem Korrekturwert kann das CAD auch mit dem <strong>k-Faktor</strong> rechnen. Dafür musst du verstehen, was beim Biegen im Blech passiert:</p>
+<ul>
+<li><p><strong>Außen</strong> wird das Blech <strong>gedehnt</strong>, <strong>innen</strong> wird es <strong>gestaucht</strong>.</p></li>
+<li><p>Dazwischen liegt eine Schicht, deren Länge sich nicht ändert: die <strong>neutrale Faser</strong>. Ihre Länge ist die gestreckte Länge.</p></li>
+<li><p>Der <strong>k-Faktor</strong> gibt an, wo die neutrale Faser in der Blechdicke liegt. Bei <strong>k = 0,5</strong> läge sie genau in der Mitte.</p></li>
+<li><p>Beim Biegen wandert die neutrale Faser <strong>nach innen</strong>. Der k-Faktor wird also <strong>kleiner als 0,5</strong>. Den passenden Wert liefert die Biegetabelle.</p></li>
+</ul>
+<h2>🧮 Rechenweg mit dem k-Faktor</h2>
+<p>So rechnet das CAD die gestreckte Länge am Winkelhalter (s = 2 mm, r = 2 mm, 90°):</p>
+<ol>
+<li><p><strong>Gerade Schenkel ohne Biegezone:</strong> jeweils Außenmaß minus Radius und Blechdicke. 50 − 2 − 2 = <strong>46 mm</strong> und 30 − 2 − 2 = <strong>26 mm</strong>.</p></li>
+<li><p><strong>Bogen auf der neutralen Faser:</strong> Bei 90° ist das ein Viertelkreis. Formel: <strong>Bogen = π/2 · (r + k · s)</strong></p></li>
+<li><p><strong>Werte einsetzen:</strong> Die Biegetabelle gibt zum Beispiel <strong>k = 0,43</strong> an. Dann gilt: 1,57 · (2 + 0,43 · 2) = 1,57 · 2,86 ≈ <strong>4,5 mm</strong>.</p></li>
+<li><p><strong>Summe bilden:</strong> 46 mm + 26 mm + 4,5 mm = <strong>76,5 mm</strong>.</p></li>
+</ol>
+<p>Beide Rechenwege führen zum <strong>gleichen Ergebnis</strong>. Korrekturwert und k-Faktor passen also zusammen.</p>
+<h2>📄 Die Biegezeichnung</h2>
+<p>Aus dem Modell erzeugt das CAD per Klick die <strong>Abwicklung</strong>. Daraus entsteht die <strong>Biegezeichnung</strong>. Sie enthält:</p>
+<ul>
+<li><p>den <strong>flachen Zuschnitt</strong> mit der <strong>gestreckten Länge</strong>, hier 76,5 mm</p></li>
+<li><p>die <strong>Biegelinie</strong>: Sie zeigt, wo gebogen wird</p></li>
+<li><p>an der Biegelinie die <strong>Biegerichtung</strong> und den <strong>Biegewinkel</strong>, hier <strong>90° nach oben</strong> mit <strong>r = 2 mm</strong></p></li>
+</ul>
+<p>So weiß die Werkstatt genau, wie sie das Teil biegen muss.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FCs_va7_MxC9JbqCLZMBqf-img.webp?alt=media&amp;token=242ff92e-956f-4c93-9913-0e2bca834c75" alt="" data-display="full-width">
+<h2>💾 Die Kontur als DXF ausgeben</h2>
+<p>Und wie kommt die Kontur an die Maschine? In vier Schritten:</p>
+<ol>
+<li><p><strong>Export:</strong> Du exportierst die Abwicklung als <strong>DXF-Datei</strong>. Das ist ein Austauschformat für <strong>zweidimensionale Konturen</strong>.</p></li>
+<li><p><strong>Einlesen:</strong> Die Laser- oder Stanzmaschine liest die <strong>Außenkontur</strong> und die <strong>Löcher</strong> daraus ein.</p></li>
+<li><p><strong>Zuschnitt:</strong> Die Maschine schneidet das flache Teil aus.</p></li>
+<li><p><strong>Biegen:</strong> Danach wird das Teil an der Biegelinie gebogen.</p></li>
+</ol>
+<p><strong>Achtung:</strong> Gib in der DXF-Datei <strong>nur die Kontur</strong> aus. Maße, Text und Schriftfeld gehören in die Biegezeichnung, nicht in die Schneiddatei.</p>
+<h2>✅ Kontrolle per Handrechnung</h2>
+<p>Verlass dich nicht blind auf das Programm:</p>
+<ol>
+<li><p><strong>Von Hand rechnen:</strong> L = a + b − v, also 50 + 30 − 3,5 = 76,5 mm.</p></li>
+<li><p><strong>Mit dem CAD vergleichen:</strong> Stimmt dein Ergebnis mit der Länge der Abwicklung überein?</p></li>
+<li><p><strong>Große Abweichung?</strong> Dann prüfst du die Grundeinstellungen: <strong>Blechdicke, Biegeradius und Biegetabelle</strong>.</p></li>
+</ol>
+<h2>🔁 Zweites Beispiel: U-Profil mit zwei Biegungen</h2>
+<p>Mia konstruiert ein <strong>U-Profil</strong> aus demselben Blech: s = 2 mm, r = 2 mm. Die Außenmaße sind <strong>30 mm, 50 mm und 30 mm</strong>.</p>
+<p>Wichtig: <strong>Jede Biegung bekommt ihren eigenen Korrekturwert.</strong> Bei zwei Biegungen ziehst du v also zweimal ab.</p>
+<ul>
+<li><p>Summe der Außenmaße: 30 + 50 + 30 = <strong>110 mm</strong></p></li>
+<li><p>Korrektur: 2 · 3,5 mm = <strong>7 mm</strong></p></li>
+<li><p>Zuschnitt: 110 mm − 7 mm = <strong>103 mm</strong></p></li>
+</ul>
+<h2>⚠️ Innenmaß oder Außenmaß?</h2>
+<p>Achte genau darauf, wie die Schenkel in der Zeichnung bemaßt sind. Manchmal sind sie <strong>innen bemaßt</strong>, zum Beispiel mit <strong>48 mm und 28 mm</strong>. Der Korrekturwert aus der Tabelle gilt aber für <strong>Außenmaße</strong>.</p>
+<p>Die Lösung: Du <strong>addierst die Blechdicke</strong>. Bei s = 2 mm ergibt das 48 + 2 = <strong>50 mm</strong> und 28 + 2 = <strong>30 mm</strong>. Der Zuschnitt bleibt also <strong>76,5 mm</strong> lang.</p>
+<h2>🚫 Typische Fehler beim Abwickeln</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fehler</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Falsche Blechdicke</strong> im Blechmodul</p></td><td colspan="1" rowspan="1"><p>Abwicklung und Biegeradius stimmen nicht</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Biegetabelle passt nicht</strong> zu Maschine und Werkzeug der Werkstatt</p></td><td colspan="1" rowspan="1"><p>Der Zuschnitt wird zu lang oder zu kurz</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Biegerichtung fehlt</strong> in der Biegezeichnung</p></td><td colspan="1" rowspan="1"><p>Die Werkstatt biegt im Zweifel in die falsche Richtung</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Maße oder Schriftfeld</strong> in der DXF-Datei</p></td><td colspan="1" rowspan="1"><p>Der Laser schneidet im schlimmsten Fall auch diese Linien</p></td></tr>
+</tbody></table></div>
+<h2>🛠️ Übung: Jetzt bist du dran</h2>
+<p><strong>Aufgabe 1:</strong> Ein Winkel aus demselben Blech mit demselben Radius hat außen <strong>40 mm und 25 mm</strong> lange Schenkel. Der Korrekturwert ist wieder <strong>3,5 mm</strong>. Wie lang ist der Zuschnitt?</p>
+<p><strong>Aufgabe 2:</strong> Welche Datei bekommt der Laser?</p>
+<p><strong>Lösung:</strong></p>
+<ul>
+<li><p>Aufgabe 1: L = 40 + 25 − 3,5 = <strong>61,5 mm</strong></p></li>
+<li><p>Aufgabe 2: Der Laser bekommt die Abwicklung als <strong>DXF-Datei</strong>, nur mit der Kontur.</p></li>
+</ul>
+<blockquote><p>Außenmaße addieren und für jede Biegung den Korrekturwert abziehen: So kommst du sicher zur gestreckten Länge.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia stellt im Blechmodul s = 2 mm, r = 2 mm und die Biegetabelle der Werkstatt ein. Sie baut den Winkelhalter mit Lasche und Kante auf und lässt die Abwicklung erzeugen: 76,5 mm. Ihre Handrechnung 50 + 30 − 3,5 ergibt denselben Wert. In die Biegezeichnung trägt sie die Biegelinie mit „90° nach oben, r = 2“ ein. Die DXF-Datei mit der reinen Kontur geht an den Laser. 💪 Frau Engel ist zufrieden: Der gebogene Winkel passt genau.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Im <strong>Blechmodul</strong> legst du <strong>Blechdicke, Biegeradius und Biegetabelle</strong> am Anfang fest. Die <strong>gestreckte Länge</strong> ist die Summe der Außenmaße minus dem Korrekturwert v je Biegung, oder das CAD rechnet sie mit dem <strong>k-Faktor</strong>. Die <strong>Biegezeichnung</strong> zeigt die Abwicklung mit Biegelinie, Biegerichtung und Biegewinkel. Die Kontur geht als <strong>DXF</strong> an den Zuschnitt, und du kontrollierst die Länge mit einer <strong>Handrechnung</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Aufgaben: <strong>Gestreckte Länge berechnen</strong> mit L = a + b − v. Bei mehreren Biegungen ziehst du v <strong>für jede Biegung</strong> ab. Sind die Schenkel <strong>innen bemaßt</strong>, rechnest du zuerst die Blechdicke dazu. Gefragt wird auch: Was ist die <strong>neutrale Faser</strong>? Die Schicht, deren Länge sich beim Biegen nicht ändert. Und: Was gehört in die <strong>DXF-Datei</strong>? Nur die Kontur.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Welche drei Grundeinstellungen legst du im Blechmodul fest?</summary><div data-type="detailsContent"><p>✅ Blechdicke, Biegeradius und Biegetabelle. Sie werden einmal am Anfang festgelegt, damit das Modell jede Biegung gleich rechnet.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Warum darfst du für den Zuschnitt nicht einfach die Außenmaße addieren?</summary><div data-type="detailsContent"><p>✅ Weil das Blech in der Biegung gedehnt wird. Der Zuschnitt wäre sonst zu lang. Deshalb ziehst du je Biegung den Korrekturwert v ab.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Ein U-Profil hat außen 30, 50 und 30 mm, v = 3,5 mm je Biegung. Wie lang ist der Zuschnitt?</summary><div data-type="detailsContent"><p>✅ 30 + 50 + 30 = 110 mm, davon 2 · 3,5 mm = 7 mm abziehen. Der Zuschnitt ist 103 mm lang.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was gibt der k-Faktor an und warum ist er meist kleiner als 0,5?</summary><div data-type="detailsContent"><p>✅ Der k-Faktor gibt an, wo die neutrale Faser in der Blechdicke liegt. Bei 0,5 läge sie genau in der Mitte. Beim Biegen wandert sie nach innen, deshalb wird der k-Faktor kleiner.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was muss in der Biegezeichnung stehen und was gehört nicht in die DXF-Datei?</summary><div data-type="detailsContent"><p>✅ Die Biegezeichnung zeigt den flachen Zuschnitt mit gestreckter Länge, die Biegelinie sowie Biegerichtung und Biegewinkel. In die DXF-Datei gehören keine Maße, kein Text und kein Schriftfeld, sondern nur die Kontur.</p></div></details>
+<p></p>

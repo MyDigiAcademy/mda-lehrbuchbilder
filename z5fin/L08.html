@@ -1,0 +1,102 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie du mit einer <strong>Extrusion</strong> aus einer flachen Skizze einen Körper machst</p></li>
+<li><p>Welche <strong>Endbedingung</strong> du wann wählst und wie die <strong>Ausschnitt-Extrusion</strong> Material entfernt</p></li>
+<li><p>Wie du <strong>rotationssymmetrische Teile</strong> per <strong>Rotation</strong> erzeugst</p></li>
+<li><p>Wie du den <strong>Modellaufbau</strong> sinnvoll planst und typische Fehler vermeidest</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> hält <strong>Mia</strong> (Technische Produktdesignerin in Ausbildung) eine <strong>abgesetzte Welle</strong> in der Hand. Sie soll das Teil im CAD nachbauen. <strong>Tim</strong> (Technischer Systemplaner in Ausbildung) braucht einen <strong>Flansch</strong> und eine <strong>Montageplatte</strong> für eine Heizungsanlage. Ausbilderin <strong>Frau Engel</strong> erklärt den beiden: Beides beginnt mit einer <strong>Skizze</strong>. Die Frage ist nur, wie daraus ein Körper wird. Dafür gibt es zwei <strong>Grundbefehle</strong>: <strong>Extrusion</strong> und <strong>Rotation</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FN0W5bUx7jL959wnzfrgWa-img.webp?alt=media&amp;token=9ccc9f54-37de-4275-b963-0d5450c657e3" alt="" data-display="full-width">
+<h2>📤 Die Extrusion: Skizze herausziehen</h2>
+<p>Bei der <strong>Extrusion</strong> wird die Skizze aus ihrer Ebene herausgezogen, ähnlich wie Teig, der durch eine Form gedrückt wird. Das geschieht immer <strong>senkrecht zur Skizzierebene</strong>. Du legst dabei nur zwei Dinge fest:</p>
+<ol>
+<li><p><strong>Richtung:</strong> nach oben oder nach unten, also auf welcher Seite der Skizzierebene das Material entsteht.</p></li>
+<li><p><strong>Tiefe:</strong> wie weit die Skizze herausgezogen wird.</p></li>
+</ol>
+<p>Das Ergebnis ist ein <strong>Feature</strong> im <strong>Modellbaum</strong>. Aus einem <strong>Rechteck</strong> wird so ein <strong>Quader</strong>, aus einem <strong>Kreis</strong> ein <strong>Zylinder</strong>.</p>
+<h2>📏 Die Endbedingungen</h2>
+<p>Die <strong>Endbedingung</strong> legt fest, wo die Extrusion endet. Vier Varianten musst du kennen:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Endbedingung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>So funktioniert sie</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Typischer Einsatz</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Abstand</strong></p></td><td colspan="1" rowspan="1"><p>Fester Wert, z. B. 20 mm. Eindeutig, aber starr.</p></td><td colspan="1" rowspan="1"><p>Einfache Körper mit festem Maß</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Bis Fläche</strong></p></td><td colspan="1" rowspan="1"><p>Der Körper endet an einer gewählten Fläche. Verschiebt sich die Fläche, wächst der Körper mit.</p></td><td colspan="1" rowspan="1"><p>Körper, die an ein anderes Element anschließen sollen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Durch alles</strong></p></td><td colspan="1" rowspan="1"><p>Geht durch das ganze Bauteil.</p></td><td colspan="1" rowspan="1"><p>Durchbrüche</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Symmetrisch</strong></p></td><td colspan="1" rowspan="1"><p>Zu beiden Seiten der Skizzierebene gleich weit, z. B. 10 mm und 10 mm.</p></td><td colspan="1" rowspan="1"><p>Wenn die Skizzierebene genau in der Mitte des Bauteils liegen soll</p></td></tr>
+</tbody></table></div>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FEPVcA5oNcfv3vdKuEUx2g-img.webp?alt=media&amp;token=afb2e860-4a6e-4280-8fff-97ef10b89f09" alt="" data-display="full-width">
+<h2>✂️ Die Ausschnitt-Extrusion: Material wegnehmen</h2>
+<p>Eine Extrusion kann nicht nur Material hinzufügen, sondern auch <strong>Material entfernen</strong>. Das ist die <strong>Ausschnitt-Extrusion</strong>. Sie funktioniert genauso wie die normale Extrusion, nur umgekehrt.</p>
+<ul>
+<li><p>Die <strong>Skizze</strong> legst du meist direkt auf eine <strong>Fläche des Bauteils</strong>.</p></li>
+<li><p>So entstehen zum Beispiel <strong>Taschen</strong>, <strong>Nuten</strong> oder <strong>Durchbrüche</strong>.</p></li>
+<li><p>Es gelten dieselben <strong>Endbedingungen</strong>. Für einen Durchbruch nimmst du am besten <strong>durch alles</strong>.</p></li>
+</ul>
+<h2>🔄 Die Rotation: Profil um eine Achse drehen</h2>
+<p>Der zweite Grundbefehl ist die <strong>Rotation</strong>. Hier dreht sich die Skizze um eine <strong>Achse</strong>, meistens einmal ganz herum, also um <strong>360°</strong>. Aus dem Profil wird ein runder Körper.</p>
+<ul>
+<li><p>Du skizzierst nur das <strong>halbe Profil</strong>.</p></li>
+<li><p>Das Profil liegt auf <strong>einer Seite der Achse</strong> und darf sie <strong>nicht kreuzen</strong>.</p></li>
+<li><p>Typische Teile: <strong>Wellen</strong>, <strong>Flansche</strong> und <strong>Rohrformstücke</strong>.</p></li>
+</ul>
+<h2>🤔 Welche Methode wann?</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Extrusion</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Rotation</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Teileart</strong></p></td><td colspan="1" rowspan="1"><p>Prismatische Teile</p></td><td colspan="1" rowspan="1"><p>Rotationssymmetrische Teile</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Kennzeichen</strong></p></td><td colspan="1" rowspan="1"><p>Gerade Flächen, gleichbleibende Kontur</p></td><td colspan="1" rowspan="1"><p>Rund um eine Achse aufgebaut</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Beispiele</strong></p></td><td colspan="1" rowspan="1"><p>Platten, Halter, Konsolen</p></td><td colspan="1" rowspan="1"><p>Wellen, Bolzen, Flansche</p></td></tr>
+</tbody></table></div>
+<p>Die entscheidende Frage lautet: <strong>Hat das Teil eine Drehachse?</strong> Viele Teile kombinieren übrigens beide Methoden. Der Flansch ist rund und entsteht per Rotation, seine <strong>Schraubenlöcher</strong> kommen später als eigene Features dazu.</p>
+<h2>🧱 Den Modellaufbau planen</h2>
+<p>Bevor du loslegst, planst du die Reihenfolge der Features:</p>
+<ol>
+<li><p><strong>Grundkörper:</strong> als Extrusion oder Rotation.</p></li>
+<li><p><strong>Absätze und Ausschnitte:</strong> Material dazu oder weg.</p></li>
+<li><p><strong>Details:</strong> zum Schluss Bohrungen, Fasen und Rundungen.</p></li>
+</ol>
+<p>So bleibt der <strong>Modellbaum übersichtlich</strong>, und spätere Änderungen sind einfach. Wer <strong>Fasen zu früh</strong> setzt, bekommt oft Fehler, sobald sich Kanten ändern.</p>
+<h2>⚙️ Mias abgesetzte Welle</h2>
+<p>Mia baut ihre Welle per Rotation in vier Schritten auf:</p>
+<ol>
+<li><p><strong>Halbes Profil:</strong> Sie zeichnet das halbe Profil auf die <strong>XY-Ebene</strong>.</p></li>
+<li><p><strong>Mittellinie:</strong> Die Mittellinie legt sie als <strong>Konstruktionslinie</strong> an. Sie wird zur <strong>Drehachse</strong>.</p></li>
+<li><p><strong>Maße:</strong> Durchmesser <strong>Ø30</strong> und <strong>Ø45</strong>, Längen <strong>40</strong>, <strong>60</strong> und <strong>40 mm</strong>. Die beiden äußeren Absätze haben Ø30, der mittlere Absatz Ø45. Die Gesamtlänge beträgt 40 + 60 + 40 = <strong>140 mm</strong>.</p></li>
+<li><p><strong>Rotation:</strong> Zum Schluss dreht sie das Profil um <strong>360°</strong>. Fertig ist die Welle.</p></li>
+</ol>
+<p>Weil das Profil <strong>voll bestimmt</strong> ist, kann Mia später jedes Maß einfach ändern.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FKMA7KkHnpxlG9_fGGrago-img.webp?alt=media&amp;token=7be36958-9730-4f3c-ba22-d494bbc40786" alt="" data-display="full-width">
+<h2>🔧 Tims Flansch, Montageplatte und Rohrmuffe</h2>
+<p><strong>Flansch:</strong> Tim erzeugt ihn ebenfalls per <strong>Rotation</strong>. Das Profil aus <strong>Scheibe</strong> und <strong>Hals</strong> dreht er um die <strong>Rohrachse</strong>.</p>
+<p><strong>Montageplatte:</strong> Sie ist ein <strong>prismatisches Teil</strong>. Tim skizziert ein Rechteck und extrudiert es auf die <strong>Plattendicke</strong>. Die <strong>Bohrungen</strong> für die Befestigung setzt er danach als eigene Features.</p>
+<p><strong>Rohrmuffe:</strong> Die Muffe verbindet zwei Rohre miteinander. So geht Tim vor:</p>
+<ol>
+<li><p><strong>Halbes Profil mit Abstand zur Achse:</strong> Innen ist die Muffe hohl, denn dort wird das Rohr eingesteckt.</p></li>
+<li><p><strong>Rohranschlag:</strong> In der Mitte bekommt das Profil einen kleinen <strong>Absatz nach innen</strong>. Bis zu diesem Anschlag wird das Rohr eingeschoben.</p></li>
+<li><p><strong>Rotation um 360°:</strong> Die hohle Muffe ist in einem einzigen Schritt fertig.</p></li>
+</ol>
+<h2>⚠️ Vier typische Fehler</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fehler</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Skizze offen</strong></p></td><td colspan="1" rowspan="1"><p>Das Programm kann keinen Körper erzeugen.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Falsche Richtung</strong></p></td><td colspan="1" rowspan="1"><p>Das Material wächst auf der falschen Seite der Skizzierebene.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Profil kreuzt die Achse</strong></p></td><td colspan="1" rowspan="1"><p>Das Programm meldet einen Fehler.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Alles in einer Skizze</strong></p></td><td colspan="1" rowspan="1"><p>Das Modell ist schwer zu ändern. Besser sind mehrere einfache Features.</p></td></tr>
+</tbody></table></div>
+<h2>🛠️ Übung: Methode und Endbedingung wählen</h2>
+<p><strong>Aufgabe 1:</strong> Ein <strong>Bolzen mit Kopf</strong> soll modelliert werden. Extrusion oder Rotation?</p>
+<p><strong>Aufgabe 2:</strong> Ein <strong>Durchbruch</strong> soll immer ganz durch die Platte gehen, auch wenn die Platte später dicker wird. Welche Endbedingung wählst du?</p>
+<p><strong>Lösung:</strong></p>
+<ul>
+<li><p>Aufgabe 1: <strong>Rotation</strong>, denn der Bolzen ist rotationssymmetrisch.</p></li>
+<li><p>Aufgabe 2: <strong>durch alles</strong>. Die richtige Endbedingung hält dein Modell auch bei Änderungen stabil.</p></li>
+</ul>
+<blockquote><p>Erst der Grundkörper, dann die Details: So bleibt dein Modell übersichtlich und leicht zu ändern.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia zeichnet das halbe Profil ihrer Welle auf die XY-Ebene, legt die Mittellinie als Konstruktionslinie an und bemaßt Ø30, Ø45 sowie 40, 60 und 40 mm. Nach der Rotation um 360° steht die Welle. Tim extrudiert die Montageplatte und setzt die Bohrungen erst danach als eigene Features. Als der Kunde eine dickere Platte wünscht, ändert Tim nur ein Maß. 💪 Der Durchbruch mit „durch alles“ passt sich automatisch an.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Die <strong>Extrusion</strong> zieht eine Skizze senkrecht aus ihrer Ebene heraus. Die <strong>Endbedingungen</strong> sind Abstand, bis Fläche, durch alles und symmetrisch. Die <strong>Rotation</strong> dreht ein halbes Profil um eine Achse. Beim <strong>Modellaufbau</strong> gilt: erst der Grundkörper, dann die Details.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Fragen: <strong>Extrusion oder Rotation?</strong> Hat das Teil eine Drehachse, dann Rotation. <strong>Welche Endbedingung für einen Durchbruch?</strong> Durch alles. <strong>Warum darf das Rotationsprofil die Achse nicht kreuzen?</strong> Sonst kann das Programm keinen gültigen Körper erzeugen. Und: Fasen und Rundungen gehören <strong>ans Ende</strong> des Modellbaums.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was legst du bei einer Extrusion fest?</summary><div data-type="detailsContent"><p>✅ Die Richtung (nach oben oder nach unten, senkrecht zur Skizzierebene) und die Tiefe bzw. Endbedingung. Das Ergebnis ist ein Feature im Modellbaum.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Was ist der Vorteil der Endbedingung „bis Fläche“ gegenüber einem festen Abstand?</summary><div data-type="detailsContent"><p>✅ Verschiebt sich die gewählte Fläche, wächst der Körper mit. Ein fester Abstand ist zwar eindeutig, bleibt aber starr.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Worauf musst du beim Profil für eine Rotation achten?</summary><div data-type="detailsContent"><p>✅ Du zeichnest nur das halbe Profil. Es liegt auf einer Seite der Achse und darf sie nicht kreuzen. Die Achse legst du z. B. als Konstruktionslinie an.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Mias Welle hat die Absätze 40, 60 und 40 mm. Wie lang ist sie insgesamt?</summary><div data-type="detailsContent"><p>✅ 40 + 60 + 40 = 140 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Wie entsteht Tims hohle Rohrmuffe in einem einzigen Schritt?</summary><div data-type="detailsContent"><p>✅ Er zeichnet das halbe Profil mit Abstand zur Achse (innen hohl), mit einem kleinen Absatz nach innen als Rohranschlag in der Mitte, und dreht es um 360°.</p></div></details>
+<p></p>

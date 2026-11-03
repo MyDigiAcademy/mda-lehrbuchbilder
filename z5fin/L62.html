@@ -1,0 +1,107 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie du den <strong>Massenstrom</strong> aus <strong>Heizlast</strong> und <strong>Spreizung</strong> berechnest</p></li>
+<li><p>Wie du die <strong>Rohrdimension</strong> wählst und den <strong>Druckverlust</strong> einer Teilstrecke berechnest</p></li>
+<li><p>Wie du den <strong>ungünstigsten Strang</strong> findest und die <strong>Pumpe</strong> auslegst</p></li>
+<li><p>Was das Ganze mit dem <strong>hydraulischen Abgleich</strong> zu tun hat</p></li>
+</ul>
+<p>👋 Wie dick muss ein Heizungsrohr sein und wie stark die Pumpe, damit jeder Heizkörper warm wird? Bei der <strong>Muster Technik GmbH</strong> hat <strong>Tim</strong> die Heizlast eines Hauses berechnet: <strong>10 kW</strong>. Jetzt soll er das <strong>Rohrnetz dimensionieren</strong> und eine passende <strong>Umwälzpumpe</strong> auswählen. Seine Ausbilderin <strong>Frau Engel</strong> zeigt auf den <strong>längsten Strang</strong> im Plan und sagt: „Der hier ist entscheidend." Warum gerade der? Und wie geht Tim vor?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2Fr6rZVO-Lk0ZLysF3gWSDh-img.webp?alt=media&amp;token=dd700b9b-6ab6-43b8-8593-90e2b54c8036" alt="" data-display="full-width">
+<h2>💧 Der Massenstrom</h2>
+<p>Alles beginnt mit dem <strong>Massenstrom ṁ</strong>. Er sagt, wie viel Heizwasser pro Sekunde durch die Rohre fließen muss:</p>
+<p><strong>ṁ = Φ / (c · Δθ)</strong></p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Zeichen</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Φ</strong></p></td><td colspan="1" rowspan="1"><p>Heizlast in kW</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>c</strong></p></td><td colspan="1" rowspan="1"><p>Spezifische Wärmekapazität von Wasser: <strong>4,19 kJ/(kg·K)</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Δθ</strong></p></td><td colspan="1" rowspan="1"><p><strong>Spreizung</strong>: Vorlauftemperatur minus Rücklauftemperatur, in K</p></td></tr>
+</tbody></table></div>
+<h2>🧮 Tims Massenstrom</h2>
+<p>Heizlast Φ = <strong>10 kW</strong>, Spreizung Δθ = <strong>10 K</strong>:</p>
+<ol>
+<li><p>ṁ = 10 kW / (4,19 kJ/(kg·K) · 10 K)</p></li>
+<li><p>ṁ ≈ <strong>0,239 kg/s</strong></p></li>
+<li><p>0,239 kg/s · 3.600 s/h ≈ <strong>860 kg/h</strong>, also etwa <strong>0,86 m³/h</strong></p></li>
+</ol>
+<h2>📏 Den Rohrdurchmesser wählen</h2>
+<p>Mit dem Massenstrom suchst du den passenden Rohrdurchmesser:</p>
+<ul>
+<li><p><strong>Tabellen und Diagramme:</strong> Darin liest du zum Massenstrom den Rohrdurchmesser ab.</p></li>
+<li><p><strong>Richtwert R:</strong> Für das <strong>Rohrreibungsdruckgefälle R</strong> gelten etwa <strong>100 bis 200 Pa/m</strong>.</p></li>
+<li><p><strong>Fließgeschwindigkeit:</strong> Sie darf nicht zu hoch werden, sonst entstehen <strong>Fließgeräusche</strong>.</p></li>
+</ul>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Rohr zu klein</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Rohr zu groß</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>Der <strong>Druckverlust steigt</strong>.</p></td><td colspan="1" rowspan="1"><p>Das Rohrnetz wird <strong>teuer</strong>.</p></td></tr>
+</tbody></table></div>
+<h2>📉 Druckverlust einer Teilstrecke</h2>
+<p>Den Druckverlust einer Teilstrecke berechnest du so:</p>
+<p><strong>Δp = R · l + Z</strong></p>
+<ul>
+<li><p><strong>R · l:</strong> Rohrreibung. R ist das Rohrreibungsdruckgefälle in <strong>Pa/m</strong>, l die Länge der Teilstrecke in <strong>m</strong>.</p></li>
+<li><p><strong>Z:</strong> <strong>Einzelwiderstände</strong>. Das sind Bögen, T-Stücke und Armaturen, die zusätzlich bremsen.</p></li>
+</ul>
+<h2>✍️ Beispiel: Teilstrecke 1 und 2</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Teilstrecke</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Angaben</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>R · l</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Δp = R · l + Z</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>TS 1</strong></p></td><td colspan="1" rowspan="1"><p>l = 12 m, R = 150 Pa/m, Z = 600 Pa</p></td><td colspan="1" rowspan="1"><p>150 · 12 = 1.800 Pa</p></td><td colspan="1" rowspan="1"><p>1.800 + 600 = <strong>2.400 Pa = 2,4 kPa</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>TS 2</strong></p></td><td colspan="1" rowspan="1"><p>l = 18 m, R = 120 Pa/m, Z = 900 Pa</p></td><td colspan="1" rowspan="1"><p>120 · 18 = 2.160 Pa</p></td><td colspan="1" rowspan="1"><p>2.160 + 900 = <strong>3.060 Pa ≈ 3,1 kPa</strong></p></td></tr>
+</tbody></table></div>
+<p>In Teilstrecke 2 ist R kleiner, weil hier schon <strong>weniger Wasser fließt</strong>. Dafür liegen auf dieser Strecke <strong>mehr Bögen und T-Stücke</strong>. Teilstrecke 2 verliert deshalb mehr Druck als Teilstrecke 1, obwohl ihr R kleiner ist.</p>
+<h2>🎯 Der ungünstigste Strang</h2>
+<p>Warum zeigte Frau Engel auf den längsten Strang?</p>
+<ul>
+<li><p>Das Wasser muss <strong>jeden Heizkörper</strong> erreichen, auch den <strong>am weitesten entfernten</strong>.</p></li>
+<li><p>Auf dem Weg dorthin <strong>addieren sich alle Teilstrecken</strong>, hier TS 1 und TS 2.</p></li>
+<li><p>Dieser Weg hat meist die <strong>größte Summe der Druckverluste</strong>. Man nennt ihn den <strong>ungünstigsten Strang</strong>.</p></li>
+<li><p>Genau er bestimmt, welche <strong>Förderhöhe</strong> die Pumpe schaffen muss.</p></li>
+</ul>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FFYnpRgw3lmViwiSIR1-kB-img.webp?alt=media&amp;token=e33a715e-19fb-44ed-a2f4-f8899c7c5f63" alt="" data-display="full-width">
+<h2>➕ Summe des ungünstigsten Strangs</h2>
+<p>Tim zählt alles auf dem ungünstigsten Strang zusammen. Die Werte für Heizkörper und Wärmeerzeuger sind Beispielwerte aus den <strong>Datenblättern</strong>.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Abschnitt</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Druckverlust</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Teilstrecke 1</strong></p></td><td colspan="1" rowspan="1"><p>2,4 kPa</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Teilstrecke 2</strong></p></td><td colspan="1" rowspan="1"><p>3,06 kPa</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Ferner Heizkörper mit Ventil</strong></p></td><td colspan="1" rowspan="1"><p>6,0 kPa</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wärmeerzeuger</strong></p></td><td colspan="1" rowspan="1"><p>3,5 kPa</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Summe</strong></p></td><td colspan="1" rowspan="1"><p><strong>14,96 kPa ≈ 15 kPa</strong></p></td></tr>
+</tbody></table></div>
+<p>Die Rohre selbst machen hier nur gut <strong>ein Drittel</strong> aus (5,46 von 14,96 kPa). <strong>Ventile und Wärmeerzeuger</strong> darfst du also auf keinen Fall vergessen.</p>
+<h2>🔁 Von Kilopascal zur Förderhöhe</h2>
+<p>Pumpen werden nicht in Kilopascal ausgewählt, sondern mit der <strong>Förderhöhe H in Metern</strong>. Die Förderhöhe sagt, wie hoch die Pumpe eine Wassersäule heben könnte:</p>
+<p><strong>H = Δp / (ρ · g)</strong></p>
+<p>H = 15.000 Pa / (1.000 kg/m³ · 9,81 m/s²) ≈ <strong>1,53 m</strong></p>
+<p><strong>Faustwert:</strong> 10 kPa entsprechen ungefähr <strong>1 m Förderhöhe</strong>.</p>
+<h2>⚙️ Die Pumpe auswählen</h2>
+<p>Für die Pumpenauswahl braucht Tim <strong>zwei Werte</strong>:</p>
+<ol>
+<li><p><strong>Förderstrom:</strong> 0,86 m³/h</p></li>
+<li><p><strong>Förderhöhe:</strong> 15 kPa ≈ 1,5 m</p></li>
+</ol>
+<p>Im <strong>Kennlinienfeld</strong> schneidet die <strong>Pumpenkennlinie</strong> die <strong>Anlagenkennlinie</strong> im <strong>Betriebspunkt</strong>. Passt der Betriebspunkt zu Förderstrom und Förderhöhe, ist die Pumpe richtig ausgewählt.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FTYRy8hPTpD4GIeZmIXsu5-img.webp?alt=media&amp;token=3ac4984a-9dd2-4525-9c4a-06556dbe847d" alt="" data-display="full-width">
+<h2>⚖️ Bezug zum hydraulischen Abgleich</h2>
+<ul>
+<li><p><strong>Ohne Abgleich:</strong> Heizkörper nahe an der Pumpe haben einen kurzen Weg und wenig Widerstand. Sie bekommen zu viel Wasser, die fernen zu wenig.</p></li>
+<li><p><strong>Nahe Kreise drosseln:</strong> zum Beispiel über die <strong>Voreinstellung der Ventile</strong>. Die Werte stammen aus deiner Druckverlustberechnung.</p></li>
+<li><p><strong>Ergebnis:</strong> Jeder Heizkörper bekommt genau seinen Volumenstrom und alle Räume werden gleichmäßig warm.</p></li>
+</ul>
+<h2>⚠️ Typische Fehler</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fehler</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Pumpe sicherheitshalber zu groß</strong></p></td><td colspan="1" rowspan="1"><p>Fließgeräusche und unnötig hoher Stromverbrauch</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Nur einen kurzen Strang gerechnet</strong></p></td><td colspan="1" rowspan="1"><p>Die fernen Heizkörper bleiben kalt.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Einzelwiderstände Z vergessen</strong></p></td><td colspan="1" rowspan="1"><p>Der Druckverlust ist zu klein gerechnet, die Pumpe schafft es nicht bis zum letzten Heizkörper.</p></td></tr>
+</tbody></table></div>
+<blockquote><p>Erst der Massenstrom, dann das Rohr, dann der Druckverlust, dann die Pumpe.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Tim berechnet 860 kg/h Massenstrom und wählt die Rohre mit R zwischen 100 und 200 Pa/m. Auf dem ungünstigsten Strang zum fernen Heizkörper kommt er mit Ventil und Wärmeerzeuger auf rund 15 kPa, also etwa 1,5 m Förderhöhe. Im Kennlinienfeld sucht er eine Pumpe, deren Betriebspunkt bei 0,86 m³/h und 1,5 m liegt. 💪 Danach berechnet er die Voreinstellungen der nahen Heizkörperventile für den hydraulischen Abgleich.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>ṁ = Φ / (c · Δθ)</strong>. Den Rohrdurchmesser wählst du mit einem Richtwert von etwa <strong>100 bis 200 Pa/m</strong>. <strong>Δp = R · l + Z</strong>, und der <strong>ungünstigste Strang</strong> bestimmt die Förderhöhe. Die Pumpe wählst du nach <strong>Förderstrom</strong> und <strong>Förderhöhe</strong>, danach folgt der <strong>hydraulische Abgleich</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Achte auf die Einheiten: Φ in kW und c in kJ/(kg·K) ergeben ṁ in kg/s. Mal 3.600 kommst du auf kg/h. Bei der Förderhöhe setzt du Δp in <strong>Pa</strong> ein, nicht in kPa. Typische Frage: <strong>Welcher Strang bestimmt die Förderhöhe?</strong> Der ungünstigste, also der mit der größten Summe der Druckverluste, meist zum fernsten Heizkörper.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Die Heizlast bleibt 10 kW, die Spreizung beträgt aber 20 K. Wie groß ist der Massenstrom in kg/h?</summary><div data-type="detailsContent"><p>✅ ṁ = 10 / (4,19 · 20) ≈ 0,119 kg/s, mal 3.600 ergibt rund 430 kg/h. Doppelte Spreizung heißt halber Massenstrom.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Eine Teilstrecke ist 20 m lang, R beträgt 100 Pa/m und Z 500 Pa. Wie groß ist der Druckverlust?</summary><div data-type="detailsContent"><p>✅ Δp = 100 · 20 + 500 = 2.000 + 500 = 2.500 Pa, also 2,5 kPa.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Rechne einen Druckverlust von 15 kPa in die Förderhöhe um.</summary><div data-type="detailsContent"><p>✅ H = 15.000 Pa / (1.000 kg/m³ · 9,81 m/s²) ≈ 1,53 m. Faustwert: 10 kPa entsprechen etwa 1 m.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Warum bestimmt der ungünstigste Strang die Förderhöhe der Pumpe?</summary><div data-type="detailsContent"><p>✅ Das Wasser muss auch den fernsten Heizkörper erreichen. Auf diesem Weg addieren sich alle Teilstrecken und Widerstände zur größten Summe. Schafft die Pumpe diesen Strang, schafft sie alle anderen auch.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was passiert ohne hydraulischen Abgleich, und wie behebst du es?</summary><div data-type="detailsContent"><p>✅ Nahe Heizkörper bekommen zu viel Wasser, ferne zu wenig. Du drosselst die nahen Kreise über die Voreinstellung der Ventile, mit Werten aus der Druckverlustberechnung. Dann bekommt jeder Heizkörper seinen Volumenstrom.</p></div></details>
+<p></p>

@@ -1,0 +1,85 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Den Unterschied zwischen <strong>Volumenmodell</strong> und <strong>Flächenmodell</strong> und wann du welches nimmst</p></li>
+<li><p>Wie du mit <strong>Splines</strong>, <strong>Profilen</strong> und <strong>Leitkurven</strong> die Grundlage für Flächen legst</p></li>
+<li><p>Wie du Flächen <strong>erzeugst</strong> (Extrusion, Rotation, Begrenzung, Loft, Sweep), <strong>trimmst</strong>, <strong>verlängerst</strong> und <strong>vernähst</strong></p></li>
+<li><p>Wie aus einer geschlossenen Flächenhaut ein <strong>festes Bauteil mit Wandstärke</strong> wird</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> hält <strong>Mia</strong> den Prototyp eines <strong>ergonomischen Handgriffs</strong> in der Hand. Er liegt weich in der Hand und hat keine einzige gerade Kante. Mit Quadern und Zylindern kommt Mia hier nicht weit, denn die Form ist überall gekrümmt. Ausbilderin <strong>Frau Engel</strong> sagt: „Dafür brauchst du die <strong>Flächenmodellierung</strong>.“ Wie funktioniert das?</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FoV5Z-rbAv_iaBDHgkQUoL-img.webp?alt=media&amp;token=c3a0b463-e699-40de-9f30-b827ed4390e4" alt="" data-display="full-width">
+<h2>🧊 Volumenmodell und Flächenmodell</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Volumenmodell</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Flächenmodell</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Aufbau</strong></p></td><td colspan="1" rowspan="1"><p>geschlossener Körper</p></td><td colspan="1" rowspan="1"><p>nur die Haut, also Flächen ohne Dicke</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Eigenschaften</strong></p></td><td colspan="1" rowspan="1"><p>hat Volumen und Masse</p></td><td colspan="1" rowspan="1"><p>keine Dicke, keine Masse</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Vorteil</strong></p></td><td colspan="1" rowspan="1"><p>schnell gebaut und sicher</p></td><td colspan="1" rowspan="1"><p>sehr frei formbar, dadurch entstehen <strong>Freiformflächen</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Typische Teile</strong></p></td><td colspan="1" rowspan="1"><p>prismatische Teile: Platten, Wellen, Halter</p></td><td colspan="1" rowspan="1"><p>frei gekrümmte Formen: Griffe, Gehäuse</p></td></tr>
+</tbody></table></div>
+<p>Freiformflächen wären mit einfachen Grundkörpern kaum möglich. In der Praxis <strong>kombinierst du oft beides</strong>: Die <strong>Außenhaut</strong> entsteht aus Flächen, <strong>Rippen, Bohrungen und Schraubdome</strong> baust du danach ganz normal als Volumen.</p>
+<h2>〰️ Kurven als Grundlage</h2>
+<p>Jede Fläche beginnt mit Kurven. Drei Kurvenarten sind wichtig:</p>
+<ul>
+<li><p><strong>Spline:</strong> die wichtigste Kurve. Sie verläuft glatt und wird über <strong>Kontrollpunkte</strong> gesteuert. Ziehst du an einem Punkt, ändert sich die Kurve weich.</p></li>
+<li><p><strong>Profil:</strong> ein <strong>Querschnitt</strong> der späteren Form. Stell dir vor, du schneidest den fertigen Griff an einer Stelle quer durch. Die Schnittlinie ist das Profil.</p></li>
+<li><p><strong>Leitkurve:</strong> Sie gibt den <strong>Verlauf</strong> vor, an dem sich die Fläche entlang bewegt.</p></li>
+</ul>
+<h2>🌀 Flächenarten</h2>
+<p>Aus Kurven werden Flächen. Die Kurven bleiben dabei die Grundlage: Änderst du später eine Kurve, <strong>passt sich die Fläche automatisch an</strong>.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Flächenart</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>So entsteht sie</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Extrusionsfläche</strong></p></td><td colspan="1" rowspan="1"><p>Eine Kurve wird geradlinig verschoben.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rotationsfläche</strong></p></td><td colspan="1" rowspan="1"><p>Eine Kurve dreht sich um eine Achse, zum Beispiel für einen runden Knauf.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Begrenzungsfläche</strong></p></td><td colspan="1" rowspan="1"><p>Sie füllt die Lücke zwischen mehreren Randkurven, wie eine Haut über einem Rahmen.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Ausformung (Loft)</strong></p></td><td colspan="1" rowspan="1"><p>Mehrere unterschiedliche Profile werden mit einer glatten Fläche verbunden.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Sweep</strong></p></td><td colspan="1" rowspan="1"><p>Ein Profil wandert entlang einer Leitkurve, zum Beispiel für einen gebogenen Bügel.</p></td></tr>
+</tbody></table></div>
+<p>Loft und Sweep brauchst du besonders oft. Die Merkhilfe: <strong>Loft = mehrere Profile</strong>, <strong>Sweep = ein Profil auf einem Pfad</strong> (Profil + Leitkurve).</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FFSFn0segrbtT8sCEQ1CXj-img.webp?alt=media&amp;token=f60e30ce-a752-4540-b6b1-5b2caa74ad0f" alt="" data-display="full-width">
+<h2>✂️ Trimmen, Verlängern, Vernähen</h2>
+<p>Selten passt eine Fläche sofort perfekt. Deshalb bearbeitest du sie in drei Schritten:</p>
+<ol>
+<li><p><strong>Trimmen:</strong> Du schneidest <strong>Überstände</strong> ab, zum Beispiel dort, wo sich zwei Flächen schneiden.</p></li>
+<li><p><strong>Verlängern:</strong> Du führst eine Fläche weiter, wenn sie zu kurz ist und die Nachbarfläche nicht erreicht.</p></li>
+<li><p><strong>Vernähen:</strong> Du verbindest mehrere Flächen zu <strong>einer zusammenhängenden Fläche</strong>.</p></li>
+</ol>
+<p><strong>Wichtig beim Vernähen:</strong> Die Ränder müssen genau aufeinanderliegen. Sonst bleiben winzige Spalten, die du oft erst viel später bemerkst.</p>
+<h2>🧱 Aus Flächen wird ein Bauteil</h2>
+<p>Am Ende brauchst du ein echtes Bauteil. So kommst du dahin:</p>
+<ol>
+<li><p><strong>Dicht?</strong> Die Flächenhaut muss <strong>völlig geschlossen</strong> sein. Schon eine winzige Lücke verhindert das Umwandeln.</p></li>
+<li><p><strong>Volumen erzeugen:</strong> Ist die Haut dicht, machst du daraus einen <strong>Volumenkörper</strong>.</p></li>
+<li><p><strong>Wandstärke:</strong> Für ein Kunststoffgehäuse erzeugst du eine Wandstärke, zum Beispiel <strong>2,5 mm</strong>. So wird aus dem Körper eine <strong>Schale</strong>.</p></li>
+</ol>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FN7WTVH6l1wMrUInLwEer--img.webp?alt=media&amp;token=8eb3f1f4-7dfd-4128-aea2-9ef31f3bb055" alt="" data-display="full-width">
+<h2>✊ Mias Handgriff entsteht</h2>
+<ol>
+<li><p><strong>Leitkurve:</strong> Mia zeichnet zuerst eine Leitkurve für den Verlauf des Griffs.</p></li>
+<li><p><strong>Profile:</strong> An mehreren Stellen legt sie Profile an. In der Mitte ist der Griff dicker, an den Enden dünner.</p></li>
+<li><p><strong>Ausformung:</strong> Ein Loft durch alle Profile ergibt die glatte Griffhaut.</p></li>
+<li><p><strong>Schließen:</strong> Sie schließt die Enden, vernäht alles und macht daraus einen Volumenkörper.</p></li>
+</ol>
+<p>Will Frau Engel den Griff etwas dicker haben, ändert Mia einfach <strong>ein Profil</strong>. Die Fläche passt sich automatisch an.</p>
+<h2>🏭 Typische Anwendungen</h2>
+<p>Freiformflächen brauchst du überall dort, wo Menschen ein Produkt anfassen oder ansehen und wo die Form mehr können muss als ein einfacher Block:</p>
+<ul>
+<li><p><strong>Griffe</strong>, die gut in der Hand liegen sollen</p></li>
+<li><p><strong>Gehäuse</strong> mit weichen, fließenden Formen</p></li>
+<li><p><strong>Abdeckungen und Verkleidungen</strong>, zum Beispiel an Maschinen oder Fahrzeugen</p></li>
+</ul>
+<h2>🚫 Typische Fehler</h2>
+<ul>
+<li><p><strong>Spalte:</strong> Winzige Spalte zwischen zwei Flächen verhindern später das Umwandeln in ein Volumen.</p></li>
+<li><p><strong>Überlappungen:</strong> Flächen überlappen sich, statt sauber getrimmt zu sein.</p></li>
+<li><p><strong>Verdrehte Ausformung:</strong> Die Startpunkte der Profile sind nicht zueinander ausgerichtet. Die Fläche windet sich dann wie ein gedrehtes Handtuch.</p></li>
+</ul>
+<blockquote><p>Nur eine dichte Haut wird zum Volumen.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Beim ersten Versuch will das CAD-Programm Mias Griffhaut nicht in ein Volumen umwandeln. Mia prüft die Ränder und findet einen winzigen Spalt zwischen der Griffhaut und der Endfläche. Sie verlängert die Endfläche, trimmt den Überstand und vernäht beide Flächen neu. 💪 Jetzt ist die Haut dicht, und der Griff wird zum Volumenkörper.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Ein <strong>Flächenmodell</strong> ist nur Haut ohne Dicke, dafür sehr frei formbar. Grundlage sind <strong>Splines, Profile und Leitkurven</strong>. <strong>Loft</strong> verbindet mehrere Profile, <strong>Sweep</strong> führt ein Profil entlang einer Leitkurve. Flächen <strong>trimmen, vernähen und schließen</strong>, dann wird daraus ein Volumen mit Wandstärke.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Häufige Frage: <strong>Loft oder Sweep?</strong> Ändert sich der Querschnitt entlang der Form, nimmst du einen <strong>Loft</strong> (mehrere Profile). Bleibt der Querschnitt gleich und folgt einer gebogenen Bahn, nimmst du einen <strong>Sweep</strong> (ein Profil + Leitkurve). Und: Ein Flächenmodell hat <strong>keine Masse</strong>, erst der geschlossene Volumenkörper hat eine.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Ein Bügel soll einer gebogenen Bahn folgen und überall denselben Querschnitt haben. Welche Fläche nimmst du?</summary><div data-type="detailsContent"><p>✅ Einen Sweep, also ein Profil entlang einer Leitkurve.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Deine Flächenhaut hat eine kleine Lücke. Was passiert, wenn du daraus ein Volumen machen willst?</summary><div data-type="detailsContent"><p>✅ Das Umwandeln klappt nicht. Du musst die Lücke erst schließen und die Flächen vernähen.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was unterscheidet ein Volumenmodell von einem Flächenmodell?</summary><div data-type="detailsContent"><p>✅ Ein Volumenmodell ist ein geschlossener Körper mit Volumen und Masse. Ein Flächenmodell besteht nur aus der Haut ohne Dicke, ist dafür aber sehr frei formbar.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was ist ein Spline, und wie änderst du ihn?</summary><div data-type="detailsContent"><p>✅ Ein Spline ist eine glatte Kurve, die über Kontrollpunkte gesteuert wird. Ziehst du an einem Kontrollpunkt, ändert sich die Kurve weich.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Deine Ausformung windet sich wie ein gedrehtes Handtuch. Was ist die Ursache?</summary><div data-type="detailsContent"><p>✅ Die Startpunkte der Profile sind nicht zueinander ausgerichtet. Richtest du sie aus, wird die Fläche wieder glatt.</p></div></details>
+<p></p>

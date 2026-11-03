@@ -1,0 +1,110 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was eine <strong>Baugruppendatei</strong> ist und warum das <strong>erste Bauteil fixiert</strong> wird</p></li>
+<li><p>Wie <strong>Abhängigkeiten</strong> die <strong>sechs Freiheitsgrade</strong> eines Bauteils wegnehmen</p></li>
+<li><p>Wie du Freiheitsgrade bewusst <strong>frei lässt</strong>, wenn sich ein Teil bewegen soll</p></li>
+<li><p>Wie du <strong>Unterbaugruppen</strong> bildest und <strong>typische Probleme</strong> systematisch behebst</p></li>
+</ul>
+<p>👋 Bei der <strong>Muster Technik GmbH</strong> liegen die Teile eines <strong>Lagerbocks</strong> auf dem Tisch: <strong>Grundplatte</strong>, <strong>Lagergehäuse</strong>, <strong>Welle</strong> und <strong>Schrauben</strong>. <strong>Mia</strong> hat alle Teile schon einzeln modelliert. Jetzt soll sie daraus im CAD eine <strong>Baugruppe</strong> machen. Ausbilderin <strong>Frau Engel</strong> dreht an der echten Welle und sagt: Im Modell muss sie sich genauso drehen lassen. Wie bekommt Mia die Teile an die richtige Stelle? Mit <strong>Abhängigkeiten</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F4TVzfbMS0_uaHejYaGHDJ-img.webp?alt=media&amp;token=e4f9d97b-6a1d-4d89-9f90-9af0778ff19a" alt="" data-display="full-width">
+<h2>🗂️ Die Baugruppe ist eine Datei</h2>
+<p>Eine <strong>Baugruppe</strong> ist im CAD eine <strong>eigene Datei</strong>. Sie enthält die Bauteile nicht selbst, sondern <strong>verweist auf die Einzelteildateien</strong>. Die Baugruppe „Lagerbock“ verweist also auf die Dateien Grundplatte, Lagergehäuse, Welle und Schraube.</p>
+<ul>
+<li><p>Jedes Teil gibt es nur <strong>einmal</strong>.</p></li>
+<li><p>Änderst du ein Einzelteil, zeigt die Baugruppe die Änderung <strong>sofort</strong>.</p></li>
+</ul>
+<h2>📌 Das erste Bauteil fixieren</h2>
+<p>Am Anfang steht ein Bauteil, auf dem alles aufbaut. Dieses erste Bauteil wird <strong>fixiert</strong>: Es liegt fest im Raum und kann sich nicht mehr bewegen. Viele Programme fixieren das erste eingefügte Teil automatisch.</p>
+<p>Am besten wählst du das <strong>tragende Teil</strong>, beim Lagerbock also die <strong>Grundplatte</strong>. Alle anderen Teile richtest du daran aus.</p>
+<h2>🧭 Sechs Freiheitsgrade</h2>
+<p>Ein Bauteil, das frei im Raum liegt, hat <strong>sechs Freiheitsgrade</strong>. Das kennst du schon aus der Skizze, nur dass du jetzt im Raum arbeitest:</p>
+<ul>
+<li><p><strong>3 Verschiebungen:</strong> entlang X, Y und Z</p></li>
+<li><p><strong>3 Drehungen:</strong> um X, Y und Z</p></li>
+</ul>
+<p>3 Verschiebungen + 3 Drehungen = <strong>6 Freiheitsgrade</strong>. Abhängigkeiten nehmen sie nach und nach weg.</p>
+<h2>🔗 Die wichtigsten Abhängigkeiten</h2>
+<p>Eine <strong>Abhängigkeit</strong> legt fest, wie zwei Teile zueinander liegen. Diese fünf sind die wichtigsten:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Abhängigkeit</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Deckungsgleich</strong></p></td><td colspan="1" rowspan="1"><p>Zwei Flächen liegen aufeinander.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Konzentrisch</strong></p></td><td colspan="1" rowspan="1"><p>Zwei runde Elemente haben eine gemeinsame Achse, z. B. Welle und Bohrung.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Parallel</strong></p></td><td colspan="1" rowspan="1"><p>Zwei Flächen sind parallel, ihr Abstand bleibt aber frei.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Abstand</strong></p></td><td colspan="1" rowspan="1"><p>Fester Abstand zwischen zwei Flächen, z. B. 5 mm.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Winkel</strong></p></td><td colspan="1" rowspan="1"><p>Fester Winkel zwischen zwei Flächen, z. B. 35°.</p></td></tr>
+</tbody></table></div>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2FWUoZgkwrmi_54GUFb-0Fw-img.webp?alt=media&amp;token=a26c70bc-51fe-4e6a-8713-f18a39007a3e" alt="" data-display="full-width">
+<h2>🔢 Freiheitsgrade zählen: das Lagergehäuse</h2>
+<ol>
+<li><p><strong>Start:</strong> 6 Freiheitsgrade.</p></li>
+<li><p><strong>Unterseite deckungsgleich</strong> auf der Grundplatte: Das Gehäuse kann nicht mehr nach oben oder unten und in keine der beiden Richtungen mehr kippen. <strong>Minus 3.</strong></p></li>
+<li><p><strong>Bohrung konzentrisch</strong> zur Bohrung in der Platte: Das Gehäuse kann nicht mehr seitlich rutschen. <strong>Minus 2.</strong></p></li>
+<li><p><strong>Rechnung:</strong> 6 − 3 − 2 = <strong>1</strong>. Das Gehäuse könnte sich noch um die Bohrung drehen.</p></li>
+<li><p><strong>Seitenfläche parallel:</strong> nimmt auch den letzten Freiheitsgrad weg. 1 − 1 = <strong>0</strong>, das Gehäuse sitzt fest.</p></li>
+</ol>
+<h2>🔓 Freiheitsgrade bewusst frei lassen</h2>
+<p>Du musst nicht immer alle Freiheitsgrade wegnehmen:</p>
+<ul>
+<li><p><strong>Starre Teile</strong> wie das Lagergehäuse legst du <strong>komplett fest</strong>.</p></li>
+<li><p>Bei <strong>beweglichen Teilen</strong> lässt du genau die Bewegung frei, die es auch in der Wirklichkeit gibt. Die <strong>Welle</strong> darf sich zum Beispiel <strong>drehen</strong>.</p></li>
+</ul>
+<p>So kannst du schon im Modell prüfen, ob sich alles bewegen lässt und <strong>nichts aneinanderstößt</strong>.</p>
+<h2>🌳 Unterbaugruppen</h2>
+<p>Bei größeren Konstruktionen bildest du <strong>Unterbaugruppen</strong>:</p>
+<ul>
+<li><p>Ganz oben steht die <strong>Hauptbaugruppe</strong>.</p></li>
+<li><p>Darunter kommen <strong>Unterbaugruppen</strong>, z. B. der Lagerbock, und weitere Unterbaugruppen.</p></li>
+<li><p>Darin liegen die <strong>Einzelteile</strong>, beim Lagerbock Grundplatte, Gehäuse, Welle und Schrauben.</p></li>
+</ul>
+<p>Die Struktur folgt der <strong>späteren Montage</strong>: Was zusammen montiert wird, gehört in eine Unterbaugruppe. Das hilft auch bei der <strong>Stückliste</strong>.</p>
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2F2eSroOcmrUHti5A31mGwq%2F8wzhsk8e6FqBEr3e4bFAj-img.webp?alt=media&amp;token=8b01edba-04c0-45b6-b63d-f3c57aa0ebc1" alt="" data-display="full-width">
+<p><strong>Unterbaugruppe zweimal verwenden:</strong> Eine Maschine braucht zwei gleiche Lagerböcke, einen links und einen rechts. Du fügst die Unterbaugruppe Lagerbock einfach <strong>zweimal</strong> ein. Jeder Lagerbock hat 2 Schrauben. In der Stückliste der Maschine stehen dann 2 Lagerböcke × 2 Schrauben = <strong>4 Schrauben</strong>. Die Stückliste rechnet das automatisch hoch. Änderst du den Lagerbock, gilt die Änderung sofort für <strong>beide Stellen</strong>. Das spart Zeit und verhindert, dass die beiden Lagerböcke irgendwann unterschiedlich aussehen.</p>
+<h2>⚠️ Typische Probleme</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Problem</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Widersprüchliche Abhängigkeiten</strong></p></td><td colspan="1" rowspan="1"><p>Zwei Abhängigkeiten verlangen eine unmögliche Lage. Das Programm meldet einen Fehler.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Umbenannte Dateien</strong></p></td><td colspan="1" rowspan="1"><p>Der Verweis zeigt ins Leere, das Teil fehlt in der Baugruppe.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Verschobene Dateien</strong></p></td><td colspan="1" rowspan="1"><p>Die Baugruppe findet das Teil nicht mehr.</p></td></tr>
+</tbody></table></div>
+<p>Deshalb gilt: Dateien <strong>nur über das CAD-Programm oder die Datenverwaltung</strong> umbenennen und verschieben, nie einfach im Dateiordner.</p>
+<h2>🩺 Fehler systematisch beheben</h2>
+<p>Gehe ruhig in vier Schritten vor, statt wahllos Abhängigkeiten zu löschen:</p>
+<ol>
+<li><p><strong>Meldung lesen:</strong> Sie nennt meist die betroffenen Teile.</p></li>
+<li><p><strong>Im Modellbaum suchen:</strong> Finde die Abhängigkeiten dieser Teile.</p></li>
+<li><p><strong>Überzählige löschen oder ändern:</strong> Beispiel: Zwei Flächen sind deckungsgleich und sollen zugleich 5 mm Abstand haben. Das geht nicht, eine der beiden Abhängigkeiten muss weg.</p></li>
+<li><p><strong>Datei neu zuordnen:</strong> Fehlt eine Datei, ordnest du sie im Programm neu zu. Dann findet die Baugruppe das Teil wieder.</p></li>
+</ol>
+<h2>🔧 Mia baut den Lagerbock</h2>
+<ol>
+<li><p><strong>Grundplatte:</strong> einfügen und fixieren.</p></li>
+<li><p><strong>Lagergehäuse:</strong> Unterseite deckungsgleich auf die Platte, eine Bohrung konzentrisch, eine Seitenfläche parallel. Jetzt sitzt es fest.</p></li>
+<li><p><strong>Schrauben:</strong> konzentrisch zu den Bohrungen, Kopf deckungsgleich mit der Auflagefläche.</p></li>
+<li><p><strong>Welle:</strong> soll sich im Lagergehäuse drehen können, sonst aber nichts.</p></li>
+</ol>
+<p><strong>So geht Mia bei der Welle vor:</strong></p>
+<ul>
+<li><p><strong>Konzentrisch zur Lagerbohrung:</strong> nimmt <strong>4</strong> Freiheitsgrade weg, nämlich 2 Verschiebungen quer zur Achse und 2 Kippbewegungen.</p></li>
+<li><p><strong>Axiale Fläche deckungsgleich:</strong> z. B. ein Wellenabsatz an der Stirnseite des Gehäuses. Das nimmt <strong>1</strong> Freiheitsgrad weg.</p></li>
+<li><p><strong>Rechnung:</strong> 6 − 4 − 1 = <strong>1</strong>. Übrig bleibt genau die <strong>Drehung um die eigene Achse</strong>, so wie es sein soll.</p></li>
+</ul>
+<p>Würde Mia noch eine zusätzliche Abhängigkeit setzen, wäre die Welle <strong>blockiert</strong>, und die Bewegung im Modell stimmt nicht mehr mit der Wirklichkeit überein.</p>
+<h2>🛠️ Übung: Abhängigkeiten und Freiheitsgrade</h2>
+<p><strong>Aufgabe 1:</strong> Zwei Flächen sollen genau 5 mm auseinander liegen. Welche Abhängigkeit setzt du?</p>
+<p><strong>Aufgabe 2:</strong> Wie viele Freiheitsgrade hat ein Bauteil, das frei im Raum liegt?</p>
+<p><strong>Lösung:</strong></p>
+<ul>
+<li><p>Aufgabe 1: die Abhängigkeit <strong>Abstand</strong> mit 5 mm.</p></li>
+<li><p>Aufgabe 2: <strong>6</strong>, also 3 Verschiebungen und 3 Drehungen.</p></li>
+</ul>
+<blockquote><p>Nimm nur so viele Freiheitsgrade weg, wie das echte Teil auch hat.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia fixiert die Grundplatte, legt das Lagergehäuse komplett fest und verschraubt es im Modell. Die Welle setzt sie konzentrisch zur Lagerbohrung und mit dem Wellenabsatz deckungsgleich an die Stirnseite. Frau Engel zieht im CAD an der Welle: Sie dreht sich, rutscht aber nicht heraus. 💪 Genau wie das echte Teil auf dem Tisch.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Eine <strong>Baugruppe</strong> ist eine Datei, die auf Einzelteile verweist. Das <strong>erste Bauteil</strong> wird fixiert, alle anderen richten sich danach. <strong>Abhängigkeiten</strong> nehmen Freiheitsgrade weg, bewegliche Teile behalten ihre Bewegung. Dateien nur über das <strong>CAD</strong> oder die <strong>Datenverwaltung</strong> umbenennen oder verschieben.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Fragen: <strong>Wie viele Freiheitsgrade</strong> hat ein freies Bauteil? 6. <strong>Wie viele nimmt „konzentrisch“</strong> bei einer Welle in einer Bohrung weg? 4. <strong>Wie viele nimmt „deckungsgleich“</strong> bei zwei ebenen Flächen weg? 3. Rechne die Freiheitsgrade immer Schritt für Schritt herunter und prüfe, ob die gewünschte Bewegung übrig bleibt.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Warum zeigt eine Baugruppe Änderungen an einem Einzelteil sofort an?</summary><div data-type="detailsContent"><p>✅ Weil die Baugruppendatei die Teile nicht selbst enthält, sondern auf die Einzelteildateien verweist. Jedes Teil gibt es nur einmal.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Was ist der Unterschied zwischen „parallel“ und „Abstand“?</summary><div data-type="detailsContent"><p>✅ Bei „parallel“ sind die Flächen parallel, ihr Abstand bleibt frei. „Abstand“ legt einen festen Wert fest, z. B. 5 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Das Lagergehäuse liegt deckungsgleich auf der Platte, eine Bohrung ist konzentrisch. Wie viele Freiheitsgrade bleiben, und wie legst du den letzten fest?</summary><div data-type="detailsContent"><p>✅ 6 − 3 − 2 = 1, die Drehung um die Bohrung. Eine parallele Seitenfläche nimmt auch diesen Freiheitsgrad weg.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Eine Maschine enthält die Unterbaugruppe Lagerbock zweimal, jeder Lagerbock hat 2 Schrauben. Wie viele Schrauben stehen in der Stückliste?</summary><div data-type="detailsContent"><p>✅ 2 × 2 = 4 Schrauben. Die Stückliste rechnet das automatisch hoch.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Ein Kollege hat eine Bauteildatei im Dateiordner umbenannt. Was passiert, und wie behebst du es?</summary><div data-type="detailsContent"><p>✅ Der Verweis der Baugruppe zeigt ins Leere, das Teil fehlt. Du ordnest die Datei im CAD-Programm neu zu. Künftig nur über CAD oder Datenverwaltung umbenennen.</p></div></details>
+<p></p>
