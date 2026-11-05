@@ -1,0 +1,319 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie ein <strong>Transistor als Schalter</strong> arbeitet und warum er dabei kaum warm wird.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>Basisvorwiderstand</strong> mit Übersteuerung berechnest: <strong>RV = (UST − UBE) / IB</strong>.</p>
+    </li>
+    <li>
+        <p>Warum eine <strong>Freilaufdiode</strong> den Transistor beim Schalten von Spulen schützt.</p>
+    </li>
+    <li>
+        <p>Wie ein Transistor <strong>verstärkt</strong> und wie du den <strong>Arbeitspunkt</strong> einstellst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH baut Tim eine <strong>Meldeleuchte</strong> auf. Die Lampe hat <strong>12 V und 1,2 W</strong>. Ein Steuerausgang mit <strong>5 V</strong> soll sie über einen Transistor einschalten. Danach soll der Transistor auch ein <strong>Relais</strong> mit 12 V schalten. Ausbilderin Frau Schneider fragt: Wie groß muss der Basisvorwiderstand sein? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔀 Der Transistor als Schalter</h2>
+<p>Als Schalter kennt der Transistor nur <strong>zwei Zustände</strong>:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Zustand</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedingung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Wirkung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Gesperrt</strong></p></td>
+                <td colspan="1" rowspan="1"><p>UBE unter etwa 0,7 V</p></td>
+                <td colspan="1" rowspan="1"><p>kein Kollektorstrom, wie ein offener Schalter</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leitend</strong></p></td>
+                <td colspan="1" rowspan="1"><p>UBE rund 0,7 V (Silizium), Basisstrom fließt</p></td>
+                <td colspan="1" rowspan="1"><p>Laststrom eingeschaltet, wie ein geschlossener Schalter</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>So steuert ein <strong>kleiner Basisstrom</strong> einen <strong>großen Kollektorstrom</strong>, schnell und ohne Verschleiß, denn es gibt keine mechanischen Kontakte.</p>
+
+<h2>🔌 Die Schaltung der Meldeleuchte</h2>
+<ul>
+    <li>
+        <p><strong>Steuerkreis:</strong> Die Steuerspannung U1 treibt über den Vorwiderstand RV einen Strom in die Basis.</p>
+    </li>
+    <li>
+        <p><strong>Basis und Emitter:</strong> Der Basisstrom IB fließt von der Basis B zum Emitter E. Ab etwa <strong>UBE = 0,7 V</strong> leitet der Transistor K1.</p>
+    </li>
+    <li>
+        <p><strong>Laststromkreis:</strong> Jetzt fließt der Kollektorstrom IC von <strong>+12 V</strong> durch die Lampe P1 und den Transistor nach 0 V.</p>
+    </li>
+    <li>
+        <p><strong>Durchgeschaltet:</strong> Zwischen Kollektor und Emitter bleibt nur eine sehr kleine Spannung UCE. Steigt UBE, fällt UCE fast auf null.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<h2>🧮 Kollektorstrom und Basisstrom</h2>
+<p>Für den Vorwiderstand brauchst du zuerst den Basisstrom. Den Kollektorstrom bestimmt die Last:</p>
+<ol>
+    <li>
+        <p><strong>Kollektorstrom:</strong> IC = P / U = 1,2 W / 12 V = 0,1 A = <strong>100 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Mindest-Basisstrom:</strong> Laut Datenblatt ist <strong>B ≥ 160</strong>. IB min = IC / B = 100 mA / 160 = <strong>0,625 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Mit Übersteuerung:</strong> Damit der Transistor sicher voll durchschaltet, übersteuerst du ihn dreifach (ü = 3). IB = ü × IB min = 3 × 0,625 mA = <strong>1,875 mA</strong></p>
+    </li>
+</ol>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>P</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leistung der Lampe</p></td>
+                <td colspan="1" rowspan="1"><p>W</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Lampenspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IC / IB</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kollektorstrom / Basisstrom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>B</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Stromverstärkung</p></td>
+                <td colspan="1" rowspan="1"><p>keine Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>ü</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Übersteuerungsfaktor</p></td>
+                <td colspan="1" rowspan="1"><p>keine Einheit</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🧮 Den Vorwiderstand berechnen</h2>
+<ul>
+    <li>
+        <p><strong>RV = (UST − UBE) / IB</strong></p>
+    </li>
+</ul>
+<p>RV ist der Basisvorwiderstand in Ω, UST die Steuerspannung in V, UBE die Basis-Emitter-Spannung von rund 0,7 V und IB der Basisstrom in A.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> RV = (5 V − 0,7 V) / 1,875 mA</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> RV = 4,3 V / 1,875 mA ≈ <strong>2,29 kΩ</strong></p>
+    </li>
+    <li>
+        <p><strong>Normwert:</strong> Du nimmst den <strong>nächstkleineren</strong> Normwert, <strong>2,2 kΩ</strong>. Dann fließen sogar IB = 4,3 V / 2,2 kΩ ≈ <strong>1,95 mA</strong>.</p>
+    </li>
+</ol>
+<p>Beim Basisvorwiderstand wählst du den kleineren Normwert, damit der Basisstrom nicht unter den berechneten Wert fällt.</p>
+
+<h2>🌡️ Warum er kaum warm wird</h2>
+<ul>
+    <li>
+        <p><strong>Gesperrt:</strong> IC ≈ 0, UCE ≈ 12 V. Es fließt praktisch kein Strom, also entsteht fast keine Verlustleistung.</p>
+    </li>
+    <li>
+        <p><strong>Leitend (gesättigt):</strong> UCE sat beträgt nur etwa <strong>0,2 V</strong>.</p>
+    </li>
+</ul>
+<p>Die Verlustleistung im Transistor ist <strong>P = UCE × IC</strong> = 0,2 V × 0,1 A = 0,02 W = <strong>20 mW</strong>. P ist die Verlustleistung in W, UCE die Kollektor-Emitter-Spannung in V, IC der Kollektorstrom in A. Die Lampe bekommt fast die volle Spannung: 12 V − 0,2 V = <strong>11,8 V</strong>.</p>
+
+<h2>⚠️ Typischer Fehler: RV zu groß</h2>
+<p>Tim nimmt ohne Rechnung einfach geschätzte <strong>10 kΩ</strong>:</p>
+<ol>
+    <li>
+        <p>IB = 4,3 V / 10 kΩ = <strong>0,43 mA</strong>, also weniger als die nötigen 0,625 mA.</p>
+    </li>
+    <li>
+        <p>Bei B = 160 erreicht der Kollektorstrom nur IC = 160 × 0,43 mA ≈ <strong>69 mA</strong>.</p>
+    </li>
+    <li>
+        <p>Der Transistor schaltet nicht voll durch. Vereinfacht gerechnet bleiben an ihm <strong>UCE ≈ 3,7 V statt 0,2 V</strong>.</p>
+    </li>
+    <li>
+        <p>Die Verlustleistung steigt auf rund <strong>0,26 W statt 20 mW</strong>.</p>
+    </li>
+</ol>
+<blockquote>
+    <p>Die Lampe ist zu dunkel, und der Transistor wird heiß. Rechne deshalb immer mit Übersteuerung.</p>
+</blockquote>
+
+<h2>🧲 Induktive Last: das Relais</h2>
+<p>Die <strong>Relaisspule</strong> ist eine <strong>induktive Last</strong>. Der Transistor K1 schaltet sie gegen 0 V.</p>
+<ul>
+    <li>
+        <p><strong>Beim Abschalten</strong> will die Spule ihren Strom weitertreiben. Es entsteht eine <strong>Induktionsspannung</strong>, die weit über der Betriebsspannung liegt. Ohne Schutz kann sie den Transistor zerstören.</p>
+    </li>
+    <li>
+        <p>Deshalb liegt <strong>parallel zur Spule</strong> eine <strong>Freilaufdiode</strong>, hier R1 genannt. Sie ist in Sperrrichtung zu +UB geschaltet und sperrt im Betrieb.</p>
+    </li>
+    <li>
+        <p>Beim Abschalten leitet sie. Der Strom kreist durch Spule und Diode und klingt dabei ab.</p>
+    </li>
+</ul>
+
+<h3>Abschalten ohne und mit Diode</h3>
+<p>Das Kennlinienfeld IC über UCE zeigt den Schaltvorgang zwischen den Punkten <strong>Ein</strong> und <strong>Aus</strong>:</p>
+<ul>
+    <li>
+        <p><strong>Ohne Diode:</strong> UCE steigt beim Ausschalten weit an, während noch viel Strom fließt. Der Transistor wird stark belastet.</p>
+    </li>
+    <li>
+        <p><strong>Mit Freilaufdiode:</strong> IC sinkt sofort, UCE bleibt im sicheren Bereich. Der Schaltvorgang verläuft sanft.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h2>📈 Der Transistor als Verstärker</h2>
+<p>Als Verstärker arbeitet der Transistor <strong>zwischen gesperrt und leitend</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Kennlinienfeld:</strong> IC über UCE, je Basisstrom eine Kurve.</p>
+    </li>
+    <li>
+        <p><strong>Arbeitsgerade:</strong> Sie ergibt sich aus dem Kollektorwiderstand RC und endet rechts bei der Betriebsspannung Ub.</p>
+    </li>
+    <li>
+        <p><strong>Arbeitspunkt:</strong> Schnittpunkt der Arbeitsgeraden mit einer Kennlinie.</p>
+    </li>
+    <li>
+        <p><strong>Spannungsaufteilung:</strong> <strong>Ub = UCE + URC</strong>. Ub ist die Betriebsspannung, UCE die Spannung am Transistor, URC die Spannung am Kollektorwiderstand, alle in V.</p>
+    </li>
+</ul>
+<p>Liegt der Arbeitspunkt <strong>in der Mitte</strong>, kann das Signal nach beiden Seiten schwingen. Ändert sich IB nur wenig, wandert der Arbeitspunkt auf der Geraden, und IC ändert sich stark. Das ist die <strong>Verstärkung</strong>.</p>
+
+<h2>🎯 Den Arbeitspunkt einstellen</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Methode</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Eigenschaft</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Basisvorwiderstand</strong></p></td>
+                <td colspan="1" rowspan="1"><p>einfach, aber der Arbeitspunkt wandert, wenn der Transistor warm wird</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Basisspannungsteiler</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Querstrom Iq viel größer als IB, die Basisspannung bleibt fast konstant</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Emitterwiderstand RE</strong></p></td>
+                <td colspan="1" rowspan="1"><p>stabilisiert den Arbeitspunkt zusätzlich</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Nur mit dem richtigen Arbeitspunkt in der Mitte der Arbeitsgeraden wird das Signal <strong>unverzerrt</strong> verstärkt.</p>
+
+<h2>🔊 Praxisbeispiel: NF-Verstärker</h2>
+<p>NF steht für <strong>Niederfrequenz</strong>, also Signale im Hörbereich.</p>
+<ol>
+    <li>
+        <p><strong>Eingang:</strong> Links kommt das kleine Eingangssignal U1 mit kleiner Amplitude.</p>
+    </li>
+    <li>
+        <p><strong>Arbeitspunkt:</strong> Der Spannungsteiler aus R1, R2 und R3 stellt den Arbeitspunkt ein. Der Kondensator C1 koppelt und lässt nur das Wechselsignal durch.</p>
+    </li>
+    <li>
+        <p><strong>Verstärkung:</strong> Der Transistor BC107 verstärkt. Am Kollektorwiderstand RC = 560 Ω entsteht die große Spannungsänderung.</p>
+    </li>
+    <li>
+        <p><strong>Ausgang:</strong> Das Signal U2 ist viel größer und um <strong>180°</strong> gedreht. Das ist typisch für die <strong>Emitterschaltung</strong>.</p>
+    </li>
+</ol>
+
+<h2>🔍 Tims Relais berechnet</h2>
+<p>Die Relaisspule hat <strong>12 V und 400 Ω</strong>, B = 160, ü = 3, die Steuerspannung ist 5 V.</p>
+<ol>
+    <li>
+        <p><strong>Spulenstrom:</strong> IC = 12 V / 400 Ω = <strong>30 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Basisstrom:</strong> IB = 30 mA / 160 × 3 ≈ <strong>0,56 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Vorwiderstand:</strong> RV = 4,3 V / 0,56 mA ≈ <strong>7,6 kΩ</strong>. Du nimmst den Normwert <strong>6,8 kΩ</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Nicht vergessen:</strong> Parallel zur Relaisspule gehört eine Freilaufdiode.</p>
+    </li>
+</ol>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In Steuerungen schalten Transistoren häufig Relais, Schütze oder Magnetventile. Alle diese Lasten haben eine Spule. Fehlt die Freilaufdiode, entsteht bei jedem Abschalten eine hohe Induktionsspannung, und der Transistor fällt früher oder später aus. Deshalb sitzt die Diode direkt parallel zur Spule, in Sperrrichtung zu +UB, und der Basisvorwiderstand ist mit Übersteuerung berechnet, damit der Transistor voll durchschaltet und kühl bleibt. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Der Transistor leitet ab etwa <strong>UBE = 0,7 V</strong>. Den Vorwiderstand rechnest du mit <strong>Übersteuerung</strong>: IB = ü × IC / B und RV = (UST − UBE) / IB. Voll durchgeschaltet ist UCE sat klein, und der Transistor bleibt kühl. <strong>Spulen brauchen eine Freilaufdiode</strong>. Als Verstärker braucht der Transistor einen <strong>Arbeitspunkt in der Mitte</strong> der Arbeitsgeraden.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Gehe bei Schaltaufgaben immer in dieser Reihenfolge vor: IC aus der Last, IB min = IC / B, IB mit Übersteuerung, dann RV. Beim Basisvorwiderstand nimmst du den <strong>nächstkleineren</strong> Normwert, damit genug Basisstrom fließt. Und denke bei Relais, Schützen und Ventilen an die <strong>Freilaufdiode</strong>, sie wird in Prüfungen gern abgefragt.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Lampe 12 V, 1,2 W, B ≥ 160, ü = 3: Wie groß ist der Basisstrom?</summary>
+    <div data-type="detailsContent">
+        <p>✅ IC = 1,2 W / 12 V = 100 mA. IB min = 100 mA / 160 = 0,625 mA. Mit Übersteuerung IB = 3 × 0,625 mA = 1,875 mA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie groß ist RV bei UST = 5 V und IB = 1,875 mA, und welchen Normwert wählst du?</summary>
+    <div data-type="detailsContent">
+        <p>✅ RV = (5 V − 0,7 V) / 1,875 mA ≈ 2,29 kΩ. Du wählst den nächstkleineren Normwert 2,2 kΩ.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Warum wird ein voll durchgeschalteter Transistor kaum warm?</summary>
+    <div data-type="detailsContent">
+        <p>✅ UCE sat ist nur etwa 0,2 V. Die Verlustleistung P = UCE × IC = 0,2 V × 0,1 A = 20 mW ist sehr klein. Gesperrt fließt praktisch kein Strom.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Wozu dient die Freilaufdiode, und wo wird sie angeschlossen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Sie schützt den Transistor vor der hohen Induktionsspannung beim Abschalten einer Spule. Sie liegt direkt parallel zur Spule, in Sperrrichtung zu +UB.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Warum ist ein Basisspannungsteiler stabiler als ein einfacher Basisvorwiderstand?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Sein Querstrom Iq ist viel größer als IB. Dadurch bleibt die Basisspannung fast konstant, und der Arbeitspunkt wandert bei Erwärmung kaum.</p>
+    </div>
+</details>
+<p></p>

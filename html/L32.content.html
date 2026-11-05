@@ -1,0 +1,279 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Warum die Digitaltechnik mit <strong>zwei Ziffern</strong> auskommt.</p>
+    </li>
+    <li>
+        <p>Welche <strong>Stellenwerte</strong> eine Dualzahl hat und was <strong>Bit</strong> und <strong>Byte</strong> bedeuten.</p>
+    </li>
+    <li>
+        <p>Wie du eine <strong>Dualzahl in eine Dezimalzahl</strong> umrechnest.</p>
+    </li>
+    <li>
+        <p>Wie du mit dem <strong>Divisionsrestverfahren</strong> eine Dezimalzahl in eine Dualzahl umrechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH steht Mia vor einer <strong>Übungssteuerung</strong>. Sie ist im ersten Ausbildungsjahr. An der Steuerung sitzen <strong>8 kleine Lampen</strong>, manche leuchten, manche nicht. Ausbilderin Frau Schneider sagt: Die Lampen zeigen eine Zahl, und zwar im <strong>Dualsystem</strong>. Welche Zahl ist das? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔢 Zwei Ziffern reichen</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Zahlensystem</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ziffern</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einsatz</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Zehnersystem (Dezimalsystem)</strong></p></td>
+                <td colspan="1" rowspan="1"><p>0 bis 9</p></td>
+                <td colspan="1" rowspan="1"><p>Rechnen im Alltag</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Dualsystem (Binärsystem)</strong></p></td>
+                <td colspan="1" rowspan="1"><p>nur 0 und 1</p></td>
+                <td colspan="1" rowspan="1"><p>Computer und Steuerungen</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Der Grund: Ein <strong>digitales Signal</strong> hat nur <strong>zwei Zustände</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Spannung liegt an:</strong> Signal <strong>1</strong></p>
+    </li>
+    <li>
+        <p><strong>Keine Spannung:</strong> Signal <strong>0</strong></p>
+    </li>
+</ul>
+<p>Eine Stelle einer Dualzahl heißt <strong>Bit</strong>. <strong>8 Bit sind 1 Byte</strong>, so wie die 8 Lampen an Mias Steuerung.</p>
+
+<h2>📊 Die Stellenwerte</h2>
+<p>Wie viel eine 1 wert ist, hängt von ihrer <strong>Stelle</strong> ab. Der Stellenwert ist <strong>2ⁿ</strong>. n ist die Position der Stelle, <strong>von rechts gezählt und mit 0 beginnend</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Stelle</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">8.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">7.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">6.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">5.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">4.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">3.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">2.</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">1.</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Stellenwert</strong></p></td>
+                <td colspan="1" rowspan="1"><p>2⁷</p></td>
+                <td colspan="1" rowspan="1"><p>2⁶</p></td>
+                <td colspan="1" rowspan="1"><p>2⁵</p></td>
+                <td colspan="1" rowspan="1"><p>2⁴</p></td>
+                <td colspan="1" rowspan="1"><p>2³</p></td>
+                <td colspan="1" rowspan="1"><p>2²</p></td>
+                <td colspan="1" rowspan="1"><p>2¹</p></td>
+                <td colspan="1" rowspan="1"><p>2⁰</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Dezimalwert</strong></p></td>
+                <td colspan="1" rowspan="1"><p>128</p></td>
+                <td colspan="1" rowspan="1"><p>64</p></td>
+                <td colspan="1" rowspan="1"><p>32</p></td>
+                <td colspan="1" rowspan="1"><p>16</p></td>
+                <td colspan="1" rowspan="1"><p>8</p></td>
+                <td colspan="1" rowspan="1"><p>4</p></td>
+                <td colspan="1" rowspan="1"><p>2</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul>
+    <li>
+        <p>Ganz rechts steht <strong>2⁰ = 1</strong>, daneben 2¹ = 2, dann 2² = 4.</p>
+    </li>
+    <li>
+        <p><strong>Jede Stelle nach links verdoppelt den Wert:</strong> 8, 16, 32, 64, 128. Im Zehnersystem ist es ähnlich, dort ist jede Stelle zehnmal so viel wert.</p>
+    </li>
+    <li>
+        <p>Sind alle 8 Bit 1, ergibt das höchstens 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = <strong>255</strong>.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<h2>🧮 Dualzahl in Dezimalzahl</h2>
+<p>Beispiel: die Dualzahl <strong>110100</strong>. Am besten nutzt du eine kleine Tabelle.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Dualzahl</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">1</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">1</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">0</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">1</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">0</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">0</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Stellenwert</strong></p></td>
+                <td colspan="1" rowspan="1"><p>2⁵ = 32</p></td>
+                <td colspan="1" rowspan="1"><p>2⁴ = 16</p></td>
+                <td colspan="1" rowspan="1"><p>2³ = 8</p></td>
+                <td colspan="1" rowspan="1"><p>2² = 4</p></td>
+                <td colspan="1" rowspan="1"><p>2¹ = 2</p></td>
+                <td colspan="1" rowspan="1"><p>2⁰ = 1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>zählt</strong></p></td>
+                <td colspan="1" rowspan="1"><p><strong>32</strong></p></td>
+                <td colspan="1" rowspan="1"><p><strong>16</strong></p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p><strong>4</strong></p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ol>
+    <li>
+        <p><strong>Stellenwerte notieren:</strong> Unter jede Stelle schreibst du ihren Stellenwert, von rechts: 1, 2, 4, 8, 16, 32.</p>
+    </li>
+    <li>
+        <p><strong>Einsen auswählen:</strong> Nur die Stellen mit einer 1 zählen, hier 32, 16 und 4. Die Nullen fallen weg.</p>
+    </li>
+    <li>
+        <p><strong>Addieren:</strong> 32 + 16 + 4 = <strong>52</strong></p>
+    </li>
+</ol>
+<p>Genau diese Zahl zeigen auch Mias Lampen: <strong>00110100</strong> ist ebenfalls 52. Die <strong>Nullen vorne zählen nichts</strong>.</p>
+
+<h2>⚠️ Typischer Fehler: falsche Richtung</h2>
+<ul>
+    <li>
+        <p><strong>Falsch:</strong> Wer die Stellenwerte links mit 1 beginnt, rechnet bei 110100: 1 + 2 + 8 = 11. Das ist falsch.</p>
+    </li>
+    <li>
+        <p><strong>Richtig:</strong> Ganz rechts steht 2⁰ = 1. Dann ergibt 110100: 32 + 16 + 4 = <strong>52</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Stellenwerte zählst du immer <strong>von rechts nach links</strong>, so wie die Einer im Zehnersystem rechts stehen.</p>
+</blockquote>
+
+<h2>🔁 Dezimalzahl in Dualzahl</h2>
+<p>Für den umgekehrten Weg gibt es das <strong>Divisionsrestverfahren</strong>: Du teilst immer wieder durch 2 und schreibst den Rest auf, bis 0 herauskommt.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Rechnung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ergebnis</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Rest</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>52 : 2</p></td>
+                <td colspan="1" rowspan="1"><p>26</p></td>
+                <td colspan="1" rowspan="1"><p><strong>0</strong></p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>26 : 2</p></td>
+                <td colspan="1" rowspan="1"><p>13</p></td>
+                <td colspan="1" rowspan="1"><p><strong>0</strong></p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>13 : 2</p></td>
+                <td colspan="1" rowspan="1"><p>6</p></td>
+                <td colspan="1" rowspan="1"><p><strong>1</strong></p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>6 : 2</p></td>
+                <td colspan="1" rowspan="1"><p>3</p></td>
+                <td colspan="1" rowspan="1"><p><strong>0</strong></p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>3 : 2</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p><strong>1</strong></p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>1 : 2</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p><strong>1</strong></p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Du liest die Reste <strong>von unten nach oben</strong>: <strong>110100</strong>. Das ist wieder die 52.</p>
+<p><strong>Probe:</strong> 32 + 16 + 4 = 52. Stimmt.</p>
+
+{{IMG3}}
+
+<h2>🔍 Zwei Umrechnungen zum Üben</h2>
+<ul>
+    <li>
+        <p><strong>Frage 1: Welche Dezimalzahl ist 1011?</strong> Die Einsen stehen bei 8, 2 und 1. Also 8 + 2 + 1 = <strong>11</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Frage 2: Wie schreibst du 13 als Dualzahl?</strong> 13 : 2 = 6 Rest 1, 6 : 2 = 3 Rest 0, 3 : 2 = 1 Rest 1, 1 : 2 = 0 Rest 1. Von unten gelesen: <strong>1101</strong>, denn 8 + 4 + 1 = 13.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Ins Dezimalsystem zählen nur die Einsen, zurück liest du die Reste von unten.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In Steuerungen werden Zustände von Ein- und Ausgängen oft als Byte angezeigt, zum Beispiel über 8 Leuchtdioden. Jede Leuchte steht für ein Bit. Leuchten an Mias Steuerung die Lampen mit den Stellenwerten 32, 16 und 4, dann steht dort die Zahl 52. Wer die Stellenwerte sicher kennt, kann solche Anzeigen direkt ablesen und Fehler schneller finden. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Das Dualsystem kennt nur <strong>0 und 1</strong>, passend zu den zwei Zuständen eines Signals: Spannung an ist 1, keine Spannung ist 0. Eine Stelle ist ein <strong>Bit</strong>, <strong>8 Bit sind 1 Byte</strong>. Jede Stelle nach links ist <strong>doppelt</strong> so viel wert: 1, 2, 4, 8, 16 und so weiter. Ins Dezimalsystem addierst du die Stellenwerte der Einsen. Zurück teilst du durch 2 und liest die Reste von unten.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Schreib dir in der Prüfung zuerst die Stellenwerte 128, 64, 32, 16, 8, 4, 2, 1 auf. Dann kannst du jede 8-Bit-Zahl schnell umrechnen. Mach bei der Umrechnung ins Dualsystem immer die <strong>Probe</strong>, indem du zurückrechnest. Und achte darauf, dass du die Reste von <strong>unten nach oben</strong> liest.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Warum arbeiten Steuerungen im Dualsystem?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ein digitales Signal hat nur zwei Zustände: Spannung liegt an (1) oder keine Spannung (0). Dafür reichen die Ziffern 0 und 1.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie viele Bit hat ein Byte, und welche Zahl ist mit 8 Bit höchstens darstellbar?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 1 Byte hat 8 Bit. Sind alle 8 Bit 1, ergibt das 255.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Welche Dezimalzahl ist 110100?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 32 + 16 + 4 = 52.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Was ist der typische Fehler beim Umrechnen von 110100, und was kommt dabei heraus?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die Stellenwerte werden links mit 1 begonnen. Dann ergibt sich falsch 1 + 2 + 8 = 11 statt 52.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Wie schreibst du 13 als Dualzahl?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 1101. Divisionsrestverfahren: Reste 1, 0, 1, 1 von unten nach oben gelesen. Probe: 8 + 4 + 1 = 13.</p>
+    </div>
+</details>
+<p></p>

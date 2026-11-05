@@ -1,0 +1,289 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was ein <strong>Halbleiter</strong> ist und was <strong>Eigenleitung</strong> bedeutet.</p>
+    </li>
+    <li>
+        <p>Wie <strong>Dotierung</strong> n-Leiter und p-Leiter erzeugt und was am <strong>PN-Übergang</strong> passiert.</p>
+    </li>
+    <li>
+        <p>Wie sich <strong>Heißleiter (NTC)</strong> und <strong>Kaltleiter (PTC)</strong> verhalten und wo du sie einsetzt.</p>
+    </li>
+    <li>
+        <p>Wie ein <strong>Varistor (VDR)</strong> Geräte vor Überspannung schützt.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH prüfen Mia und Tim Temperaturfühler. Bei <strong>25 °C</strong> zeigt das Multimeter rund <strong>1 kΩ</strong>. Im warmen Wasser bei <strong>60 °C</strong> sind es nur noch <strong>0,5 kΩ</strong>. Mia wundert sich: Bei Kupfer steigt der Widerstand doch mit der Wärme. Ausbilderin Frau Schneider erklärt: Der Fühler besteht aus einem Halbleiter. Warum verhält er sich so anders als ein Kupferdraht? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>⚡ Was ist ein Halbleiter?</h2>
+<p>Werkstoffe lassen sich nach ihrer Leitfähigkeit in drei Gruppen einteilen:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Gruppe</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiele</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Freie Ladungsträger</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leiter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Metalle wie Kupfer</p></td>
+                <td colspan="1" rowspan="1"><p>sehr viele freie Elektronen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Halbleiter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Silizium, Germanium</p></td>
+                <td colspan="1" rowspan="1"><p>dazwischen, abhängig von der Temperatur</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Isolator</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Keramik, Kunststoff</p></td>
+                <td colspan="1" rowspan="1"><p>fast keine freien Ladungsträger</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Der wichtigste Halbleiter ist <strong>Silizium</strong>. Silizium hat <strong>4 Valenzelektronen</strong>, das sind die Elektronen auf der äußeren Schale. Mit ihnen bindet sich jedes Atom fest an <strong>4 Nachbarn</strong>. So entsteht ein regelmäßiges <strong>Kristallgitter</strong>.</p>
+
+<h2>🔥 Eigenleitung: Warum Wärme den Widerstand senkt</h2>
+<p>Im Siliziumgitter sitzen zwischen zwei Atomen immer <strong>2 Valenzelektronen</strong>. Sie sind fest gebunden. Deshalb leitet reines Silizium im kalten Zustand <strong>fast nicht</strong>.</p>
+<ul>
+    <li>
+        <p>Durch <strong>Wärme</strong> bricht eine Bindung auf. Ein Elektron wird frei.</p>
+    </li>
+    <li>
+        <p>Zurück bleibt eine Lücke, das <strong>Loch</strong>.</p>
+    </li>
+    <li>
+        <p>Je wärmer der Kristall, desto mehr <strong>freie Elektronen und Löcher</strong> entstehen. Das ist die <strong>Eigenleitung</strong>. Der Widerstand <strong>sinkt</strong>.</p>
+    </li>
+</ul>
+<p><strong>Kupfer ist anders:</strong> Es hat schon genug freie Elektronen. Bei Wärme schwingen seine Atome stärker und bremsen die Elektronen. Der Widerstand <strong>steigt</strong>. Damit ist Mias Frage beantwortet.</p>
+
+<h2>🧪 Dotierung: n-Leiter und p-Leiter</h2>
+<p>Für Bauteile wird Silizium <strong>dotiert</strong>. Dotieren heißt: Man baut gezielt <strong>wenige Fremdatome</strong> in den Kristall ein.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Fremdatom</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Valenzelektronen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Wirkung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ergebnis</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Phosphor (P)</strong></p></td>
+                <td colspan="1" rowspan="1"><p>5</p></td>
+                <td colspan="1" rowspan="1"><p>4 binden sich, das 5. ist frei beweglich</p></td>
+                <td colspan="1" rowspan="1"><p><strong>n-Leiter</strong>, Elektronenüberschuss</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Bor (B)</strong></p></td>
+                <td colspan="1" rowspan="1"><p>3</p></td>
+                <td colspan="1" rowspan="1"><p>eine Bindung bleibt offen, es entsteht ein Loch</p></td>
+                <td colspan="1" rowspan="1"><p><strong>p-Leiter</strong>, Löcher</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Die überwiegenden Ladungsträger heißen <strong>Majoritätsträger</strong>: im n-Leiter die <strong>Elektronen</strong>, im p-Leiter die <strong>Löcher</strong>.</p>
+
+<h2>🔗 Der PN-Übergang</h2>
+<p>Was passiert, wenn eine p-Zone und eine n-Zone aneinandergrenzen?</p>
+<ol>
+    <li>
+        <p>An der Grenze wandern freie <strong>Elektronen aus der n-Zone</strong> hinüber und füllen in der p-Zone <strong>Löcher</strong>.</p>
+    </li>
+    <li>
+        <p>So entsteht eine Schicht <strong>ohne freie Ladungsträger</strong>. Übrig bleiben <strong>ortsfeste Ionen</strong>: auf der p-Seite negativ, auf der n-Seite positiv.</p>
+    </li>
+    <li>
+        <p>Diese <strong>Raumladungszone</strong> heißt auch <strong>Sperrschicht</strong>.</p>
+    </li>
+    <li>
+        <p>Die Ionen bauen eine Spannung auf, die <strong>Diffusionsspannung</strong>. Bei Silizium sind es rund <strong>0,7 V</strong>.</p>
+    </li>
+</ol>
+<p>Dieser PN-Übergang ist die <strong>Grundlage für Diode und Transistor</strong>.</p>
+
+{{IMG2}}
+
+<h2>🌡️ Halbleiterwiderstände im Überblick</h2>
+<p>Halbleiterwiderstände bestehen meist aus <strong>Metalloxiden oder Halbleiterkeramik</strong>. Ihre Kennlinie ist keine Gerade, deshalb heißen sie <strong>nichtlineare Widerstände</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bauteil</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Kurzzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Verhalten</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Heißleiter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>NTC</p></td>
+                <td colspan="1" rowspan="1"><p>wärmer: R sinkt, wird niederohmiger</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Kaltleiter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>PTC</p></td>
+                <td colspan="1" rowspan="1"><p>wärmer: R steigt, wird hochohmiger</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Varistor</strong></p></td>
+                <td colspan="1" rowspan="1"><p>VDR</p></td>
+                <td colspan="1" rowspan="1"><p>Spannung höher: R sinkt, wird niederohmig</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>📉 Der Heißleiter (NTC)</h2>
+<p>NTC heißt <strong>negativer Temperaturkoeffizient</strong>. In der Kennlinie steht waagrecht die Temperatur ϑ (Theta), senkrecht der Widerstand R.</p>
+<ul>
+    <li>
+        <p><strong>Schaltzeichen:</strong> Die Pfeile zeigen <strong>gegeneinander</strong>. Steigt die Temperatur, sinkt der Widerstand.</p>
+    </li>
+    <li>
+        <p><strong>R25:</strong> Bei 25 °C hat der Heißleiter aus Mias Messung rund <strong>1 kΩ</strong>. Dieser Wert heißt R25.</p>
+    </li>
+    <li>
+        <p><strong>Bei 60 °C</strong> sind es noch rund <strong>0,5 kΩ</strong>, genau wie bei Mias Messung.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h3>Heißleiter im Einsatz</h3>
+<ul>
+    <li>
+        <p><strong>Fremderwärmte Heißleiter</strong> nehmen die Temperatur der Umgebung an. Sie sind <strong>Temperaturfühler</strong>, etwa in Heizungen oder Klimaanlagen.</p>
+    </li>
+    <li>
+        <p><strong>Eigenerwärmte Heißleiter</strong> werden durch ihren eigenen Strom warm. Sie <strong>begrenzen den Anlaufstrom</strong>, etwa bei Netzteilen. Beim Einschalten ist der Heißleiter kalt und hochohmig. Dann erwärmt er sich und wird niederohmig, das Gerät bekommt fast die volle Spannung.</p>
+    </li>
+</ul>
+
+<h2>📈 Der Kaltleiter (PTC)</h2>
+<p>PTC heißt <strong>positiver Temperaturkoeffizient</strong>. Im Schaltzeichen zeigen beide Pfeile in <strong>dieselbe Richtung</strong>: Steigt die Temperatur, steigt der Widerstand.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Kennwert</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Temperatur</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Widerstand</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Anfangstemperatur ϑA</strong></p></td>
+                <td colspan="1" rowspan="1"><p>70 °C</p></td>
+                <td colspan="1" rowspan="1"><p>bis hierhin klein, unter 100 Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Bemessungstemperatur ϑN</strong></p></td>
+                <td colspan="1" rowspan="1"><p>120 °C</p></td>
+                <td colspan="1" rowspan="1"><p>ab hier steiler Anstieg</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Endtemperatur ϑE</strong></p></td>
+                <td colspan="1" rowspan="1"><p>160 °C</p></td>
+                <td colspan="1" rowspan="1"><p>rund 1 MΩ</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>Kaltleiter im Einsatz</h3>
+<ul>
+    <li>
+        <p><strong>Fremderwärmt, Motorschutz:</strong> Der Kaltleiter sitzt als Fühler in der Motorwicklung. Wird sie zu heiß, schaltet ein <strong>Auslösegerät</strong> den Motor ab.</p>
+    </li>
+    <li>
+        <p><strong>Eigenerwärmt, Überlastschutz:</strong> Bei zu viel Strom wird der Kaltleiter heiß und hochohmig. Der Strom wird begrenzt.</p>
+    </li>
+    <li>
+        <p><strong>Eigenerwärmt, Füllstand:</strong> In der Flüssigkeit wird der Kaltleiter gekühlt und bleibt niederohmig. An der Luft wird er heiß und hochohmig.</p>
+    </li>
+</ul>
+
+<h2>🛡️ Der Varistor (VDR)</h2>
+<p>Der Varistor ist ein <strong>spannungsabhängiger Widerstand</strong>. Das zeigt das <strong>U im Schaltzeichen</strong>.</p>
+<ul>
+    <li>
+        <p>Bei kleiner Spannung ist sein Widerstand riesig: bei <strong>50 V mehrere MΩ</strong>, es fließt fast kein Strom.</p>
+    </li>
+    <li>
+        <p>Steigt die Spannung, fällt der Widerstand stark: bei <strong>160 V auf rund 1 Ω</strong>. Er leitet und begrenzt die Spannungsspitze.</p>
+    </li>
+    <li>
+        <p><strong>K50</strong> in der Typbezeichnung, etwa S14K50, heißt: höchstens <strong>50 V Betriebsspannung</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Du schaltest den Varistor <strong>parallel zum Gerät</strong>. So schützt er es vor Überspannung, etwa durch Blitz.</p>
+</blockquote>
+
+<h2>🔍 Heißleiter oder Kaltleiter?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Mias Fühler wird im warmen Wasser niederohmiger.</strong> Das ist ein <strong>Heißleiter (NTC)</strong>. Wärme erzeugt mehr freie Ladungsträger, R sinkt.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Ein Fühler in einer Motorwicklung wird bei Überhitzung plötzlich hochohmig.</strong> Das ist ein <strong>Kaltleiter (PTC)</strong>. Sein Widerstand springt hoch, und er meldet die Überhitzung, damit der Motor abgeschaltet wird.</p>
+    </li>
+</ul>
+<p><strong>Merkhilfe:</strong> Der Heißleiter leitet heiß besser, der Kaltleiter leitet kalt besser.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In einem Schaltnetzteil laden sich beim Einschalten die Kondensatoren schlagartig auf, der Einschaltstrom wäre sehr hoch. Ein eigenerwärmter Heißleiter in der Zuleitung ist zunächst kalt und hochohmig und bremst diesen Stromstoß. Nach kurzer Zeit hat er sich durch den eigenen Strom erwärmt, wird niederohmig, und das Gerät bekommt fast die volle Spannung. Ein Varistor parallel zum Netzeingang fängt zusätzlich Überspannungsspitzen ab. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Silizium hat <strong>4 Valenzelektronen</strong>. Durch Wärme entsteht <strong>Eigenleitung</strong>, der Widerstand sinkt. <strong>Phosphor</strong> ergibt einen n-Leiter mit Elektronenüberschuss, <strong>Bor</strong> einen p-Leiter mit Löchern. Am <strong>PN-Übergang</strong> entsteht eine Sperrschicht ohne freie Ladungsträger, die Diffusionsspannung beträgt bei Silizium rund 0,7 V. Beim <strong>Heißleiter</strong> sinkt der Widerstand mit der Wärme, beim <strong>Kaltleiter</strong> steigt er. Der <strong>Varistor</strong> wird bei Überspannung niederohmig und schützt Geräte.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Achte auf die Schaltzeichen: Beim <strong>NTC</strong> zeigen die Pfeile gegeneinander, beim <strong>PTC</strong> gleichlaufend, beim <strong>Varistor</strong> steht ein U. Häufig gefragt wird auch, welches Fremdatom welchen Leitungstyp ergibt: 5 Valenzelektronen (Phosphor) ergeben n, 3 Valenzelektronen (Bor) ergeben p. Und denk daran: Der Varistor wird immer <strong>parallel</strong> zum geschützten Gerät geschaltet.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Warum sinkt der Widerstand eines Halbleiters bei Erwärmung, während er bei Kupfer steigt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Im Halbleiter brechen durch Wärme Bindungen auf, es entstehen mehr freie Elektronen und Löcher (Eigenleitung). Kupfer hat schon genug freie Elektronen, bei Wärme schwingen die Atome stärker und bremsen die Elektronen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Welcher Leitungstyp entsteht, wenn Silizium mit Bor dotiert wird?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ein p-Leiter. Bor hat nur 3 Valenzelektronen, eine Bindung bleibt offen und es entsteht ein Loch. Die Majoritätsträger sind Löcher.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Was ist die Sperrschicht, und wie groß ist die Diffusionsspannung bei Silizium?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die Sperrschicht ist die Raumladungszone am PN-Übergang ohne freie Ladungsträger, nur mit ortsfesten Ionen. Die Diffusionsspannung beträgt bei Silizium rund 0,7 V.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Wie kann ein Kaltleiter einen Füllstand melden?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Er wird eigenerwärmt betrieben. In der Flüssigkeit wird er gekühlt und bleibt niederohmig, an der Luft wird er heiß und hochohmig.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was bedeutet K50 bei einem Varistor, und wie wird er angeschlossen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ K50 heißt höchstens 50 V Betriebsspannung. Der Varistor wird parallel zum Gerät geschaltet und schützt es vor Überspannung.</p>
+    </div>
+</details>
+<p></p>

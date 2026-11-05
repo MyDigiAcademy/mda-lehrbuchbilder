@@ -1,0 +1,266 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie eine <strong>Diode</strong> aufgebaut ist und wie du <strong>Anode, Kathode</strong> und Schaltzeichen erkennst.</p>
+    </li>
+    <li>
+        <p>Was <strong>Durchlassrichtung</strong>, <strong>Sperrrichtung</strong> und die <strong>Diodenkennlinie</strong> bedeuten.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>Vorwiderstand</strong> mit <strong>RV = (U − UF) / IF</strong> berechnest und wie Dioden <strong>gleichrichten</strong>.</p>
+    </li>
+    <li>
+        <p>Wie die <strong>Z-Diode</strong> Spannung stabilisiert und warum Dioden <strong>gekühlt</strong> werden.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH nehmen Mia und Tim die Kennlinie einer <strong>Siliziumdiode</strong> auf. Das Netzgerät liefert <strong>12 V</strong> Gleichspannung. Die Diode soll höchstens <strong>20 mA</strong> führen. Tim fragt sich, welchen Vorwiderstand er braucht. Mia steckt die Diode andersherum ein, und es fließt kein Strom. Ausbilderin Frau Schneider fragt: Warum leitet die Diode nur in eine Richtung? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔌 Aufbau, Anschlüsse und Schaltzeichen</h2>
+<p>Eine Diode besteht aus einem <strong>PN-Übergang</strong>.</p>
+<ul>
+    <li>
+        <p>Der Anschluss an der <strong>p-Zone</strong> heißt <strong>Anode (A)</strong>, der an der <strong>n-Zone</strong> heißt <strong>Kathode (K)</strong>.</p>
+    </li>
+    <li>
+        <p>Im <strong>Schaltzeichen</strong> zeigt das Dreieck in Durchlassrichtung. Der Strich ist die Kathode.</p>
+    </li>
+    <li>
+        <p>Am Bauteil erkennst du die Kathode am <strong>Ring</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Die Diode wirkt wie ein <strong>Ventil</strong>: Strom fließt nur von der Anode zur Kathode.</p>
+</blockquote>
+
+<h2>➡️ Durchlassrichtung</h2>
+<p>In der Messschaltung liegt <strong>Plus über den Vorwiderstand an der Anode</strong>, Minus an der Kathode.</p>
+<ul>
+    <li>
+        <p>Der <strong>Vorwiderstand RV</strong> begrenzt den Strom. Das Amperemeter misst den Strom, das Voltmeter die Spannung an der Diode.</p>
+    </li>
+    <li>
+        <p>Die Diode ist in Durchlassrichtung geschaltet. Es fließt der <strong>Durchlassstrom IF</strong>, an der Diode liegt die <strong>Durchlassspannung UF</strong>.</p>
+    </li>
+</ul>
+
+<h2>⛔ Sperrrichtung</h2>
+<p>Jetzt ist die Diode umgedreht: <strong>Plus liegt an der Kathode</strong>, Minus an der Anode.</p>
+<ul>
+    <li>
+        <p>Die Diode <strong>sperrt</strong>. Es fließt nur ein winziger <strong>Sperrstrom IR</strong>, an der Diode liegt die <strong>Sperrspannung UR</strong>.</p>
+    </li>
+    <li>
+        <p>Die äußere Spannung zieht die Ladungsträger von der Grenze weg, die <strong>Sperrschicht wird breiter</strong>.</p>
+    </li>
+    <li>
+        <p>Das nutzt man als <strong>Verpolungsschutz</strong>: Eine Diode in Reihe sperrt, wenn jemand Plus und Minus vertauscht.</p>
+    </li>
+</ul>
+
+<h2>📈 Die Kennlinie der Diode</h2>
+<p>Die Kennlinie zeigt den Strom in Abhängigkeit von der Spannung an der Diode.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bereich</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Lage</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Verhalten</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Durchlassbereich</strong></p></td>
+                <td colspan="1" rowspan="1"><p>rechts oben</p></td>
+                <td colspan="1" rowspan="1"><p>bis etwa 0,7 V fast kein Strom, dann steiler Anstieg</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Schleusenspannung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Knick der Kennlinie</p></td>
+                <td colspan="1" rowspan="1"><p>Silizium rund 0,7 V, Germanium rund 0,3 V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Sperrbereich</strong></p></td>
+                <td colspan="1" rowspan="1"><p>links unten</p></td>
+                <td colspan="1" rowspan="1"><p>fast kein Strom</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Durchbruch</strong></p></td>
+                <td colspan="1" rowspan="1"><p>bei zu großer Sperrspannung</p></td>
+                <td colspan="1" rowspan="1"><p>Strom steigt stark, eine normale Diode wird zerstört</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG2}}
+
+<h2>🧮 Den Vorwiderstand berechnen</h2>
+<p>Am Vorwiderstand liegt die Spannung, die die Diode <strong>nicht braucht</strong>. Deshalb gilt:</p>
+<ul>
+    <li>
+        <p><strong>RV = (U − UF) / IF</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>RV</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Vorwiderstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannung der Quelle (Netzgerät)</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>UF</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Durchlassspannung an der Diode</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IF</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Durchlassstrom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Tim rechnet mit U = 12 V, UF = 0,7 V und IF = 20 mA = 0,02 A:</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> RV = (12 V − 0,7 V) / 0,02 A</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> RV = 11,3 V / 0,02 A = <strong>565 Ω</strong></p>
+    </li>
+    <li>
+        <p><strong>Normwert:</strong> Tim nimmt den nächstgrößeren Wert aus der Reihe E12, also <strong>680 Ω</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Kontrolle:</strong> IF = 11,3 V / 680 Ω ≈ <strong>16,6 mA</strong>, also weniger als 20 mA.</p>
+    </li>
+</ol>
+<p>Den nächstgrößeren Normwert wählst du, damit der höchstzulässige Strom sicher nicht überschritten wird.</p>
+
+<h2>〰️ Gleichrichten</h2>
+<p>Eine wichtige Aufgabe der Diode ist das <strong>Gleichrichten</strong> von Wechselspannung.</p>
+<ul>
+    <li>
+        <p><strong>Einweggleichrichter:</strong> Eine Diode lässt nur die <strong>positiven Halbwellen</strong> durch, die negativen sperrt sie.</p>
+    </li>
+    <li>
+        <p><strong>Brückenschaltung B2:</strong> Vier Dioden. In jeder Halbwelle leiten <strong>zwei Dioden</strong>, der Strom fließt immer in derselben Richtung durch den Lastwiderstand RL. So werden <strong>beide Halbwellen</strong> genutzt.</p>
+    </li>
+</ul>
+<p>In beiden Fällen entsteht eine <strong>pulsierende Gleichspannung</strong>.</p>
+
+{{IMG3}}
+
+<h2>⚡ Die Z-Diode</h2>
+<p>Eine besondere Diode ist die <strong>Z-Diode</strong>. Du erkennst sie im Schaltzeichen am <strong>geknickten Strich</strong>.</p>
+<ul>
+    <li>
+        <p>Sie wird absichtlich in <strong>Sperrrichtung</strong> betrieben, mit Plus an der Kathode.</p>
+    </li>
+    <li>
+        <p>Erreicht die Spannung die <strong>Z-Spannung UZ</strong>, leitet sie rückwärts. Typisch sind <strong>5,6 V</strong> oder <strong>9,1 V</strong>.</p>
+    </li>
+    <li>
+        <p>Damit sie nicht überlastet wird, sitzt immer ein <strong>Vorwiderstand</strong> davor. Er begrenzt den Strom.</p>
+    </li>
+    <li>
+        <p>Am Verbraucher RL bleibt die Spannung so <strong>fast konstant</strong>, auch wenn die Eingangsspannung schwankt.</p>
+    </li>
+</ul>
+
+<h2>❄️ Warum Dioden gekühlt werden</h2>
+<p>Fließt Strom durch die Diode, entsteht Wärme. Die Verlustleistung berechnest du mit:</p>
+<ul>
+    <li>
+        <p><strong>P = UF × IF</strong> (P in W, UF in V, IF in A)</p>
+    </li>
+</ul>
+<p>Bei <strong>3 A</strong> steigt UF auf rund <strong>1 V</strong>. Dann gilt P = 1 V × 3 A = <strong>3 W</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Grenztemperatur:</strong> Silizium rund <strong>150 °C</strong>, Germanium rund <strong>75 °C</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Kühlkörper:</strong> Die Diode sitzt auf einem Kühlkörper. <strong>Wärmeleitpaste</strong> verbessert den Übergang, eine <strong>Isolierscheibe</strong> trennt elektrisch.</p>
+    </li>
+    <li>
+        <p><strong>Thermischer Widerstand Rth</strong> in K/W: Er beschreibt, wie gut die Wärme abfließt. Je kleiner er ist, desto besser die Kühlung.</p>
+    </li>
+</ul>
+
+<h2>🔍 Welcher Vorwiderstand?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Mia nimmt 9 V statt 12 V, die Diode soll wieder 20 mA führen.</strong> RV = (9 V − 0,7 V) / 0,02 A = 8,3 V / 0,02 A = <strong>415 Ω</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Eine Z-Diode mit 5,6 V hängt über einen Vorwiderstand an 12 V, durch ihn fließen 20 mA.</strong> RV = (12 V − 5,6 V) / 0,02 A = 6,4 V / 0,02 A = <strong>320 Ω</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Am Vorwiderstand liegt der Rest der Spannung, also die Spannung, die die Diode nicht braucht.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Viele Geräte mit Gleichspannungseingang haben eine Diode in Reihe als Verpolungsschutz. Wird das Netzteil falsch herum angeschlossen, sperrt die Diode, und die Elektronik bleibt unbeschädigt. Im Netzteil selbst sorgt eine Brückenschaltung B2 dafür, dass beide Halbwellen der Wechselspannung genutzt werden, und eine Z-Diode mit Vorwiderstand hält die Spannung für eine empfindliche Baugruppe fast konstant. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In <strong>Durchlassrichtung</strong> liegt Plus an der Anode, Silizium leitet ab rund <strong>0,7 V</strong>. In <strong>Sperrrichtung</strong> fließt fast kein Strom, das schützt vor Verpolung. Den Vorwiderstand berechnest du mit <strong>RV = (U − UF) / IF</strong>. Der Einweggleichrichter nutzt eine Halbwelle, die Brücke B2 beide. Die <strong>Z-Diode</strong> stabilisiert die Spannung, und ein <strong>Kühlkörper</strong> führt die Wärme ab.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne Milliampere vor dem Einsetzen in Ampere um: 20 mA = 0,02 A. Ziehe immer zuerst die Spannung an der Diode ab, bei der normalen Siliziumdiode UF = 0,7 V, bei der Z-Diode UZ. Wähle danach den <strong>nächstgrößeren Normwert</strong> und kontrolliere, dass der Strom unter dem Höchstwert bleibt.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Woran erkennst du die Kathode einer Diode im Schaltzeichen und am Bauteil?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Im Schaltzeichen ist die Kathode der Strich, auf den das Dreieck zeigt. Am Bauteil ist sie mit einem Ring markiert.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie groß ist die Schleusenspannung bei Silizium und bei Germanium?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei Silizium rund 0,7 V, bei Germanium rund 0,3 V.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> U = 12 V, UF = 0,7 V, IF = 20 mA: Wie groß ist RV, und welchen Normwert wählst du?</summary>
+    <div data-type="detailsContent">
+        <p>✅ RV = 11,3 V / 0,02 A = 565 Ω. Aus der Reihe E12 nimmst du den nächstgrößeren Wert 680 Ω. Dann fließen rund 16,6 mA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Was ist der Unterschied zwischen Einweggleichrichter und Brückenschaltung B2?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Einweggleichrichter nutzt mit einer Diode nur die positiven Halbwellen. Die Brücke B2 nutzt mit vier Dioden beide Halbwellen. Beide liefern eine pulsierende Gleichspannung.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Wie wird eine Z-Diode betrieben, und wozu braucht sie einen Vorwiderstand?</summary>
+    <div data-type="detailsContent">
+        <p>✅ In Sperrrichtung, mit Plus an der Kathode. Ab der Z-Spannung leitet sie rückwärts. Der Vorwiderstand begrenzt den Strom, damit sie nicht überlastet wird.</p>
+    </div>
+</details>
+<p></p>

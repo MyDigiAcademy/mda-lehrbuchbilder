@@ -1,0 +1,289 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie ein <strong>Operationsverstärker (OPV)</strong> aufgebaut ist.</p>
+    </li>
+    <li>
+        <p>Wie du sein <strong>Schaltzeichen</strong> mit invertierendem und nichtinvertierendem Eingang liest.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>invertierenden</strong> und den <strong>nichtinvertierenden Verstärker</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Wo Operationsverstärker <strong>eingesetzt</strong> werden.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH schließt Mia einen <strong>Temperatursensor</strong> an. Er liefert höchstens <strong>0,45 V</strong>. Der Eingang der Steuerung arbeitet aber mit bis zu <strong>5 V</strong>. Ausbilderin Frau Schneider zeigt ihr einen kleinen Chip, einen <strong>Operationsverstärker</strong>. Wie macht er aus 0,45 V fast 5 V? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔲 Was ist ein Operationsverstärker?</h2>
+<p>Ein Operationsverstärker, kurz <strong>OPV</strong>, ist ein elektronischer Verstärker.</p>
+<ul>
+    <li>
+        <p>Er hat <strong>2 Eingänge</strong> und <strong>1 Ausgang</strong>.</p>
+    </li>
+    <li>
+        <p>Meist ist er eine <strong>integrierte Schaltung (IC)</strong>: Alle Bauteile sitzen fertig verdrahtet in einem Gehäuse.</p>
+    </li>
+    <li>
+        <p>Versorgt wird er meist <strong>symmetrisch</strong> mit <strong>+Ub und −Ub</strong>, zum Beispiel <strong>±15 V</strong>.</p>
+    </li>
+</ul>
+
+<h2>⚙️ Drei Stufen im Inneren</h2>
+<ol>
+    <li>
+        <p><strong>Eingänge E1 und E2:</strong> Hier liegen die Eingangsspannungen.</p>
+    </li>
+    <li>
+        <p><strong>Eingangsstufe:</strong> Sie verarbeitet die <strong>Differenzspannung U1D</strong> und gibt das Signal UA weiter.</p>
+    </li>
+    <li>
+        <p><strong>Treiberstufe:</strong> Sie verstärkt das Signal weiter.</p>
+    </li>
+    <li>
+        <p><strong>Endstufe:</strong> Sie liefert die Ausgangsspannung U2 am Ausgang A.</p>
+    </li>
+</ol>
+<p>Dank der Versorgung mit +Ub und −Ub kann U2 <strong>positiv und negativ</strong> werden.</p>
+
+<h2>✏️ Das Schaltzeichen</h2>
+<p>Das Schaltzeichen gibt es einfach und mit eingezeichneter Versorgung.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Anschluss</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Kennzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>E1</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Minus (−)</p></td>
+                <td colspan="1" rowspan="1"><p>invertierender Eingang</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>E2</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Plus (+)</p></td>
+                <td colspan="1" rowspan="1"><p>nichtinvertierender Eingang</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>A</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Ausgang</p></td>
+                <td colspan="1" rowspan="1"><p>U2 gegen 0 V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>+Ub, −Ub</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Versorgung</p></td>
+                <td colspan="1" rowspan="1"><p>aus zwei Spannungsquellen</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Verstärkt wird die <strong>Differenzspannung U1D</strong> zwischen E1 und E2.</p>
+
+{{IMG2}}
+
+<h2>🚀 Sehr hohe Verstärkung</h2>
+<p>Die Differenzspannung verstärkt der OPV enorm. Seine <strong>Leerlaufverstärkung V₀</strong> liegt oft bei <strong>100 000</strong> und mehr. V₀ hat keine Einheit, U1D ist die Differenzspannung in V.</p>
+<ul>
+    <li>
+        <p>Rechnerisch ergibt schon 1 mV: V₀ × U1D = 100 000 × 1 mV = <strong>100 V</strong>.</p>
+    </li>
+    <li>
+        <p>Doch der Ausgang kommt nicht über die Versorgung hinaus. Bei <strong>±15 V</strong> Versorgung ist bei etwa <strong>±13,5 V</strong> Schluss.</p>
+    </li>
+</ul>
+<p>Das nutzt der <strong>Komparator</strong>: Er arbeitet <strong>ohne Gegenkopplung</strong>, vergleicht zwei Spannungen, und der Ausgang springt ganz nach plus oder ganz nach minus.</p>
+
+<h2>🔄 Der invertierende Verstärker</h2>
+<p>Für einen genauen Verstärker braucht der OPV eine <strong>Gegenkopplung</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Eingang:</strong> Ue kommt über den Widerstand <strong>Re</strong> an den <strong>Minus-Eingang</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Gegenkopplung:</strong> Der Widerstand <strong>RK</strong> führt den Ausgang zurück auf den Minus-Eingang.</p>
+    </li>
+    <li>
+        <p><strong>Punkt S:</strong> Weil V₀ so groß ist, regelt sich U1D fast auf null. Der Punkt S liegt praktisch auf <strong>0 V</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Ua ist verstärkt, aber <strong>umgekehrt</strong>: Ist Ue positiv, wird Ua negativ.</p>
+</blockquote>
+
+{{IMG3}}
+
+<h3>Rechnung</h3>
+<p>Die Verstärkung bestimmen nur die beiden Widerstände:</p>
+<ul>
+    <li>
+        <p><strong>Vu = −RK / Re</strong> und <strong>Ua = Vu × Ue</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Vu</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannungsverstärkung</p></td>
+                <td colspan="1" rowspan="1"><p>keine Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>RK</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Rückkopplungswiderstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Re</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Eingangswiderstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Ue / Ua</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Eingangsspannung / Ausgangsspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Beispiel mit RK = 47 kΩ, Re = 10 kΩ und Ue = 0,5 V:</p>
+<ol>
+    <li>
+        <p><strong>Verstärkung:</strong> Vu = −47 kΩ / 10 kΩ = <strong>−4,7</strong></p>
+    </li>
+    <li>
+        <p><strong>Ausgangsspannung:</strong> Ua = −4,7 × 0,5 V = <strong>−2,35 V</strong></p>
+    </li>
+</ol>
+
+<h2>➕ Der nichtinvertierende Verstärker</h2>
+<ul>
+    <li>
+        <p><strong>Eingang:</strong> Ue liegt <strong>direkt am Plus-Eingang</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Gegenkopplung:</strong> RK und RQ teilen die Ausgangsspannung und führen sie auf den Minus-Eingang zurück. RQ liegt gegen 0 V.</p>
+    </li>
+    <li>
+        <p><strong>In Phase:</strong> Ua ist gleich gerichtet wie Ue.</p>
+    </li>
+</ul>
+<p>Die Verstärkung ist <strong>Vu = 1 + RK / RQ</strong>, also <strong>mindestens 1</strong>. RK ist der Rückkopplungswiderstand, RQ der Widerstand gegen 0 V, beide in Ω.</p>
+
+<h2>🧮 Mias Sensor verstärken</h2>
+<p>Frau Schneider wählt <strong>RQ = 1 kΩ</strong> und <strong>RK = 10 kΩ</strong>. Der Sensor liefert <strong>Ue = 0,45 V</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Verstärkung:</strong> Vu = 1 + 10 kΩ / 1 kΩ = 1 + 10 = <strong>11</strong></p>
+    </li>
+    <li>
+        <p><strong>Ausgangsspannung:</strong> Ua = Vu × Ue = 11 × 0,45 V = <strong>4,95 V</strong>, passend für die Steuerung.</p>
+    </li>
+</ol>
+<p><strong>Achtung Grenze:</strong> Bei Ue = 1,5 V ergäbe sich rechnerisch 11 × 1,5 V = 16,5 V. Das schafft der Ausgang nicht, er wird durch die Versorgung begrenzt.</p>
+
+<h2>🧰 Wo OPV eingesetzt werden</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Schaltung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Aufgabe</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Summierverstärker</strong></p></td>
+                <td colspan="1" rowspan="1"><p>addiert mehrere Signale</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Differenzverstärker</strong></p></td>
+                <td colspan="1" rowspan="1"><p>verstärkt den Unterschied zweier Spannungen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Spannungsfolger (Impedanzwandler)</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Verstärkung Vu = 1, belastet die Quelle kaum</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Konstantquellen</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Konstantstromquellen und Konstantspannungsquellen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Komparator</strong></p></td>
+                <td colspan="1" rowspan="1"><p>vergleicht zwei Spannungen, ohne Gegenkopplung</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Entscheidend ist immer die <strong>Beschaltung</strong>: Welche Eingänge werden genutzt, und wie sieht die Rückführung aus?</p>
+
+<h2>🔍 10 kΩ und 100 kΩ im Vergleich</h2>
+<p>Am Eingang liegen jeweils <strong>Ue = 0,2 V</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Fall 1: invertierend, Re = 10 kΩ, RK = 100 kΩ.</strong> Vu = −100 kΩ / 10 kΩ = <strong>−10</strong>, also Ua = −10 × 0,2 V = <strong>−2 V</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: nichtinvertierend, RQ = 10 kΩ, RK = 100 kΩ.</strong> Vu = 1 + 100 kΩ / 10 kΩ = <strong>11</strong>, also Ua = 11 × 0,2 V = <strong>2,2 V</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Invertierend kehrt das Vorzeichen um, nichtinvertierend bleibt das Vorzeichen erhalten.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Viele Sensoren liefern nur kleine Spannungen im Bereich von Millivolt bis wenigen hundert Millivolt. Bevor eine Steuerung sie sauber auswerten kann, verstärkt ein nichtinvertierender OPV das Signal auf den Eingangsbereich der Steuerung, so wie bei Mias Sensor von 0,45 V auf 4,95 V. Weil das Signal in Phase bleibt, steigt die Ausgangsspannung mit der Temperatur, und die Steuerung kann den Wert direkt umrechnen. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein OPV hat <strong>2 Eingänge und 1 Ausgang</strong> und wird mit <strong>±Ub</strong> versorgt. Der <strong>Minus-Eingang</strong> ist invertierend, der <strong>Plus-Eingang</strong> nichtinvertierend. Die Leerlaufverstärkung ist riesig, der Ausgang aber durch die Versorgung begrenzt. <strong>Invertierend:</strong> Vu = −RK / Re, das Signal wird umgekehrt. <strong>Nichtinvertierend:</strong> Vu = 1 + RK / RQ, das Signal bleibt in Phase.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Prüfe zuerst, an welchem Eingang das Signal liegt. Beim invertierenden Verstärker nie das <strong>Minuszeichen</strong> vergessen, beim nichtinvertierenden nie die <strong>1 +</strong>. Kontrolliere am Ende, ob das Ergebnis innerhalb der Versorgung liegt. Liegt es darüber, ist der Ausgang begrenzt, und die rechnerische Spannung wird nicht erreicht.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Welcher Eingang des OPV ist invertierend, welcher nichtinvertierend?</summary>
+    <div data-type="detailsContent">
+        <p>✅ E1 mit Minus ist der invertierende Eingang, E2 mit Plus der nichtinvertierende Eingang.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> V₀ = 100 000, U1D = 1 mV, Versorgung ±15 V: Welche Ausgangsspannung stellt sich ein?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Rechnerisch wären es 100 V. Der Ausgang ist aber durch die Versorgung begrenzt, bei etwa 13,5 V ist Schluss.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Invertierender Verstärker mit RK = 47 kΩ, Re = 10 kΩ, Ue = 0,5 V: Wie groß ist Ua?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Vu = −47 kΩ / 10 kΩ = −4,7. Ua = −4,7 × 0,5 V = −2,35 V.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Nichtinvertierender Verstärker mit RQ = 1 kΩ, RK = 10 kΩ, Ue = 0,45 V: Wie groß ist Ua?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Vu = 1 + 10 kΩ / 1 kΩ = 11. Ua = 11 × 0,45 V = 4,95 V.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was zeichnet einen Spannungsfolger aus?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Er hat die Verstärkung Vu = 1 und belastet die Quelle kaum. Deshalb heißt er auch Impedanzwandler.</p>
+    </div>
+</details>
+<p></p>

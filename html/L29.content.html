@@ -1,0 +1,233 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie <strong>NPN- und PNP-Transistoren</strong> aufgebaut sind.</p>
+    </li>
+    <li>
+        <p>Wie die Anschlüsse <strong>Basis, Kollektor und Emitter</strong> heißen und wie du die <strong>Schaltzeichen</strong> liest.</p>
+    </li>
+    <li>
+        <p>Wie du Ströme mit der <strong>Stromverstärkung B = IC / IB</strong> und mit <strong>IE = IB + IC</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Wie der Transistor als <strong>Schalter</strong> und als <strong>Verstärker</strong> arbeitet.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH soll eine kleine <strong>Steuerplatine</strong> ein <strong>Relais</strong> schalten. Ihr Ausgang liefert aber höchstens <strong>1 mA</strong>. Die Relaisspule braucht <strong>50 mA</strong>. Tim schlägt einen Transistor vor. Ausbilderin Frau Schneider fragt Mia: Wie kann ein so kleiner Strom einen viel größeren Strom schalten? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🧱 Aufbau des bipolaren Transistors</h2>
+<p>Ein <strong>bipolarer Transistor</strong> besteht aus <strong>drei Halbleiterschichten</strong>. Beim <strong>NPN-Transistor</strong> sieht das so aus:</p>
+<ul>
+    <li>
+        <p>In der Mitte liegt eine <strong>sehr dünne p-Schicht</strong>. Ihr Anschluss heißt <strong>Basis (B)</strong>.</p>
+    </li>
+    <li>
+        <p>Außen liegen zwei <strong>n-Schichten</strong> mit dem <strong>Kollektor (C)</strong> und dem <strong>Emitter (E)</strong>.</p>
+    </li>
+    <li>
+        <p>So entstehen <strong>zwei PN-Übergänge</strong>. Im Ersatzbild wirken sie wie <strong>zwei Dioden</strong>.</p>
+    </li>
+</ul>
+<p>Beim <strong>PNP-Transistor</strong> ist die Schichtfolge umgekehrt: außen p, innen n.</p>
+
+{{IMG2}}
+
+<h2>✏️ Schaltzeichen NPN und PNP</h2>
+<p>Die Schaltzeichen sind in <strong>DIN EN 60617</strong> festgelegt.</p>
+<ul>
+    <li>
+        <p>Links ist die <strong>Basis</strong>, oben der <strong>Kollektor</strong>, unten der <strong>Emitter</strong>.</p>
+    </li>
+    <li>
+        <p>Der <strong>Pfeil sitzt immer am Emitter</strong> und zeigt die technische Stromrichtung.</p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Typ</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Schichtfolge</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Pfeil am Emitter</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>NPN</strong></p></td>
+                <td colspan="1" rowspan="1"><p>außen n, innen p</p></td>
+                <td colspan="1" rowspan="1"><p>zeigt nach außen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>PNP</strong></p></td>
+                <td colspan="1" rowspan="1"><p>außen p, innen n</p></td>
+                <td colspan="1" rowspan="1"><p>zeigt nach innen</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🔌 So steuert der Basisstrom</h2>
+<p>Die Steuerplatine schaltet das Relais über einen NPN-Transistor. Die Relaisspule liegt zwischen <strong>+12 V</strong> und dem Kollektor, der Ausgang der Platine steuert über den Basiswiderstand <strong>RB</strong> die Basis, der Emitter liegt an <strong>0 V</strong>.</p>
+<ol>
+    <li>
+        <p>Die <strong>Basis-Emitter-Strecke</strong> muss in <strong>Durchlassrichtung</strong> liegen. Bei Silizium braucht sie rund <strong>UBE = 0,7 V</strong>.</p>
+    </li>
+    <li>
+        <p>Dann fließt ein kleiner <strong>Basisstrom IB</strong>.</p>
+    </li>
+    <li>
+        <p>Dieser kleine Strom steuert einen viel größeren <strong>Kollektorstrom IC</strong> durch das Relais. Das ist die <strong>Stromverstärkung</strong>.</p>
+    </li>
+    <li>
+        <p>Beide Ströme fließen über den Emitter ab. Der <strong>Emitterstrom</strong> ist <strong>IE = IB + IC</strong>.</p>
+    </li>
+</ol>
+<blockquote>
+    <p>Fließt <strong>kein Basisstrom</strong>, sperrt der Transistor, und auch IC ist fast null.</p>
+</blockquote>
+
+{{IMG3}}
+
+<h2>🧮 Mit der Stromverstärkung rechnen</h2>
+<p>Wie stark der Transistor verstärkt, gibt die <strong>Gleichstromverstärkung B</strong> an:</p>
+<ul>
+    <li>
+        <p><strong>B = IC / IB</strong></p>
+    </li>
+    <li>
+        <p>umgestellt: <strong>IB = IC / B</strong> und <strong>IC = B × IB</strong></p>
+    </li>
+    <li>
+        <p><strong>IE = IB + IC</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>B</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Gleichstromverstärkung</p></td>
+                <td colspan="1" rowspan="1"><p>keine Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IC</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kollektorstrom</p></td>
+                <td colspan="1" rowspan="1"><p>mA</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IB</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Basisstrom</p></td>
+                <td colspan="1" rowspan="1"><p>mA</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IE</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Emitterstrom</p></td>
+                <td colspan="1" rowspan="1"><p>mA</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Tims Transistor hat <strong>B = 250</strong>, das Relais braucht <strong>IC = 50 mA</strong>:</p>
+<ol>
+    <li>
+        <p><strong>Basisstrom:</strong> IB = IC / B = 50 mA / 250 = <strong>0,2 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Emitterstrom:</strong> IE = IB + IC = 0,2 mA + 50 mA = <strong>50,2 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Kontrolle:</strong> Die Platine liefert bis zu 1 mA. Das reicht.</p>
+    </li>
+</ol>
+<p>In der Praxis gibt man etwas <strong>mehr Basisstrom</strong> als berechnet, damit der Transistor sicher durchschaltet.</p>
+
+<h2>🔀 Schalter und Verstärker</h2>
+<p>Transistoren arbeiten auf zwei Arten:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Betriebsart</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">So funktioniert es</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Schalter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Zwei Zustände: Ohne IB sperrt er wie ein offener Schalter. Mit genug IB schaltet er durch, und das Relais zieht an.</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Verstärker</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Ein kleines Signal, z. B. von einem Mikrofon, steuert den Basisstrom. Der Kollektorstrom folgt ihm verstärkt.</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Deshalb steckt der Transistor in <strong>fast jedem elektronischen Gerät</strong>.</p>
+
+<h2>🔍 Wie groß ist IC?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: B = 200, IB = 0,1 mA.</strong> IC = B × IB = 200 × 0,1 mA = <strong>20 mA</strong>. Der Emitterstrom ist IE = 0,1 mA + 20 mA = <strong>20,1 mA</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Die Platine schaltet ihren Ausgang ab, IB = 0.</strong> Ohne Basisstrom sperrt der Transistor. IC ist fast <strong>0</strong>, und das Relais fällt ab.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> IC = B × IB und IE = IB + IC.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ausgänge von Mikrocontrollern und kleinen Steuerplatinen liefern oft nur wenige Milliampere. Für Relais, Lampen oder kleine Motoren reicht das nicht. Ein NPN-Transistor mit Basiswiderstand übernimmt hier die Arbeit: Der Ausgang liefert nur den kleinen Basisstrom, und der große Laststrom fließt über Kollektor und Emitter. So wird die Steuerplatine geschont, und trotzdem zieht das Relais sicher an. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein bipolarer Transistor hat <strong>drei Schichten</strong>, NPN oder PNP. Die Anschlüsse heißen <strong>Basis, Kollektor und Emitter</strong>, der Pfeil sitzt am Emitter. Die Basis-Emitter-Strecke braucht rund <strong>0,7 V</strong>. Es gilt <strong>B = IC / IB</strong> und <strong>IE = IB + IC</strong>. Der Transistor arbeitet als <strong>Schalter</strong> oder als <strong>Verstärker</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Gern gefragt: Woran erkennst du im Schaltzeichen NPN oder PNP? Achte auf den Pfeil am Emitter: <strong>nach außen bei NPN</strong>, <strong>nach innen bei PNP</strong>. Bei Rechenaufgaben stellst du B = IC / IB passend um und vergisst nicht, dass der Emitterstrom immer die <strong>Summe</strong> aus Basis- und Kollektorstrom ist.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wie ist ein NPN-Transistor aufgebaut?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Aus drei Halbleiterschichten: außen zwei n-Schichten mit Kollektor und Emitter, in der Mitte eine sehr dünne p-Schicht mit der Basis. Dabei entstehen zwei PN-Übergänge.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Woran unterscheidest du die Schaltzeichen von NPN und PNP?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Am Pfeil am Emitter. Beim NPN-Transistor zeigt er nach außen, beim PNP-Transistor nach innen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> B = 250, IC = 50 mA: Wie groß sind IB und IE?</summary>
+    <div data-type="detailsContent">
+        <p>✅ IB = 50 mA / 250 = 0,2 mA. IE = 0,2 mA + 50 mA = 50,2 mA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Welche Spannung braucht die Basis-Emitter-Strecke eines Siliziumtransistors, damit er leitet?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Rund 0,7 V. Die Basis-Emitter-Strecke muss dabei in Durchlassrichtung liegen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was passiert, wenn der Basisstrom null ist?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Transistor sperrt wie ein offener Schalter. IC ist fast null, und ein angeschlossenes Relais fällt ab.</p>
+    </div>
+</details>
+<p></p>

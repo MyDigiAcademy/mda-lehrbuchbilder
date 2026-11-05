@@ -1,0 +1,270 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was ein <strong>analoges Signal</strong> ist.</p>
+    </li>
+    <li>
+        <p>Was ein <strong>binäres Signal</strong> ist und welche Spannungen 0 und 1 bedeuten.</p>
+    </li>
+    <li>
+        <p>Wie du <strong>digitale Signale</strong> von analogen und binären abgrenzt.</p>
+    </li>
+    <li>
+        <p>Wie du binäre Signale mit <strong>UND, ODER und NICHT</strong> verknüpfst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH steht eine kleine <strong>Behälteranlage</strong> mit Wassertank, Pumpe und Steuerung. Tim zeigt Mia zwei Sensoren: Der eine misst <strong>laufend den Füllstand</strong>. Der andere meldet nur: <strong>voll oder nicht voll</strong>. Ausbilderin Frau Schneider fragt: Welche Signalarten stecken in der Anlage, und wann darf die Pumpe laufen? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>📶 Analog und binär</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Signalart</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Eigenschaft</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel in der Anlage</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Analog</strong></p></td>
+                <td colspan="1" rowspan="1"><p>ändert sich stufenlos, jeder Zwischenwert im Bereich ist möglich (wertkontinuierlich)</p></td>
+                <td colspan="1" rowspan="1"><p>Füllstandssensor</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Binär</strong></p></td>
+                <td colspan="1" rowspan="1"><p>nur zwei Zustände: 1 oder 0, Spannung oder keine Spannung</p></td>
+                <td colspan="1" rowspan="1"><p>Sensor oben im Tank: voll oder nicht voll</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Welche Spannung 0 und welche 1 bedeutet, hängt vom Bereich ab:</p>
+<ul>
+    <li>
+        <p><strong>Steuerungstechnik:</strong> 0 V bedeutet meist <strong>0</strong>, 24 V bedeutet <strong>1</strong>.</p>
+    </li>
+    <li>
+        <p><strong>TTL-Bausteine der Elektronik:</strong> 0 V bedeutet <strong>0</strong>, 5 V bedeutet <strong>1</strong>.</p>
+    </li>
+</ul>
+
+<h2>🔢 Das digitale Signal</h2>
+<p>Ein digitales Signal entsteht zum Beispiel aus einem analogen Verlauf. Es hat zwei Merkmale:</p>
+<ul>
+    <li>
+        <p><strong>Wertdiskret:</strong> Es gibt nur <strong>feste Stufen</strong>, keine Zwischenwerte.</p>
+    </li>
+    <li>
+        <p><strong>Zeitdiskret:</strong> Der Wert wird nur zu <strong>festen Zeitpunkten</strong> erfasst.</p>
+    </li>
+</ul>
+<p>Jede Stufe ist eine <strong>Zahl aus mehreren Bits</strong>. <strong>8 Stufen sind 2³</strong>, dafür reichen <strong>3 Bit</strong>.</p>
+<blockquote>
+    <p>Ein binäres Signal ist der <strong>einfachste Fall eines digitalen Signals</strong>: genau 1 Bit.</p>
+</blockquote>
+
+{{IMG2}}
+
+<h2>🔗 Die UND-Verknüpfung</h2>
+<p>Binäre Signale kann eine Steuerung verknüpfen. Die erste Grundverknüpfung ist <strong>UND</strong>, auch <strong>Konjunktion</strong> genannt. Im Schaltzeichen steht das Und-Zeichen <strong>&amp;</strong>. Der Ausgang X ist <strong>nur 1, wenn A und B 1 sind</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">A</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">B</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">X</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p><strong>1</strong></p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Ist ein Eingang 0, bleibt X 0. Nur in der letzten Zeile sind beide Eingänge 1, und nur dort ist X 1.</p>
+<p><strong>Beispiel:</strong> Die <strong>Zweihandbedienung einer Presse</strong>. Sie startet erst, wenn beide Taster gedrückt sind.</p>
+
+<h2>🔀 Die ODER-Verknüpfung</h2>
+<p>Die zweite Grundverknüpfung ist <strong>ODER</strong>, auch <strong>Disjunktion</strong> genannt. Im Schaltzeichen steht <strong>≥1</strong>: Mindestens ein Eingang muss 1 sein.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">A</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">B</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">X</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p><strong>0</strong></p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>X ist nur in der ersten Zeile 0, wenn beide Eingänge 0 sind. <strong>Achtung:</strong> Auch wenn beide Eingänge 1 sind, ist X 1. ODER ist also <strong>kein Entweder-oder</strong>.</p>
+<p><strong>Beispiel:</strong> Zwei Taster an verschiedenen Stellen lösen denselben Alarm aus. Egal welcher gedrückt wird, der Alarm geht an.</p>
+
+<h2>🚫 Die NICHT-Verknüpfung</h2>
+<p>Die dritte Grundverknüpfung ist <strong>NICHT</strong>, auch <strong>Negation</strong> oder <strong>Inverter</strong> genannt. Sie hat nur <strong>einen Eingang</strong> und kehrt das Signal um. Im Schaltzeichen steht eine 1, ein <strong>kleiner Kreis am Ausgang</strong> zeigt die Umkehrung.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">A</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">X</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Beispiel:</strong> Eine Warnleuchte leuchtet, solange ein Deckel offen ist. Ist der Deckel offen, meldet der Kontakt 0, und die Leuchte ist an (1). Ist der Deckel zu, meldet der Kontakt 1, und die Leuchte geht aus (0).</p>
+
+<h2>💧 Wann läuft die Pumpe?</h2>
+<p>Zurück zur Behälteranlage. Die Steuerung verknüpft zwei Signale:</p>
+<ul>
+    <li>
+        <p><strong>Starttaster S:</strong> liefert 1, wenn du ihn drückst.</p>
+    </li>
+    <li>
+        <p><strong>Sensor B (Tank voll):</strong> liefert 1, wenn der Tank voll ist.</p>
+    </li>
+    <li>
+        <p>Ein <strong>NICHT</strong> kehrt das Signal von B um. Ein <strong>UND</strong> verknüpft danach S mit dem umgekehrten Signal. Sein Ausgang schaltet die <strong>Pumpe P</strong>, sie läuft bei 1.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Fall</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">S</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">B</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">NICHT B</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">P</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>1: Tank halb voll</strong></p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p><strong>1</strong>, Pumpe läuft</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>2: Tank voll</strong></p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+                <td colspan="1" rowspan="1"><p><strong>0</strong>, Pumpe steht</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Im Fall 2 macht das NICHT aus der 1 eine 0, das UND liefert 0. Die Pumpe steht, und der Tank läuft <strong>nicht über</strong>.</p>
+
+<h2>🔍 Signale richtig einordnen</h2>
+<ul>
+    <li>
+        <p><strong>Frage 1: Liefert der Füllstandssensor ein analoges oder ein binäres Signal?</strong> <strong>Analog</strong>, denn er meldet jeden Füllstand stufenlos.</p>
+    </li>
+    <li>
+        <p><strong>Frage 2: An einer ODER-Verknüpfung sind beide Taster gedrückt. Geht der Alarm an?</strong> <strong>Ja</strong>, auch dann ist X 1. ODER ist kein Entweder-oder.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> UND braucht alle Eingänge, ODER mindestens einen, und NICHT kehrt um.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In echten Anlagen treffen alle Signalarten aufeinander. Ein Drucksensor liefert ein analoges Signal, die Steuerung wandelt es in ein digitales Signal mit festen Stufen um. Endschalter, Taster und Grenzwertgeber liefern binäre Signale mit 0 V und 24 V. Die Steuerung verknüpft diese binären Signale mit UND, ODER und NICHT, zum Beispiel so, dass eine Pumpe nur läuft, wenn gestartet wurde und der Behälter nicht voll ist. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p><strong>Analoge Signale</strong> ändern sich stufenlos, jeder Zwischenwert ist möglich. <strong>Binäre Signale</strong> kennen nur 0 und 1, in der Steuerungstechnik oft 0 V und 24 V. <strong>Digitale Signale</strong> haben feste Stufen aus Bits und sind wert- und zeitdiskret. Mit <strong>UND</strong> (alle Eingänge 1), <strong>ODER</strong> (mindestens ein Eingang 1) und <strong>NICHT</strong> (kehrt um) verknüpfst du binäre Signale.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Lerne die Schaltzeichen sicher: <strong>&amp;</strong> für UND, <strong>≥1</strong> für ODER, <strong>1 mit Kreis am Ausgang</strong> für NICHT. Ein Klassiker ist die Frage, ob ODER bei zwei gedrückten Tastern 1 liefert: Ja, ODER ist kein Entweder-oder. Bei verknüpften Schaltungen gehst du Schritt für Schritt vor und schreibst dir an jedem Ausgang den Wert 0 oder 1 auf.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was unterscheidet ein analoges von einem binären Signal?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ein analoges Signal ändert sich stufenlos und kann jeden Wert in seinem Bereich annehmen. Ein binäres Signal kennt nur zwei Zustände, 0 und 1.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Was bedeuten wertdiskret und zeitdiskret?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Wertdiskret: Es gibt nur feste Stufen, keine Zwischenwerte. Zeitdiskret: Der Wert wird nur zu festen Zeitpunkten erfasst.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Wie viele Bit brauchst du für 8 Stufen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 3 Bit, denn 2³ = 8.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Wann ist der Ausgang einer UND-Verknüpfung 1, wann der einer ODER-Verknüpfung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei UND nur, wenn alle Eingänge 1 sind. Bei ODER, wenn mindestens ein Eingang 1 ist, also auch, wenn beide 1 sind.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Die Pumpe wird über S UND (NICHT B) geschaltet. Was passiert, wenn S = 1 und B = 1 ist?</summary>
+    <div data-type="detailsContent">
+        <p>✅ NICHT B ist 0, das UND liefert 0. Die Pumpe steht, und der Tank läuft nicht über.</p>
+    </div>
+</details>
+<p></p>
