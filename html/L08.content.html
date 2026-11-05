@@ -1,0 +1,302 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was der <strong>Spannungsfall ΔU</strong> ist und wovon er abhängt.</p>
+    </li>
+    <li>
+        <p>Die <strong>Formeln</strong> für <strong>Gleichstrom, Wechselstrom und Drehstrom</strong> und warum l immer die <strong>einfache Länge</strong> ist.</p>
+    </li>
+    <li>
+        <p>Wie du den Spannungsfall in <strong>Volt und Prozent</strong> an zwei Beispielen Schritt für Schritt berechnest.</p>
+    </li>
+    <li>
+        <p>Welche <strong>Grenzwerte</strong> gelten und wie du prüfst, ob das Ergebnis zulässig ist.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH wird ein neuer <strong>Drehstrommotor</strong> aufgestellt. Er läuft an <strong>400 V</strong> und nimmt <strong>18 A</strong> auf. Mia und Tim sollen die Zuleitung prüfen. Der Motor steht <strong>25 m</strong> vom Verteiler entfernt, geplant sind <strong>1,5 mm² Kupfer</strong>. Ausbilderin Frau Schneider fragt die beiden: Kommt am Motor noch genug Spannung an? Das rechnest du in dieser Lektion mit ihnen durch. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>⚡ Was ist der Spannungsfall?</h2>
+<p>Links steht der Verteiler, rechts der Motor. Die Leitung dazwischen ist <strong>25 m</strong> lang. Das ist die <strong>einfache Länge l</strong>.</p>
+<ul>
+    <li>
+        <p>Am <strong>Anfang</strong> der Leitung liegen <strong>U = 400 V</strong> an.</p>
+    </li>
+    <li>
+        <p>Am <strong>Motor</strong> kommt etwas weniger an, <strong>U &lt; 400 V</strong>. Denn jeder Leiter hat einen kleinen Widerstand, an dem ein Teil der Spannung abfällt.</p>
+    </li>
+</ul>
+<p>Den Unterschied zwischen Anfang und Ende der Leitung nennt man <strong>Spannungsfall ΔU</strong>. Er wird in <strong>Volt</strong> angegeben.</p>
+
+<h2>📏 Wovon hängt ΔU ab?</h2>
+<ul>
+    <li>
+        <p><strong>Länge:</strong> Doppelte Länge bedeutet doppelten Spannungsfall.</p>
+    </li>
+    <li>
+        <p><strong>Querschnitt:</strong> Ein dünner Leiter hat einen größeren Widerstand als ein dicker, also einen größeren Spannungsfall.</p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> Mehr Strom bedeutet mehr Spannungsfall.</p>
+    </li>
+    <li>
+        <p><strong>Material:</strong> beschrieben durch die <strong>Leitfähigkeit γ</strong> (Gamma). Kupfer hat <strong>γ = 56 m/(Ω · mm²)</strong>, Aluminium leitet schlechter und hat rund <strong>35 m/(Ω · mm²)</strong>.</p>
+    </li>
+</ul>
+
+<h2>🌡️ Folgen eines zu großen ΔU</h2>
+<ul>
+    <li>
+        <p><strong>Motor:</strong> Mit zu wenig Spannung erreicht er sein Drehmoment nicht und wird warm.</p>
+    </li>
+    <li>
+        <p><strong>Leuchten:</strong> Sie leuchten dunkler.</p>
+    </li>
+    <li>
+        <p><strong>Leitung:</strong> An ihr wird Verlustleistung frei, die die Leitung erwärmt.</p>
+    </li>
+</ul>
+<p>Deshalb gibt es <strong>Grenzwerte</strong> für den Spannungsfall.</p>
+
+<h2>↔️ Welche Länge zählt?</h2>
+<p>Bei einem Verbraucher an Wechselstrom fließt der Strom über den <strong>Hinleiter</strong> zum Verbraucher und über den <strong>Rückleiter</strong> wieder zurück. Trotzdem gilt:</p>
+<blockquote>
+    <p><strong>l ist die einfache Länge</strong>, also die Entfernung vom Verteiler bis zum Verbraucher, nicht hin und zurück.</p>
+</blockquote>
+<ul>
+    <li>
+        <p>Bei <strong>Gleich- und Wechselstrom</strong> steckt der Rückweg im <strong>Faktor 2</strong>.</p>
+    </li>
+    <li>
+        <p>Bei <strong>Drehstrom</strong> teilen sich 3 Außenleiter den Rückweg. Dort steht der <strong>Faktor √3</strong>.</p>
+    </li>
+</ul>
+
+<h2>📐 Formeln für den Spannungsfall</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Fall</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formel</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Gleichstrom</strong></p></td>
+                <td colspan="1" rowspan="1"><p>ΔU = 2 × l × I / (γ × A)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Wechselstrom</strong></p></td>
+                <td colspan="1" rowspan="1"><p>ΔU = 2 × l × I × cos φ / (γ × A)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Drehstrom</strong></p></td>
+                <td colspan="1" rowspan="1"><p>ΔU = √3 × l × I × cos φ / (γ × A)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Spannungsfall in Prozent</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Δu = ΔU × 100 % / U</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Bei einem Heizgerät ist <strong>cos φ = 1</strong>, bei Motoren ist er kleiner.</p>
+
+{{IMG2}}
+
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>ΔU</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannungsfall</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Δu</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannungsfall in Prozent</p></td>
+                <td colspan="1" rowspan="1"><p>%</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>l</strong></p></td>
+                <td colspan="1" rowspan="1"><p>einfache Länge</p></td>
+                <td colspan="1" rowspan="1"><p>m</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Strom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>A</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Querschnitt</p></td>
+                <td colspan="1" rowspan="1"><p>mm²</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>γ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leitfähigkeit, Kupfer 56</p></td>
+                <td colspan="1" rowspan="1"><p>m/(Ω · mm²)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>cos φ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leistungsfaktor</p></td>
+                <td colspan="1" rowspan="1"><p>ohne Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Nennspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🚦 Wie groß darf ΔU sein?</h2>
+<ul>
+    <li>
+        <p><strong>Wohngebäude, DIN 18015-1:</strong> höchstens <strong>3 %</strong> zwischen Zähler und Verbraucher.</p>
+    </li>
+    <li>
+        <p><strong>DIN VDE 0100-520</strong> empfiehlt bei Versorgung aus dem öffentlichen Netz höchstens <strong>3 % für Beleuchtung</strong> und <strong>5 % für andere Verbraucher</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Vorgabe von Frau Schneider:</strong> Als Planungsvorgabe des Betriebs gelten höchstens <strong>3 %</strong>. Das sind <strong>12 V bei 400 V</strong> und <strong>6,9 V bei 230 V</strong>.</p>
+    </li>
+</ul>
+
+<h2>🧮 Die Zuleitung zum Motor berechnen</h2>
+<p>Gegeben: <strong>U = 400 V</strong> Drehstrom, <strong>I = 18 A</strong>, <strong>l = 25 m</strong>, <strong>A = 1,5 mm²</strong>, Kupfer mit <strong>γ = 56 m/(Ω · mm²)</strong>, <strong>cos φ = 0,9</strong>. Gesucht ist ΔU in Volt und in Prozent.</p>
+<ol>
+    <li>
+        <p><strong>Formel:</strong> Drehstrom, also ΔU = √3 × l × I × cos φ / (γ × A)</p>
+    </li>
+    <li>
+        <p><strong>Einsetzen:</strong> ΔU = 1,732 × 25 m × 18 A × 0,9 / (56 × 1,5 mm²)</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> ΔU = 701,46 / 84 ≈ <strong>8,35 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Prozent:</strong> Δu = 8,35 V × 100 % / 400 V ≈ <strong>2,09 %</strong></p>
+    </li>
+</ol>
+
+<h2>📉 Spannung entlang der Leitung</h2>
+<ul>
+    <li>
+        <p><strong>Am Verteiler:</strong> 400 V</p>
+    </li>
+    <li>
+        <p><strong>Nach 12,5 m:</strong> 395,83 V</p>
+    </li>
+    <li>
+        <p><strong>Am Motor nach 25 m:</strong> 391,65 V, also ΔU = 8,35 V</p>
+    </li>
+</ul>
+<p>Die <strong>Grenze von 3 %</strong> liegt bei <strong>388 V</strong>. Die Spannung am Motor bleibt darüber. Mit <strong>2,09 % ≤ 3 %</strong> ist der Spannungsfall <strong>zulässig</strong>.</p>
+
+{{IMG3}}
+
+<h2>⚠️ Typischer Fehler: Länge doppelt</h2>
+<ul>
+    <li>
+        <p><strong>Falsch, l = 50 m:</strong> ΔU = 1,732 × 50 m × 18 A × 0,9 / (56 × 1,5 mm²) ≈ 16,70 V</p>
+    </li>
+    <li>
+        <p><strong>Richtig, l = 25 m:</strong> ΔU = 1,732 × 25 m × 18 A × 0,9 / (56 × 1,5 mm²) ≈ 8,35 V</p>
+    </li>
+</ul>
+<p>Der Rückweg steckt schon im <strong>Faktor 2 oder √3</strong>. Die Länge also nie verdoppeln, immer die <strong>einfache Länge</strong> einsetzen.</p>
+
+<h2>🔥 Beispiel 2: Heizgerät an Wechselstrom</h2>
+<p>Ein Heizgerät an <strong>230 V</strong> nimmt <strong>I = 16 A</strong> auf. Es ist <strong>l = 30 m</strong> entfernt, die Kupferleitung hat <strong>A = 1,5 mm²</strong>, und es gilt <strong>cos φ = 1</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> ΔU = 2 × 30 m × 16 A × 1 / (56 × 1,5 mm²)</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> ΔU = 960 / 84 ≈ <strong>11,43 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Prozent:</strong> Δu = 11,43 V × 100 % / 230 V ≈ <strong>4,97 %</strong>. Das liegt <strong>über 3 %</strong> und ist zu groß.</p>
+    </li>
+</ol>
+<p><strong>Was hilft? Ein größerer Querschnitt.</strong> Mit <strong>2,5 mm²</strong> steht im Nenner 56 × 2,5 = 140:</p>
+<ol>
+    <li>
+        <p>ΔU = 960 / 140 ≈ <strong>6,86 V</strong></p>
+    </li>
+    <li>
+        <p>Δu = 6,86 V × 100 % / 230 V ≈ <strong>2,98 %</strong>. Das ist <strong>knapp zulässig</strong>.</p>
+    </li>
+</ol>
+<p>Wie du den nötigen Querschnitt direkt berechnest, lernst du in der nächsten Lektion.</p>
+
+<h2>🔍 Größer oder kleiner?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Der Motor steht nur 15 m entfernt.</strong> ΔU wird kleiner: 1,732 × 15 m × 18 A × 0,9 / 84 ≈ <strong>5,01 V</strong>, also rund 1,25 %.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: 25 m, aber 2,5 mm².</strong> ΔU = 701,46 / 140 ≈ <strong>5,01 V</strong>, also genau derselbe Wert.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Kürzere Leitung oder größerer Querschnitt, der Spannungsfall sinkt.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Bei langen Zuleitungen, zum Beispiel zu einer Garage, einem Gartenhaus oder einer Maschine am anderen Ende der Halle, reicht der Querschnitt nach Strombelastbarkeit oft nicht aus. Die Leitung würde zwar nicht zu warm, aber am Verbraucher käme zu wenig Spannung an. Deshalb rechnest du bei längeren Strecken immer auch den Spannungsfall nach und wählst bei Bedarf einen größeren Querschnitt. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Der Spannungsfall ist die Spannung, die <strong>an der Leitung selbst abfällt</strong>. Er wächst mit <strong>Länge und Strom</strong> und sinkt mit <strong>größerem Querschnitt</strong>. l ist die <strong>einfache Länge</strong>, der Rückweg steckt im Faktor 2 oder √3. Mit <strong>Δu = ΔU × 100 % / U</strong> erhältst du den Spannungsfall in Prozent. Vergleiche immer mit der Vorgabe, zum Beispiel 3 %.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Wähle zuerst die richtige Formel nach der <strong>Netzart</strong>: Faktor 2 bei Gleich- und Wechselstrom, √3 bei Drehstrom. Setze die <strong>einfache Länge</strong> ein und vergiss bei Motoren cos φ nicht. Rechne am Ende immer in Prozent um und vergleiche mit dem Grenzwert. Erst dann ist die Aufgabe vollständig gelöst.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was versteht man unter dem Spannungsfall ΔU?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Den Unterschied zwischen der Spannung am Anfang und am Ende der Leitung. Er entsteht, weil am Widerstand der Leiter ein Teil der Spannung abfällt.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Warum setzt du für l nur die einfache Länge ein?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Rückweg steckt schon im Faktor 2 bei Gleich- und Wechselstrom bzw. im Faktor √3 bei Drehstrom.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Drehstrommotor, 400 V, 18 A, 25 m, 1,5 mm² Kupfer, cos φ = 0,9: Wie groß ist ΔU?</summary>
+    <div data-type="detailsContent">
+        <p>✅ ΔU = 1,732 × 25 m × 18 A × 0,9 / (56 × 1,5 mm²) ≈ 8,35 V. Das sind rund 2,09 % und damit zulässig.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Wie viel Volt sind 3 % bei 400 V und bei 230 V?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 12 V bei 400 V und 6,9 V bei 230 V.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Das Heizgerät an 230 V hat mit 1,5 mm² einen Spannungsfall von 4,97 %. Was tust du?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Einen größeren Querschnitt wählen. Mit 2,5 mm² sinkt ΔU auf rund 6,86 V, also 2,98 %. Das ist knapp zulässig.</p>
+    </div>
+</details>
+<p></p>

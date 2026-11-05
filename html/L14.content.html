@@ -1,0 +1,278 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie sich <strong>binäre</strong> und <strong>analoge Signale</strong> unterscheiden und welche <strong>Normsignale</strong> es gibt.</p>
+    </li>
+    <li>
+        <p>Wie ein analoges Signal über die <strong>Analogeingabe</strong> als Zahl in die SPS gelangt und was der <strong>Nennbereich 0 bis 27648</strong> bedeutet.</p>
+    </li>
+    <li>
+        <p>Wie die Bausteine <strong>NORM_X</strong> und <strong>SCALE_X</strong> rechnen.</p>
+    </li>
+    <li>
+        <p>Wie du in <strong>zwei Beispielen</strong> einen Digitalwert in eine Temperatur und eine Temperatur in einen Digitalwert umrechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! Im Prüfstand der Muster Elektrotechnik GmbH wird Wasser erwärmt. Ein <strong>Temperatursensor</strong> misst <strong>0 °C bis 100 °C</strong> und liefert <strong>4 mA bis 20 mA</strong>. Tim sieht im Eingangswort der SPS die Zahl <strong>13824</strong>. Er fragt Ausbilderin Frau Schneider: Wie viel Grad sind das? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>📶 Binäre und analoge Signale</h2>
+<ul>
+    <li>
+        <p><strong>Binäre Signale</strong> kennen nur <strong>0 oder 1</strong>, also aus oder ein.</p>
+    </li>
+    <li>
+        <p><strong>Analoge Signale</strong> können <strong>jeden Wert in einem Bereich</strong> annehmen, zum Beispiel jede Temperatur zwischen 0 °C und 100 °C.</p>
+    </li>
+</ul>
+<p>Für analoge Signale gibt es <strong>Normsignale</strong>, auch <strong>Einheitssignale</strong> genannt:</p>
+<ul>
+    <li>
+        <p><strong>0 V bis 10 V</strong> (Spannungssignal)</p>
+    </li>
+    <li>
+        <p><strong>4 mA bis 20 mA</strong> (Stromsignal)</p>
+    </li>
+</ul>
+
+<h2>🔌 Wie gelangt das Signal in die SPS?</h2>
+<ol>
+    <li>
+        <p><strong>Sensor:</strong> Er wandelt eine Größe wie Temperatur oder Druck in ein Normsignal um.</p>
+    </li>
+    <li>
+        <p><strong>Analogeingabe (ADU):</strong> Die Baugruppe hat hier <strong>8 Kanäle</strong> (AE 8). Ein <strong>Analog-Digital-Umsetzer</strong> macht aus dem Normsignal eine ganze Zahl, das <strong>Eingangswort EW</strong> mit <strong>16 Bit</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Analogausgabe (DAU):</strong> Die Baugruppe hat hier <strong>4 Kanäle</strong> (AA 4). Ein <strong>Digital-Analog-Umsetzer</strong> macht aus dem <strong>Ausgangswort AW</strong> wieder ein Normsignal.</p>
+    </li>
+</ol>
+<p>Jeder Kanal belegt <strong>ein Wort, also 2 Byte</strong>. Deshalb heißen die Adressen der Analogeingabe <strong>EW4, EW6, EW8 bis EW18</strong> und die der Analogausgabe <strong>AW4, AW6, AW8 und AW10</strong>.</p>
+
+<h2>🔢 Der Nennbereich</h2>
+<p>Bei der <strong>S7-1200</strong> und <strong>S7-1500</strong> reicht der <strong>Nennbereich von 0 bis 27648</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Stromsignal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Spannungssignal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Digitalwert</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>4 mA</strong></p></td>
+                <td colspan="1" rowspan="1"><p>0 V</p></td>
+                <td colspan="1" rowspan="1"><p>0</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>12 mA</strong> (Mitte)</p></td>
+                <td colspan="1" rowspan="1"><p>5 V</p></td>
+                <td colspan="1" rowspan="1"><p>13824</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>20 mA</strong></p></td>
+                <td colspan="1" rowspan="1"><p>10 V</p></td>
+                <td colspan="1" rowspan="1"><p>27648</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG2}}
+
+<p>Die Mitte, also 12 mA, ergibt <strong>13824</strong>. Genau das sieht Tim. Aber Achtung: <strong>Das ist noch keine Temperatur.</strong> Der Digitalwert muss erst umgerechnet werden.</p>
+
+<h2>⚡ Warum 4 mA bis 20 mA?</h2>
+<ul>
+    <li>
+        <p><strong>Bei 0 V bis 10 V</strong> kann 0 V der kleinste Messwert sein oder eine <strong>unterbrochene Leitung</strong>. Beides sieht gleich aus.</p>
+    </li>
+    <li>
+        <p><strong>Bei 4 mA bis 20 mA</strong> beginnt der Messbereich bei 4 mA. Das nennt man <strong>Live Zero</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Unter 4 mA</strong> stimmt etwas nicht. Bei einem <strong>Drahtbruch</strong> meldet die Baugruppe einen Fehler.</p>
+    </li>
+    <li>
+        <p>Ein <strong>Stromsignal</strong> ist außerdem <strong>unempfindlich gegen Störungen</strong> und eignet sich auch für <strong>lange Leitungen</strong>.</p>
+    </li>
+</ul>
+
+<h2>🛤️ Der Weg durch die SPS</h2>
+<p><strong>Beim Einlesen:</strong></p>
+<ol>
+    <li>
+        <p>Der Sensor liefert 4 mA bis 20 mA.</p>
+    </li>
+    <li>
+        <p>Die Analogeingabe (ADU) liefert den Digitalwert.</p>
+    </li>
+    <li>
+        <p><strong>NORM_X</strong> normiert ihn auf eine <strong>Realzahl von 0,0 bis 1,0</strong>.</p>
+    </li>
+    <li>
+        <p><strong>SCALE_X</strong> skaliert diesen Wert auf <strong>0 °C bis 100 °C</strong>.</p>
+    </li>
+    <li>
+        <p>Damit rechnet die CPU in °C.</p>
+    </li>
+</ol>
+<p><strong>Beim Ausgeben</strong> geht es umgekehrt: Die CPU gibt einen Stellwert vor, zum Beispiel für ein Ventil. NORM_X normiert ihn auf 0,0 bis 1,0, SCALE_X skaliert ihn auf den Nennbereich 0 bis 27648. Die Analogausgabe (DAU) macht daraus wieder 4 mA bis 20 mA für das Ventil.</p>
+
+{{IMG3}}
+
+<blockquote>
+    <p><strong>NORM_X</strong> macht aus einem Bereich den Bereich 0 bis 1. <strong>SCALE_X</strong> macht daraus einen neuen Bereich.</p>
+</blockquote>
+
+<h2>📐 Der Baustein NORM_X</h2>
+<p>NORM_X hat die Eingänge <strong>MIN</strong>, <strong>VALUE</strong> und <strong>MAX</strong> und den Ausgang <strong>OUT</strong>. Er rechnet:</p>
+<ul>
+    <li>
+        <p><strong>OUT = (VALUE − MIN) / (MAX − MIN)</strong></p>
+    </li>
+</ul>
+<p>Für Tims Wert mit MIN = 0, VALUE = 13824 und MAX = 27648:</p>
+<ul>
+    <li>
+        <p>OUT = (13824 − 0) / (27648 − 0) = <strong>0,5</strong>, genau die Mitte.</p>
+    </li>
+</ul>
+
+<h2>📐 Der Baustein SCALE_X</h2>
+<p>Jetzt ist VALUE = 0,5, MIN = 0 und MAX = 100 °C. SCALE_X rechnet:</p>
+<ul>
+    <li>
+        <p><strong>OUT = VALUE × (MAX − MIN) + MIN</strong></p>
+    </li>
+</ul>
+<p>Eingesetzt: OUT = 0,5 × (100 − 0) + 0 = <strong>50 °C</strong>. Das Wasser ist also <strong>50 °C</strong> warm.</p>
+<p><strong>EN</strong> schaltet den Baustein ein, <strong>ENO</strong> meldet eine fehlerfreie Rechnung. Deshalb verbindest du <strong>ENO von NORM_X mit EN von SCALE_X</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Zeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bei NORM_X</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bei SCALE_X</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>VALUE</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Eingangswert, hier Digitalwert</p></td>
+                <td colspan="1" rowspan="1"><p>normierter Wert 0,0 bis 1,0</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>MIN</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Untergrenze des Bereichs</p></td>
+                <td colspan="1" rowspan="1"><p>Untergrenze des Zielbereichs</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>MAX</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Obergrenze des Bereichs</p></td>
+                <td colspan="1" rowspan="1"><p>Obergrenze des Zielbereichs</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>OUT</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Ergebnis von 0,0 bis 1,0</p></td>
+                <td colspan="1" rowspan="1"><p>Ergebnis im Zielbereich</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>EN, ENO</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Baustein ein, Rechnung fehlerfrei</p></td>
+                <td colspan="1" rowspan="1"><p>Baustein ein, Rechnung fehlerfrei</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🧮 Beispiel 2: Ein Messwert wird zum Digitalwert</h2>
+<p>Jetzt umgekehrt: Der Messbereich reicht von <strong>2 °C bis 102 °C</strong>, gemessen werden <strong>56 °C</strong>. Gesucht ist der Digitalwert für den Nennbereich 0 bis 27648.</p>
+<ol>
+    <li>
+        <p><strong>NORM_X:</strong> OUT = (56 − 2) / (102 − 2) = 54 / 100 = <strong>0,54</strong></p>
+    </li>
+    <li>
+        <p><strong>SCALE_X:</strong> OUT = 0,54 × (27648 − 0) + 0 = <strong>14929,92</strong></p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> gerundet <strong>14930</strong></p>
+    </li>
+</ol>
+
+<h2>⚠️ Typischer Fehler: falsches MAX</h2>
+<ul>
+    <li>
+        <p><strong>Falsch, MAX = 32767:</strong> OUT = 13824 / 32767 ≈ 0,4219. Das ergibt rund <strong>42,19 °C</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Richtig, MAX = 27648:</strong> OUT = 13824 / 27648 = 0,5. Das ergibt genau <strong>50 °C</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p><strong>MIN und MAX müssen passen:</strong> bei NORM_X zum Nennbereich der Baugruppe, bei SCALE_X zum Messbereich des Sensors.</p>
+</blockquote>
+
+<h2>🔍 Was bedeutet das?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1:</strong> Ein Drucksensor misst 0 bar bis 10 bar, im Eingangswort steht <strong>6912</strong>. Das ist ein Viertel des Nennbereichs: NORM_X ergibt 6912 / 27648 = 0,25. SCALE_X ergibt 0,25 × 10 bar = <strong>2,5 bar</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2:</strong> Der Temperatursensor liefert plötzlich <strong>0 mA</strong>. Das liegt unter 4 mA und deutet auf einen <strong>Drahtbruch</strong>. Die Baugruppe meldet einen Fehler.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Erst normieren, dann skalieren.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Am Prüfstand legt Tim im SPS-Programm zwei Bausteine hintereinander an: NORM_X mit MIN = 0, VALUE = EW4 und MAX = 27648, dahinter SCALE_X mit MIN = 0 und MAX = 100. ENO von NORM_X verbindet er mit EN von SCALE_X. Am Ausgang von SCALE_X steht jetzt die Wassertemperatur in °C, bei 12 mA also 50 °C. Damit kann die CPU direkt weiterrechnen, zum Beispiel einen Grenzwert überwachen. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p><strong>Binäre Signale</strong> kennen nur 0 und 1, <strong>analoge</strong> jeden Wert im Bereich. <strong>Normsignale</strong> sind 0 V bis 10 V oder 4 mA bis 20 mA mit <strong>Live Zero</strong>. Der <strong>Nennbereich</strong> bei S7-1200 und S7-1500 ist 0 bis 27648. <strong>NORM_X</strong> normiert auf 0 bis 1, <strong>SCALE_X</strong> skaliert auf den Zielbereich.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Schreib dir beide Formeln auf: <strong>NORM_X: OUT = (VALUE − MIN) / (MAX − MIN)</strong> und <strong>SCALE_X: OUT = VALUE × (MAX − MIN) + MIN</strong>. Prüfe bei jeder Aufgabe, in welche Richtung gerechnet wird: vom Digitalwert zur physikalischen Größe oder umgekehrt. Und nimm als Obergrenze des Nennbereichs 27648, nicht 32767.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Welche Normsignale gibt es, und was bedeutet Live Zero?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 0 V bis 10 V und 4 mA bis 20 mA. Live Zero heißt: Der Messbereich beginnt bei 4 mA. Fließt weniger, liegt ein Fehler vor, zum Beispiel ein Drahtbruch.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Warum heißen die Adressen der Analogeingabe EW4, EW6, EW8 usw.?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Jeder Kanal belegt ein Wort, also 2 Byte. Deshalb springt die Adresse von Kanal zu Kanal um 2.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Im Eingangswort steht 13824, der Sensor misst 0 °C bis 100 °C. Wie warm ist das Wasser?</summary>
+    <div data-type="detailsContent">
+        <p>✅ NORM_X: 13824 / 27648 = 0,5. SCALE_X: 0,5 × (100 − 0) + 0 = 50 °C.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Messbereich 2 °C bis 102 °C, Messwert 56 °C: Welcher Digitalwert ergibt sich?</summary>
+    <div data-type="detailsContent">
+        <p>✅ NORM_X: (56 − 2) / (102 − 2) = 0,54. SCALE_X: 0,54 × 27648 = 14929,92, gerundet 14930.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was passiert, wenn bei NORM_X MAX = 32767 statt 27648 eingetragen wird?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Für 13824 ergibt sich 0,4219 statt 0,5, also rund 42,19 °C statt 50 °C. Der angezeigte Wert ist falsch.</p>
+    </div>
+</details>
+<p></p>

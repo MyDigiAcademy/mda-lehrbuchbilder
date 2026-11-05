@@ -1,0 +1,289 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was <strong>Steuern</strong> bedeutet und warum eine Steuerung einen <strong>offenen Wirkungsablauf</strong> hat.</p>
+    </li>
+    <li>
+        <p>Wie du einen <strong>Wirkungsplan</strong> mit Führungsgröße w, Stellgröße y und Steuerstrecke liest.</p>
+    </li>
+    <li>
+        <p>Welche Glieder eine Steuerung nach dem <strong>EVA-Prinzip</strong> hat: Signalglied, Steuerglied, Stellglied und Arbeitsglied.</p>
+    </li>
+    <li>
+        <p>Wie du Steuerungen nach <strong>Signalart</strong>, <strong>Signalverarbeitung</strong> und <strong>Programmierung</strong> unterscheidest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! Es ist ein kalter Wintermorgen in der Ausbildungswerkstatt der Muster Elektrotechnik GmbH. Draußen sind es <strong>minus 5 °C</strong>. Tim öffnet zum Lüften das große Fenster. Nach <strong>10 Minuten</strong> ist die Raumtemperatur von <strong>20 °C auf 16 °C</strong> gefallen. Mia friert und wundert sich: Der Heizkörper wird trotzdem nicht wärmer. Ausbilderin Frau Schneider erklärt: Unsere Heizung wird nur <strong>gesteuert</strong>, nicht <strong>geregelt</strong>. Was das genau heißt, klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>⚙️ Was bedeutet Steuern?</h2>
+<p>Beim Steuern werden eine oder mehrere <strong>Eingangsgrößen</strong>, zum Beispiel die Außentemperatur, in der Steuerung nach <strong>festen Regeln</strong> verarbeitet. Daraus entsteht eine <strong>Ausgangsgröße</strong>, hier die Wärme am Heizkörper.</p>
+<ul>
+    <li>
+        <p><strong>Eingangsgröße:</strong> z. B. die Außentemperatur</p>
+    </li>
+    <li>
+        <p><strong>Steuerung:</strong> verarbeitet die Eingangsgröße nach festen Regeln</p>
+    </li>
+    <li>
+        <p><strong>Ausgangsgröße:</strong> z. B. die Wärme am Heizkörper</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Ob das Ergebnis stimmt, meldet niemand zurück. Es gibt <strong>keine Rückmeldung</strong>. Man spricht von einem <strong>offenen Wirkungsablauf</strong>. Das ist der Kern jeder Steuerung.</p>
+</blockquote>
+
+<h2>🌡️ Die Heizung der Werkstatt wird gesteuert</h2>
+<p>Schau dir die Heizung der Werkstatt genauer an:</p>
+<ol>
+    <li>
+        <p>Draußen an der Wand sitzt der <strong>Außentemperaturfühler</strong>. Er misst die Außentemperatur <strong>ϑA</strong>.</p>
+    </li>
+    <li>
+        <p>Sein Messwert geht als <strong>Führungsgröße w</strong> an die Steuerung.</p>
+    </li>
+    <li>
+        <p>Die Steuerung bildet daraus die <strong>Stellgröße y</strong>. Damit verstellt der <strong>Stellmotor M</strong> das Ventil.</p>
+    </li>
+    <li>
+        <p>Das <strong>Ventil</strong> bestimmt, wie viel heißes Wasser durch den Heizkörper fließt. Der <strong>Heizkörper</strong> gibt die Wärme an den Raum ab.</p>
+    </li>
+</ol>
+<p><strong>Je kälter es draußen ist, desto weiter öffnet das Ventil.</strong></p>
+
+<h2>🪟 Das offene Fenster: eine Störgröße</h2>
+<p>Was passiert, wenn Tim das Fenster öffnet? Das offene Fenster ist eine <strong>Störgröße z</strong>. Kalte Luft kühlt den Raum ab.</p>
+<ul>
+    <li>
+        <p><strong>Die Steuerung merkt davon nichts.</strong> Draußen ist es ja nicht kälter geworden, und die Raumtemperatur <strong>ϑR</strong> wird gar nicht gemessen.</p>
+    </li>
+    <li>
+        <p><strong>Anders bei einer Regelung:</strong> Ein Raumtemperaturfühler misst ϑR als <strong>Regelgröße x</strong>. Die Regelung vergleicht x mit der Führungsgröße w und öffnet das Ventil weiter, wenn es zu kalt ist.</p>
+    </li>
+</ul>
+<p>Die Regelung lernst du in einer eigenen Lektion genauer kennen.</p>
+
+<h2>🗺️ Der Wirkungsplan einer Steuerung</h2>
+<p>Fachleute beschreiben eine Steuerung mit einem <strong>Wirkungsplan</strong>. Für die Werkstattheizung sieht er so aus:</p>
+<ul>
+    <li>
+        <p>Unten kommt die <strong>Führungsgröße w</strong> herein, hier die Außentemperatur ϑA. Sie gibt vor, wie stark geheizt wird.</p>
+    </li>
+    <li>
+        <p>Die <strong>Steuereinrichtung</strong> verarbeitet sie.</p>
+    </li>
+    <li>
+        <p>Heraus kommt die <strong>Stellgröße y</strong>, also wie weit das Ventil öffnen soll, hier die Ventilöffnung.</p>
+    </li>
+    <li>
+        <p>Sie wirkt auf das <strong>Stellglied</strong>, das Ventil.</p>
+    </li>
+    <li>
+        <p>Das Stellglied und die eigentliche <strong>Strecke</strong>, der Heizkörper, bilden zusammen die <strong>Steuerstrecke</strong>.</p>
+    </li>
+    <li>
+        <p>Am Ende steht die <strong>Aufgabengröße xA</strong>, hier die Raumtemperatur ϑR.</p>
+    </li>
+    <li>
+        <p>Durch die Steuerstrecke fließt <strong>Energie</strong>, hier das heiße Heizwasser (Energiefluss).</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<p>Das Wichtigste: Von der Raumtemperatur führt <strong>kein Weg zurück</strong> zur Steuereinrichtung. Der Wirkungsablauf ist offen. Deshalb verändert eine Störgröße z wie das offene Fenster die Raumtemperatur, ohne dass die Steuerung etwas dagegen tut.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel Werkstattheizung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>w</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Führungsgröße</p></td>
+                <td colspan="1" rowspan="1"><p>Außentemperatur ϑA</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>y</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Stellgröße</p></td>
+                <td colspan="1" rowspan="1"><p>Ventilöffnung</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>z</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Störgröße</p></td>
+                <td colspan="1" rowspan="1"><p>offenes Fenster</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>xA</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Aufgabengröße</p></td>
+                <td colspan="1" rowspan="1"><p>Raumtemperatur ϑR</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Steuerstrecke</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Stellglied + Strecke</p></td>
+                <td colspan="1" rowspan="1"><p>Ventil + Heizkörper</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🔄 Das EVA-Prinzip: die Glieder einer Steuerung</h2>
+<p>Jede Steuerung arbeitet nach dem <strong>EVA-Prinzip</strong>: <strong>Eingabe, Verarbeitung, Ausgabe</strong>. Als Beispiel dient der Motor eines Förderbands.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bereich</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Glied</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Aufgabe</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Eingabe</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Signalglied</p></td>
+                <td colspan="1" rowspan="1"><p>meldet einen Zustand</p></td>
+                <td colspan="1" rowspan="1"><p>Taster S1, Sensor</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Verarbeitung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Steuerglied</p></td>
+                <td colspan="1" rowspan="1"><p>verknüpft die Signale</p></td>
+                <td colspan="1" rowspan="1"><p>Hilfsschütz, SPS</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Ausgabe</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Stellglied</p></td>
+                <td colspan="1" rowspan="1"><p>schaltet die Energie</p></td>
+                <td colspan="1" rowspan="1"><p>Leistungsschütz Q1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Ausgabe</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Arbeitsglied</p></td>
+                <td colspan="1" rowspan="1"><p>setzt die Energie in Bewegung um</p></td>
+                <td colspan="1" rowspan="1"><p>Motor M1</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG3}}
+
+<p>Bis zum Stellglied fließen nur <strong>Signale mit kleiner Leistung</strong> (Signalfluss). Erst ab dem Stellglied fließt die <strong>Energie für den Motor</strong> (Energiefluss).</p>
+
+<h2>📶 Einteilung nach der Signalart</h2>
+<p>Steuerungen teilt man auf drei Arten ein. Die erste Einteilung richtet sich nach der Art der Signale:</p>
+<ul>
+    <li>
+        <p><strong>Binäre Steuerungen</strong> kennen nur <strong>zwei Zustände</strong>, zum Beispiel ein oder aus.</p>
+    </li>
+    <li>
+        <p><strong>Analoge Steuerungen</strong> arbeiten mit <strong>stufenlosen Werten</strong>, zum Beispiel mit einer Spannung von <strong>0 V bis 10 V</strong>, die einem Frequenzumrichter die Drehzahl vorgibt.</p>
+    </li>
+    <li>
+        <p><strong>Digitale Steuerungen</strong> verarbeiten <strong>Zahlenwerte</strong>, zum Beispiel in einer SPS.</p>
+    </li>
+</ul>
+<p>Die Signalarten lernst du in einer eigenen Lektion genauer kennen.</p>
+
+<h2>🔀 Einteilung nach der Signalverarbeitung</h2>
+<ul>
+    <li>
+        <p><strong>Verknüpfungssteuerung:</strong> Sie schaltet, wenn bestimmte Eingangssignale <strong>zusammen erfüllt</strong> sind. Das Rolltor der Werkstatt fährt zum Beispiel nur zu, wenn der Taster gedrückt <strong>und</strong> die Lichtschranke frei ist.</p>
+    </li>
+    <li>
+        <p><strong>Ablaufsteuerung:</strong> Sie arbeitet <strong>Schritt für Schritt</strong>. Der nächste Schritt startet nach einer Zeit oder wenn ein Sensor meldet, dass der Schritt fertig ist. Ein Beispiel ist der <strong>Stern-Dreieck-Anlauf</strong> eines Motors: Nach einer eingestellten Zeit schaltet er von Stern auf Dreieck um.</p>
+    </li>
+</ul>
+<p>Ablaufsteuerungen beschreibst du mit <strong>GRAFCET</strong>. Dazu gibt es eine eigene Lektion.</p>
+
+<h2>💻 Einteilung nach der Programmierung</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Merkmal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Verbindungsprogrammiert</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Speicherprogrammierbar (SPS)</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Funktion steckt in</strong></p></td>
+                <td colspan="1" rowspan="1"><p>der Verdrahtung von Schützen und Relais</p></td>
+                <td colspan="1" rowspan="1"><p>dem Programm der SPS</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Änderung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>neu verdrahten</p></td>
+                <td colspan="1" rowspan="1"><p>Programm am PC oder Programmiergerät ändern, die Verdrahtung bleibt gleich</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🔍 Steuerung oder Regelung?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1:</strong> Die Werkstattheizung richtet sich nur nach dem Außenfühler. Das ist eine <strong>Steuerung</strong>. Der Wirkungsablauf ist offen, das offene Fenster bleibt unbemerkt.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2:</strong> Ein Raumthermostat misst 16 °C, vergleicht mit den gewünschten 20 °C und öffnet das Ventil weiter. Das ist eine <strong>Regelung</strong>. Die Raumtemperatur wird gemessen und zurückgemeldet.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Die entscheidende Frage lautet: <strong>Wird das Ergebnis gemessen und zurückgemeldet?</strong> Nein heißt Steuerung, ja heißt Regelung.</p>
+</blockquote>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Viele Gebäudeheizungen arbeiten außentemperaturgeführt: Je kälter es draußen ist, desto heißer wird das Heizwasser. Das ist eine Steuerung. Bei offenem Fenster kühlt der Raum aus, ohne dass die Heizung reagiert. Erst ein Raumthermostat am Heizkörper misst die Raumtemperatur ϑR und macht aus der Steuerung eine Regelung. Genau deshalb hat Mia in der Werkstatt gefroren. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p><strong>Steuern</strong> ist ein offener Wirkungsablauf ohne Rückmeldung. Im <strong>Wirkungsplan</strong> wirkt die Führungsgröße w über die Steuereinrichtung und die Stellgröße y auf die Steuerstrecke. Nach dem <strong>EVA-Prinzip</strong> folgen Signalglied, Steuerglied, Stellglied und Arbeitsglied aufeinander. Steuerungen unterscheidet man nach <strong>Signalart</strong>, <strong>Signalverarbeitung</strong> und <strong>Programmierung</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In Prüfungen sollst du oft entscheiden, ob eine Anlage gesteuert oder geregelt wird. Suche dazu die Rückführung: Wird die Größe, um die es geht, gemessen und mit dem Sollwert verglichen? Ordne außerdem die Glieder sicher zu: Das <strong>Stellglied</strong> (z. B. Leistungsschütz Q1) schaltet die Energie, das <strong>Arbeitsglied</strong> (z. B. Motor M1) setzt sie in Bewegung um.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was kennzeichnet eine Steuerung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Eingangsgrößen werden nach festen Regeln zu einer Ausgangsgröße verarbeitet. Es gibt keine Rückmeldung, der Wirkungsablauf ist offen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Warum heizt die Werkstattheizung bei offenem Fenster nicht stärker?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Sie richtet sich nur nach der Außentemperatur ϑA. Die Raumtemperatur ϑR wird nicht gemessen, deshalb bleibt die Störgröße z, das offene Fenster, unbemerkt.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Woraus besteht die Steuerstrecke der Werkstattheizung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Aus dem Stellglied, dem Ventil, und der eigentlichen Strecke, dem Heizkörper. Am Ende steht die Aufgabengröße xA, die Raumtemperatur ϑR.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Ordne nach dem EVA-Prinzip zu: Motor M1, Taster S1, Leistungsschütz Q1, SPS.</summary>
+    <div data-type="detailsContent">
+        <p>✅ Taster S1 ist das Signalglied (Eingabe), die SPS das Steuerglied (Verarbeitung), das Leistungsschütz Q1 das Stellglied und der Motor M1 das Arbeitsglied (beide Ausgabe).</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was unterscheidet eine verbindungsprogrammierte Steuerung von einer SPS?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei der verbindungsprogrammierten Steuerung steckt die Funktion in der Verdrahtung von Schützen und Relais, für Änderungen musst du neu verdrahten. Bei der SPS steckt sie im Programm, du änderst es am PC oder Programmiergerät, die Verdrahtung bleibt gleich.</p>
+    </div>
+</details>
+<p></p>

@@ -1,0 +1,229 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wofür der <strong>Leitungsschutzschalter (LS-Schalter)</strong> da ist und welche Fehler er erkennt.</p>
+    </li>
+    <li>
+        <p>Wie der <strong>thermische Auslöser</strong> mit Bimetall bei <strong>Überlast</strong> verzögert abschaltet.</p>
+    </li>
+    <li>
+        <p>Wie der <strong>elektromagnetische Auslöser</strong> mit Schlaganker bei <strong>Kurzschluss</strong> in Millisekunden abschaltet.</p>
+    </li>
+    <li>
+        <p>Was der Aufdruck <strong>B16</strong> bedeutet und wann du wieder einschalten darfst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH fällt heute <strong>zweimal derselbe Steckdosenstromkreis</strong> aus. Er ist mit einem <strong>LS-Schalter B16</strong> abgesichert. Beim ersten Mal betreibt Tim zwei Heizlüfter und einen Wasserkocher gleichzeitig. <strong>Nach einigen Minuten</strong> ist der Strom weg. Beim zweiten Mal steckt Mia eine Leuchte mit gequetschter Leitung ein. Diesmal schaltet der LS-Schalter <strong>sofort</strong> ab. Ausbilderin Frau Schneider fragt: Was hat der LS-Schalter jeweils erkannt? Das findest du in dieser Lektion heraus. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🛡️ Wofür ist der LS-Schalter da?</h2>
+<p>Der LS-Schalter <strong>schützt die Leitung vor zu hoher Erwärmung</strong>. Fließt zu viel Strom, wird die Leitung zu heiß, die Isolierung schmilzt, und es kann brennen. Zu viel Strom fließt in zwei Fällen:</p>
+<ul>
+    <li>
+        <p><strong>Überlast:</strong> Es hängen zu viele Geräte am Stromkreis.</p>
+    </li>
+    <li>
+        <p><strong>Kurzschluss:</strong> Zwei aktive Leiter berühren sich.</p>
+    </li>
+</ul>
+<p>Außerdem gilt:</p>
+<ul>
+    <li>
+        <p><strong>Körperschluss im TN-System:</strong> Ein großer Fehlerstrom fließt über den Schutzleiter. Auch dann schaltet der LS-Schalter ab. Das ist der <strong>Fehlerschutz</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Zusätzlicher Personenschutz:</strong> Ihn übernimmt die <strong>Fehlerstrom-Schutzeinrichtung, kurz RCD</strong>. Sie löst schon bei sehr kleinen Fehlerströmen aus.</p>
+    </li>
+    <li>
+        <p><strong>Norm:</strong> Genormt ist der LS-Schalter in <strong>DIN VDE 0641-11</strong>, das entspricht <strong>DIN EN 60898-1</strong>.</p>
+    </li>
+</ul>
+
+<h2>🔍 Der LS-Schalter von innen</h2>
+<p>Folge dem Strom durch den LS-Schalter:</p>
+<ol>
+    <li>
+        <p><strong>Eingang:</strong> Der Strom kommt über die Zuleitung vom Netz an der <strong>Anschlussklemme 2</strong> an.</p>
+    </li>
+    <li>
+        <p><strong>Thermischer Auslöser:</strong> Er fließt durch das <strong>Bimetall</strong>, den Schutz bei Überlast.</p>
+    </li>
+    <li>
+        <p><strong>Elektromagnetischer Auslöser:</strong> Danach fließt er durch die Spule mit <strong>Schlaganker</strong>, den Schutz bei Kurzschluss.</p>
+    </li>
+    <li>
+        <p><strong>Ausgang:</strong> An der <strong>Anschlussklemme 1</strong> fließt er weiter zum Verbraucher.</p>
+    </li>
+</ol>
+<p>Mit dem <strong>Betätigungshebel</strong> schaltest du von Hand. Unten sitzt die <strong>Funken-Löschkammer</strong>. Auch im <strong>Schaltzeichen</strong> erkennst du: <strong>Beide Auslöser liegen in Reihe im Strompfad.</strong></p>
+
+{{IMG2}}
+
+<h2>🌡️ Der thermische Auslöser bei Überlast</h2>
+<p>Das <strong>Bimetall</strong> besteht aus zwei fest verbundenen Metallen:</p>
+<ul>
+    <li>
+        <p><strong>Metall A</strong> dehnt sich bei Wärme <strong>stark</strong> aus.</p>
+    </li>
+    <li>
+        <p><strong>Metall B</strong> dehnt sich nur <strong>wenig</strong> aus.</p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Zustand</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Strom</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Was passiert</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>kalt</strong></p></td>
+                <td colspan="1" rowspan="1"><p>I ≤ I<sub>N</sub></p></td>
+                <td colspan="1" rowspan="1"><p>Bimetall gerade, die Klinke hält das Schaltschloss fest.</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>warm</strong></p></td>
+                <td colspan="1" rowspan="1"><p>I &gt; I<sub>N</sub></p></td>
+                <td colspan="1" rowspan="1"><p>Bimetall biegt sich zur Seite von Metall B, drückt gegen die Klinke, das Schaltschloss wird <strong>entklinkt</strong>. Die Kontakte öffnen.</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Bei Überlast erwärmt der Strom das Bimetall, oft zusätzlich über eine <strong>Heizwicklung</strong>. I<sub>N</sub> ist der <strong>Bemessungsstrom</strong> des LS-Schalters.</p>
+<blockquote>
+    <p>Das Bimetall braucht Zeit, um sich zu erwärmen. Der thermische Auslöser reagiert deshalb <strong>verzögert</strong>, und zwar umso schneller, je größer der Überstrom ist.</p>
+</blockquote>
+
+<h2>🧮 Tims Fall nachgerechnet</h2>
+<p>Tim betreibt 2 Heizlüfter und 1 Wasserkocher an 230 V. Jedes Gerät hat <strong>2000 W</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Gesamtleistung:</strong> P = 2000 W + 2000 W + 2000 W = <strong>6000 W</strong></p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> I = P / U = 6000 W / 230 V ≈ <strong>26,1 A</strong></p>
+    </li>
+    <li>
+        <p><strong>Vergleich:</strong> 26,1 A &gt; I<sub>N</sub> = 16 A. Das ist eine <strong>Überlast</strong>.</p>
+    </li>
+</ol>
+<p>I ist der Strom in A, P die Leistung in W und U die Spannung in V. Weil der thermische Auslöser verzögert reagiert, fiel Tims Stromkreis erst nach Minuten aus.</p>
+
+<h2>⚡ Der elektromagnetische Auslöser bei Kurzschluss</h2>
+<p>Bei einem Kurzschluss arbeitet der <strong>elektromagnetische Auslöser</strong>. Der Strom fließt vom Netz durch seine <strong>Spule</strong> zum Verbraucher.</p>
+<ul>
+    <li>
+        <p>Bei einem Kurzschluss steigt der Strom <strong>schlagartig auf ein Vielfaches</strong>. Das starke Magnetfeld reißt den <strong>Schlaganker</strong> zur Seite.</p>
+    </li>
+    <li>
+        <p>Der Schlaganker schlägt das <strong>bewegliche Schaltstück</strong> um den <strong>Drehpunkt</strong> vom <strong>festen Schaltstück</strong> weg.</p>
+    </li>
+    <li>
+        <p>Den <strong>Kontaktdruck</strong> liefert sonst das <strong>Schaltschloss</strong>. Der Schlaganker entklinkt es gleich mit, damit die Kontakte offen bleiben.</p>
+    </li>
+    <li>
+        <p>Das passiert <strong>unverzögert, in wenigen Millisekunden</strong>.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h2>🔥 Abschalten und wieder einschalten</h2>
+<ul>
+    <li>
+        <p><strong>Lichtbogen:</strong> Trennen sich die Kontakte unter Last, entsteht ein Lichtbogen. Die <strong>Funken-Löschkammer</strong> teilt und kühlt ihn, so erlischt er schnell.</p>
+    </li>
+    <li>
+        <p><strong>Freiauslösung:</strong> Der LS-Schalter schaltet auch dann ab, wenn jemand den Hebel festhält.</p>
+    </li>
+    <li>
+        <p><strong>Wieder einschalten:</strong> erst, wenn du die <strong>Ursache gefunden und beseitigt</strong> hast.</p>
+    </li>
+</ul>
+
+<h2>🏷️ Was bedeutet B16?</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Teil des Aufdrucks</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>B</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Auslösecharakteristik. Welche du wann wählst, lernst du in der nächsten Lektion.</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>16</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Bemessungsstrom I<sub>N</sub> = 16 A</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>I<sub>N</sub> muss zur Leitung passen:</strong> Der Bemessungsstrom darf nicht größer sein als die Strombelastbarkeit der Leitung, die der LS-Schalter schützt.</p>
+
+<h2>❔ Welcher Auslöser war es?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1, Tims Stromkreis fällt nach einigen Minuten aus:</strong> Der <strong>thermische Auslöser</strong> hat ausgelöst. 26,1 A sind bei 16 A Bemessungsstrom eine Überlast.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2, Mias Leuchte lässt ihn sofort ausfallen:</strong> Der <strong>elektromagnetische Auslöser</strong> hat ausgelöst. In der gequetschten Leitung berühren sich zwei Leiter, ein Kurzschluss.</p>
+    </li>
+</ul>
+<p><strong>Nicht einfach wieder einschalten!</strong> Die Ursache ist noch da. Erst wenn sie beseitigt ist, darf wieder eingeschaltet werden: Die Heizlüfter kommen auf verschiedene Stromkreise, und die Leuchte wird aussortiert.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein LS-Schalter, der immer wieder nach einigen Minuten auslöst, ist meist kein Defekt. Er zeigt eine dauerhafte Überlast an. Die Lösung ist nicht ein größerer LS-Schalter, denn dann wäre die Leitung nicht mehr geschützt. Die Lösung ist eine bessere Aufteilung der Verbraucher auf mehrere Stromkreise. Löst er dagegen sofort aus, suchst du nach einem Kurzschluss, zum Beispiel in einer beschädigten Leitung. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Der LS-Schalter <strong>schützt die Leitung</strong> vor zu hoher Erwärmung. Bei <strong>Überlast</strong> löst das <strong>Bimetall verzögert</strong> aus. Bei <strong>Kurzschluss</strong> löst der <strong>Schlaganker unverzögert in Millisekunden</strong> aus. Bei Körperschluss im TN-System schaltet er ab, Personen schützt zusätzlich die RCD. <strong>Wieder einschalten erst, wenn die Ursache beseitigt ist.</strong></p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ordne die Auslöser sicher zu: <strong>thermisch = Bimetall = Überlast = verzögert</strong>, <strong>elektromagnetisch = Spule mit Schlaganker = Kurzschluss = unverzögert</strong>. Beim Aufdruck wie B16 steht der Buchstabe für die Auslösecharakteristik und die Zahl für den Bemessungsstrom in A. Und denk daran: Der LS-Schalter schützt die Leitung, den zusätzlichen Personenschutz übernimmt die RCD.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wovor schützt der LS-Schalter in erster Linie?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Er schützt die Leitung vor zu hoher Erwärmung durch Überlast und Kurzschluss. So schmilzt die Isolierung nicht, und es entsteht kein Brand.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Warum löst der thermische Auslöser verzögert aus?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Das Bimetall braucht Zeit, um sich zu erwärmen und zu verbiegen. Je größer der Überstrom, desto schneller löst es aus.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> 3 Geräte mit je 2000 W hängen an einem B16-Stromkreis mit 230 V. Liegt eine Überlast vor?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ja. I = 6000 W / 230 V ≈ 26,1 A, und das ist mehr als I<sub>N</sub> = 16 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Wie schaltet der elektromagnetische Auslöser bei Kurzschluss ab?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der stark ansteigende Strom erzeugt in der Spule ein starkes Magnetfeld. Es reißt den Schlaganker zur Seite, der das bewegliche Schaltstück wegschlägt und das Schaltschloss entklinkt. Das dauert nur wenige Millisekunden.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was bedeutet Freiauslösung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der LS-Schalter schaltet auch dann ab, wenn jemand den Betätigungshebel festhält.</p>
+    </div>
+</details>
+<p></p>

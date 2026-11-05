@@ -1,0 +1,326 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was eine <strong>Ablaufsteuerung</strong> ist und wie sie mit Betriebsartenteil, Ablaufkette und Befehlsausgabe aufgebaut ist.</p>
+    </li>
+    <li>
+        <p>Wie du eine <strong>Ablaufkette nach DIN EN 60848 (GRAFCET)</strong> liest und zeichnest.</p>
+    </li>
+    <li>
+        <p>Wie sich <strong>kontinuierlich</strong> und <strong>speichernd wirkende Aktionen</strong> unterscheiden.</p>
+    </li>
+    <li>
+        <p>Wie du die Kette mit <strong>Schrittmerkern</strong> in der SPS umsetzt.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH steht ein <strong>Aufzugmodell</strong>. Es hat <strong>3 Etagen</strong> und wird von einer <strong>SPS</strong> gesteuert. Mia und Tim sollen das Programm schreiben. Ausbilderin Frau Schneider sagt: Plant zuerst den Ablauf als Ablaufkette. Mia fragt sich: In welcher Reihenfolge läuft alles ab, und wann geht es weiter? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🪜 Was ist eine Ablaufsteuerung?</h2>
+<p>Eine Ablaufsteuerung arbeitet einen Ablauf <strong>Schritt für Schritt</strong> ab. Der nächste Schritt beginnt erst, wenn seine <strong>Weiterschaltbedingung</strong> erfüllt ist. Beim Aufzug heißt das:</p>
+<ol>
+    <li>
+        <p>Die <strong>Tür öffnet</strong>, bis sie offen ist.</p>
+    </li>
+    <li>
+        <p>Die <strong>Tür schließt</strong>, bis sie zu ist.</p>
+    </li>
+    <li>
+        <p>Erst bei geschlossener Tür <strong>fährt die Kabine</strong>.</p>
+    </li>
+</ol>
+<p><strong>Abgrenzung:</strong> Bei der <strong>Verknüpfungssteuerung</strong> hängen die Ausgänge nur von der Verknüpfung der Eingänge ab. Eine feste Schrittfolge gibt es dort nicht.</p>
+
+<h2>⏱️ Drei Arten von Ablaufsteuerungen</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Art</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Weiterschalten</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel Aufzug</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Zeitgeführt</strong></p></td>
+                <td colspan="1" rowspan="1"><p>nach fester Zeit, egal was im Prozess passiert</p></td>
+                <td colspan="1" rowspan="1"><p>Tür bleibt immer genau 10 s offen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Prozessgeführt</strong></p></td>
+                <td colspan="1" rowspan="1"><p>nach einem Signal aus dem Prozess</p></td>
+                <td colspan="1" rowspan="1"><p>Kabine fährt erst, wenn ein Sensor meldet: Tür zu und verriegelt</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Mischform</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Zeit und Signal kombiniert</p></td>
+                <td colspan="1" rowspan="1"><p>Tür schließt nach 10 s oder sofort per Taster</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🏗️ Aufbau einer Ablaufsteuerung</h2>
+<p>Im Programm ist eine Ablaufsteuerung in feste Teile gegliedert:</p>
+<ul>
+    <li>
+        <p><strong>Wahl der Betriebsart:</strong> Einrichten, Einzelschritt oder Automatik.</p>
+    </li>
+    <li>
+        <p><strong>Betriebsartenteil:</strong> erkennt die Betriebsart und gibt den Ablauf frei.</p>
+    </li>
+    <li>
+        <p><strong>Ablaufkette:</strong> legt die Reihenfolge der Schritte fest.</p>
+    </li>
+    <li>
+        <p><strong>Meldungen:</strong> entstehen parallel, zum Beispiel Status, Warnungen oder Fehler.</p>
+    </li>
+    <li>
+        <p><strong>Befehlsausgabe:</strong> Hier entstehen die Befehle, zum Beispiel Tür auf.</p>
+    </li>
+    <li>
+        <p><strong>Verriegelungen:</strong> prüfen vorher, ob der Befehl sicher ist. Die Tür darf nicht öffnen, während die Kabine fährt.</p>
+    </li>
+    <li>
+        <p><strong>Stellglieder:</strong> Zum Schluss gehen die Befehle an Schütze, Ventile, Leuchten und Motoren.</p>
+    </li>
+</ul>
+
+<h2>🎛️ Die Betriebsarten</h2>
+<ul>
+    <li>
+        <p><strong>Automatik:</strong> Die Kette läuft selbstständig durch. Das ist der Normalbetrieb.</p>
+    </li>
+    <li>
+        <p><strong>Einzelschritt:</strong> Es geht nur per Tastendruck einen Schritt weiter, mit oder ohne Prüfung der Weiterschaltbedingung.</p>
+    </li>
+    <li>
+        <p><strong>Einrichten:</strong> Du schaltest einzelne Aktoren von Hand, zum Beispiel bei der Inbetriebnahme oder Fehlersuche.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Wichtig: Die <strong>Verriegelungen wirken immer</strong>, in jeder Betriebsart.</p>
+</blockquote>
+
+<h2>📐 Die Elemente der Ablaufkette nach DIN EN 60848</h2>
+<p>Die Ablaufkette wird nach <strong>DIN EN 60848</strong> gezeichnet, also als <strong>GRAFCET</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Element</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Darstellung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Anfangsschritt</strong></p></td>
+                <td colspan="1" rowspan="1"><p>doppelter Rahmen, meist Nummer 0</p></td>
+                <td colspan="1" rowspan="1"><p>ist beim Start aktiv</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Transition</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Querstrich, rechts die Bedingung</p></td>
+                <td colspan="1" rowspan="1"><p>Weiterschaltbedingung, z. B. SF1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Schritt</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Quadrat mit Schrittnummer</p></td>
+                <td colspan="1" rowspan="1"><p>ein Zustand im Ablauf</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Aktion</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Rechteck rechts am Schritt</p></td>
+                <td colspan="1" rowspan="1"><p>QA1: Türmotor auf, solange Schritt 1 aktiv ist</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Wirkverbindung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>senkrechte Linie</p></td>
+                <td colspan="1" rowspan="1"><p>verläuft von oben nach unten</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>➡️ Wann schaltet die Kette weiter?</h2>
+<p>Vorher ist <strong>Schritt 0 aktiv</strong>. Jemand drückt den Ruftaster, <strong>SF1 wird 1</strong>, die Bedingung ist erfüllt. Nachher ist <strong>Schritt 1 aktiv</strong> und Schritt 0 nicht mehr.</p>
+<blockquote>
+    <p><strong>Schaltregel:</strong> Eine Transition schaltet nur, wenn der <strong>Schritt davor aktiv</strong> ist <strong>und</strong> die <strong>Bedingung erfüllt</strong> ist. In einer einfachen Kette ist deshalb immer <strong>genau ein Schritt aktiv</strong>.</p>
+</blockquote>
+
+<h2>🛗 Die Ablaufkette der Aufzugtür</h2>
+
+{{IMG2}}
+
+<ol>
+    <li>
+        <p><strong>Schritt 0 (Anfangsschritt):</strong> Die Kabine wartet, bis jemand den Ruftaster <strong>SF1</strong> drückt.</p>
+    </li>
+    <li>
+        <p><strong>Schritt 1:</strong> <strong>QA1</strong> öffnet die Tür, bis <strong>BG1</strong> meldet: Tür offen.</p>
+    </li>
+    <li>
+        <p><strong>Schritt 2:</strong> Die Tür bleibt offen, für <strong>10 s oder bis zum Taster SF2</strong>. Die Bedingung lautet <strong>10s/X2 + SF2</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Schritt 3:</strong> <strong>QA2</strong> schließt die Tür, bis <strong>BG2</strong> meldet: zu und verriegelt.</p>
+    </li>
+    <li>
+        <p><strong>Schritt 4:</strong> Die Kabine fährt mit <strong>QA3</strong>. Meldet <strong>BG3</strong> die Zieletage, führt die Linie mit Pfeil zurück zum Anfangsschritt.</p>
+    </li>
+</ol>
+
+<h2>🔣 Bedingungen richtig lesen</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Schreibweise</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>10s/X2</strong></p></td>
+                <td colspan="1" rowspan="1"><p>10 s, nachdem Schritt 2 aktiv geworden ist</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>X2</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Schrittvariable: ist 1, solange Schritt 2 aktiv ist. Sie ist kein eigener Zeitbaustein.</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>+</strong></p></td>
+                <td colspan="1" rowspan="1"><p>ODER</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>· (Malpunkt)</strong></p></td>
+                <td colspan="1" rowspan="1"><p>UND</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Strich über B2</strong></p></td>
+                <td colspan="1" rowspan="1"><p>NICHT B2, also B2 = 0</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Die Bedingung <strong>10s/X2 + SF2</strong> in Schritt 2 ist also die <strong>Mischform</strong>: Zeit ODER Signal. Die Tür schließt nach 10 s oder sofort mit dem Taster SF2.</p>
+
+<h2>💡 Kontinuierlich und speichernd wirkende Aktionen</h2>
+<ul>
+    <li>
+        <p><strong>Kontinuierlich wirkend:</strong> PF1 ist 1, <strong>solange der Schritt aktiv</strong> ist.</p>
+    </li>
+    <li>
+        <p><strong>Speichernd, Setzen beim Aktivieren</strong> (Pfeil nach oben, <strong>PF1 := 1</strong>): PF1 wird beim Aktivieren auf 1 gesetzt und bleibt an, auch wenn der Schritt endet.</p>
+    </li>
+    <li>
+        <p><strong>Speichernd, Rücksetzen beim Aktivieren</strong> (Pfeil nach oben, <strong>PF1 := 0</strong>): PF1 wird auf 0 zurückgesetzt, wenn der Schritt beginnt.</p>
+    </li>
+    <li>
+        <p><strong>Speichernd, Rücksetzen beim Deaktivieren</strong> (Pfeil nach unten, <strong>PF1 := 0</strong>): PF1 wird erst zurückgesetzt, wenn der Schritt endet.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h2>🛗 Speichernd wirken im Aufzug</h2>
+<ul>
+    <li>
+        <p>Der <strong>Türmotor QA1</strong> wirkt kontinuierlich. Er läuft nur in Schritt 1.</p>
+    </li>
+    <li>
+        <p>Die Anzeige <strong>PF1 „Aufzug besetzt"</strong> leuchtet von Schritt 1 bis zum Ende von Schritt 4. Sie wird <strong>beim Aktivieren von Schritt 1</strong> gesetzt (PF1 := 1) und <strong>beim Deaktivieren von Schritt 4</strong> zurückgesetzt (PF1 := 0).</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Was speichernd gesetzt wird, muss auch wieder zurückgesetzt werden. Sonst bleibt der Ausgang an.</p>
+
+<h2>🖥️ Die Kette in der SPS</h2>
+<p>Jeder Schritt bekommt einen <strong>Schrittmerker</strong>, Schritt 1 zum Beispiel <strong>M0.1</strong>. Er wird als SR-Speicher programmiert:</p>
+<ul>
+    <li>
+        <p><strong>Setzen:</strong> wenn Schritt 0 aktiv ist <strong>UND</strong> SF1 = 1 ist, also M0.0 &amp; SF1.</p>
+    </li>
+    <li>
+        <p><strong>Rücksetzen:</strong> sobald der nächste Schritt aktiv ist, also über <strong>M0.2</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Anlauf:</strong> Den Anfangsschritt M0.0 setzt die SPS beim Anlauf.</p>
+    </li>
+    <li>
+        <p><strong>Befehlsausgabe:</strong> QA1 schaltet, solange M0.1 gesetzt ist.</p>
+    </li>
+</ul>
+
+<h2>⚠️ Typischer Fehler: Rücksetzen vergessen</h2>
+<ul>
+    <li>
+        <p><strong>Falsch:</strong> Das Rücksetzen fehlt. M0.1 bleibt gesetzt. In Schritt 3 bekommt der Türmotor gleichzeitig auf (QA1) und zu (QA2).</p>
+    </li>
+    <li>
+        <p><strong>Richtig:</strong> Jeder neue Schritt setzt den vorherigen zurück, und QA1 und QA2 sind gegeneinander verriegelt.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Teste die Kette im <strong>Einzelschrittbetrieb</strong>. So siehst du sofort, ob immer nur ein Schritt aktiv ist.</p>
+</blockquote>
+
+<h2>🔍 Was passiert jetzt?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1:</strong> Schritt 2 ist aktiv, nach 4 s drückt jemand SF2. Die Kette schaltet <strong>sofort weiter</strong> auf Schritt 3, denn bei ODER reicht der Taster.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2:</strong> Schritt 3 ist aktiv, aber BG2 meldet noch 0. Es passiert <strong>noch nichts</strong>, die Tür schließt weiter.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Weiter geht es nur bei aktivem Schritt und erfüllter Bedingung.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Mia und Tim zeichnen die Kette zuerst auf Papier: Schritte 0 bis 4, Transitionen SF1, BG1, 10s/X2 + SF2, BG2 und BG3, rechts die Aktionen QA1, QA2 und QA3 sowie PF1. Danach setzen sie jeden Schritt als Merker M0.0 bis M0.4 in der SPS um. Im Einzelschrittbetrieb prüfen sie, dass immer nur ein Merker gesetzt ist, bevor das Aufzugmodell im Automatikbetrieb läuft. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Eine <strong>Ablaufsteuerung</strong> arbeitet Schritt für Schritt, zeitgeführt, prozessgeführt oder gemischt. Die <strong>Ablaufkette</strong> besteht aus Anfangsschritt, Schritten, Transitionen und Aktionen. In einer einfachen Kette ist immer <strong>genau ein Schritt aktiv</strong>. <strong>Speichernde Aktionen</strong> setzen einen Ausgang, bis er zurückgesetzt wird. In der SPS wird jeder Schritt ein <strong>Merker mit Setzen und Rücksetzen</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Achte beim Lesen von GRAFCET auf die Zeichen: <strong>+ ist ODER</strong>, der <strong>Malpunkt ist UND</strong>, ein <strong>Strich darüber ist NICHT</strong>. Bei Zeitbedingungen wie 10s/X2 läuft die Zeit ab dem Aktivwerden von Schritt 2. Prüfe bei speichernden Aktionen immer, wo der Ausgang wieder zurückgesetzt wird.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wie unterscheiden sich zeitgeführte, prozessgeführte und gemischte Ablaufsteuerungen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Zeitgeführt schaltet nach fester Zeit weiter, prozessgeführt nach einem Signal aus dem Prozess, die Mischform kombiniert Zeit und Signal.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wann schaltet eine Transition?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Nur wenn der Schritt davor aktiv ist und die Weiterschaltbedingung erfüllt ist. Deshalb ist in einer einfachen Kette immer genau ein Schritt aktiv.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Was bedeutet die Bedingung 10s/X2 + SF2?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Weiterschalten 10 s nachdem Schritt 2 aktiv geworden ist ODER sofort, wenn der Taster SF2 gedrückt wird.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Wie wird die Anzeige PF1 „Aufzug besetzt" angesteuert?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Speichernd: Sie wird beim Aktivieren von Schritt 1 gesetzt (PF1 := 1) und beim Deaktivieren von Schritt 4 zurückgesetzt (PF1 := 0).</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was passiert, wenn das Rücksetzen des Schrittmerkers M0.1 fehlt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ M0.1 bleibt gesetzt. In Schritt 3 bekommt der Türmotor gleichzeitig auf und zu. Richtig ist: Der nächste Schritt setzt den vorherigen zurück, und QA1 und QA2 sind gegeneinander verriegelt.</p>
+    </div>
+</details>
+<p></p>

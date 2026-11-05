@@ -1,0 +1,233 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie du die Formel für den Spannungsfall <strong>nach dem Querschnitt A umstellst</strong>.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>Querschnitt für eine Motorzuleitung</strong> Schritt für Schritt berechnest.</p>
+    </li>
+    <li>
+        <p>Wie du den passenden <strong>Normquerschnitt</strong> wählst.</p>
+    </li>
+    <li>
+        <p>Warum du zusätzlich die <strong>Strombelastbarkeit I<sub>Z</sub></strong> prüfen musst und welcher Querschnitt am Ende gilt.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH bekommen Tim und Mia einen neuen Auftrag. Ein <strong>Motor mit 400 V Drehstrom</strong> nimmt <strong>I<sub>B</sub> = 18 A</strong> auf, sein <strong>cos φ ist 0,9</strong>. Ausbilderin Frau Schneider gibt ihnen die Planung: <strong>25 m Kupferleitung</strong> vom Verteiler bis zum Motor. Der Spannungsfall darf <strong>höchstens 10 V</strong> betragen. Ihre Frage: Welchen Querschnitt braucht die Leitung? Genau das findest du in dieser Lektion heraus. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔄 Die Formel umstellen</h2>
+<p>Beim Spannungsfall war der Querschnitt A gegeben und ΔU gesucht. Jetzt ist es umgekehrt: <strong>ΔU ist vorgegeben, A ist gesucht.</strong> Du startest mit der Formel für Drehstrom:</p>
+<ul>
+    <li>
+        <p><strong>ΔU = √3 × l × I × cos φ / (γ × A)</strong></p>
+    </li>
+</ul>
+<p>A und ΔU tauschen die Plätze. Umgestellt gilt:</p>
+<ul>
+    <li>
+        <p><strong>Drehstrom:</strong> A = √3 × l × I × cos φ / (γ × ΔU)</p>
+    </li>
+    <li>
+        <p><strong>Wechselstrom:</strong> A = 2 × l × I × cos φ / (γ × ΔU)</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>A</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Querschnitt</p></td>
+                <td colspan="1" rowspan="1"><p>mm²</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>l</strong></p></td>
+                <td colspan="1" rowspan="1"><p>einfache Länge</p></td>
+                <td colspan="1" rowspan="1"><p>m</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Strom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>cos φ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leistungsfaktor</p></td>
+                <td colspan="1" rowspan="1"><p>ohne Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>γ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leitfähigkeit, Kupfer 56</p></td>
+                <td colspan="1" rowspan="1"><p>m/(Ω · mm²)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>ΔU</strong></p></td>
+                <td colspan="1" rowspan="1"><p>maximal zulässiger Spannungsfall</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>📏 Die Leitungslänge</h2>
+<p>Die Zuleitung führt <strong>3 Außenleiter L1, L2 und L3</strong> vom Verteiler zum Motor.</p>
+<ul>
+    <li>
+        <p>Für l nimmst du die <strong>einfache Länge</strong>, hier <strong>l = 25 m</strong>.</p>
+    </li>
+    <li>
+        <p>Der <strong>Rückleiter ist schon drin:</strong> Die Formel enthält den Rückweg des Stroms im Faktor √3 bei Drehstrom bzw. im Faktor 2 bei Wechselstrom.</p>
+    </li>
+</ul>
+<blockquote>
+    <p><strong>Fehler: 50 m einsetzen.</strong> Dann rechnest du den Rückleiter doppelt, und der Querschnitt wird viel zu groß.</p>
+</blockquote>
+
+<h2>🧮 Querschnitt berechnen</h2>
+<p>Gegeben: <strong>l = 25 m</strong>, <strong>I<sub>B</sub> = 18 A</strong>, <strong>cos φ = 0,9</strong>, <strong>ΔU = 10 V</strong>. Für Kupfer gilt laut Tabellenbuch <strong>γ = 56 m/(Ω · mm²)</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Formel:</strong> A = √3 × l × I × cos φ / (γ × ΔU)</p>
+    </li>
+    <li>
+        <p><strong>Einsetzen:</strong> A = 1,732 × 25 m × 18 A × 0,9 / (56 m/(Ω · mm²) × 10 V)</p>
+    </li>
+    <li>
+        <p><strong>Zähler und Nenner:</strong> A = 701,46 / 560</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> A ≈ <strong>1,25 mm²</strong></p>
+    </li>
+</ol>
+<p>Diesen Wert findest du aber in keinem Katalog.</p>
+
+<h2>🔢 Der Normquerschnitt</h2>
+<p>Leitungen gibt es nur in <strong>genormten Querschnitten</strong>, zum Beispiel:</p>
+<ul>
+    <li>
+        <p><strong>1,5 mm², 2,5 mm², 4 mm², 6 mm², 10 mm² und 16 mm²</strong></p>
+    </li>
+</ul>
+<p>Auf den berechneten Wert von 1,25 mm² folgt als nächster Wert <strong>1,5 mm²</strong>.</p>
+<blockquote>
+    <p><strong>Immer aufrunden, nie abrunden.</strong> Sonst wäre ΔU größer als erlaubt.</p>
+</blockquote>
+<p>Für den Spannungsfall reicht also 1,5 mm². Fertig ist die Aufgabe damit aber noch nicht, es fehlt eine zweite Prüfung.</p>
+
+<h2>🌡️ Die Strombelastbarkeit</h2>
+<p>Jeder Strom <strong>erwärmt die Leitung</strong>. <strong>I<sub>Z</sub></strong> ist der höchste zulässige Strom, den sie <strong>dauerhaft</strong> führen darf. Die Tabellenbuchwerte nach <strong>DIN VDE 0298-4</strong> gelten hier für eine Mantelleitung <strong>NYM auf der Wand, Verlegeart C, mit 3 belasteten Adern</strong>, Kupfer, 30 °C Umgebung:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Querschnitt</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">I<sub>Z</sub></span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">für I<sub>B</sub> = 18 A</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>1,5 mm²</strong></p></td>
+                <td colspan="1" rowspan="1"><p>17,5 A</p></td>
+                <td colspan="1" rowspan="1"><p>18 A &gt; 17,5 A, wird zu warm</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>2,5 mm²</strong></p></td>
+                <td colspan="1" rowspan="1"><p>24 A</p></td>
+                <td colspan="1" rowspan="1"><p>18 A ≤ 24 A, passt</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>4 mm²</strong></p></td>
+                <td colspan="1" rowspan="1"><p>32 A</p></td>
+                <td colspan="1" rowspan="1"><p>passt, aber nicht nötig</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG3}}
+
+<p><strong>Nur für diese Verlegung:</strong> Bei <strong>Häufung</strong> mehrerer Leitungen oder <strong>höherer Umgebungstemperatur</strong> sinkt I<sub>Z</sub>, dann gelten kleinere Werte.</p>
+
+<h2>✅ Zwei Prüfungen, ein Ergebnis</h2>
+<ol>
+    <li>
+        <p><strong>Spannungsfall:</strong> verlangt mindestens <strong>1,5 mm²</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Strombelastbarkeit:</strong> verlangt mindestens <strong>2,5 mm²</strong>.</p>
+    </li>
+</ol>
+<p><strong>Es gilt immer der größere Querschnitt, also 2,5 mm².</strong></p>
+<p>Ein kurzer Ausblick auf die Absicherung: Es gilt <strong>I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub></strong>. I<sub>N</sub> ist der Nennstrom der Schutzeinrichtung. Hier gilt <strong>18 A ≤ 20 A ≤ 24 A</strong>. Eine Schutzeinrichtung mit <strong>20 A</strong> passt also.</p>
+
+<h2>🔍 Typische Denkfehler</h2>
+<ul>
+    <li>
+        <p><strong>Warum nicht einfach 1,5 mm²?</strong> Die Leitung schafft nur 17,5 A, der Motor braucht 18 A. Sie würde zu warm.</p>
+    </li>
+    <li>
+        <p><strong>Tim setzt für l 50 m ein.</strong> Er rechnet den Rückleiter doppelt: A = 1,732 × 50 m × 18 A × 0,9 / 560 ≈ <strong>2,51 mm²</strong>. Damit wählt er unnötig <strong>4 mm²</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Die einfache Länge kommt in die Formel, und der größere Querschnitt gilt.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Bei kurzen Leitungen entscheidet meist die Strombelastbarkeit über den Querschnitt, so wie bei Tims und Mias Motorzuleitung. Bei sehr langen Leitungen ist es oft umgekehrt: Dann verlangt der Spannungsfall den größeren Querschnitt, obwohl die Leitung thermisch einen kleineren schaffen würde. Deshalb rechnest du in der Praxis immer beide Prüfungen und nimmst den größeren Wert. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Für den Querschnitt stellst du die Formel nach A um: <strong>A = √3 × l × I × cos φ / (γ × ΔU)</strong>, bei Wechselstrom mit Faktor 2. l ist die <strong>einfache Leitungslänge</strong>, der Rückleiter steckt im Faktor √3 bzw. 2. Du <strong>rundest auf den nächsten Normquerschnitt auf</strong>. Danach prüfst du die <strong>Strombelastbarkeit</strong>, der größere Querschnitt gilt. Für die Absicherung gilt I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Bei Querschnittsaufgaben gibt es oft Punkte für jeden Teilschritt: Formel umstellen, einsetzen, auf Normquerschnitt aufrunden, Strombelastbarkeit aus der Tabelle prüfen und das Endergebnis begründen. Achte auf die richtige Tabellenzeile, also <strong>Verlegeart und Anzahl der belasteten Adern</strong>. Wer nur den Spannungsfall rechnet, landet hier bei 1,5 mm² und liegt falsch.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wie lautet die nach A umgestellte Formel für Drehstrom?</summary>
+    <div data-type="detailsContent">
+        <p>✅ A = √3 × l × I × cos φ / (γ × ΔU). Bei Wechselstrom steht statt √3 der Faktor 2.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> 25 m, 18 A, cos φ = 0,9, ΔU = 10 V, Kupfer: Welcher Querschnitt ergibt sich rechnerisch?</summary>
+    <div data-type="detailsContent">
+        <p>✅ A = 701,46 / 560 ≈ 1,25 mm². Aufgerundet auf den Normquerschnitt sind das 1,5 mm².</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Warum nehmen Tim und Mia nicht einfach 1,5 mm²?</summary>
+    <div data-type="detailsContent">
+        <p>✅ NYM 1,5 mm² in Verlegeart C mit 3 belasteten Adern schafft nur 17,5 A. Der Motor braucht 18 A, die Leitung würde zu warm. Deshalb gilt 2,5 mm² mit 24 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Was passiert, wenn Tim für l 50 m einsetzt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Er rechnet den Rückleiter doppelt, kommt auf 2,51 mm² und wählt unnötig 4 mm².</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Welche Schutzeinrichtung passt zu I<sub>B</sub> = 18 A und I<sub>Z</sub> = 24 A?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Eine mit I<sub>N</sub> = 20 A, denn es gilt 18 A ≤ 20 A ≤ 24 A.</p>
+    </div>
+</details>
+<p></p>

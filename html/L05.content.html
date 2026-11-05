@@ -1,0 +1,280 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was der <strong>Betriebsstrom I<sub>B</sub></strong> ist und warum er die Grundlage für Leitung und Schutz bildet.</p>
+    </li>
+    <li>
+        <p>Welche <strong>Formeln</strong> für <strong>Gleichstrom, Wechselstrom und Drehstrom</strong> gelten.</p>
+    </li>
+    <li>
+        <p>Was der <strong>Leistungsfaktor cos φ</strong> bedeutet und warum beim Motor der <strong>Wirkungsgrad η</strong> dazugehört.</p>
+    </li>
+    <li>
+        <p>Wie du den Betriebsstrom für einen <strong>Drehstrommotor</strong> und ein <strong>Heizgerät</strong> Schritt für Schritt berechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH steht ein neuer <strong>Drehstrommotor</strong> für eine Pumpe. Er leistet <strong>9,2 kW an 400 V</strong>. Mia und Tim lesen auf dem Typenschild außerdem <strong>cos φ = 0,85</strong> und einen <strong>Wirkungsgrad von 87 %</strong> ab. Das Feld mit dem Strom hat Ausbilderin Frau Schneider mit Klebeband abgedeckt. Ihre Frage: Wie groß ist der Betriebsstrom des Motors? Genau das rechnest du in dieser Lektion mit den beiden aus. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>⚡ Was ist der Betriebsstrom?</h2>
+<p>Der <strong>Betriebsstrom I<sub>B</sub></strong> ist der Strom, der im <strong>ungestörten Betrieb dauerhaft</strong> fließt. Er ist der Ausgangspunkt für jede Planung eines Stromkreises.</p>
+<ul>
+    <li>
+        <p><strong>Grundlage für den Leitungsschutz:</strong> Es gilt die Bedingung <strong>I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub></strong>. Dabei ist I<sub>N</sub> der Bemessungsstrom der Schutzeinrichtung in A und I<sub>Z</sub> die Strombelastbarkeit der Leitung in A.</p>
+    </li>
+    <li>
+        <p><strong>Grundlage für den Querschnitt:</strong> Die Leitung muss I<sub>B</sub> dauerhaft führen, ohne zu warm zu werden.</p>
+    </li>
+    <li>
+        <p><strong>Nicht gemeint</strong> sind der kurze <strong>Anlaufstrom</strong> beim Einschalten und der <strong>Kurzschlussstrom</strong>.</p>
+    </li>
+</ul>
+
+<h2>📐 Die Formeln für I<sub>B</sub></h2>
+<p>Wie du I<sub>B</sub> berechnest, hängt von der <strong>Netzart</strong> ab:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Netzart</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formel</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Hinweis</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Gleichstrom, ohmsche Last</strong></p></td>
+                <td colspan="1" rowspan="1"><p>I = P / U</p></td>
+                <td colspan="1" rowspan="1"><p>kein cos φ</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Einphasen-Wechselstrom</strong></p></td>
+                <td colspan="1" rowspan="1"><p>I = P / (U × cos φ)</p></td>
+                <td colspan="1" rowspan="1"><p>cos φ im Nenner</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Drehstrom</strong></p></td>
+                <td colspan="1" rowspan="1"><p>I = P / (√3 × U × cos φ)</p></td>
+                <td colspan="1" rowspan="1"><p>zusätzlich √3, U = 400 V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>I ist der Strom in A, P die Wirkleistung in W, U die Spannung in V und cos φ der Leistungsfaktor ohne Einheit. Die <strong>Wurzel aus 3</strong> ist rund <strong>1,732</strong>.</p>
+<blockquote>
+    <p>Bei Drehstrom setzt du die Spannung <strong>zwischen zwei Außenleitern</strong> ein, also <strong>400 V</strong>. Es gilt 400 V = √3 × 230 V.</p>
+</blockquote>
+
+<h2>🔺 Der Leistungsfaktor cos φ</h2>
+<p>Was cos φ bedeutet, zeigt das <strong>Leistungsdreieck</strong>:</p>
+<ul>
+    <li>
+        <p><strong>Waagerecht</strong> liegt die <strong>Wirkleistung P</strong> in W. Sie wird in Arbeit oder Wärme umgesetzt.</p>
+    </li>
+    <li>
+        <p><strong>Senkrecht</strong> steht die <strong>Blindleistung Q</strong> in var (Volt-Ampere reaktiv). Sie baut beim Motor das Magnetfeld auf.</p>
+    </li>
+    <li>
+        <p>Zusammen ergeben sie die <strong>Scheinleistung S</strong> in VA als schräge Seite des Dreiecks.</p>
+    </li>
+    <li>
+        <p>Der Winkel φ liegt zwischen P und S. Es gilt <strong>cos φ = P / S</strong>.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<p>Die Blindleistung geht nicht verloren, sie <strong>pendelt hin und her</strong>. Sie belastet aber die Leitung. Deshalb gilt: <strong>Je kleiner cos φ, desto größer wird der Strom.</strong></p>
+
+<h2>🏷️ Das Typenschild ablesen</h2>
+<p>Auf dem Typenschild des Pumpenmotors stehen folgende Angaben:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Angabe</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>3~ Mot., 50 Hz</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Drehstrommotor für 50 Hz</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>400 V Δ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannung zwischen den Außenleitern, Dreieckschaltung</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>9,2 kW S1</strong></p></td>
+                <td colspan="1" rowspan="1"><p>P<sub>2</sub>, abgegebene Leistung an der Welle, Dauerbetrieb S1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>cos φ 0,85</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leistungsfaktor</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>η 87,0 %</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Wirkungsgrad, also η = 0,87</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>1460 1/min, IP55, Iso.-Kl. F</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Drehzahl, Schutzart, Isolierstoffklasse</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Strom in A</strong></p></td>
+                <td colspan="1" rowspan="1"><p>abgeklebt, Mia und Tim rechnen ihn selbst</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Wichtig:</strong> Die Leistung auf dem Typenschild eines Motors ist immer die <strong>abgegebene Leistung an der Welle P<sub>2</sub></strong>.</p>
+
+<h2>⚙️ Aufgenommen und abgegeben: der Wirkungsgrad</h2>
+<p>Der Motor nimmt aus dem Netz die Leistung <strong>P<sub>1</sub></strong> auf. An der Welle gibt er nur <strong>P<sub>2</sub></strong> ab und treibt damit die Pumpe. Der Rest sind <strong>Verluste</strong>, vor allem Wärme und Reibung. Deshalb gilt:</p>
+<ul>
+    <li>
+        <p><strong>P<sub>1</sub> = P<sub>2</sub> / η</strong></p>
+    </li>
+</ul>
+<p>Für den Drehstrommotor wird die Formel damit zu:</p>
+<ul>
+    <li>
+        <p><strong>I<sub>B</sub> = P<sub>2</sub> / (√3 × U × cos φ × η)</strong></p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>P<sub>1</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>aufgenommene Leistung</p></td>
+                <td colspan="1" rowspan="1"><p>W</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>P<sub>2</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>abgegebene Leistung an der Welle</p></td>
+                <td colspan="1" rowspan="1"><p>W</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>η</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Wirkungsgrad, hier 0,87</p></td>
+                <td colspan="1" rowspan="1"><p>ohne Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Außenleiterspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>cos φ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leistungsfaktor</p></td>
+                <td colspan="1" rowspan="1"><p>ohne Einheit</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>B</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Betriebsstrom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🧮 Mia und Tim berechnen den Motorstrom</h2>
+<p>Die Werte vom Typenschild: <strong>P<sub>2</sub> = 9,2 kW, U = 400 V, cos φ = 0,85, η = 0,87</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Schritt 1, aufgenommene Leistung:</strong> P<sub>1</sub> = 9200 W / 0,87 ≈ <strong>10575 W</strong></p>
+    </li>
+    <li>
+        <p><strong>Schritt 2, Nenner:</strong> √3 × U × cos φ = 1,732 × 400 V × 0,85 ≈ <strong>588,9 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Schritt 3, Betriebsstrom:</strong> I<sub>B</sub> = 10575 W / 588,9 V ≈ <strong>17,96 A</strong>, also rund <strong>18 A</strong>.</p>
+    </li>
+</ol>
+<p>Als Frau Schneider das Klebeband abzieht, steht dort <strong>18,0 A</strong>. Mia und Tim haben richtig gerechnet.</p>
+
+<h2>⚠️ Typischer Fehler: P<sub>2</sub> direkt eingesetzt</h2>
+<ul>
+    <li>
+        <p><strong>Falsch, ohne Wirkungsgrad:</strong> I = 9200 W / 588,9 V ≈ 15,62 A</p>
+    </li>
+    <li>
+        <p><strong>Richtig, erst durch η teilen:</strong> I<sub>B</sub> = 10575 W / 588,9 V ≈ 17,96 A</p>
+    </li>
+</ul>
+<p>Das sind rund <strong>2,3 A zu wenig</strong>. Leitung und Schutz würden zu knapp gewählt.</p>
+<blockquote>
+    <p>Ein zweiter Klassiker: In die Drehstromformel werden 230 V statt 400 V eingesetzt. Dann wird der Strom viel zu groß: 10575 W / (1,732 × 230 V × 0,85) ≈ <strong>31,2 A</strong>.</p>
+</blockquote>
+
+<h2>🔥 Übung: ein Heizgerät am Wechselstrom</h2>
+<p>Ein Heizgerät mit <strong>3,5 kW</strong> hängt an <strong>230 V Wechselstrom</strong>. Es ist eine <strong>ohmsche Last</strong>, also ist <strong>cos φ = 1</strong>. Die Formel I = P / (U × cos φ) wird damit zu <strong>I = P / U</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> I = 3500 W / 230 V</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> I ≈ <strong>15,2 A</strong></p>
+    </li>
+</ol>
+<p>Einen Wirkungsgrad brauchst du hier <strong>nicht</strong>. Die Leistung des Heizgeräts ist bereits die <strong>aufgenommene Leistung</strong>.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Bevor Mia und Tim die Zuleitung für den Pumpenmotor planen, notieren sie I<sub>B</sub> ≈ 18 A. Mit diesem Wert wählen sie im nächsten Schritt den Leitungsschutzschalter nach der Bedingung I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub> und prüfen, ob der Querschnitt der Leitung den Strom dauerhaft führen kann. Hätten sie den Wirkungsgrad vergessen, wären sie von 15,62 A ausgegangen und hätten zu knapp geplant. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>I<sub>B</sub> fließt im <strong>ungestörten Betrieb dauerhaft</strong>. Die Formel hängt von der <strong>Netzart</strong> ab: Gleichstrom I = P / U, Wechselstrom I = P / (U × cos φ), Drehstrom I = P / (√3 × U × cos φ). Bei Drehstrom setzt du <strong>400 V und √3</strong> ein. Beim Motor teilst du zusätzlich durch den <strong>Wirkungsgrad η</strong>. I<sub>B</sub> ist die Grundlage für Leitung und Schutz.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Prüfe bei Motoraufgaben immer, ob die Leistung <strong>P<sub>1</sub> oder P<sub>2</sub></strong> ist. Auf dem Typenschild steht P<sub>2</sub>, also musst du durch η teilen. Achte außerdem auf die richtige Spannung: bei Drehstrom 400 V zwischen den Außenleitern zusammen mit √3, bei Einphasen-Wechselstrom 230 V ohne √3.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was versteht man unter dem Betriebsstrom I<sub>B</sub>?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Den Strom, der im ungestörten Betrieb dauerhaft fließt. Anlaufstrom und Kurzschlussstrom sind nicht gemeint.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Steht auf dem Typenschild eines Motors P<sub>1</sub> oder P<sub>2</sub>?</summary>
+    <div data-type="detailsContent">
+        <p>✅ P<sub>2</sub>, die abgegebene Leistung an der Welle. Für den Strom brauchst du P<sub>1</sub> = P<sub>2</sub> / η.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Tim setzt in die Drehstromformel 230 V statt 400 V ein. Was passiert?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Strom wird viel zu groß, rund 31,2 A statt 17,96 A. Bei Drehstrom gehört die Spannung zwischen zwei Außenleitern, also 400 V, in die Formel.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Warum wird der Strom größer, wenn cos φ kleiner wird?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei kleinem cos φ ist der Anteil der Blindleistung Q größer. Sie pendelt hin und her und belastet die Leitung zusätzlich, obwohl die Wirkleistung P gleich bleibt.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Wie groß ist der Strom eines Heizgeräts mit 3,5 kW an 230 V?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ohmsche Last, cos φ = 1: I = 3500 W / 230 V ≈ 15,2 A. Ein Wirkungsgrad ist nicht nötig.</p>
+    </div>
+</details>
+<p></p>

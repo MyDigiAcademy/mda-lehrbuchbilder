@@ -1,0 +1,284 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was <strong>Regeln</strong> bedeutet und wie es sich vom <strong>Steuern</strong> unterscheidet.</p>
+    </li>
+    <li>
+        <p>Wie eine <strong>Handregelung</strong> an einem Generator funktioniert und wie du die <strong>Regeldifferenz e = w − x</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Aus welchen Teilen eine <strong>Regeleinrichtung</strong> besteht: Messeinrichtung, Regler und Steller.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>Signalflussplan</strong> eines Regelkreises liest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH steht ein Prüfstand mit einem kleinen <strong>Generator</strong>. Er soll <strong>230 V</strong> liefern. Tim schaltet eine zusätzliche Last zu. Sofort sinkt die Spannung auf <strong>221 V</strong>. Mia dreht am Knopf für den Erregerstrom, bis die Anzeige wieder stimmt. Ausbilderin Frau Schneider fragt: Was hast du gemacht, und wie schafft das eine Anlage allein? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🎯 Was ist Regelungstechnik?</h2>
+<p>Die Regelungstechnik sorgt dafür, dass eine physikalische Größe wie <strong>Spannung, Temperatur oder Druck</strong> auf einem <strong>gewünschten Wert</strong> bleibt, auch wenn sich die Bedingungen ändern.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Merkmal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Steuern</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Regeln</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Rückmeldung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>keine</p></td>
+                <td colspan="1" rowspan="1"><p>Größe wird laufend gemessen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Ablauf</strong></p></td>
+                <td colspan="1" rowspan="1"><p>offener Wirkungsablauf</p></td>
+                <td colspan="1" rowspan="1"><p>geschlossener Wirkungskreis</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Vorgehen</strong></p></td>
+                <td colspan="1" rowspan="1"><p>nach festen Regeln verarbeiten</p></td>
+                <td colspan="1" rowspan="1"><p>messen, mit dem Sollwert vergleichen, stellen</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>✋ Die Handregelung am Generator</h2>
+<p>Was hat Mia am Prüfstand gemacht? Schau dir den Aufbau an:</p>
+<ul>
+    <li>
+        <p><strong>Generator:</strong> Er wird mit <strong>konstanter Drehzahl n</strong> angetrieben.</p>
+    </li>
+    <li>
+        <p><strong>Last:</strong> Durch sie fließt der <strong>Laststrom I</strong>, an ihr liegt die <strong>Spannung U</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Messeinrichtung:</strong> Sie zeigt die Spannung an. Auf der Skala ist der <strong>Sollwert</strong> markiert.</p>
+    </li>
+    <li>
+        <p><strong>Bediener:</strong> Er beobachtet die Anzeige und vergleicht den <strong>Istwert</strong> mit dem <strong>Sollwert</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Stellglied:</strong> Weicht die Spannung ab, verstellt der Bediener damit den <strong>Erregerstrom Ie</strong>. Mehr Erregerstrom ergibt mehr Spannung.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Ein Mensch <strong>misst, vergleicht und stellt</strong>. Das nennt man <strong>Handregelung</strong>, denn hier regelt der Mensch selbst.</p>
+</blockquote>
+
+<h2>📖 Die Größen im Regelkreis</h2>
+<p>Die Größen im Regelkreis haben feste Fachnamen. Sie sind in <strong>DIN IEC 60050-351</strong> genormt.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel Generator</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>x</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Regelgröße: die Größe, die geregelt werden soll. Ihr aktueller Wert heißt Istwert.</p></td>
+                <td colspan="1" rowspan="1"><p>Spannung U</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>w</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Führungsgröße: der gewünschte Wert, also der Sollwert</p></td>
+                <td colspan="1" rowspan="1"><p>230 V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>y</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Stellgröße: womit eingegriffen wird</p></td>
+                <td colspan="1" rowspan="1"><p>Erregerstrom Ie</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>z</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Störgröße: verändert die Regelgröße ungewollt</p></td>
+                <td colspan="1" rowspan="1"><p>zugeschaltete Last</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>e</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Regeldifferenz: Unterschied zwischen Soll und Ist</p></td>
+                <td colspan="1" rowspan="1"><p>in V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Für die Regeldifferenz gilt:</p>
+<ul>
+    <li>
+        <p><strong>e = w − x</strong></p>
+    </li>
+</ul>
+<p>Dabei ist e die Regeldifferenz, w die Führungsgröße und x die Regelgröße, hier alle in Volt.</p>
+
+<h2>🧮 Mias Fall gerechnet</h2>
+<p><strong>Mit Last:</strong> Der Sollwert ist w = 230 V, gemessen wird nur x = 221 V.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> e = w − x = 230 V − 221 V</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> e = <strong>9 V</strong></p>
+    </li>
+</ol>
+<p>Die Regeldifferenz ist <strong>positiv</strong>, die Spannung ist also <strong>zu klein</strong>. Mia muss den Erregerstrom Ie <strong>erhöhen</strong>.</p>
+<p><strong>Last wieder ab:</strong> Tim schaltet die Last ab, und die Spannung steigt auf x = 236 V.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> e = 230 V − 236 V</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> e = <strong>−6 V</strong></p>
+    </li>
+</ol>
+<p>Ist e <strong>negativ</strong>, ist die Spannung <strong>zu groß</strong>, und der Erregerstrom Ie wird <strong>verringert</strong>.</p>
+
+{{IMG2}}
+
+<h2>🤖 Die Regeleinrichtung</h2>
+<p>Damit niemand ständig nachstellen muss, übernimmt das eine <strong>Regeleinrichtung</strong>:</p>
+<ul>
+    <li>
+        <p><strong>Regelstrecke:</strong> Sie enthält den Generator. In ihr entsteht die Größe, die geregelt wird.</p>
+    </li>
+    <li>
+        <p><strong>Regelgröße x:</strong> wieder die Spannung, hier am Lastwiderstand RL.</p>
+    </li>
+    <li>
+        <p><strong>Messeinrichtung:</strong> Sie misst x und gibt den Messwert als <strong>Rückführgröße r</strong> weiter.</p>
+    </li>
+    <li>
+        <p><strong>Sollwerteinsteller:</strong> Hier stellst du den Sollwert w ein.</p>
+    </li>
+    <li>
+        <p><strong>Regler:</strong> Er vergleicht w und r. Ihre Differenz ist die Regeldifferenz e, die er auswertet.</p>
+    </li>
+</ul>
+
+<h2>➡️ Vom Regler zur Stellgröße</h2>
+<ol>
+    <li>
+        <p>Aus der Regeldifferenz bildet der Regler die <strong>Reglerausgangsgröße m</strong>.</p>
+    </li>
+    <li>
+        <p>Sie geht an den <strong>Steller</strong>. Er steuert damit das Stellglied an.</p>
+    </li>
+    <li>
+        <p>Das <strong>Stellglied</strong> stellt den Erregerstrom Ie ein. Das ist die <strong>Stellgröße y</strong>, und sie verändert die Spannung am Generator.</p>
+    </li>
+</ol>
+<ul>
+    <li>
+        <p><strong>Stelleinrichtung</strong> = Steller + Stellglied</p>
+    </li>
+    <li>
+        <p><strong>Regeleinrichtung</strong> = Messeinrichtung + Regler + Steller</p>
+    </li>
+</ul>
+<p>So werden Laständerungen jetzt <strong>automatisch</strong> ausgeglichen.</p>
+
+<h2>🔁 Der Signalflussplan des Regelkreises</h2>
+<p>Der Signalflussplan zeigt das große Ganze. Folge dem Signal einmal im Kreis:</p>
+<ol>
+    <li>
+        <p>Links kommt die <strong>Führungsgröße w</strong> herein, der Sollwert.</p>
+    </li>
+    <li>
+        <p>Von unten kommt die <strong>Rückführgröße r</strong>, also der gemessene Istwert.</p>
+    </li>
+    <li>
+        <p>Am kleinen Kreis, der <strong>Vergleichsstelle</strong>, wird r von w abgezogen. Heraus kommt die <strong>Regeldifferenz e</strong>.</p>
+    </li>
+    <li>
+        <p>Sie geht an den <strong>Regler</strong>. Er bildet daraus die <strong>Reglerausgangsgröße m</strong>.</p>
+    </li>
+    <li>
+        <p>m geht an die <strong>Stelleinrichtung</strong>. Sie macht daraus die <strong>Stellgröße y</strong>.</p>
+    </li>
+    <li>
+        <p>Die Stellgröße wirkt auf die <strong>Regelstrecke</strong>. Von oben greift die <strong>Störgröße z</strong> an.</p>
+    </li>
+    <li>
+        <p>Am Ausgang entsteht die <strong>Regelgröße x</strong>.</p>
+    </li>
+    <li>
+        <p>Die <strong>Messeinrichtung</strong> erfasst x und führt sie als r zum Vergleich zurück.</p>
+    </li>
+</ol>
+
+{{IMG3}}
+
+<blockquote>
+    <p>So schließt sich der <strong>Regelkreis</strong>, und die Regelung korrigiert sich ständig selbst.</p>
+</blockquote>
+
+<h2>🔍 Die Werkstattheizung mit Raumthermostat</h2>
+<p>Die Werkstattheizung bekommt einen <strong>Raumthermostat</strong>. Er soll <strong>20 °C</strong> halten, misst aber nur <strong>16 °C</strong>, weil das Fenster offen ist.</p>
+<ul>
+    <li>
+        <p><strong>Störgröße z:</strong> das offene Fenster</p>
+    </li>
+    <li>
+        <p><strong>Regeldifferenz:</strong> e = 20 °C − 16 °C = <strong>4 K</strong></p>
+    </li>
+    <li>
+        <p><strong>Stellglied:</strong> das Ventil am Heizkörper. Der Regler öffnet es weiter, bis wieder 20 °C erreicht sind.</p>
+    </li>
+</ul>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Am Prüfstand hat Mia per Hand geregelt: Anzeige ablesen, mit 230 V vergleichen, Erregerstrom nachstellen. Wird jede Laständerung von einer Regeleinrichtung ausgeglichen, misst die Messeinrichtung die Spannung am Lastwiderstand RL, der Regler bildet aus e = w − r die Reglerausgangsgröße m, und der Steller stellt über das Stellglied den Erregerstrom Ie ein. Die Spannung bleibt so bei 230 V, ohne dass jemand am Knopf drehen muss. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p><strong>Regeln</strong> heißt messen, vergleichen und stellen in einem <strong>geschlossenen Wirkungskreis</strong>. Die <strong>Regeldifferenz</strong> ist Führungsgröße w minus Regelgröße x: <strong>e = w − x</strong>. Die <strong>Stellgröße y</strong> gleicht die Wirkung der <strong>Störgröße z</strong> aus. Die <strong>Regeleinrichtung</strong> besteht aus Messeinrichtung, Regler und Steller.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Achte beim Rechnen der Regeldifferenz auf das <strong>Vorzeichen</strong>: e positiv heißt Istwert zu klein, die Stellgröße muss steigen. e negativ heißt Istwert zu groß, die Stellgröße muss sinken. Bei Temperaturdifferenzen gibst du das Ergebnis in <strong>Kelvin</strong> an. Im Signalflussplan wird an der Vergleichsstelle <strong>r von w abgezogen</strong>.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was unterscheidet Regeln von Steuern?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Beim Regeln wird die Größe laufend gemessen, mit dem Sollwert verglichen und nachgestellt, der Wirkungskreis ist geschlossen. Beim Steuern gibt es keine Rückmeldung, der Wirkungsablauf ist offen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Sollwert 230 V, gemessen 221 V: Wie groß ist e, und was muss passieren?</summary>
+    <div data-type="detailsContent">
+        <p>✅ e = 230 V − 221 V = 9 V. Die Spannung ist zu klein, der Erregerstrom Ie muss erhöht werden.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Die Spannung steigt auf 236 V. Wie groß ist e jetzt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ e = 230 V − 236 V = −6 V. Die Spannung ist zu groß, der Erregerstrom Ie wird verringert.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Aus welchen Teilen besteht die Regeleinrichtung, und was ist die Stelleinrichtung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die Regeleinrichtung besteht aus Messeinrichtung, Regler und Steller. Die Stelleinrichtung besteht aus Steller und Stellglied.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Ein Raumthermostat soll 20 °C halten und misst 16 °C bei offenem Fenster. Nenne Störgröße, Regeldifferenz und Stellglied.</summary>
+    <div data-type="detailsContent">
+        <p>✅ Störgröße z ist das offene Fenster, die Regeldifferenz beträgt 20 °C − 16 °C = 4 K, das Stellglied ist das Ventil am Heizkörper.</p>
+    </div>
+</details>
+<p></p>

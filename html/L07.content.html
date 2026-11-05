@@ -1,0 +1,235 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Die <strong>Auswahlregel I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub></strong> und die <strong>genormten Bemessungsströme</strong>.</p>
+    </li>
+    <li>
+        <p>Die <strong>Auslösecharakteristiken B, C und D</strong> und wofür du sie einsetzt.</p>
+    </li>
+    <li>
+        <p>Wie du Schritt für Schritt den passenden <strong>LS-Schalter für einen Motor</strong> auswählst.</p>
+    </li>
+    <li>
+        <p>Welche <strong>typischen Fehler</strong> bei der Auswahl passieren und wie du sie vermeidest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH schließen Tim und Mia einen neuen <strong>Motor</strong> an. Er läuft mit <strong>400 V Drehstrom</strong> und hat einen Betriebsstrom <strong>I<sub>B</sub> = 18 A</strong>. Die Zuleitung <strong>NYM 2,5 mm²</strong> in Verlegeart C darf <strong>I<sub>Z</sub> = 24 A</strong> führen. Der Verteiler ist freigeschaltet und gegen Wiedereinschalten gesichert. Ausbilderin Frau Schneider fragt Tim: Welchen LS-Schalter setzt du für die Motorzuleitung in den Verteiler? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>📏 Die Auswahlregel</h2>
+<p>Für die Auswahl eines LS-Schalters gilt immer:</p>
+<ul>
+    <li>
+        <p><strong>I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub></strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>B</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Betriebsstrom des Verbrauchers</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>N</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Bemessungsstrom des LS-Schalters</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>Z</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Strombelastbarkeit der Leitung</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>I<sub>N</sub> ist der Strom, den der Schalter <strong>dauerhaft führen kann, ohne auszulösen</strong>. Die Bemessungsströme sind <strong>genormt</strong>, zum Beispiel:</p>
+<ul>
+    <li>
+        <p><strong>6, 10, 13, 16, 20, 25, 32, 40, 50 und 63 A</strong></p>
+    </li>
+</ul>
+<p>Tims Motor braucht 18 A, die Leitung schafft 24 A. Dazwischen liegt <strong>genau ein Normwert: 20 A</strong>.</p>
+
+{{IMG2}}
+
+<h2>📊 Die Auslösecharakteristik B, C und D</h2>
+<p>Zum Bemessungsstrom kommt die <strong>Auslösecharakteristik nach DIN EN 60898-1</strong>. Sie gibt an, bei welchem <strong>Vielfachen von I<sub>N</sub></strong> der LS-Schalter <strong>unverzögert</strong>, also magnetisch, auslöst.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Charakteristik</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">unverzögerte Auslösung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einsatz</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>B</strong></p></td>
+                <td colspan="1" rowspan="1"><p>3 bis 5 × I<sub>N</sub></p></td>
+                <td colspan="1" rowspan="1"><p>Steckdosen, Licht, allgemeiner Leitungsschutz</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>C</strong></p></td>
+                <td colspan="1" rowspan="1"><p>5 bis 10 × I<sub>N</sub></p></td>
+                <td colspan="1" rowspan="1"><p>höhere Einschaltströme, z. B. Motoren, Gruppen von Leuchtstofflampen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>D</strong></p></td>
+                <td colspan="1" rowspan="1"><p>10 bis 20 × I<sub>N</sub></p></td>
+                <td colspan="1" rowspan="1"><p>sehr hohe Anlaufströme, z. B. Transformatoren</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG3}}
+
+<h2>⚙️ Warum braucht der Motor Charakteristik C?</h2>
+<p>Beim Einschalten zieht ein Motor kurz einen <strong>Anlaufstrom</strong>, ein Vielfaches seines Betriebsstroms. Den <strong>unverzögerten Auslösestrom I<sub>a</sub></strong> berechnest du mit:</p>
+<ul>
+    <li>
+        <p><strong>I<sub>a</sub> = k × I<sub>N</sub></strong></p>
+    </li>
+</ul>
+<p>I<sub>a</sub> ist der unverzögerte Auslösestrom in A, k das Vielfache laut Charakteristik ohne Einheit und I<sub>N</sub> der Bemessungsstrom in A.</p>
+<ol>
+    <li>
+        <p><strong>B20:</strong> 3 × 20 A = 60 A bis 5 × 20 A = 100 A. Er löst also zwischen <strong>60 A und 100 A</strong> aus.</p>
+    </li>
+    <li>
+        <p><strong>C20:</strong> 5 × 20 A = 100 A bis 10 × 20 A = 200 A. Er löst also zwischen <strong>100 A und 200 A</strong> aus.</p>
+    </li>
+</ol>
+<blockquote>
+    <p>Beim B20 kann schon der Anlaufstrom des Motors auslösen. Der C20 lässt dem Motor mehr Spielraum.</p>
+</blockquote>
+
+<h2>🧮 Tims Antwort Schritt für Schritt</h2>
+<ol>
+    <li>
+        <p><strong>Bemessungsstrom:</strong> Der nächste Normwert über I<sub>B</sub> = 18 A ist <strong>I<sub>N</sub> = 20 A</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Leitung geprüft:</strong> 20 A ≤ I<sub>Z</sub> = 24 A. Die Leitung ist geschützt.</p>
+    </li>
+    <li>
+        <p><strong>Charakteristik:</strong> Wegen des Anlaufstroms wählt Tim <strong>C</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Polzahl:</strong> Sie gibt an, wie viele Leiter gleichzeitig abgeschaltet werden. 3 Außenleiter bedeutet <strong>3-polig</strong>.</p>
+    </li>
+</ol>
+<p><strong>Ergebnis: C20, 3-polig.</strong></p>
+
+<h2>📝 Prüfungsaufgabe: Kompressor</h2>
+<p>Ein <strong>Kompressor mit starkem Einschaltstrom</strong> läuft an <strong>400 V Drehstrom</strong>. Sein Betriebsstrom beträgt <strong>I<sub>B</sub> = 12,01 A</strong>. Die Leitung NYM 1,5 mm² in Verlegeart C darf <strong>I<sub>Z</sub> = 17,5 A</strong> führen. Welcher LS-Schalter ist geeignet?</p>
+<ol>
+    <li>
+        <p><strong>Bemessungsstrom:</strong> Der nächste Normwert über 12,01 A ist <strong>I<sub>N</sub> = 13 A</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Leitung geprüft:</strong> 13 A ≤ 17,5 A. Die Leitung ist geschützt.</p>
+    </li>
+    <li>
+        <p><strong>Charakteristik und Polzahl:</strong> C wegen des Einschaltstroms, 3-polig wegen Drehstrom.</p>
+    </li>
+</ol>
+<p><strong>Ergebnis: C13, 3-polig.</strong></p>
+
+<h2>⚠️ Typische Fehler</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Fehler</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Folge</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>N</sub> zu klein</strong></p></td>
+                <td colspan="1" rowspan="1"><p>B16 bei I<sub>B</sub> = 18 A</p></td>
+                <td colspan="1" rowspan="1"><p>Löst schon im normalen Betrieb aus.</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>N</sub> größer als I<sub>Z</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>B25 bei I<sub>Z</sub> = 24 A</p></td>
+                <td colspan="1" rowspan="1"><p>Leitung nicht geschützt, sie kann überhitzen, ohne dass der Schalter auslöst.</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Prüfe deshalb immer beide Seiten der Regel I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub>.</strong></p>
+
+<h2>🔍 Zurück zu Frau Schneiders Frage</h2>
+<p>Tim schlägt zuerst einen <strong>B20</strong> vor. Mia meint, ein <strong>C25</strong> hält mehr aus. Beide Vorschläge passen nicht:</p>
+<ul>
+    <li>
+        <p><strong>B20: nein.</strong> Er kann schon beim Anlauf des Motors auslösen, ab 60 A.</p>
+    </li>
+    <li>
+        <p><strong>C25: nein.</strong> 25 A liegen über I<sub>Z</sub> = 24 A, die Leitung wäre ungeschützt.</p>
+    </li>
+    <li>
+        <p><strong>Richtig: C20, 3-polig.</strong> Es gilt 18 A ≤ 20 A ≤ 24 A.</p>
+    </li>
+</ul>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Im Verteiler findest du für Steckdosen- und Lichtstromkreise meist B-Automaten, zum Beispiel B16. Für Motoren, Kompressoren oder Pumpen setzt du C-Automaten ein, damit der kurze Anlaufstrom nicht auslöst. D-Automaten brauchst du nur bei sehr hohen Einschaltströmen, etwa vor Transformatoren. Bei jedem Drehstromverbraucher wählst du einen 3-poligen LS-Schalter, damit alle 3 Außenleiter gleichzeitig abgeschaltet werden. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Es gilt <strong>I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub></strong>. Du wählst den <strong>nächsten Normwert über I<sub>B</sub></strong>. Charakteristik <strong>B</strong> für Steckdosen und Licht, <strong>C</strong> für Motoren, <strong>D</strong> für Transformatoren. Bei Drehstrom brauchst du einen <strong>3-poligen</strong> LS-Schalter. Ist I<sub>N</sub> größer als I<sub>Z</sub>, ist die Leitung <strong>nicht geschützt</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Gehe bei Auswahlaufgaben immer in 4 Schritten vor: Normwert über I<sub>B</sub> suchen, gegen I<sub>Z</sub> prüfen, Charakteristik nach Verbraucher wählen, Polzahl nach Netzart festlegen. Die vollständige Antwort enthält alle Angaben, zum Beispiel <strong>C20, 3-polig</strong>. Mit I<sub>a</sub> = k × I<sub>N</sub> kannst du begründen, warum B bei Motoren zu früh auslösen kann.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Welche Regel gilt bei der Auswahl eines LS-Schalters?</summary>
+    <div data-type="detailsContent">
+        <p>✅ I<sub>B</sub> ≤ I<sub>N</sub> ≤ I<sub>Z</sub>. Der Bemessungsstrom muss mindestens so groß wie der Betriebsstrom und höchstens so groß wie die Strombelastbarkeit der Leitung sein.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> In welchem Bereich löst ein C20 unverzögert aus?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Zwischen 5 × 20 A = 100 A und 10 × 20 A = 200 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Welche Charakteristik wählst du für Steckdosen, Motoren und Transformatoren?</summary>
+    <div data-type="detailsContent">
+        <p>✅ B für Steckdosen und Licht, C für Motoren, D für Transformatoren.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Kompressor an 400 V Drehstrom, I<sub>B</sub> = 12,01 A, I<sub>Z</sub> = 17,5 A. Welcher LS-Schalter passt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ C13, 3-polig. 13 A ist der nächste Normwert über 12,01 A und kleiner als 17,5 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Warum ist ein C25 bei I<sub>Z</sub> = 24 A falsch?</summary>
+    <div data-type="detailsContent">
+        <p>✅ I<sub>N</sub> wäre größer als I<sub>Z</sub>. Die Leitung könnte überhitzen, ohne dass der Schalter auslöst.</p>
+    </div>
+</details>
+<p></p>
