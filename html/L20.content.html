@@ -1,0 +1,258 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was der <strong>induktive Blindwiderstand X<sub>L</sub> = 2 × π × f × L</strong> ist und wie er entsteht.</p>
+    </li>
+    <li>
+        <p>Wie Strom und Spannung an einer <strong>idealen Spule</strong> verschoben sind.</p>
+    </li>
+    <li>
+        <p>Wie sich die <strong>Reihenschaltung aus R und L</strong> verhält.</p>
+    </li>
+    <li>
+        <p>Wie du mit dem <strong>Spannungsdreieck</strong> und dem <strong>Widerstandsdreieck</strong> rechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! Am Prüfstand der Muster Elektrotechnik GmbH untersuchen Mia und Tim eine <strong>Drosselspule</strong>. Sie hat <strong>L = 0,3 H</strong>, ihr Draht hat <strong>R = 40 Ω</strong> Wirkwiderstand. An <strong>24 V Gleichspannung</strong> misst Tim <strong>0,6 A</strong>. An <strong>24 V Wechselspannung mit 50 Hz</strong> ist der Strom viel kleiner. Ausbilderin Frau Schneider fragt: Warum fließt jetzt weniger Strom? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🧲 Der induktive Blindwiderstand</h2>
+<p>Der Grund steckt in der Spule selbst:</p>
+<ul>
+    <li>
+        <p><strong>Strom ändert sich:</strong> Bei Wechselstrom ändern sich Strom und Magnetfeld ständig.</p>
+    </li>
+    <li>
+        <p><strong>Selbstinduktion:</strong> Dabei entsteht eine <strong>Selbstinduktionsspannung</strong>. Sie wirkt jeder Stromänderung entgegen und bremst den Strom.</p>
+    </li>
+    <li>
+        <p><strong>Induktiver Blindwiderstand X<sub>L</sub>:</strong> So heißt diese bremsende Wirkung.</p>
+    </li>
+</ul>
+<p>Es gilt:</p>
+<ul>
+    <li>
+        <p><strong>X<sub>L</sub> = 2 × π × f × L</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>X<sub>L</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>induktiver Blindwiderstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>f</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Frequenz</p></td>
+                <td colspan="1" rowspan="1"><p>Hz</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>L</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Induktivität</p></td>
+                <td colspan="1" rowspan="1"><p>H</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>π</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kreiszahl, rund 3,14</p></td>
+                <td colspan="1" rowspan="1"><p>ohne</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Je größer f und L, desto größer X<sub>L</sub>.</strong> Bei Gleichstrom ist f = 0, dann ist auch X<sub>L</sub> = 0 und es wirkt nur der Widerstand R.</p>
+
+<h2>🧮 X<sub>L</sub> der Drosselspule</h2>
+<p>Gegeben sind f = 50 Hz und L = 0,3 H.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> X<sub>L</sub> = 2 × π × 50 Hz × 0,3 H</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> X<sub>L</sub> ≈ 314 1/s × 0,3 H ≈ <strong>94,2 Ω</strong></p>
+    </li>
+</ol>
+<p>Zum Vergleich: Der Wirkwiderstand beträgt R = 40 Ω. Der Blindwiderstand X<sub>L</sub> = 94,2 Ω ist also <strong>mehr als doppelt so groß</strong>.</p>
+
+<h2>〰️ Die ideale Spule</h2>
+<p>Eine <strong>ideale Spule</strong> hat keinen Wirkwiderstand. In der Schaltung wirkt nur X<sub>L</sub>.</p>
+<ul>
+    <li>
+        <p>An der Spule liegt die <strong>Blindspannung U<sub>bL</sub></strong>, durch sie fließt der <strong>Blindstrom I<sub>bL</sub></strong>.</p>
+    </li>
+    <li>
+        <p><strong>Zeigerbild:</strong> Die Spannung steht senkrecht auf dem Strom, <strong>90° voraus</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Linienbild:</strong> Der Strom erreicht seinen Scheitelwert erst <strong>90° später</strong>.</p>
+    </li>
+</ul>
+<p>An der idealen Spule <strong>eilt der Strom 90° nach</strong>.</p>
+
+{{IMG2}}
+
+<h2>🔗 R und L in Reihe</h2>
+<p>Jede echte Spule hat auch einen Wirkwiderstand. Deshalb betrachtet man <strong>R und X<sub>L</sub> in Reihe</strong>.</p>
+<ul>
+    <li>
+        <p><strong>I ist überall gleich:</strong> In der Reihenschaltung fließt durch beide derselbe Strom.</p>
+    </li>
+    <li>
+        <p><strong>Wirkspannung U<sub>W</sub>:</strong> Sie liegt am Widerstand und ist <strong>phasengleich</strong> mit dem Strom.</p>
+    </li>
+    <li>
+        <p><strong>Blindspannung U<sub>bL</sub>:</strong> Sie liegt an der Spule und eilt dem Strom <strong>90° voraus</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Gesamtspannung U:</strong> Sie musst du <strong>geometrisch</strong> bestimmen. Im Zeigerbild liegt U<sub>W</sub> in Stromrichtung, U<sub>bL</sub> senkrecht dazu und U schräg dazwischen.</p>
+    </li>
+    <li>
+        <p><strong>Linienbild:</strong> u ist zu jedem Zeitpunkt die Summe der beiden Kurven u<sub>W</sub> und u<sub>bL</sub>.</p>
+    </li>
+</ul>
+
+<h2>📐 Das Spannungsdreieck</h2>
+<p>Aus dem Zeigerbild wird das Spannungsdreieck:</p>
+<ul>
+    <li>
+        <p><strong>U<sub>W</sub></strong> liegt waagrecht, in Richtung des Stroms.</p>
+    </li>
+    <li>
+        <p><strong>U<sub>bL</sub></strong> steht senkrecht.</p>
+    </li>
+    <li>
+        <p><strong>U</strong> ist die schräge Seite. Zwischen U<sub>W</sub> und U liegt der Winkel <strong>φ</strong>.</p>
+    </li>
+</ul>
+<p>Nach <strong>Pythagoras</strong> gilt:</p>
+<ul>
+    <li>
+        <p><strong>U = √(U<sub>W</sub>² + U<sub>bL</sub>²)</strong></p>
+    </li>
+    <li>
+        <p><strong>cos φ = U<sub>W</sub> / U</strong></p>
+    </li>
+    <li>
+        <p><strong>sin φ = U<sub>bL</sub> / U</strong></p>
+    </li>
+</ul>
+<p>U ist die Gesamtspannung, U<sub>W</sub> die Wirkspannung und U<sub>bL</sub> die Blindspannung, alle in V. φ ist der Phasenverschiebungswinkel.</p>
+
+{{IMG3}}
+
+<h2>🔺 Das Widerstandsdreieck</h2>
+<p>Teilst du alle Seiten des Spannungsdreiecks durch den Strom I, erhältst du das <strong>Widerstandsdreieck</strong>.</p>
+<ul>
+    <li>
+        <p>Waagrecht liegt <strong>R</strong>, senkrecht <strong>X<sub>L</sub></strong>.</p>
+    </li>
+    <li>
+        <p>Die schräge Seite ist der <strong>Scheinwiderstand Z = √(R² + X<sub>L</sub>²)</strong>.</p>
+    </li>
+    <li>
+        <p>Der Winkel bleibt gleich: <strong>cos φ = R / Z</strong>.</p>
+    </li>
+</ul>
+<p>Z, R und X<sub>L</sub> stehen in Ω.</p>
+
+<h2>🧮 Scheinwiderstand und Strom der Drosselspule</h2>
+<p>Gegeben: R = 40 Ω, X<sub>L</sub> = 94,2 Ω, U = 24 V bei 50 Hz.</p>
+<ol>
+    <li>
+        <p><strong>Scheinwiderstand:</strong> Z = √(R² + X<sub>L</sub>²) = √((40 Ω)² + (94,2 Ω)²) ≈ <strong>102,4 Ω</strong></p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> I = U / Z = 24 V / 102,4 Ω ≈ <strong>0,234 A</strong></p>
+    </li>
+</ol>
+<p>Bei Gleichspannung waren es 0,6 A, bei Wechselspannung mit 50 Hz nur 0,234 A. Das ist die Antwort für Frau Schneider: <strong>X<sub>L</sub> bremst den Strom.</strong></p>
+
+<h2>🧮 Teilspannungen und Winkel</h2>
+<ol>
+    <li>
+        <p><strong>Wirkspannung:</strong> U<sub>W</sub> = I × R = 0,234 A × 40 Ω ≈ <strong>9,36 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Blindspannung:</strong> U<sub>bL</sub> = I × X<sub>L</sub> = 0,234 A × 94,2 Ω ≈ <strong>22,04 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Kontrolle:</strong> √((9,36 V)² + (22,04 V)²) ≈ <strong>24 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Winkel:</strong> cos φ = R / Z = 40 Ω / 102,4 Ω ≈ 0,39, also <strong>φ ≈ 67°</strong></p>
+    </li>
+</ol>
+<blockquote>
+    <p>Typischer Fehler: Einfach addiert ergäben 9,36 V + 22,04 V falsche 31,4 V. Die Teilspannungen sind phasenverschoben und werden deshalb immer geometrisch addiert.</p>
+</blockquote>
+
+<h2>🔍 Jetzt bist du dran</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Tim stellt den Prüfstand auf 100 Hz statt 50 Hz.</strong> X<sub>L</sub> verdoppelt sich auf rund <strong>188,5 Ω</strong>. Der Strom sinkt auf rund <strong>0,125 A</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Er schaltet zurück auf 24 V Gleichspannung.</strong> X<sub>L</sub> ist 0. Es wirkt nur R, also fließen wieder 24 V / 40 Ω = <strong>0,6 A</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Höhere Frequenz, größeres X<sub>L</sub>, kleinerer Strom.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Drosselspulen nutzt man gezielt, um Wechselströme zu begrenzen, zum Beispiel als Vorschaltgerät oder als Netzdrossel vor einem Frequenzumrichter. Weil X<sub>L</sub> mit der Frequenz steigt, werden hochfrequente Störungen stärker gebremst als der 50-Hz-Netzstrom. Bei Gleichstrom wirkt dagegen nur der kleine Drahtwiderstand, deshalb misst Tim dort 0,6 A. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Die <strong>Selbstinduktion</strong> bremst den Wechselstrom. Der Blindwiderstand ist <strong>X<sub>L</sub> = 2 × π × f × L</strong>. An der idealen Spule <strong>eilt der Strom 90° nach</strong>. In der Reihenschaltung gilt <strong>Z = √(R² + X<sub>L</sub>²)</strong>, nie einfach addieren. Mit <strong>cos φ = R / Z</strong> bestimmst du den Winkel.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne bei einer echten Spule immer in dieser Reihenfolge: X<sub>L</sub>, dann Z mit Pythagoras, dann I = U / Z, dann die Teilspannungen und cos φ. Kontrolliere am Ende, ob √(U<sub>W</sub>² + U<sub>bL</sub>²) wieder die Gesamtspannung ergibt.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Warum fließt durch eine Spule bei Wechselspannung weniger Strom als bei Gleichspannung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei Wechselstrom ändert sich das Magnetfeld ständig. Die Selbstinduktionsspannung wirkt der Stromänderung entgegen. Zum Wirkwiderstand kommt der induktive Blindwiderstand X<sub>L</sub> hinzu.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie groß ist X<sub>L</sub> einer Spule mit 0,3 H bei 50 Hz?</summary>
+    <div data-type="detailsContent">
+        <p>✅ X<sub>L</sub> = 2 × π × 50 Hz × 0,3 H ≈ 94,2 Ω.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> R = 40 Ω, X<sub>L</sub> = 94,2 Ω, U = 24 V: Wie groß sind Z und I?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Z = √((40 Ω)² + (94,2 Ω)²) ≈ 102,4 Ω. I = 24 V / 102,4 Ω ≈ 0,234 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Warum darfst du U<sub>W</sub> und U<sub>bL</sub> nicht einfach addieren?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Sie sind um 90° gegeneinander verschoben. Die Gesamtspannung ergibt sich geometrisch mit U = √(U<sub>W</sub>² + U<sub>bL</sub>²). Einfach addiert kämen falsche 31,4 V statt 24 V heraus.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was passiert mit X<sub>L</sub> und dem Strom, wenn die Frequenz von 50 Hz auf 100 Hz steigt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ X<sub>L</sub> verdoppelt sich auf rund 188,5 Ω, der Strom sinkt auf rund 0,125 A.</p>
+    </div>
+</details>
+<p></p>

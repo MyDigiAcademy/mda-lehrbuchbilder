@@ -1,0 +1,278 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was die <strong>Wirkleistung P</strong> ist und wann <strong>P = U × I</strong> gilt.</p>
+    </li>
+    <li>
+        <p>Was <strong>Blindleistung Q</strong> ist und warum sie hin und her pendelt.</p>
+    </li>
+    <li>
+        <p>Was die <strong>Scheinleistung S</strong> bedeutet.</p>
+    </li>
+    <li>
+        <p>Wie du mit dem <strong>Leistungsdreieck</strong> und dem <strong>Leistungsfaktor cos φ</strong> rechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH prüft Tim einen neuen Kompressor. Auf dem Typenschild steht: <strong>230 V Wechselspannung, 10 A</strong>. Tim erwartet also <strong>2300 W</strong>. Doch der Leistungsmesser zeigt nur <strong>1840 W</strong>. Ausbilderin Frau Schneider fragt: Wo sind die restlichen Watt geblieben? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>⚡ Drei Leistungen im Wechselstromkreis</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Leistung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Wirkleistung P</strong></p></td>
+                <td colspan="1" rowspan="1"><p>wird in Wärme, Licht oder Bewegung umgewandelt</p></td>
+                <td colspan="1" rowspan="1"><p>W (Watt)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Blindleistung Q</strong></p></td>
+                <td colspan="1" rowspan="1"><p>baut Magnetfelder oder elektrische Felder auf und pendelt zwischen Netz und Verbraucher</p></td>
+                <td colspan="1" rowspan="1"><p>var</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Scheinleistung S</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Produkt aus Spannung und Strom, muss das Netz liefern</p></td>
+                <td colspan="1" rowspan="1"><p>VA (Voltampere)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Welche Leistung wie groß ist, entscheidet die <strong>Phasenverschiebung φ</strong> zwischen Strom und Spannung.</p>
+
+<h2>🔥 Wirkleistung an Wirkwiderständen</h2>
+<p>Ein Generator G liefert Wechselspannung. Der Strom I<sub>W</sub> fließt durch einen Widerstand R, an ihm liegt die Spannung U<sub>W</sub>. Parallel dazu liegen ein <strong>Heizwiderstand E1</strong> und eine <strong>Glühlampe E2</strong>.</p>
+<ul>
+    <li>
+        <p>Alle drei sind <strong>Wirkwiderstände</strong>. Sie setzen die Energie vollständig in Wärme oder Licht um.</p>
+    </li>
+    <li>
+        <p>Strom und Spannung sind <strong>phasengleich</strong>, es gilt <strong>φ = 0°</strong>.</p>
+    </li>
+</ul>
+<p>Im Liniendiagramm erreichen u<sub>W</sub> und i<sub>W</sub> gleichzeitig ihren Höchstwert und gleichzeitig null. Multiplizierst du u und i in jedem Augenblick, erhältst du die <strong>Leistungskurve p</strong>.</p>
+<ul>
+    <li>
+        <p>Die Leistungskurve ist <strong>immer positiv</strong>. Ihr Mittelwert ist die <strong>Wirkleistung P</strong>.</p>
+    </li>
+    <li>
+        <p>Die Fläche unter der Kurve entspricht der <strong>Wirkarbeit</strong>. Diese Arbeit zählt der Stromzähler.</p>
+    </li>
+    <li>
+        <p><strong>Nur wenn φ = 0° ist, gilt P = U × I.</strong></p>
+    </li>
+</ul>
+
+<h2>🔄 Blindleistung an der idealen Spule</h2>
+<p>An einer idealen Spule sind Strom und Spannung um <strong>φ = 90°</strong> verschoben, der Strom eilt der Spannung nach.</p>
+<ul>
+    <li>
+        <p>Die Leistungskurve p ist <strong>abwechselnd positiv und negativ</strong>.</p>
+    </li>
+    <li>
+        <p><strong>p positiv:</strong> Die Spule nimmt Energie auf und baut ihr Magnetfeld auf.</p>
+    </li>
+    <li>
+        <p><strong>p negativ:</strong> Das Feld baut sich ab, und die Energie fließt zurück ins Netz.</p>
+    </li>
+    <li>
+        <p><strong>Im Mittel null:</strong> Die Flächen der <strong>Blindarbeit</strong> sind im Plus und im Minus gleich groß. Es gilt P = 0, die Blindleistung pendelt nur zwischen Erzeuger und Verbraucher hin und her.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<h2>🧲 Wo entsteht Blindleistung?</h2>
+<ul>
+    <li>
+        <p><strong>Spulen</strong> brauchen <strong>induktive Blindleistung Q<sub>L</sub></strong> für ihr Magnetfeld, zum Beispiel in Motoren, Transformatoren und Drosseln.</p>
+    </li>
+    <li>
+        <p><strong>Kondensatoren</strong> brauchen <strong>kapazitive Blindleistung Q<sub>C</sub></strong> für das elektrische Feld zwischen ihren Platten.</p>
+    </li>
+    <li>
+        <p>Q<sub>L</sub> und Q<sub>C</sub> <strong>wirken gegeneinander</strong>. Das ist die Grundlage der <strong>Kompensation</strong>.</p>
+    </li>
+</ul>
+
+<h2>⚙️ Scheinleistung beim Motor</h2>
+<p>Bei einem echten Motor sind Strom und Spannung um einen Winkel zwischen <strong>0° und 90°</strong> verschoben.</p>
+<ul>
+    <li>
+        <p>Die Leistungskurve p ist meist positiv. Ihr Mittelwert ist die Wirkleistung P.</p>
+    </li>
+    <li>
+        <p>Die negativen Flächen zeigen den <strong>Blindanteil</strong>, der zwischen Netz und Motor pendelt.</p>
+    </li>
+    <li>
+        <p>Das Netz muss trotzdem den <strong>vollen Strom</strong> liefern. Spannung mal Strom ist deshalb die <strong>Scheinleistung S = U × I</strong>.</p>
+    </li>
+</ul>
+
+<h2>📐 Die drei Formeln</h2>
+<ul>
+    <li>
+        <p><strong>Scheinleistung:</strong> S = U × I</p>
+    </li>
+    <li>
+        <p><strong>Wirkleistung:</strong> P = U × I × cos φ</p>
+    </li>
+    <li>
+        <p><strong>Blindleistung:</strong> Q = U × I × sin φ</p>
+    </li>
+</ul>
+<p>U ist die Spannung in V und I der Strom in A, jeweils als <strong>Effektivwert</strong>. φ ist der Phasenverschiebungswinkel. <strong>cos φ</strong> heißt <strong>Leistungsfaktor</strong>, <strong>sin φ</strong> heißt <strong>Blindfaktor</strong>.</p>
+
+<h2>🔺 Das Leistungsdreieck</h2>
+<p>Die drei Leistungen lassen sich als rechtwinkliges Dreieck zeichnen:</p>
+<ul>
+    <li>
+        <p>Die <strong>Wirkleistung P</strong> liegt waagerecht.</p>
+    </li>
+    <li>
+        <p>Die <strong>induktive Blindleistung Q</strong> steht senkrecht dazu.</p>
+    </li>
+    <li>
+        <p>Die <strong>Scheinleistung S</strong> verbindet beide Enden. Sie ist die längste Seite.</p>
+    </li>
+    <li>
+        <p>Zwischen P und S liegt der Winkel <strong>φ</strong>.</p>
+    </li>
+</ul>
+<p>Nach Pythagoras gilt: <strong>S² = P² + Q²</strong>.</p>
+
+{{IMG3}}
+
+<h2>📊 Leistungsfaktor und Blindfaktor</h2>
+<ul>
+    <li>
+        <p><strong>Leistungsfaktor:</strong> cos φ = P / S</p>
+    </li>
+    <li>
+        <p><strong>Blindfaktor:</strong> sin φ = Q / S</p>
+    </li>
+</ul>
+<p>P ist die Wirkleistung in W, Q die Blindleistung in var und S die Scheinleistung in VA.</p>
+<ul>
+    <li>
+        <p><strong>φ klein:</strong> cos φ liegt nahe 1. Ein großer Teil der Scheinleistung wird als Wirkleistung genutzt.</p>
+    </li>
+    <li>
+        <p><strong>φ groß:</strong> Viel Blindleistung belastet Netz und Leitungen.</p>
+    </li>
+</ul>
+
+<h2>🧮 Der Kompressor nachgerechnet</h2>
+<p>Gegeben: U = 230 V, I = 10 A, laut Typenschild <strong>cos φ = 0,8</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Scheinleistung:</strong> S = U × I = 230 V × 10 A = <strong>2300 VA</strong></p>
+    </li>
+    <li>
+        <p><strong>Wirkleistung:</strong> P = S × cos φ = 2300 VA × 0,8 = <strong>1840 W</strong>. Genau das zeigt der Leistungsmesser.</p>
+    </li>
+    <li>
+        <p><strong>Blindleistung:</strong> Aus cos φ = 0,8 folgt sin φ = 0,6. Q = S × sin φ = 2300 VA × 0,6 = <strong>1380 var</strong></p>
+    </li>
+    <li>
+        <p><strong>Kontrolle:</strong> S = √(1840² + 1380²) = <strong>2300 VA</strong> ✓</p>
+    </li>
+</ol>
+<p>Die restlichen Watt sind also nicht verloren: Ein Teil der Leistung pendelt als Blindleistung zwischen Netz und Kompressor.</p>
+
+<h2>🧮 Beispiel 2: Pumpe</h2>
+<p>Eine Pumpe an 230 V hat <strong>P = 1800 W</strong> und <strong>cos φ = 0,9</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Scheinleistung:</strong> S = P / cos φ = 1800 W / 0,9 = <strong>2000 VA</strong></p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> I = S / U = 2000 VA / 230 V ≈ <strong>8,70 A</strong></p>
+    </li>
+    <li>
+        <p><strong>Blindleistung:</strong> Q = √(S² − P²) = √(2000² − 1800²) ≈ <strong>872 var</strong>. Sie pendelt zwischen Netz und Pumpe.</p>
+    </li>
+</ol>
+
+<h2>⚠️ Typischer Fehler: cos φ vergessen</h2>
+<ul>
+    <li>
+        <p><strong>Falsch:</strong> 230 V × 10 A = 2300 W</p>
+    </li>
+    <li>
+        <p><strong>Richtig:</strong> S = 2300 VA und P = 1840 W</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Die Einheit verrät die Leistung: P in W, Q in var, S in VA. Die Leitung führt trotzdem den vollen Strom, beim Kompressor 10 A und nicht weniger.</p>
+</blockquote>
+
+<h2>🔍 Welche Leistungen treten auf?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Heizlüfter mit cos φ = 1.</strong> Es ist φ = 0°. Es gibt <strong>keine Blindleistung</strong>, Q = 0 und S = P. Es tritt nur Wirkleistung auf.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: ideale Spule mit φ = 90°.</strong> Es ist cos φ = 0. Es gibt <strong>keine Wirkleistung</strong>, P = 0, nur Blindleistung.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> cos φ zeigt, welcher Anteil der Scheinleistung als Wirkleistung genutzt wird. Beim Kompressor sind das 80 %.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Leitungen, Sicherungen und Transformatoren müssen für den vollen Strom ausgelegt sein, also für die Scheinleistung. Deshalb stehen auf Transformatoren und Generatoren Angaben in VA oder kVA, nicht in W. Ein Motor mit schlechtem Leistungsfaktor belastet das Netz stärker, als seine Wirkleistung vermuten lässt. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Die <strong>Wirkleistung P in W</strong> wird in Wärme, Licht oder Bewegung umgewandelt. Die <strong>Blindleistung Q in var</strong> pendelt zwischen Netz und Spule oder Kondensator. Die <strong>Scheinleistung S = U × I in VA</strong> muss das Netz liefern. Im Leistungsdreieck gilt <strong>S² = P² + Q²</strong>, der Leistungsfaktor ist <strong>cos φ = P / S</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Achte bei jeder Leistungsangabe auf die richtige Einheit. U × I ergibt immer VA, erst mit cos φ wird daraus W. Kennst du nur cos φ, hilft sin φ = √(1 − cos² φ), zum Beispiel cos φ = 0,8 ergibt sin φ = 0,6. Zur Kontrolle rechnest du S = √(P² + Q²).</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Welche drei Leistungen gibt es im Wechselstromkreis, und welche Einheiten haben sie?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Wirkleistung P in W, Blindleistung Q in var und Scheinleistung S in VA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Warum ist die Wirkleistung einer idealen Spule null?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei φ = 90° ist die Leistungskurve abwechselnd positiv und negativ. Die Spule nimmt Energie auf und gibt sie wieder ans Netz zurück. Im Mittel ist P = 0.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> 230 V, 10 A, cos φ = 0,8: Wie groß sind S, P und Q?</summary>
+    <div data-type="detailsContent">
+        <p>✅ S = 2300 VA, P = 2300 VA × 0,8 = 1840 W, Q = 2300 VA × 0,6 = 1380 var.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Eine Pumpe hat 1800 W bei cos φ = 0,9 an 230 V. Wie groß sind S und I?</summary>
+    <div data-type="detailsContent">
+        <p>✅ S = 1800 W / 0,9 = 2000 VA. I = 2000 VA / 230 V ≈ 8,70 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Wie lautet der Zusammenhang im Leistungsdreieck?</summary>
+    <div data-type="detailsContent">
+        <p>✅ S² = P² + Q². Zwischen P und S liegt der Winkel φ, es gilt cos φ = P / S und sin φ = Q / S.</p>
+    </div>
+</details>
+<p></p>

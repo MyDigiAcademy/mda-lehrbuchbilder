@@ -1,0 +1,291 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was im <strong>Kondensator</strong> bei Gleichspannung und bei Wechselspannung passiert.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>kapazitiven Blindwiderstand X<sub>C</sub> = 1 / (2 × π × f × C)</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Wie du mit <strong>R und C in Reihe</strong> rechnest.</p>
+    </li>
+    <li>
+        <p>Wie du mit <strong>R und C parallel</strong> rechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH bereitet Ausbilderin Frau Schneider einen Versuch vor. Auf dem Übungsbrett sitzt ein <strong>Kondensator mit C = 10 µF</strong>. Tim ist sicher: Zwischen den Platten ist eine Isolierschicht, also fließt kein Strom. Frau Schneider schließt ihn an <strong>24 V mit 50 Hz</strong> an. Ihre Frage: Fließt hier ein Strom, und wie viel? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔋 Laden und Entladen</h2>
+<p>Ein Kondensator <strong>speichert Energie im elektrischen Feld</strong> zwischen seinen Platten.</p>
+<ul>
+    <li>
+        <p><strong>Gleichspannung:</strong> Nur beim Einschalten fließt kurz ein <strong>Ladestrom</strong>, danach ist der Strom I = 0.</p>
+    </li>
+    <li>
+        <p><strong>Wechselspannung:</strong> Die Polung wechselt, bei 50 Hz <strong>100-mal pro Sekunde</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Laden, entladen, laden:</strong> Der Kondensator wird laufend geladen und entladen. So fließt im Kreis ein Wechselstrom, aber <strong>keine Ladung durch die Isolierschicht</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Strom fließt nur, solange sich die Spannung ändert.</p>
+</blockquote>
+
+<h2>🔬 Der Versuch mit 1 Hz</h2>
+<p>Ein Versuch mit sehr langsamer Wechselspannung zeigt das deutlich:</p>
+<ul>
+    <li>
+        <p>Der <strong>Generator G</strong> liefert die Spannung U mit nur 1 Hz.</p>
+    </li>
+    <li>
+        <p>Angeschlossen ist der <strong>Kondensator mit C = 10 µF</strong>.</p>
+    </li>
+    <li>
+        <p>Das <strong>Voltmeter</strong> misst die Blindspannung U<sub>bC</sub>, das <strong>Amperemeter</strong> den Blindstrom I<sub>bC</sub>.</p>
+    </li>
+</ul>
+<p>Du siehst: Der <strong>Strom ist am größten, wenn die Spannung gerade durch null geht</strong>. Dort ändert sich die Spannung am schnellsten.</p>
+
+<h2>📐 Der kapazitive Blindwiderstand</h2>
+<p>Ungehindert fließt der Strom aber nicht. Der Kondensator hat einen <strong>kapazitiven Blindwiderstand X<sub>C</sub></strong>, der nur bei Wechselstrom wirkt.</p>
+<ul>
+    <li>
+        <p><strong>Aus einer Messung:</strong> X<sub>C</sub> = U<sub>bC</sub> / I<sub>bC</sub></p>
+    </li>
+    <li>
+        <p><strong>Berechnet:</strong> X<sub>C</sub> = 1 / (2 × π × f × C)</p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>X<sub>C</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>kapazitiver Blindwiderstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U<sub>bC</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Blindspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I<sub>bC</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Blindstrom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>f</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Frequenz</p></td>
+                <td colspan="1" rowspan="1"><p>Hz</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>C</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kapazität</p></td>
+                <td colspan="1" rowspan="1"><p>F</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Achtung, umgekehrt wie bei der Spule:</strong> Größere Frequenz oder größere Kapazität ergibt ein <strong>kleineres X<sub>C</sub></strong>. Bei Gleichspannung ist X<sub>C</sub> <strong>unendlich groß</strong>.</p>
+
+<h2>🧮 X<sub>C</sub> und Strom berechnen</h2>
+<p>Gegeben: f = 50 Hz, C = 10 µF = 10⁻⁵ F, U = 24 V.</p>
+<ol>
+    <li>
+        <p><strong>Blindwiderstand:</strong> X<sub>C</sub> = 1 / (2 × π × 50 Hz × 10 µF) = 1 / 0,00314 S ≈ <strong>318,3 Ω</strong></p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> I<sub>bC</sub> = U / X<sub>C</sub> = 24 V / 318,3 Ω ≈ <strong>75,4 mA</strong></p>
+    </li>
+</ol>
+<p>Es fließt also Strom. Tim lag falsch.</p>
+
+<h2>〰️ Der ideale Kondensator</h2>
+<p>Am idealen Kondensator wirkt nur X<sub>C</sub>. Am Kondensator liegt U<sub>bC</sub>, im Kreis fließt I<sub>bC</sub>.</p>
+<ul>
+    <li>
+        <p><strong>Zeigerbild:</strong> Der Stromzeiger liegt <strong>90° vor</strong> dem Spannungszeiger.</p>
+    </li>
+    <li>
+        <p><strong>Linienbild:</strong> Der Strom erreicht seinen Scheitelwert <strong>90° früher</strong> als die Spannung.</p>
+    </li>
+</ul>
+<p><strong>Beim Kondensator eilt der Strom vor.</strong> Die pendelnde Energie heißt <strong>Blindleistung</strong>, sie wird nicht verbraucht.</p>
+
+{{IMG2}}
+
+<h2>🔗 R und C in Reihe</h2>
+<ul>
+    <li>
+        <p><strong>Reihe:</strong> Der Strom I ist überall gleich. Die Wirkspannung U<sub>W</sub> am Widerstand ist phasengleich mit ihm.</p>
+    </li>
+    <li>
+        <p><strong>U<sub>bC</sub>:</strong> Die Blindspannung am Kondensator liegt <strong>90° hinter dem Strom</strong>.</p>
+    </li>
+    <li>
+        <p><strong>U:</strong> Der Generator liefert die Gesamtspannung.</p>
+    </li>
+</ul>
+<p>Im <strong>Spannungsdreieck</strong> liegt U<sub>W</sub> waagrecht in Richtung von I. U<sub>bC</sub> zeigt senkrecht nach unten. U ist die schräge Seite, dazwischen liegt φ:</p>
+<ul>
+    <li>
+        <p><strong>U = √(U<sub>W</sub>² + U<sub>bC</sub>²)</strong></p>
+    </li>
+</ul>
+<p>U, U<sub>W</sub> und U<sub>bC</sub> stehen in V.</p>
+
+{{IMG3}}
+
+<h2>🔺 Widerstand und Leistung</h2>
+<p>Aus dem Spannungsdreieck entstehen zwei weitere Dreiecke:</p>
+<ul>
+    <li>
+        <p><strong>Widerstandsdreieck</strong> (geteilt durch I): <strong>Z = √(R² + X<sub>C</sub>²)</strong> und <strong>cos φ = R / Z</strong></p>
+    </li>
+    <li>
+        <p><strong>Leistungsdreieck</strong> (mal I): <strong>S = √(P² + Q<sub>C</sub>²)</strong> und <strong>cos φ = P / S</strong></p>
+    </li>
+</ul>
+<p>Z, R und X<sub>C</sub> stehen in Ω, die Wirkleistung P in W, die Blindleistung Q<sub>C</sub> in var und die Scheinleistung S in VA.</p>
+
+<h2>🧮 Rechnung Reihenschaltung</h2>
+<p>Mia schaltet <strong>R = 300 Ω</strong> vor den Kondensator. Weiter gilt X<sub>C</sub> = 318,3 Ω und U = 24 V bei 50 Hz.</p>
+<ol>
+    <li>
+        <p><strong>Scheinwiderstand:</strong> Z = √((300 Ω)² + (318,3 Ω)²) ≈ <strong>437,4 Ω</strong>, nicht die einfache Summe.</p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> I = U / Z = 24 V / 437,4 Ω ≈ <strong>54,9 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Teilspannungen:</strong> U<sub>W</sub> = I × R ≈ <strong>16,5 V</strong>, U<sub>bC</sub> = I × X<sub>C</sub> ≈ <strong>17,5 V</strong>. Einfach addiert wären es falsche 34 V.</p>
+    </li>
+    <li>
+        <p><strong>Winkel:</strong> cos φ = 300 Ω / 437,4 Ω ≈ 0,69, also <strong>φ ≈ 47°</strong>. Der Strom eilt vor.</p>
+    </li>
+</ol>
+
+<h2>🔀 R und C parallel</h2>
+<ul>
+    <li>
+        <p><strong>U ist überall gleich:</strong> An beiden Bauteilen liegt dieselbe Spannung.</p>
+    </li>
+    <li>
+        <p><strong>I<sub>W</sub> durch R:</strong> Der Wirkstrom ist phasengleich mit U.</p>
+    </li>
+    <li>
+        <p><strong>I<sub>bC</sub> durch C:</strong> Der Blindstrom eilt U um 90° voraus.</p>
+    </li>
+    <li>
+        <p><strong>I:</strong> Das Amperemeter misst den Gesamtstrom.</p>
+    </li>
+</ul>
+<p>Im <strong>Stromdreieck</strong> liegt I<sub>W</sub> waagrecht, I<sub>bC</sub> senkrecht nach oben, und I ist die schräge Seite: <strong>I = √(I<sub>W</sub>² + I<sub>bC</sub>²)</strong>. Alle Ströme stehen in A.</p>
+
+<h2>🔺 Leitwert und Leistung</h2>
+<p>Das <strong>Leitwertdreieck</strong> zeigt die Kehrwerte der Widerstände:</p>
+<ul>
+    <li>
+        <p><strong>Wirkleitwert:</strong> G = 1 / R</p>
+    </li>
+    <li>
+        <p><strong>Blindleitwert:</strong> B<sub>C</sub> = 1 / X<sub>C</sub></p>
+    </li>
+    <li>
+        <p><strong>Scheinleitwert:</strong> Y = √(G² + B<sub>C</sub>²)</p>
+    </li>
+</ul>
+<p>Leitwerte stehen in <strong>Siemens (S)</strong>. Für das Leistungsdreieck gilt wieder S = √(P² + Q<sub>C</sub>²) und cos φ = P / S.</p>
+
+<h2>🧮 Rechnung Parallelschaltung</h2>
+<p>Dieselben Bauteile parallel: R = 300 Ω, X<sub>C</sub> = 318,3 Ω, U = 24 V bei 50 Hz.</p>
+<ol>
+    <li>
+        <p><strong>Wirkstrom:</strong> I<sub>W</sub> = 24 V / 300 Ω = <strong>80 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Blindstrom:</strong> I<sub>bC</sub> = 24 V / 318,3 Ω ≈ <strong>75,4 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Gesamtstrom:</strong> I = √((80 mA)² + (75,4 mA)²) ≈ <strong>109,9 mA</strong></p>
+    </li>
+    <li>
+        <p><strong>Leistungen:</strong> P = 24 V × 80 mA = <strong>1,92 W</strong>, Q<sub>C</sub> ≈ <strong>1,81 var</strong>, S ≈ <strong>2,64 VA</strong></p>
+    </li>
+    <li>
+        <p><strong>Winkel:</strong> cos φ = 1,92 W / 2,64 VA ≈ 0,73, also <strong>φ ≈ 43,3°</strong></p>
+    </li>
+</ol>
+
+<h2>🔍 Jetzt bist du dran</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Am Kondensator allein stellt Frau Schneider 100 Hz statt 50 Hz ein.</strong> X<sub>C</sub> halbiert sich auf rund <strong>159,2 Ω</strong>. Der Strom verdoppelt sich auf rund <strong>150,8 mA</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Tim legt 24 V Gleichspannung an.</strong> Nur beim Einschalten fließt kurz ein Ladestrom, <strong>danach fließt kein Strom mehr</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Höhere Frequenz, kleineres X<sub>C</sub>, mehr Strom.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Weil ein Kondensator Gleichspannung sperrt und Wechselspannung durchlässt, nutzt man ihn als Koppelkondensator zwischen Verstärkerstufen. Der Gleichanteil wird abgetrennt, das Wechselsignal kommt durch. Bei hohen Frequenzen ist X<sub>C</sub> klein, deshalb leiten Kondensatoren hochfrequente Störungen gegen Masse ab. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein Kondensator führt nur Strom, <strong>solange sich die Spannung ändert</strong>. Der Blindwiderstand ist <strong>X<sub>C</sub> = 1 / (2 × π × f × C)</strong>. Beim Kondensator <strong>eilt der Strom 90° vor</strong>. In Reihe gilt <strong>U = √(U<sub>W</sub>² + U<sub>bC</sub>²)</strong> und <strong>Z = √(R² + X<sub>C</sub>²)</strong>. Parallel gilt <strong>I = √(I<sub>W</sub>² + I<sub>bC</sub>²)</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne µF immer in F um: 10 µF = 10⁻⁵ F. Entscheide dann, ob eine Reihen- oder Parallelschaltung vorliegt. In Reihe ist der Strom gleich, du rechnest Spannungen und Widerstände geometrisch. Parallel ist die Spannung gleich, du rechnest die Ströme geometrisch. Niemals einfach addieren.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Warum fließt durch einen Kondensator bei Wechselspannung ständig Strom?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die Polung wechselt laufend, der Kondensator wird ständig geladen und entladen. So fließt im Kreis ein Wechselstrom, obwohl keine Ladung durch die Isolierschicht gelangt.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie groß ist X<sub>C</sub> eines 10-µF-Kondensators bei 50 Hz, und welcher Strom fließt bei 24 V?</summary>
+    <div data-type="detailsContent">
+        <p>✅ X<sub>C</sub> = 1 / (2 × π × 50 Hz × 10 µF) ≈ 318,3 Ω. I = 24 V / 318,3 Ω ≈ 75,4 mA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Wie verändert sich X<sub>C</sub>, wenn die Frequenz steigt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ X<sub>C</sub> wird kleiner. Bei doppelter Frequenz halbiert sich X<sub>C</sub>, der Strom verdoppelt sich. Bei Gleichspannung ist X<sub>C</sub> unendlich groß.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> R = 300 Ω und X<sub>C</sub> = 318,3 Ω in Reihe an 24 V: Wie groß sind Z und I?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Z = √((300 Ω)² + (318,3 Ω)²) ≈ 437,4 Ω. I = 24 V / 437,4 Ω ≈ 54,9 mA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Dieselben Bauteile parallel: Wie groß ist der Gesamtstrom?</summary>
+    <div data-type="detailsContent">
+        <p>✅ I<sub>W</sub> = 80 mA, I<sub>bC</sub> ≈ 75,4 mA. I = √((80 mA)² + (75,4 mA)²) ≈ 109,9 mA.</p>
+    </div>
+</details>
+<p></p>

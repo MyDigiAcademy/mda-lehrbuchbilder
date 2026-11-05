@@ -1,0 +1,246 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Welche Kurvenformen es gibt: <strong>Sinus</strong>, <strong>Rechteck</strong> und <strong>Sägezahn</strong>.</p>
+    </li>
+    <li>
+        <p>Welche <strong>Impulsarten</strong> du kennen musst.</p>
+    </li>
+    <li>
+        <p>Was <strong>Impulsdauer tᵢ</strong>, <strong>Pausendauer tₚ</strong> und <strong>Tastgrad g</strong> bedeuten.</p>
+    </li>
+    <li>
+        <p>Wie du ein Impulssignal Schritt für Schritt berechnest und was <strong>PWM</strong> ist.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH testen Mia und Tim ein Steuergerät. Tim dimmt damit eine LED-Leuchte. Mia schaut auf das Oszilloskop. Dort sieht sie keine Sinuskurve, sondern <strong>Rechteckimpulse</strong>: <strong>4 ms ein, 6 ms aus</strong>. Ausbilderin Frau Schneider fragt die beiden: Wie beschreibt man so ein Signal, und warum leuchtet die LED dadurch dunkler, obwohl die Spannung gar nicht verringert wird? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>〰️ Sinus, Rechteck und Sägezahn</h2>
+<p>Wechselspannungen gibt es in verschiedenen Formen:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Kurvenform</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Verlauf</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Sinusspannung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>gleichmäßig und harmonisch</p></td>
+                <td colspan="1" rowspan="1"><p>Netzspannung</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Rechteckspannung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>springt zwischen zwei festen Werten hin und her</p></td>
+                <td colspan="1" rowspan="1"><p>Takt in digitalen Schaltungen</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Sägezahnspannung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>steigt gleichmäßig an und fällt dann schlagartig ab</p></td>
+                <td colspan="1" rowspan="1"><p>Zeitablenkung im Oszilloskop</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG2}}
+
+<h2>⚖️ Gemeinsam: Mittelwert null</h2>
+<p>Alle reinen Wechselspannungen haben etwas gemeinsam: Während einer Periode sind die <strong>Flächen im positiven und im negativen Bereich gleich groß</strong>. Deshalb ist der <strong>Mittelwert über eine ganze Periode 0 V</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Mischgröße:</strong> Impulse zwischen 0 V und 5 V haben einen <strong>Gleichanteil</strong>. Ihr Mittelwert ist nicht null. So ein Signal nennt man Mischgröße.</p>
+    </li>
+    <li>
+        <p><strong>Effektivwert:</strong> Der Faktor <strong>√2</strong> für den Effektivwert gilt <strong>nur bei Sinus</strong>. Für Rechteck und Sägezahn gelten andere Werte.</p>
+    </li>
+</ul>
+
+<h2>⚡ Impulsarten</h2>
+<p>Ein <strong>Impuls</strong> bedeutet: Für kurze Zeit liegt eine Spannung oder ein Strom an, danach folgt eine <strong>Pause</strong>. Impulse nutzt man in der <strong>Steuerungs-, Regelungs- und Datentechnik</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Rechteckimpulse:</strong> haben eine klare Einschaltzeit und Ausschaltzeit.</p>
+    </li>
+    <li>
+        <p><strong>Nadelimpulse:</strong> sind sehr kurz und spitz, zum Beispiel als Taktsignal oder Zündimpuls.</p>
+    </li>
+    <li>
+        <p><strong>Sinusimpulse:</strong> sind Teile einer Sinuskurve, zum Beispiel Sinushalbwellen hinter einem Gleichrichter.</p>
+    </li>
+    <li>
+        <p><strong>Schwingungspakete:</strong> bestehen aus mehreren vollen Sinusschwingungen und einer Pause. So steuert man zum Beispiel Heizungen.</p>
+    </li>
+</ul>
+
+<h2>⏱️ Impuls, Pause, Periode</h2>
+<p>Schau dir die Rechteckimpulse von Tims LED genauer an:</p>
+<ul>
+    <li>
+        <p><strong>Impulsdauer tᵢ:</strong> die Zeit, in der das Signal aktiv ist. Bei Tim sind das <strong>4 ms</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Pausendauer tₚ:</strong> die Zeit, in der das Signal inaktiv ist, hier <strong>6 ms</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Periodendauer T:</strong> Impuls und Pause zusammen ergeben eine vollständige Periode.</p>
+    </li>
+</ul>
+<p>Es gilt: <strong>T = tᵢ + tₚ</strong>. T ist die Periodendauer, tᵢ die Impulsdauer und tₚ die Pausendauer, alle in Sekunden.</p>
+
+{{IMG3}}
+
+<h2>📐 Der Tastgrad</h2>
+<p>Wie lange ist das Signal innerhalb einer Periode aktiv? Das sagt der <strong>Tastgrad g</strong>:</p>
+<ul>
+    <li>
+        <p><strong>g = tᵢ / T</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>g</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Tastgrad</p></td>
+                <td colspan="1" rowspan="1"><p>ohne Einheit, oft in %</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>tᵢ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Impulsdauer</p></td>
+                <td colspan="1" rowspan="1"><p>s</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>tₚ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Pausendauer</p></td>
+                <td colspan="1" rowspan="1"><p>s</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>T</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Periodendauer</p></td>
+                <td colspan="1" rowspan="1"><p>s</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul>
+    <li>
+        <p><strong>Hoher Tastgrad, z. B. g = 0,8:</strong> Das Signal ist die meiste Zeit aktiv. Im Mittel liegt viel Spannung an.</p>
+    </li>
+    <li>
+        <p><strong>Niedriger Tastgrad, z. B. g = 0,2:</strong> Das Signal ist die meiste Zeit in der Pause. Im Mittel liegt nur wenig Spannung an der LED.</p>
+    </li>
+</ul>
+
+<h2>🎛️ Frequenz und PWM</h2>
+<p>Wie oft wiederholt sich das Signal? Auch für Impulse gilt: <strong>f = 1 / T</strong>. f ist die Frequenz in Hz, T die Periodendauer in s.</p>
+<p>Hält man die <strong>Frequenz fest</strong> und verstellt nur den <strong>Tastgrad</strong>, heißt das <strong>Pulsweitenmodulation (PWM)</strong>.</p>
+<ul>
+    <li>
+        <p><strong>LED dimmen:</strong> großer Tastgrad bedeutet hell.</p>
+    </li>
+    <li>
+        <p><strong>Motordrehzahl:</strong> großer Tastgrad bedeutet schnell.</p>
+    </li>
+</ul>
+<p>Weil sehr schnell geschaltet wird, <strong>sieht das Auge kein Flackern</strong>. Genau so arbeitet Tims Steuergerät: Die Spannung im Impuls bleibt gleich, nur der Anteil der Einschaltzeit ändert sich. Deshalb wird die LED dunkler, ohne dass die Spannung verringert wird.</p>
+
+<h2>🧮 Tims Signal berechnet</h2>
+<p>Gegeben sind tᵢ = 4 ms und tₚ = 6 ms.</p>
+<ol>
+    <li>
+        <p><strong>Periode:</strong> T = tᵢ + tₚ = 4 ms + 6 ms = <strong>10 ms</strong></p>
+    </li>
+    <li>
+        <p><strong>Tastgrad:</strong> g = tᵢ / T = 4 ms / 10 ms = <strong>0,4 = 40 %</strong></p>
+    </li>
+    <li>
+        <p><strong>Frequenz:</strong> f = 1 / T = 1 / 0,01 s = <strong>100 Hz</strong></p>
+    </li>
+</ol>
+<p>Das Signal wiederholt sich also 100-mal pro Sekunde und ist 40 % der Zeit aktiv.</p>
+
+<h2>⚠️ Typische Fehler</h2>
+<ul>
+    <li>
+        <p><strong>Tastgrad mit tₚ statt mit T gerechnet:</strong> Falsch ist 4 ms / 6 ms = 0,67. Richtig ist 4 ms / 10 ms = 0,4.</p>
+    </li>
+    <li>
+        <p><strong>Frequenz aus tᵢ statt aus T berechnet:</strong> Falsch ist 1 / 0,004 s = 250 Hz. Richtig ist 1 / 0,01 s = 100 Hz.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Tastgrad und Frequenz rechnest du immer mit der ganzen Periodendauer T = tᵢ + tₚ, nicht mit Teilen davon.</p>
+</blockquote>
+
+<h2>🔍 Jetzt bist du dran</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1:</strong> Tim stellt tᵢ = 8 ms und tₚ = 2 ms ein. Dann ist T = 10 ms und g = 8 ms / 10 ms = <strong>0,8 = 80 %</strong>. Die LED leuchtet heller.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2:</strong> Impuls und Pause dauern je 1 ms. Dann ist T = 2 ms und f = 1 / 0,002 s = <strong>500 Hz</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Mehr Impulsdauer in derselben Periode bedeutet einen höheren Tastgrad.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>PWM findest du in LED-Dimmern, Netzteilen, Lüftersteuerungen und Frequenzumrichtern. Bei Tims Steuergerät bleibt die Frequenz bei 100 Hz. Dreht er am Regler, ändert sich nur die Impulsdauer. Bei 20 % Tastgrad leuchtet die LED schwach, bei 80 % hell. Weil der Transistor nur ganz ein oder ganz aus ist, entsteht kaum Verlustwärme. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Sinus, Rechteck und Sägezahn sind Wechselspannungen mit dem <strong>Mittelwert 0 V</strong>. Impulse bestehen aus <strong>Impulsdauer und Pausendauer</strong>. Die Periodendauer ist <strong>T = tᵢ + tₚ</strong>, der Tastgrad <strong>g = tᵢ / T</strong> und die Frequenz <strong>f = 1 / T</strong>. Mit <strong>PWM</strong> steuerst du Helligkeit und Drehzahl über den Tastgrad.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Schreib bei Impulsaufgaben immer zuerst T = tᵢ + tₚ auf. Erst danach rechnest du Tastgrad und Frequenz. Achte auf die Umrechnung von ms in s und gib den Tastgrad als Dezimalzahl oder in Prozent an, so wie es in der Aufgabe verlangt ist.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wo wird eine Sägezahnspannung eingesetzt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Zum Beispiel für die Zeitablenkung im Oszilloskop. Sie steigt gleichmäßig an und fällt dann schlagartig ab.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Warum ist der Mittelwert einer reinen Wechselspannung null?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die Flächen im positiven und im negativen Bereich sind während einer Periode gleich groß. Impulse zwischen 0 V und 5 V haben dagegen einen Gleichanteil und sind eine Mischgröße.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> tᵢ = 4 ms, tₚ = 6 ms: Wie groß sind T, g und f?</summary>
+    <div data-type="detailsContent">
+        <p>✅ T = 10 ms, g = 4 ms / 10 ms = 0,4 = 40 %, f = 1 / 0,01 s = 100 Hz.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Was ist Pulsweitenmodulation?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die Frequenz bleibt fest, nur der Tastgrad wird verstellt. So regelt man die Helligkeit einer LED oder die Drehzahl eines Motors.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Welche Impulsart nutzt man zum Beispiel zum Steuern von Heizungen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Schwingungspakete. Sie bestehen aus mehreren vollen Sinusschwingungen und einer Pause.</p>
+    </div>
+</details>
+<p></p>

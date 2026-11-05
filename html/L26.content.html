@@ -1,0 +1,270 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Warum man <strong>Blindleistung kompensiert</strong>.</p>
+    </li>
+    <li>
+        <p>Wie du den passenden <strong>Kondensator</strong> mit <strong>Q<sub>C</sub> = P × (tan φ<sub>1</sub> − tan φ<sub>2</sub>)</strong> und <strong>C = Q<sub>C</sub> / (ω × U²)</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Was <strong>Einzel-</strong>, <strong>Gruppen-</strong> und <strong>Zentralkompensation</strong> unterscheidet.</p>
+    </li>
+    <li>
+        <p>Welche <strong>Vorteile</strong> die Kompensation bringt und worauf du achten musst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! Erinnerst du dich an den Kompressor in der Werkstatt der Muster Elektrotechnik GmbH? Er nimmt <strong>1840 W</strong> Wirkleistung auf, sein <strong>cos φ ist 0,8</strong>. Die Leitung führt <strong>10 A</strong>. Der Netzbetreiber schreibt: Bei zu kleinem Leistungsfaktor wird <strong>Blindarbeit</strong> zusätzlich berechnet. Ausbilderin Frau Schneider fragt Mia und Tim: Wie lässt sich die Blindleistung verringern? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>💡 Die Idee der Kompensation</h2>
+<ul>
+    <li>
+        <p><strong>Motor, induktiv:</strong> Er braucht <strong>induktive Blindleistung Q<sub>L</sub></strong> für sein Magnetfeld. Ohne Kondensator pendelt sie über die ganze Leitung zwischen Netz und Motor.</p>
+    </li>
+    <li>
+        <p><strong>Kondensator, kapazitiv:</strong> Er braucht <strong>kapazitive Blindleistung Q<sub>C</sub></strong>. Sie wirkt der induktiven genau entgegen.</p>
+    </li>
+    <li>
+        <p><strong>Parallel zum Motor:</strong> Schaltest du den Kondensator parallel zum Motor, pendelt die Blindleistung zwischen Kondensator und Motor.</p>
+    </li>
+</ul>
+<p>Die Leitung führt dann einen <strong>kleineren Strom</strong>. Genau das nennt man <strong>Blindleistungskompensation</strong>.</p>
+
+<h2>🔺 Vorher und nachher im Leistungsdreieck</h2>
+<ul>
+    <li>
+        <p><strong>P bleibt gleich:</strong> Die Wirkleistung P liegt waagerecht in Richtung der Spannung U. Der Motor arbeitet wie vorher.</p>
+    </li>
+    <li>
+        <p><strong>Vorher:</strong> Dazu gehört die große induktive Blindleistung Q<sub>L</sub>. Die Scheinleistung S<sub>1</sub> ist groß, der Winkel φ<sub>1</sub> auch.</p>
+    </li>
+    <li>
+        <p><strong>Kondensator:</strong> Er bringt die kapazitive Blindleistung Q<sub>C</sub>, die in die Gegenrichtung zeigt.</p>
+    </li>
+    <li>
+        <p><strong>Nachher:</strong> Übrig bleibt nur <strong>Q<sub>L</sub> − Q<sub>C</sub></strong>. Die Scheinleistung S<sub>2</sub> und der Winkel φ<sub>2</sub> werden kleiner.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<h2>📐 Den Kondensator berechnen</h2>
+<p>Die nötige kapazitive Blindleistung und die Kapazität berechnest du so:</p>
+<ul>
+    <li>
+        <p><strong>Q<sub>C</sub> = P × (tan φ<sub>1</sub> − tan φ<sub>2</sub>)</strong></p>
+    </li>
+    <li>
+        <p><strong>C = Q<sub>C</sub> / (ω × U²)</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Q<sub>C</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>kapazitive Blindleistung</p></td>
+                <td colspan="1" rowspan="1"><p>var</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>P</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Wirkleistung</p></td>
+                <td colspan="1" rowspan="1"><p>W</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>φ<sub>1</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>Winkel vorher</p></td>
+                <td colspan="1" rowspan="1"><p>°</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>φ<sub>2</sub></strong></p></td>
+                <td colspan="1" rowspan="1"><p>gewünschter Winkel nachher</p></td>
+                <td colspan="1" rowspan="1"><p>°</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>ω</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kreisfrequenz, ω = 2 × π × f, bei 50 Hz rund 314 1/s</p></td>
+                <td colspan="1" rowspan="1"><p>1/s</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannung am Kondensator</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>C</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kapazität</p></td>
+                <td colspan="1" rowspan="1"><p>F</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Drehstrom, Kondensatoren im Dreieck:</strong> Du rechnest je Strang mit <strong>Q<sub>C</sub> / 3</strong> und mit <strong>U = 400 V</strong>.</p>
+
+<h2>🧮 Der Kompressor wird kompensiert</h2>
+<p>Gegeben: P = 1840 W, U = 230 V.</p>
+<ol>
+    <li>
+        <p><strong>Vorher:</strong> cos φ<sub>1</sub> = 0,8, daraus tan φ<sub>1</sub> = <strong>0,75</strong></p>
+    </li>
+    <li>
+        <p><strong>Ziel:</strong> cos φ<sub>2</sub> = 0,95, daraus tan φ<sub>2</sub> ≈ <strong>0,329</strong></p>
+    </li>
+    <li>
+        <p><strong>Blindleistung des Kondensators:</strong> Q<sub>C</sub> = 1840 W × (0,75 − 0,329) ≈ <strong>775 var</strong></p>
+    </li>
+</ol>
+<p>So viel kapazitive Blindleistung muss der Kondensator liefern.</p>
+
+<h2>🧮 Kapazität und Wirkung</h2>
+<ol>
+    <li>
+        <p><strong>Kapazität:</strong> C = Q<sub>C</sub> / (ω × U²) = 775 var / (314 1/s × (230 V)²) ≈ <strong>46,6 µF</strong></p>
+    </li>
+    <li>
+        <p><strong>Scheinleistung:</strong> vorher 2300 VA, nachher S<sub>2</sub> = P / cos φ<sub>2</sub> = 1840 W / 0,95 ≈ <strong>1937 VA</strong></p>
+    </li>
+    <li>
+        <p><strong>Strom in der Leitung:</strong> vorher 10 A, nachher 1937 VA / 230 V ≈ <strong>8,42 A</strong></p>
+    </li>
+</ol>
+<p>Die Wirkleistung bleibt bei 1840 W. Nur Scheinleistung und Strom sinken.</p>
+
+<h2>🔌 Einzelkompensation</h2>
+<p>Bei der Einzelkompensation sitzt der Kondensator direkt am Verbraucher.</p>
+<ul>
+    <li>
+        <p><strong>Am Motor:</strong> Drei Kondensatoren im Dreieck liegen direkt parallel am Motor. Sie werden mit ihm zusammen geschaltet.</p>
+    </li>
+    <li>
+        <p><strong>Leuchte:</strong> Bei einer Leuchtstofflampe mit Drossel liegt der Kondensator in Reihe. Heute haben Leuchten meist elektronische Vorschaltgeräte.</p>
+    </li>
+</ul>
+<p><strong>Vorteil:</strong> Die ganze Leitung bis zum Verbraucher wird entlastet. <strong>Nachteil:</strong> Du brauchst viele kleine Kondensatoren. Das lohnt sich bei Maschinen, die lange laufen.</p>
+
+<h2>🏭 Gruppenkompensation</h2>
+<ul>
+    <li>
+        <p><strong>Mehrere Motoren teilen sich einen Block:</strong> zum Beispiel drei Motoren an L1, L2 und L3.</p>
+    </li>
+    <li>
+        <p><strong>Gemeinsame Zuleitung:</strong> Der Kondensatorblock sitzt an der gemeinsamen Zuleitung.</p>
+    </li>
+    <li>
+        <p><strong>Entladewiderstände:</strong> Die Widerstände im Block entladen die Kondensatoren nach dem Abschalten.</p>
+    </li>
+</ul>
+<p>Das passt, wenn die Maschinen einer Gruppe meist gemeinsam laufen.</p>
+
+<h2>⚡ Zentralkompensation</h2>
+<p>Die Zentralkompensation sitzt in der <strong>Hauptverteilung</strong>, direkt nach dem Transformator.</p>
+<ul>
+    <li>
+        <p><strong>Regler:</strong> Ein <strong>Blindleistungsregler</strong> misst laufend den Leistungsfaktor. Je nach Bedarf schaltet er Kondensatorstufen zu oder ab.</p>
+    </li>
+    <li>
+        <p><strong>Vorteil:</strong> Wenige Kondensatoren reichen für den ganzen Betrieb.</p>
+    </li>
+    <li>
+        <p><strong>Nachteil:</strong> Die Leitungen im Betrieb werden nicht entlastet.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h2>🧮 Beispiel: ganze Werkstatt</h2>
+<p>Die Werkstatt hat <strong>P = 40 kW</strong> bei <strong>cos φ<sub>1</sub> = 0,7</strong>. Das Ziel ist <strong>cos φ<sub>2</sub> = 0,95</strong> am 400-V-Netz.</p>
+<ol>
+    <li>
+        <p><strong>Blindleistung:</strong> Q<sub>C</sub> = 40 kW × (1,02 − 0,329) ≈ <strong>27,6 kvar</strong></p>
+    </li>
+    <li>
+        <p><strong>Dreieck, je Strang:</strong> 27,6 kvar / 3 = <strong>9,2 kvar</strong> bei 400 V</p>
+    </li>
+    <li>
+        <p><strong>Kapazität je Strang:</strong> C = 9200 var / (314 1/s × (400 V)²) ≈ <strong>183 µF</strong></p>
+    </li>
+</ol>
+
+<h2>✅ Vorteile und Vorsicht</h2>
+<ul>
+    <li>
+        <p><strong>Kleinerer Strom:</strong> Leitungen und Transformator werden entlastet, die Verluste sinken.</p>
+    </li>
+    <li>
+        <p><strong>Keine Blindarbeit:</strong> Der Zuschlag des Netzbetreibers entfällt.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Nicht überkompensieren: Ziel ist etwa cos φ = 0,95, nicht 1 oder darüber hinaus. Bei Überkompensation wird die Anlage kapazitiv, und die Spannung kann ansteigen. Prüfe vor jeder Arbeit, ob die Kondensatoren entladen sind.</p>
+</blockquote>
+
+<h2>🔍 Welche Kompensation passt?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Ein großer Motor läuft jeden Tag 10 Stunden am Stück.</strong> Hier passt die <strong>Einzelkompensation</strong>. Der Kondensator läuft mit dem Motor und entlastet die ganze Leitung.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: In einer Halle laufen viele Maschinen, die ständig zu- und abgeschaltet werden.</strong> Hier passt die <strong>Zentralkompensation mit Regler</strong>. Er schaltet genau so viele Stufen zu, wie gerade gebraucht werden.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Das Ziel ist ein cos φ von etwa 0,95, nicht auf 1 kompensieren.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>In vielen Betrieben steht neben der Hauptverteilung ein Kompensationsschrank mit mehreren Kondensatorstufen und einem Blindleistungsregler. Morgens beim Hochfahren der Maschinen schaltet der Regler Stufe für Stufe zu, abends wieder ab. So bleibt der Leistungsfaktor bei rund 0,95, und auf der Stromrechnung taucht keine Blindarbeit mehr auf. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Kondensatoren liefern <strong>kapazitive Blindleistung</strong> und kompensieren die induktive. Die <strong>Wirkleistung bleibt gleich</strong>, Strom und Scheinleistung sinken. Es gilt <strong>Q<sub>C</sub> = P × (tan φ<sub>1</sub> − tan φ<sub>2</sub>)</strong> und <strong>C = Q<sub>C</sub> / (ω × U²)</strong>. Es gibt <strong>Einzel-, Gruppen- und Zentralkompensation</strong>.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne cos φ immer zuerst in tan φ um: cos φ = 0,8 ergibt tan φ = 0,75, cos φ = 0,7 ergibt tan φ ≈ 1,02, cos φ = 0,95 ergibt tan φ ≈ 0,329. Bei Drehstrom mit Kondensatoren im Dreieck teilst du Q<sub>C</sub> durch 3 und rechnest mit 400 V. Ergebnis in µF umrechnen.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wie entlastet ein Kondensator die Leitung zu einem Motor?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Kondensator liefert kapazitive Blindleistung, die der induktiven Blindleistung des Motors entgegenwirkt. Die Blindleistung pendelt dann zwischen Kondensator und Motor, die Leitung führt einen kleineren Strom.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Was ändert sich im Leistungsdreieck durch die Kompensation?</summary>
+    <div data-type="detailsContent">
+        <p>✅ P bleibt gleich. Die Blindleistung sinkt auf Q<sub>L</sub> − Q<sub>C</sub>, damit werden die Scheinleistung und der Winkel φ kleiner.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> P = 1840 W, cos φ von 0,8 auf 0,95: Wie groß sind Q<sub>C</sub> und C bei 230 V?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Q<sub>C</sub> = 1840 W × (0,75 − 0,329) ≈ 775 var. C = 775 var / (314 1/s × (230 V)²) ≈ 46,6 µF.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Welchen Vor- und Nachteil hat die Zentralkompensation?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Vorteil: Wenige Kondensatoren reichen, ein Regler schaltet die Stufen nach Bedarf. Nachteil: Die Leitungen im Betrieb werden nicht entlastet.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Warum kompensiert man nicht auf cos φ = 1 oder darüber hinaus?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei Überkompensation wird die Anlage kapazitiv, und die Spannung kann ansteigen. Das Ziel ist etwa cos φ = 0,95.</p>
+    </div>
+</details>
+<p></p>
