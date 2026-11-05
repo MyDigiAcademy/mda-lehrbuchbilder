@@ -1,0 +1,362 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie ein <strong>Transformator</strong> aufgebaut ist und wie er funktioniert.</p>
+    </li>
+    <li>
+        <p>Wie du mit dem <strong>Übersetzungsverhältnis ü</strong> Spannungen, Windungen und Ströme berechnest.</p>
+    </li>
+    <li>
+        <p>Was bei <strong>Leerlauf</strong>, <strong>Belastung</strong> und <strong>Kurzschluss</strong> passiert und was die <strong>Kurzschlussspannung uk</strong> aussagt.</p>
+    </li>
+    <li>
+        <p>Wie du <strong>Verluste</strong> misst und den <strong>Wirkungsgrad η</strong> bestimmst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH bauen Mia und Tim einen Prüfstand auf. Die Steuerung braucht <strong>24 V</strong>. Ausbilderin Frau Schneider gibt ihnen dafür einen <strong>Sicherheitstransformator 230 V auf 24 V</strong>. Seine <strong>Bemessungsleistung beträgt 120 VA</strong>. Mia fragt sich: Wie funktioniert er, und welche Ströme fließen dabei? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>⚡ Was ist ein Transformator?</h2>
+<ul>
+    <li>
+        <p>Ein Transformator <strong>wandelt eine Wechselspannung</strong> in eine höhere oder niedrigere Wechselspannung um.</p>
+    </li>
+    <li>
+        <p>Die <strong>Frequenz bleibt gleich</strong>: 50 Hz rein, 50 Hz raus.</p>
+    </li>
+    <li>
+        <p>Das klappt <strong>nur mit Wechselspannung</strong>. Bei Gleichspannung ändert sich das Magnetfeld nicht, nichts wird induziert, und die Eingangswicklung wird heiß.</p>
+    </li>
+    <li>
+        <p>Nach der Bemessungsleistung unterscheidet man: <strong>Kleintransformatoren bis 16 kVA</strong>, darüber <strong>Großtransformatoren</strong>.</p>
+    </li>
+</ul>
+
+<h2>🧱 Aufbau des Einphasentransformators</h2>
+<ul>
+    <li>
+        <p><strong>Eingangswicklung N1</strong> (Primärwicklung): Hier liegt die Netzspannung an.</p>
+    </li>
+    <li>
+        <p><strong>Ausgangswicklung N2</strong> (Sekundärwicklung): Sie versorgt den Verbraucher.</p>
+    </li>
+    <li>
+        <p><strong>Gemeinsamer Eisenkern:</strong> Er <strong>koppelt beide Wicklungen magnetisch</strong>. Elektrisch sind sie <strong>getrennt</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Schaltzeichen:</strong> zwei Wicklungen.</p>
+    </li>
+</ul>
+
+<h2>🧲 Warum ist der Kern geblecht?</h2>
+<p>Der magnetische Wechselfluss induziert auch <strong>im Eisen</strong> Spannungen.</p>
+<ul>
+    <li>
+        <p><strong>Massiver Kern:</strong> Es fließen große <strong>Wirbelströme</strong>, der Kern wird heiß.</p>
+    </li>
+    <li>
+        <p><strong>Geblechter Kern:</strong> Er besteht aus dünnen, <strong>gegeneinander isolierten Blechen</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> schmale Bahnen, kleine Wirbelströme.</p>
+    </li>
+</ul>
+<p>Wirbelströme und das Ummagnetisieren erwärmen den Kern. Zusammen ergeben sie die <strong>Eisenverluste</strong>.</p>
+
+<h2>🔄 So arbeitet der Transformator</h2>
+<ol>
+    <li>
+        <p><strong>Eingang:</strong> An der Eingangswicklung liegt die Wechselspannung <strong>U1</strong>, es fließt der Strom <strong>I1</strong>. Elektrische Energie wird zu magnetischer Energie.</p>
+    </li>
+    <li>
+        <p><strong>Wechselfluss:</strong> Im Kern entsteht ein magnetischer Wechselfluss <strong>Φ</strong>, der ständig die Richtung ändert.</p>
+    </li>
+    <li>
+        <p><strong>Energiefluss:</strong> Über den Kern fließt die Energie magnetisch zur Ausgangswicklung.</p>
+    </li>
+    <li>
+        <p><strong>Ausgang:</strong> Der Wechselfluss induziert die Spannung <strong>U2</strong>, und der Strom <strong>I2</strong> fließt durch die Last.</p>
+    </li>
+</ol>
+
+<h2>📐 Die Leerlaufspannung U₀</h2>
+<p>Ohne Verbraucher spricht man vom <strong>Leerlauf</strong>: Es fließt kein Strom am Ausgang, aber an N2 liegt die <strong>Leerlaufspannung U₀</strong>. Bei Sinusspannung gilt:</p>
+<ul>
+    <li>
+        <p><strong>U₀ = 4,44 × B̂ × A_Fe × f × N</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U₀</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Leerlaufspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>B̂</strong></p></td>
+                <td colspan="1" rowspan="1"><p>größte Flussdichte</p></td>
+                <td colspan="1" rowspan="1"><p>T</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>A_Fe</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Eisenquerschnitt</p></td>
+                <td colspan="1" rowspan="1"><p>m²</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>f</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Frequenz</p></td>
+                <td colspan="1" rowspan="1"><p>Hz</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>N</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Windungszahl</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>4,44</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Faktor für Sinus</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Je größer einer dieser Werte, desto größer U₀.</strong></p>
+
+<h2>🔢 Das Übersetzungsverhältnis ü</h2>
+<p>Das Übersetzungsverhältnis gilt für den <strong>idealen, verlustfreien Transformator</strong>. Index 1 steht für den Eingang, Index 2 für den Ausgang.</p>
+<ul>
+    <li>
+        <p><strong>Spannungen:</strong> ü = U1 / U2 = N1 / N2</p>
+    </li>
+    <li>
+        <p><strong>Ströme (umgekehrt):</strong> ü = I2 / I1</p>
+    </li>
+    <li>
+        <p><strong>Scheinwiderstände (mit dem Quadrat):</strong> ü² = Z1 / Z2</p>
+    </li>
+</ul>
+<p>U steht für Spannung in V, N für Windungszahl, I für Strom in A und Z für Scheinwiderstand in Ω.</p>
+
+{{IMG2}}
+
+<h2>🧮 Windungen und Ströme berechnen</h2>
+<p>Mias Transformator: U1 = 230 V, U2 = 24 V, N1 = 1150 Windungen, S = 120 VA.</p>
+<ol>
+    <li>
+        <p><strong>Übersetzungsverhältnis:</strong> ü = 230 V / 24 V ≈ <strong>9,58</strong></p>
+    </li>
+    <li>
+        <p><strong>Windungen am Ausgang:</strong> N2 = 1150 × 24 V / 230 V = <strong>120 Windungen</strong></p>
+    </li>
+    <li>
+        <p><strong>Ausgangsstrom bei Bemessungsleistung:</strong> I2 = 120 VA / 24 V = <strong>5 A</strong></p>
+    </li>
+    <li>
+        <p><strong>Eingangsstrom:</strong> I1 = I2 / ü = 5 A / 9,58 ≈ <strong>0,52 A</strong></p>
+    </li>
+</ol>
+<p><strong>Probe:</strong> 230 V × 0,52 A ≈ 120 VA = 24 V × 5 A. Auf beiden Seiten sind es rund 120 VA.</p>
+
+<h2>⚠️ Typischer Fehler: Strom wie Spannung</h2>
+<ul>
+    <li>
+        <p><strong>Falsch, mal ü:</strong> I1 = 5 A × 9,58 ≈ 47,9 A. Viel zu viel.</p>
+    </li>
+    <li>
+        <p><strong>Richtig, geteilt durch ü:</strong> I1 = 5 A / 9,58 ≈ 0,52 A</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Höhere Spannung, kleinerer Strom. Die Leistung bleibt nahezu gleich.</p>
+</blockquote>
+
+<h2>🔌 Leerlauf und Belastung</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Zustand</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ausgang</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Eingang</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leerlauf</strong></p></td>
+                <td colspan="1" rowspan="1"><p>offen, I2 = 0, an N2 liegt U₀</p></td>
+                <td colspan="1" rowspan="1"><p>nur kleiner <strong>Leerlaufstrom I₀</strong>: magnetisiert den Kern und deckt die Eisenverluste</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Belastung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Verbraucher angeschlossen, Strom I2 fließt</p></td>
+                <td colspan="1" rowspan="1"><p>U2 <strong>sinkt etwas</strong>: je größer Belastung und Innenwiderstand, desto mehr</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>💥 Kurzschluss und Kurzschlussspannung</h2>
+<p>Beim <strong>Kurzschluss</strong> ist die Ausgangsseite ohne Widerstand überbrückt. Die <strong>Kurzschlussspannung Uk</strong> ist die Eingangsspannung, bei der im Kurzschluss gerade der <strong>Nennstrom</strong> fließt. Relativ gilt:</p>
+<ul>
+    <li>
+        <p><strong>uk = Uk × 100 % / UN</strong></p>
+    </li>
+</ul>
+<p>Dabei ist uk die relative Kurzschlussspannung in %, Uk die Kurzschlussspannung in V und UN die Nennspannung in V.</p>
+<ul>
+    <li>
+        <p><strong>Kleines uk:</strong> kleiner Innenwiderstand, U2 bleibt stabil.</p>
+    </li>
+    <li>
+        <p><strong>Großes uk:</strong> begrenzt den Kurzschlussstrom.</p>
+    </li>
+</ul>
+
+<h2>🧮 Kurzschlussstrom und Einschaltstrom</h2>
+<p>Mias Transformator hat <strong>uk = 10 %</strong>. Für den Dauerkurzschlussstrom gilt:</p>
+<ul>
+    <li>
+        <p><strong>Ikd = IN × 100 % / uk</strong></p>
+    </li>
+</ul>
+<p>Ikd ist der Dauerkurzschlussstrom in A, IN der Nennstrom in A.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> Ikd = 5 A × 100 % / 10 %</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> Ikd = <strong>50 A</strong> am Ausgang</p>
+    </li>
+</ol>
+<ul>
+    <li>
+        <p><strong>Stoßkurzschlussstrom:</strong> Direkt nach Eintritt des Kurzschlusses ist er etwa <strong>2 bis 2,5 × Ikd</strong>, hier also 100 A bis 125 A.</p>
+    </li>
+    <li>
+        <p><strong>Einschaltstrom:</strong> Beim Einschalten kann kurz bis zum <strong>10-fachen Nennstrom</strong> fließen, vor allem bei <strong>Restmagnetismus</strong> im Kern.</p>
+    </li>
+</ul>
+
+<h2>🔥 Verluste und Wirkungsgrad</h2>
+<ul>
+    <li>
+        <p><strong>Eisenverluste P_VFe:</strong> entstehen im Kern durch Ummagnetisieren und Wirbelströme. Sie sind <strong>unabhängig von der Last</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Wicklungsverluste P_VWi:</strong> entstehen im Kupfer und <strong>steigen mit dem Quadrat des Stroms</strong>.</p>
+    </li>
+</ul>
+<p>Für den Wirkungsgrad gilt:</p>
+<ul>
+    <li>
+        <p><strong>η = P2 / (P2 + P_VFe + P_VWi)</strong></p>
+    </li>
+</ul>
+<p>η ist der Wirkungsgrad, P2 die abgegebene Wirkleistung in W, P_VFe und P_VWi die Verluste in W. Ein <strong>großer cos φ2</strong> bringt bei gleichem Strom mehr Wirkleistung und damit einen besseren Wirkungsgrad.</p>
+
+<h2>🔬 Verluste messen: zwei Versuche</h2>
+<ul>
+    <li>
+        <p><strong>Leerlaufversuch:</strong> Ausgang offen, an den Eingang wird die Nennspannung angelegt. Es fließt nur der kleine Leerlaufstrom I₀. Das <strong>Wattmeter zeigt nahezu nur die Eisenverluste P_VFe</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Kurzschlussversuch:</strong> Ausgang kurzgeschlossen. Ein <strong>Stelltransformator</strong> erhöht die Spannung, bis der Nennstrom I1N fließt. Weil diese Spannung klein ist, entstehen kaum Eisenverluste. Das <strong>Wattmeter zeigt die Wicklungsverluste P_VWi</strong>.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h2>🧮 Wirkungsgrad berechnen</h2>
+<p>Mia und Tim haben gemessen: <strong>P_VFe = 6 W</strong>, <strong>P_VWi = 9 W</strong>, abgegeben werden <strong>P2 = 120 W</strong> an eine ohmsche Last (cos φ2 = 1).</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> η = 120 W / (120 W + 6 W + 9 W)</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> η = 120 W / 135 W ≈ 0,889 = <strong>88,9 %</strong></p>
+    </li>
+</ol>
+<p>Die <strong>15 W Verluste</strong> werden zu Wärme. Deshalb braucht der Transformator gute Belüftung.</p>
+
+<h2>🛡️ Sicherheits- und Trenntransformator</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bauart</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Trennung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ausgang</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Sicherheitstransformator</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Wicklungen sicher getrennt durch doppelte oder verstärkte Isolierung</p></td>
+                <td colspan="1" rowspan="1"><p>Kleinspannung, höchstens 50 V AC</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Trenntransformator</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Wicklungen ebenso sicher getrennt</p></td>
+                <td colspan="1" rowspan="1"><p>meist 230 V, für die Schutztrennung</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Am Prüfstand bekommt die Steuerung so ihre <strong>24 V sicher getrennt vom Netz</strong>.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Am Prüfstand braucht die Steuerung nur <strong>2,5 A</strong>. Dann fließen am Eingang I1 = 2,5 A / 9,58 ≈ <strong>0,26 A</strong>. Bei dieser halben Last bleiben die <strong>Eisenverluste bei 6 W</strong>, denn sie hängen nicht von der Last ab. Die Wicklungsverluste sinken dagegen deutlich, weil sie mit dem Quadrat des Stroms gehen. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein Transformator hat <strong>zwei Wicklungen auf einem geblechten Eisenkern</strong>. Er arbeitet <strong>nur mit Wechselspannung</strong>, die Frequenz bleibt gleich. <strong>Spannungen verhalten sich wie die Windungszahlen, Ströme umgekehrt.</strong> Die relative Kurzschlussspannung uk zeigt den Innenwiderstand und bestimmt den Kurzschlussstrom. <strong>Eisenverluste sind immer da, Wicklungsverluste steigen mit der Last.</strong></p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne beim Strom immer <strong>geteilt durch ü</strong> auf die Seite mit der höheren Spannung. Mach zur Kontrolle die <strong>Leistungsprobe</strong>: U1 × I1 muss ungefähr U2 × I2 ergeben. Beim Dauerkurzschlussstrom gilt Ikd = IN × 100 % / uk. Merke dir außerdem: Leerlaufversuch liefert die Eisenverluste, Kurzschlussversuch die Wicklungsverluste.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Warum funktioniert ein Transformator nicht mit Gleichspannung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei Gleichspannung ändert sich das Magnetfeld nicht. Es wird keine Spannung induziert, und die Eingangswicklung wird heiß.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> U1 = 230 V, U2 = 24 V, N1 = 1150. Wie viele Windungen hat N2?</summary>
+    <div data-type="detailsContent">
+        <p>✅ ü = 230 V / 24 V ≈ 9,58. N2 = 1150 × 24 V / 230 V = 120 Windungen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Am Ausgang fließen 2,5 A. Wie groß ist I1?</summary>
+    <div data-type="detailsContent">
+        <p>✅ I1 = 2,5 A / 9,58 ≈ 0,26 A. Der Strom übersetzt sich umgekehrt zur Spannung.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> IN = 5 A, uk = 10 %. Wie groß ist der Dauerkurzschlussstrom?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ikd = 5 A × 100 % / 10 % = 50 A.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> P_VFe = 6 W, P_VWi = 9 W, P2 = 120 W. Wie groß ist der Wirkungsgrad?</summary>
+    <div data-type="detailsContent">
+        <p>✅ η = 120 W / 135 W ≈ 88,9 %. Die 15 W Verluste werden zu Wärme.</p>
+    </div>
+</details>
+<p></p>

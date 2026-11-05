@@ -1,0 +1,332 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie ein <strong>Drehstrom-Asynchronmotor mit Kurzschlussläufer</strong> aufgebaut ist.</p>
+    </li>
+    <li>
+        <p>Wie das <strong>Drehmoment</strong> entsteht und wie die <strong>Leistung</strong> durch den Motor fließt.</p>
+    </li>
+    <li>
+        <p>Wie du das <strong>Leistungsschild</strong> liest und den Motor am <strong>Klemmbrett</strong> anschließt.</p>
+    </li>
+    <li>
+        <p>Wie du <strong>Leistungsaufnahme</strong>, <strong>Wirkungsgrad</strong> und <strong>Drehmoment</strong> berechnest.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH bekommt ein <strong>Förderband</strong> einen neuen Antrieb. Es ist ein Drehstrommotor mit <strong>5,5 kW für 400 V</strong>. Auf dem Leistungsschild stehen außerdem <strong>10,4 A</strong>, <strong>cos φ 0,85</strong> und <strong>1450 1/min</strong>. Ausbilderin Frau Schneider fragt Mia und Tim: Wie viel Leistung nimmt der Motor auf, und welches Drehmoment liefert er? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔧 So ist der Motor aufgebaut</h2>
+<ul>
+    <li>
+        <p><strong>Ständer:</strong> außen, ein Blechpaket mit Nuten.</p>
+    </li>
+    <li>
+        <p><strong>Ständerwicklung:</strong> liegt in den Nuten, <strong>3 Stränge</strong>, angeschlossen am Klemmbrett.</p>
+    </li>
+    <li>
+        <p><strong>Läufer:</strong> dreht sich innen, getrennt durch einen schmalen <strong>Luftspalt</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Käfigläufer:</strong> Im Läufer stecken <strong>Stäbe aus Aluminium</strong>, an beiden Enden verbunden durch <strong>Kurzschlussringe</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Welle:</strong> Der Läufer sitzt auf der Welle. Über sie gibt der Motor seine Leistung ab.</p>
+    </li>
+</ul>
+
+<h2>⚙️ Wie entsteht das Drehmoment?</h2>
+<ol>
+    <li>
+        <p>Die Ständerwicklung erzeugt ein <strong>Drehfeld</strong>. Mehr dazu erfährst du in der Lektion zur Entstehung des Drehfelds.</p>
+    </li>
+    <li>
+        <p>Das Drehfeld erzeugt in den Läuferstäben einen <strong>Strom</strong>.</p>
+    </li>
+    <li>
+        <p>Feld und Läuferstrom ergeben eine <strong>Kraft F</strong>.</p>
+    </li>
+    <li>
+        <p>Die Kraft greift am <strong>Radius r</strong> des Läufers an.</p>
+    </li>
+</ol>
+<p>Daraus folgt das Drehmoment:</p>
+<ul>
+    <li>
+        <p><strong>M = F × r</strong></p>
+    </li>
+</ul>
+<p>M ist das Drehmoment in Nm, F die Kraft in N und r der Radius in m. <strong>Beispiel:</strong> 400 N × 0,09 m = <strong>36 Nm</strong>, wie bei Mias und Tims Motor.</p>
+
+<h2>🔀 Der Leistungsfluss im Motor</h2>
+<ul>
+    <li>
+        <p><strong>P1:</strong> elektrische Leistung, die der Motor aus dem Netz aufnimmt.</p>
+    </li>
+    <li>
+        <p><strong>P2:</strong> mechanische Leistung, die er an der Welle abgibt.</p>
+    </li>
+    <li>
+        <p><strong>PV:</strong> Verlustleistung im Eisen, in den Wicklungen und durch Reibung. Alles wird zu <strong>Wärme</strong>.</p>
+    </li>
+</ul>
+<p>Es gilt <strong>PV = P1 − P2</strong>, alle Leistungen in W.</p>
+
+<h2>📐 Formeln für die Leistungen</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Größe</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formel</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leistungsaufnahme</strong></p></td>
+                <td colspan="1" rowspan="1"><p>P1 = √3 × U × I × cos φ</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Wirkungsgrad</strong></p></td>
+                <td colspan="1" rowspan="1"><p>η = P2 / P1</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leistungsabgabe</strong></p></td>
+                <td colspan="1" rowspan="1"><p>P2 = P1 × η</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Verlustleistung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>PV = P1 − P2</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>U ist die <strong>Leiterspannung</strong> in V, I der <strong>Leiterstrom</strong> in A und cos φ der <strong>Leistungsfaktor</strong>. η hat keine Einheit und ist <strong>immer kleiner als 1</strong>.</p>
+
+<h2>🪪 Das Leistungsschild</h2>
+<p>Das Leistungsschild ist der <strong>Personalausweis des Motors</strong>.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Angabe</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>62 kg</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Gewicht, wichtig für Transport und Montage</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IM B3</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Bauform: mit Füßen, waagerecht, ohne Flansch</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>132S</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Baugröße: Achshöhe 132 mm, S steht für ein kurzes Gehäuse</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>IP 56</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Schutzart: 5 = staubgeschützt, 6 = Schutz gegen starkes Strahlwasser</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Th.Cl. 155</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Wärmeklasse: Wicklung bis 155 °C</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🔢 Die Werte für 50 Hz und 60 Hz</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Angabe</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">50 Hz</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">60 Hz</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Spannung, Schaltung</strong></p></td>
+                <td colspan="1" rowspan="1"><p>400 V Δ</p></td>
+                <td colspan="1" rowspan="1"><p>460 V Δ</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Bemessungsleistung P2</strong></p></td>
+                <td colspan="1" rowspan="1"><p>5,5 kW</p></td>
+                <td colspan="1" rowspan="1"><p>6,3 kW</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Strom</strong></p></td>
+                <td colspan="1" rowspan="1"><p>10,4 A</p></td>
+                <td colspan="1" rowspan="1"><p>10,2 A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>cos φ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>0,85</p></td>
+                <td colspan="1" rowspan="1"><p>0,85</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Drehzahl</strong></p></td>
+                <td colspan="1" rowspan="1"><p>1450 1/min</p></td>
+                <td colspan="1" rowspan="1"><p>1740 1/min</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Effizienzklasse, η</strong></p></td>
+                <td colspan="1" rowspan="1"><p>IE3, 89,6 %</p></td>
+                <td colspan="1" rowspan="1"><p>IE3, 91,7 %</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul>
+    <li>
+        <p><strong>400 V Δ:</strong> Am Netz mit 400 V schließt du den Motor in <strong>Dreieck</strong> an.</p>
+    </li>
+    <li>
+        <p><strong>5,5 kW:</strong> Bemessungsleistung, also <strong>P2 an der Welle</strong>.</p>
+    </li>
+    <li>
+        <p><strong>10,4 A:</strong> fließen in jedem <strong>Außenleiter</strong>.</p>
+    </li>
+    <li>
+        <p><strong>0,85:</strong> Leistungsfaktor, der Anteil der Wirkleistung an der Scheinleistung.</p>
+    </li>
+    <li>
+        <p><strong>Norm:</strong> DIN EN 60034.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<h2>🔌 400 V Δ am Klemmbrett</h2>
+<p>Unten am Klemmbrett kommen die Außenleiter an <strong>U1, V1 und W1</strong> an. Oben liegen <strong>W2, U2 und V2</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Stern Y:</strong> Eine Brücke verbindet die oberen Klemmen. Jeder Strang bekommt rund <strong>230 V</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Dreieck Δ:</strong> Drei Brücken verbinden je eine obere mit einer unteren Klemme. Jeder Strang liegt an <strong>400 V</strong>.</p>
+    </li>
+</ul>
+<p>Der Förderbandmotor braucht 400 V je Strang, also <strong>Dreieck</strong>. Damit eignet er sich für den <strong>Stern-Dreieck-Anlauf</strong>: im Stern anlaufen, dann auf Dreieck umschalten. Der Anlaufstrom sinkt so auf etwa <strong>ein Drittel</strong>.</p>
+
+{{IMG3}}
+
+<h2>⚠️ Typischer Fehler: Schildleistung</h2>
+<ul>
+    <li>
+        <p><strong>Falsch:</strong> P1 = 5,5 kW. Dann fehlen die Verluste.</p>
+    </li>
+    <li>
+        <p><strong>Richtig:</strong> P2 = 5,5 kW. P1 ist größer.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Auf dem Leistungsschild steht immer die <strong>abgegebene Leistung P2 an der Welle</strong>.</p>
+</blockquote>
+
+<h2>🧮 Leistungsaufnahme P1</h2>
+<p>Vom Schild: U = 400 V, I = 10,4 A, cos φ = 0,85, η = 89,6 %.</p>
+<ol>
+    <li>
+        <p><strong>Formel:</strong> P1 = √3 × U × I × cos φ</p>
+    </li>
+    <li>
+        <p><strong>Einsetzen:</strong> P1 = 1,732 × 400 V × 10,4 A × 0,85</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> P1 ≈ 6124 W ≈ <strong>6,12 kW</strong></p>
+    </li>
+</ol>
+
+<h2>🧮 Leistungsabgabe und Verluste</h2>
+<ol>
+    <li>
+        <p><strong>Abgabe:</strong> P2 = P1 × η = 6124 W × 0,896 ≈ <strong>5487 W</strong>. Das passt zu den 5,5 kW auf dem Schild.</p>
+    </li>
+    <li>
+        <p><strong>Verluste:</strong> PV = P1 − P2 = 6124 W − 5487 W = <strong>637 W</strong></p>
+    </li>
+</ol>
+<p>Die 637 W werden zu Wärme, die der Lüfter am Motor abführt.</p>
+
+<h2>🔄 Drehmoment an der Welle</h2>
+<p>An der Welle gilt <strong>P2 = ω × M</strong>. ω ist die Winkelgeschwindigkeit.</p>
+<ol>
+    <li>
+        <p><strong>Drehzahl in 1/s:</strong> n = 1450 1/min / 60 s/min ≈ 24,17 1/s</p>
+    </li>
+    <li>
+        <p><strong>Winkelgeschwindigkeit:</strong> ω = 2 × π × n = 2 × π × 24,17 1/s ≈ 151,9 1/s</p>
+    </li>
+    <li>
+        <p><strong>Drehmoment:</strong> M = P2 / ω = 5487 W / 151,9 1/s ≈ <strong>36,1 Nm</strong></p>
+    </li>
+</ol>
+<p>M ist das Drehmoment in Nm, P2 die Abgabe in W, n die Drehzahl in 1/s und ω die Winkelgeschwindigkeit in 1/s.</p>
+
+<h2>⚡ Schneller mit 9550</h2>
+<p>Schneller geht es mit einer <strong>Zahlenwertgleichung</strong>:</p>
+<ul>
+    <li>
+        <p><strong>M = 9550 × P / n</strong></p>
+    </li>
+</ul>
+<p>P setzt du in <strong>kW</strong> ein, n in <strong>1/min</strong>, M kommt in <strong>Nm</strong> heraus. Die Zahl 9550 fasst 60 s, 1000 W und 2π zusammen.</p>
+<ul>
+    <li>
+        <p>M = 9550 × 5,5 / 1450 ≈ <strong>36,2 Nm</strong>. Das ist das <strong>Bemessungsmoment</strong> bei 5,5 kW.</p>
+    </li>
+</ul>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Wird derselbe Motor an einem 60-Hz-Netz betrieben, gilt die rechte Spalte des Schildes: <strong>6,3 kW bei 1740 1/min</strong>. Das Drehmoment ist dann M = 9550 × 6,3 / 1740 ≈ <strong>34,6 Nm</strong>. Mit η = 91,7 % nimmt der Motor P1 = 6,3 kW / 0,917 ≈ <strong>6,87 kW</strong> auf. Auch hier gilt: Auf dem Schild steht P2, aufgenommen wird mehr. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Der Asynchronmotor hat einen <strong>Ständer mit Wicklung</strong> und einen <strong>Kurzschlussläufer auf der Welle</strong>. Das Leistungsschild zeigt die <strong>abgegebene Leistung P2</strong>. P1 rechnest du mit <strong>√3 × U × I × cos φ</strong>, P2 ist <strong>P1 × η</strong>. Das Drehmoment ist <strong>M = P2 / ω</strong> oder <strong>M = 9550 × P / n</strong>. <strong>400 V Δ</strong> heißt: Dreieck am Netz mit 400 V.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Setze die Schildleistung nie als P1 ein. Rechne P1 immer aus Spannung, Strom und cos φ oder als <strong>P1 = P2 / η</strong>. Bei der Zahlenwertgleichung M = 9550 × P / n müssen die Einheiten stimmen: <strong>P in kW, n in 1/min</strong>. Achte bei der Schaltung auf die Strangspannung: Steht 400 V Δ auf dem Schild, kommt der Motor am 400-V-Netz in Dreieck.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Welche Leistung steht auf dem Leistungsschild eines Motors?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die abgegebene mechanische Leistung P2 an der Welle. Die aufgenommene Leistung P1 ist um die Verluste größer.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> U = 400 V, I = 10,4 A, cos φ = 0,85. Wie groß ist P1?</summary>
+    <div data-type="detailsContent">
+        <p>✅ P1 = 1,732 × 400 V × 10,4 A × 0,85 ≈ 6124 W ≈ 6,12 kW.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Was bedeutet IP 56?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Die 5 heißt staubgeschützt, die 6 Schutz gegen starkes Strahlwasser.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> 6,3 kW bei 1740 1/min. Wie groß ist das Drehmoment?</summary>
+    <div data-type="detailsContent">
+        <p>✅ M = 9550 × 6,3 / 1740 ≈ 34,6 Nm.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> P2 = 6,3 kW, η = 91,7 %. Wie groß ist P1?</summary>
+    <div data-type="detailsContent">
+        <p>✅ P1 = P2 / η = 6,3 kW / 0,917 ≈ 6,87 kW.</p>
+    </div>
+</details>
+<p></p>

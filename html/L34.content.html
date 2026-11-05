@@ -1,0 +1,274 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was ein <strong>Sensor</strong> macht und welche Größen er erfasst.</p>
+    </li>
+    <li>
+        <p>Wie du <strong>binäre und analoge Sensoren</strong> sowie <strong>passive und aktive Sensoren</strong> unterscheidest.</p>
+    </li>
+    <li>
+        <p>Wie eine <strong>Messkette</strong> aus Sensor, Übertragungsglied und Ausgeber aufgebaut ist.</p>
+    </li>
+    <li>
+        <p>Wie du mit dem <strong>Normsignal 4 bis 20 mA</strong> rechnest und einen <strong>Drahtbruch</strong> erkennst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! Mia und Tim arbeiten wieder an der Behälteranlage in der Werkstatt der Muster Elektrotechnik GmbH. Der Tank ist <strong>2 m hoch</strong> und mit Wasser gefüllt. Oben sitzt ein <strong>Füllstandssensor</strong>, auf seinem Typenschild steht: <strong>4 bis 20 mA</strong>. Mia fragt: Wie kommt der Füllstand als Signal in die Steuerung? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔎 Was macht ein Sensor?</h2>
+<p>Eine Steuerung muss wissen, was in einer Anlage passiert. Dafür braucht sie Sensoren. Ein Sensor <strong>erfasst eine physikalische Größe</strong>, die meist <strong>nicht elektrisch</strong> ist, und <strong>wandelt sie in eine elektrische Größe um</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Nichtelektrische Größen:</strong> Temperatur, Druck, Füllstand, Weg oder Feuchtigkeit.</p>
+    </li>
+    <li>
+        <p><strong>Elektrische Größen am Ausgang:</strong> meist eine <strong>Spannung</strong> oder ein <strong>Strom</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Weiterverarbeitung:</strong> Das Signal verarbeitet eine Steuerung, oder eine Anzeige macht es sichtbar.</p>
+    </li>
+</ul>
+
+<h2>🔀 Binär oder analog?</h2>
+<p>Nach dem <strong>Ausgangssignal</strong> unterscheidest du zwei Gruppen:</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Merkmal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Binäre Sensoren</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Analoge Sensoren</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Funktion</strong></p></td>
+                <td colspan="1" rowspan="1"><p>schalten nur ein oder aus</p></td>
+                <td colspan="1" rowspan="1"><p>messen, der Wert ändert sich stufenlos</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Aussage</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Objekt da oder nicht da</p></td>
+                <td colspan="1" rowspan="1"><p>z. B. Füllstand in m</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Beispiele</strong></p></td>
+                <td colspan="1" rowspan="1"><p>induktiver, kapazitiver und optischer Näherungsschalter</p></td>
+                <td colspan="1" rowspan="1"><p>Ultraschallsensor: Abstand zur Wasseroberfläche</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul>
+    <li>
+        <p><strong>Induktive Näherungsschalter</strong> erkennen nur <strong>Metall</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Kapazitive Näherungsschalter</strong> erkennen auch Nichtmetalle wie <strong>Wasser oder Kunststoff</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Optische Sensoren</strong> arbeiten mit <strong>Licht</strong>.</p>
+    </li>
+</ul>
+<p>Auf Mias Tank sitzt ein <strong>analoger Sensor</strong>: ein Ultraschallsensor, der den Abstand zur Wasseroberfläche misst. Sein Ausgang liefert <strong>4 bis 20 mA</strong>.</p>
+
+<h2>🔋 Passive und aktive Sensoren</h2>
+<p>Sensoren unterscheidest du auch nach ihrer <strong>Energie</strong>.</p>
+<ul>
+    <li>
+        <p><strong>Passive Sensoren</strong> brauchen eine <strong>Hilfsenergie</strong>, zum Beispiel eine Spannungsversorgung. Die Messgröße ändert eine elektrische Eigenschaft, etwa den <strong>Widerstand R</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Aktive Sensoren</strong> <strong>erzeugen ihr Signal selbst</strong>, indem sie Energie umwandeln.</p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Passive Sensoren</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Aktive Sensoren</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Pt100:</strong> Widerstandsthermometer</p></td>
+                <td colspan="1" rowspan="1"><p><strong>Thermoelement:</strong> erzeugt eine Spannung bei einem Temperaturunterschied</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>DMS:</strong> Dehnungsmessstreifen</p></td>
+                <td colspan="1" rowspan="1"><p><strong>Fotodiode:</strong> wandelt Licht in Strom</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Thermistor:</strong> NTC, PTC</p></td>
+                <td colspan="1" rowspan="1"><p><strong>Piezoelement:</strong> wandelt Druck in Spannung</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>⛓️ Die Messkette</h2>
+<p>Ein Sensor allein reicht nicht. Er ist der <strong>Anfang einer Messkette</strong>, die aus drei Gliedern besteht:</p>
+<ol>
+    <li>
+        <p><strong>Sensor:</strong> Er nimmt den Messwert auf. Sein Signal ist aber oft <strong>zu schwach oder zu ungenau</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Übertragungsglied:</strong> Es bereitet das Signal auf. Das kann ein <strong>Verstärker</strong>, ein <strong>Messumformer</strong> oder ein <strong>A/D-Wandler</strong> sein.</p>
+    </li>
+    <li>
+        <p><strong>Ausgeber:</strong> Am Ende steht eine <strong>Anzeige</strong> oder eine <strong>SPS</strong>. Die SPS reagiert automatisch und schaltet zum Beispiel eine Pumpe.</p>
+    </li>
+</ol>
+<p>Damit das Signal sicher über <strong>lange Leitungen</strong> kommt, macht der Messumformer daraus oft ein <strong>Normsignal</strong>.</p>
+
+{{IMG2}}
+
+<h2>📏 Normsignale</h2>
+<p>Normsignale sind <strong>genormte Bereiche</strong>, die jede Steuerung versteht.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Normsignal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bereich</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Besonderheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Spannungssignal</strong></p></td>
+                <td colspan="1" rowspan="1"><p>0 bis 10 V</p></td>
+                <td colspan="1" rowspan="1"><p>Nullpunkt bei 0 V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Stromsignal</strong></p></td>
+                <td colspan="1" rowspan="1"><p>4 bis 20 mA</p></td>
+                <td colspan="1" rowspan="1"><p>bei langen Leitungen weniger störanfällig, lebender Nullpunkt</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Beim Stromsignal bedeuten <strong>4 mA = 0 %</strong> und <strong>20 mA = 100 %</strong>. Der Nullpunkt liegt also nicht bei 0 mA. Man nennt das <strong>lebenden Nullpunkt</strong> oder <strong>Live Zero</strong>.</p>
+<blockquote>
+    <p>Der Vorteil des lebenden Nullpunkts: Fließen 0 mA, ist die Leitung unterbrochen. Die SPS erkennt den <strong>Drahtbruch</strong> sofort.</p>
+</blockquote>
+
+<h2>📐 Die Kennlinie des Füllstandssensors</h2>
+<p>Die Kennlinie von Mias Sensor ist eine <strong>Gerade</strong>: von <strong>4 mA bei leerem Tank</strong> bis <strong>20 mA bei 2 m</strong>. Daraus ergibt sich die Formel:</p>
+<ul>
+    <li>
+        <p><strong>I = 4 mA + 16 mA × h / H</strong></p>
+    </li>
+</ul>
+<p>Die <strong>16 mA</strong> sind die <strong>Spanne</strong> von 4 mA bis 20 mA.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Strom des Sensors</p></td>
+                <td colspan="1" rowspan="1"><p>mA</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>h</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Füllstand</p></td>
+                <td colspan="1" rowspan="1"><p>m</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>H</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Messbereich</p></td>
+                <td colspan="1" rowspan="1"><p>m</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{{IMG3}}
+
+<h2>🧮 Welcher Strom fließt?</h2>
+<p>Das Wasser in Mias Tank steht <strong>1,5 m</strong> hoch. Der Messbereich beträgt H = 2 m.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> I = 4 mA + 16 mA × 1,5 m / 2 m</p>
+    </li>
+    <li>
+        <p><strong>Verhältnis:</strong> 1,5 m / 2 m = 0,75</p>
+    </li>
+    <li>
+        <p><strong>Anteil der Spanne:</strong> 16 mA × 0,75 = 12 mA</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> I = 4 mA + 12 mA = <strong>16 mA</strong></p>
+    </li>
+</ol>
+
+<h2>🔁 Rückwärts gerechnet: vom Strom zum Füllstand</h2>
+<p>Die SPS misst <strong>12 mA</strong>. Wie hoch steht das Wasser?</p>
+<ol>
+    <li>
+        <p><strong>Lebenden Nullpunkt abziehen:</strong> 12 mA − 4 mA = 8 mA</p>
+    </li>
+    <li>
+        <p><strong>Anteil der Spanne:</strong> 8 mA / 16 mA = 0,5, also die Hälfte</p>
+    </li>
+    <li>
+        <p><strong>Füllstand:</strong> h = 0,5 × 2 m = <strong>1 m</strong></p>
+    </li>
+</ol>
+<p>Und wenn die SPS plötzlich <strong>0 mA</strong> misst? Dann ist der Tank <strong>nicht leer</strong>. Ein leerer Tank liefert 4 mA. 0 mA bedeuten <strong>Drahtbruch</strong>.</p>
+<p><strong>Merksatz:</strong> Unter 4 mA stimmt etwas mit der Leitung nicht.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>An Mias Behälteranlage bilden Ultraschallsensor, Messumformer und SPS eine vollständige Messkette. Der Sensor misst den Abstand zur Wasseroberfläche, der Messumformer liefert 4 bis 20 mA, und die SPS rechnet den Strom in den Füllstand um. Sinkt der Füllstand zu weit, schaltet die SPS automatisch die Pumpe. Reißt eine Leitung, misst die SPS 0 mA und meldet sofort einen Fehler, statt fälschlich einen leeren Tank anzunehmen. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein Sensor wandelt eine <strong>physikalische Größe in ein elektrisches Signal</strong>. <strong>Binäre Sensoren schalten, analoge Sensoren messen.</strong> <strong>Passive Sensoren</strong> brauchen Hilfsenergie, <strong>aktive Sensoren</strong> erzeugen ihr Signal selbst. Die Messkette besteht aus Sensor, Übertragungsglied und Ausgeber. Beim Normsignal <strong>4 bis 20 mA</strong> erkennt die SPS einen Drahtbruch, weil 0 mA nie ein gültiger Messwert sind.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Bei Aufgaben mit 4 bis 20 mA vergessen viele den <strong>lebenden Nullpunkt</strong>. Rechne immer mit der <strong>Spanne von 16 mA</strong> und addiere bzw. subtrahiere die 4 mA. Vom Füllstand zum Strom: I = 4 mA + 16 mA × h / H. Vom Strom zum Füllstand: h = (I − 4 mA) / 16 mA × H.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was ist der Unterschied zwischen binären und analogen Sensoren?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Binäre Sensoren schalten nur ein oder aus, zum Beispiel Objekt da oder nicht da. Analoge Sensoren liefern einen Messwert, der sich stufenlos ändert, zum Beispiel einen Füllstand.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Ist ein Thermoelement ein passiver oder ein aktiver Sensor?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ein aktiver Sensor. Es erzeugt bei einem Temperaturunterschied selbst eine Spannung und braucht keine Hilfsenergie. Ein Pt100 ist dagegen passiv.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Aus welchen drei Gliedern besteht eine Messkette?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Aus Sensor, Übertragungsglied (Verstärker, Messumformer oder A/D-Wandler) und Ausgeber (Anzeige oder SPS).</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Der Tank ist 2 m hoch, die SPS misst 12 mA. Wie hoch steht das Wasser?</summary>
+    <div data-type="detailsContent">
+        <p>✅ 12 mA − 4 mA = 8 mA, das ist die Hälfte der Spanne von 16 mA. Das Wasser steht 1 m hoch.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Die SPS misst 0 mA. Ist der Tank leer?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Nein. Ein leerer Tank liefert 4 mA. 0 mA bedeuten Drahtbruch, die Leitung ist unterbrochen.</p>
+    </div>
+</details>
+<p></p>

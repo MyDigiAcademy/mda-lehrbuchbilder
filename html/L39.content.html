@@ -1,0 +1,230 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Warum es beim Asynchronmotor den <strong>Schlupf</strong> geben muss.</p>
+    </li>
+    <li>
+        <p>Wie du <strong>Drehfelddrehzahl</strong>, <strong>Schlupfdrehzahl Δn</strong> und <strong>Schlupf s</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Wie du ein <strong>Beispiel Schritt für Schritt</strong> durchrechnest.</p>
+    </li>
+    <li>
+        <p>Welche <strong>typischen Werte</strong> der Schlupf im Leerlauf und unter Last hat.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH läuft eine <strong>Pumpe</strong> mit einem <strong>zweipoligen Drehstrommotor an 50 Hz</strong>. Tim misst die Drehzahl an der Welle: <strong>2880 1/min</strong>. Mia weiß, dass sich das Drehfeld mit <strong>3000 1/min</strong> dreht. Ausbilderin Frau Schneider fragt: Warum ist der Läufer langsamer, und wie groß ist der Schlupf? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔄 Warum gibt es Schlupf?</h2>
+<ul>
+    <li>
+        <p><strong>Drehfeld:</strong> läuft mit der <strong>Drehfelddrehzahl ns</strong> im Ständer um.</p>
+    </li>
+    <li>
+        <p><strong>Läufer:</strong> dreht mit der <strong>Läuferdrehzahl n</strong>, etwas langsamer. Diese Drehzahl misst du mit einem <strong>Drehzahlmesser an der Welle</strong>, so wie Tim.</p>
+    </li>
+    <li>
+        <p><strong>Gleich schnell?</strong> Dann würde das Feld die Läuferstäbe nicht mehr schneiden. Es wird <strong>keine Spannung induziert</strong>, es fließt <strong>kein Strom</strong>, und es gibt <strong>kein Drehmoment</strong>.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Deshalb läuft der Läufer immer etwas hinterher. Er dreht <strong>nie synchron</strong> mit dem Feld, daher der Name <strong>Asynchronmotor</strong>.</p>
+</blockquote>
+
+{{IMG2}}
+
+<h2>📐 Formeln für den Schlupf</h2>
+<p>Die <strong>Drehfelddrehzahl</strong> hängt von Frequenz und Polpaarzahl ab. Wie sie entsteht, erfährst du in der Lektion zur Entstehung des Drehfelds.</p>
+<ul>
+    <li>
+        <p><strong>Drehfelddrehzahl:</strong> ns = 60 × f / p</p>
+    </li>
+    <li>
+        <p><strong>Schlupfdrehzahl (absoluter Schlupf):</strong> Δn = ns − n</p>
+    </li>
+    <li>
+        <p><strong>Schlupf in Prozent:</strong> s = (ns − n) / ns × 100 % = Δn / ns × 100 %</p>
+    </li>
+</ul>
+<p><strong>Wichtig:</strong> Teile immer durch <strong>ns</strong>, nicht durch n.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>ns</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Drehfelddrehzahl</p></td>
+                <td colspan="1" rowspan="1"><p>1/min</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>n</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Läuferdrehzahl</p></td>
+                <td colspan="1" rowspan="1"><p>1/min</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Δn</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Schlupfdrehzahl</p></td>
+                <td colspan="1" rowspan="1"><p>1/min</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>s</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Schlupf</p></td>
+                <td colspan="1" rowspan="1"><p>%</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>f</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Frequenz</p></td>
+                <td colspan="1" rowspan="1"><p>Hz</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>p</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Polpaarzahl, Zahl der Polpaare im Ständer</p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🧮 Tims Pumpe nachgerechnet</h2>
+<p><strong>Gegeben:</strong> zweipolig, also p = 1, f = 50 Hz, n = 2880 1/min.</p>
+<ol>
+    <li>
+        <p><strong>Drehfelddrehzahl:</strong> ns = 60 × 50 Hz / 1 = <strong>3000 1/min</strong></p>
+    </li>
+    <li>
+        <p><strong>Schlupfdrehzahl:</strong> Δn = 3000 1/min − 2880 1/min = <strong>120 1/min</strong></p>
+    </li>
+    <li>
+        <p><strong>Schlupf:</strong> s = 120 1/min / 3000 1/min × 100 % = <strong>4 %</strong></p>
+    </li>
+</ol>
+<p>Der Läufer dreht also um <strong>4 % langsamer</strong> als das Drehfeld.</p>
+
+<h2>📊 Wie groß ist der Schlupf?</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Betriebszustand</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Drehzahl</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Schlupf</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Drehfeld ns</strong></p></td>
+                <td colspan="1" rowspan="1"><p>3000 1/min</p></td>
+                <td colspan="1" rowspan="1"><p>Bezugswert</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leerlauf</strong></p></td>
+                <td colspan="1" rowspan="1"><p>etwa 2990 1/min</p></td>
+                <td colspan="1" rowspan="1"><p>rund 0,3 %</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Bemessungslast</strong></p></td>
+                <td colspan="1" rowspan="1"><p>2880 1/min</p></td>
+                <td colspan="1" rowspan="1"><p>4 %</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul>
+    <li>
+        <p>Im <strong>Leerlauf</strong> läuft der Läufer fast so schnell wie das Drehfeld, der Schlupf ist sehr klein.</p>
+    </li>
+    <li>
+        <p><strong>Unter Last</strong> wird der Läufer langsamer, der Schlupf steigt.</p>
+    </li>
+    <li>
+        <p><strong>Typisch</strong> sind im Bemessungsbetrieb etwa <strong>2 bis 8 %</strong>. Kleine Motoren haben eher mehr Schlupf, große eher weniger.</p>
+    </li>
+</ul>
+
+{{IMG3}}
+
+<h2>⚠️ Typischer Fehler: Pole und Polpaare</h2>
+<ul>
+    <li>
+        <p><strong>Falsch, p = 2:</strong> ns = 60 × 50 Hz / 2 = 1500 1/min. Dann wäre der Läufer mit 2880 1/min schneller als das Feld. Das ist unmöglich.</p>
+    </li>
+    <li>
+        <p><strong>Richtig, p = 1:</strong> ns = 60 × 50 Hz / 1 = 3000 1/min. Zwei Pole bilden <strong>ein Polpaar</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> p zählt die <strong>Polpaare</strong>, nicht die Pole. Ein vierpoliger Motor hat also p = 2.</p>
+
+<h2>🧮 Der Förderbandmotor</h2>
+<p>Der Förderbandmotor aus der Werkstatt ist <strong>vierpolig</strong>, läuft an <strong>50 Hz</strong> und dreht mit <strong>1450 1/min</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Polpaare:</strong> 4 Pole / 2 = p = 2</p>
+    </li>
+    <li>
+        <p><strong>Drehfelddrehzahl:</strong> ns = 60 × 50 Hz / 2 = <strong>1500 1/min</strong></p>
+    </li>
+    <li>
+        <p><strong>Schlupfdrehzahl:</strong> Δn = 1500 1/min − 1450 1/min = <strong>50 1/min</strong></p>
+    </li>
+    <li>
+        <p><strong>Schlupf:</strong> s = 50 1/min / 1500 1/min × 100 % ≈ <strong>3,3 %</strong></p>
+    </li>
+</ol>
+<p>Das liegt im typischen Bereich von 2 bis 8 %, genau wie bei Tims Pumpe.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Tim misst die Pumpe einmal ohne Fördermenge und einmal unter voller Last. Ohne Last zeigt der Drehzahlmesser etwa <strong>2990 1/min</strong>, der Schlupf liegt bei rund <strong>0,3 %</strong>. Unter Bemessungslast sinkt die Drehzahl auf <strong>2880 1/min</strong>, der Schlupf steigt auf <strong>4 %</strong>. Je mehr Drehmoment der Motor liefern muss, desto größer wird der Schlupf, denn nur so wird im Läufer genug Strom induziert. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Der Läufer dreht <strong>immer langsamer als das Drehfeld</strong>, sonst gäbe es kein Drehmoment. Die <strong>Schlupfdrehzahl</strong> ist <strong>Δn = ns − n</strong>. Der <strong>Schlupf</strong> ist <strong>s = Δn / ns × 100 %</strong>. p zählt die Polpaare, <strong>zweipolig heißt p = 1</strong>. Typisch sind <strong>2 bis 8 %</strong>, im Leerlauf viel weniger.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne in drei Schritten: erst <strong>ns</strong>, dann <strong>Δn</strong>, dann <strong>s</strong>. Teile beim Schlupf immer durch <strong>ns</strong>. Mach eine Plausibilitätsprobe: Die Läuferdrehzahl muss knapp unter ns liegen. Kommt ein Läufer heraus, der schneller als das Feld dreht, hast du wahrscheinlich Pole und Polpaare verwechselt.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Warum kann der Läufer eines Asynchronmotors nicht so schnell wie das Drehfeld drehen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Bei gleicher Drehzahl würde das Feld die Läuferstäbe nicht schneiden. Es würde keine Spannung induziert, kein Strom fließen und kein Drehmoment entstehen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Zweipoliger Motor, 50 Hz, n = 2880 1/min. Wie groß ist der Schlupf?</summary>
+    <div data-type="detailsContent">
+        <p>✅ ns = 3000 1/min, Δn = 120 1/min, s = 120 / 3000 × 100 % = 4 %.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Vierpoliger Motor, 50 Hz, n = 1450 1/min. Wie groß sind ns und s?</summary>
+    <div data-type="detailsContent">
+        <p>✅ p = 2, ns = 1500 1/min, Δn = 50 1/min, s ≈ 3,3 %.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Durch welche Drehzahl teilst du bei der Schlupfberechnung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Immer durch die Drehfelddrehzahl ns, nicht durch die Läuferdrehzahl n.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Welcher Schlupf ist im Bemessungsbetrieb typisch?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Etwa 2 bis 8 %. Kleine Motoren haben eher mehr Schlupf, große eher weniger. Im Leerlauf ist er viel kleiner, zum Beispiel rund 0,3 %.</p>
+    </div>
+</details>
+<p></p>

@@ -1,0 +1,346 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie du <strong>Grenzstand</strong> und <strong>kontinuierliche Messung</strong> unterscheidest.</p>
+    </li>
+    <li>
+        <p>Wie die wichtigsten <strong>Messverfahren</strong> funktionieren und wie du mit <strong>Ultraschall</strong> und <strong>hydrostatischer Messung</strong> rechnest.</p>
+    </li>
+    <li>
+        <p>Was <strong>optische, induktive und kapazitive Näherungsschalter</strong> erkennen und was <strong>Schließer</strong> und <strong>Öffner</strong> sind.</p>
+    </li>
+    <li>
+        <p>Wie du Sensoren in <strong>Zwei-, Drei- und Vierdrahttechnik</strong> anschließt.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Werkstatt der Muster Elektrotechnik GmbH bauen Tim und Mia die Behälteranlage aus. Der Wassertank ist ein <strong>Zylinder</strong>, <strong>1,2 m breit</strong> und <strong>2 m hoch</strong>. Ausbilderin Frau Schneider sagt: Die Steuerung soll den <strong>Füllstand laufend kennen</strong>, und der Tank darf <strong>nie überlaufen</strong>. Welche Sensoren passen zu welcher Aufgabe? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+{{IMG1}}
+
+<h2>🔀 Grenzstand oder kontinuierlich?</h2>
+<ul>
+    <li>
+        <p>Ein <strong>Grenzstandschalter</strong> meldet nur, ob ein Füllstand erreicht ist, also ja oder nein. Sein Signal ist <strong>binär</strong>, zum Beispiel als Überlaufschutz.</p>
+    </li>
+    <li>
+        <p>Eine <strong>kontinuierliche Messung</strong> liefert den Füllstand im ganzen Bereich als <strong>analoges Signal</strong>, zum Beispiel <strong>4 bis 20 mA</strong>.</p>
+    </li>
+</ul>
+<p>Mias Tank braucht <strong>beides</strong>: eine kontinuierliche Messung und zusätzlich einen Grenzschalter gegen Überlaufen.</p>
+
+<h2>🚨 Sensoren für den Grenzstand</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Sensor</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Funktion</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einsatz</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Schwimmerschalter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>schwimmt auf, kippt bei steigender Flüssigkeit und schaltet einen Kontakt</p></td>
+                <td colspan="1" rowspan="1"><p>Flüssigkeiten</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Konduktiver Sensor</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Elektroden im Tank: Erreicht leitfähige Flüssigkeit die Elektrode, fließt ein kleiner Strom und er schaltet</p></td>
+                <td colspan="1" rowspan="1"><p>leitfähige Flüssigkeiten wie Wasser, nicht bei Öl</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Vibrationsgrenzschalter</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Schwinggabel schwingt, bedeckt das Medium sie, ändert sich die Schwingung</p></td>
+                <td colspan="1" rowspan="1"><p>auch Schüttgut</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🔊 Der Ultraschallsensor</h2>
+<p>Kontinuierlich misst oft ein <strong>Ultraschallsensor</strong>. Er sitzt <strong>oben auf dem Tank</strong>.</p>
+<ol>
+    <li>
+        <p><strong>Schallimpuls:</strong> Der Sensor sendet einen kurzen Impuls nach unten.</p>
+    </li>
+    <li>
+        <p><strong>Echo:</strong> Die Oberfläche wirft ihn zurück.</p>
+    </li>
+    <li>
+        <p><strong>Laufzeit:</strong> Aus der Laufzeit berechnet die Elektronik den Abstand s und daraus den Füllstand h.</p>
+    </li>
+</ol>
+<ul>
+    <li>
+        <p><strong>Vorteil:</strong> Die Messung ist <strong>berührungslos</strong>, für Flüssigkeiten und feines Schüttgut.</p>
+    </li>
+    <li>
+        <p><strong>Störungen:</strong> <strong>Schaum, Dampf oder Staub</strong> können den Schall stören.</p>
+    </li>
+</ul>
+
+{{IMG2}}
+
+<h2>🧮 Den Abstand berechnen</h2>
+<p>Der Sensor sitzt <strong>2,2 m über dem Boden</strong>, das Echo kommt nach <strong>t = 4 ms</strong> zurück. Der Schall läuft hin und zurück, deshalb gilt:</p>
+<ul>
+    <li>
+        <p><strong>s = c × t / 2</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>s</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Abstand Sensor bis Oberfläche</p></td>
+                <td colspan="1" rowspan="1"><p>m</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>c</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Schallgeschwindigkeit, in Luft bei 20 °C: 343 m/s</p></td>
+                <td colspan="1" rowspan="1"><p>m/s</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>t</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Laufzeit</p></td>
+                <td colspan="1" rowspan="1"><p>s</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>h</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Füllstand</p></td>
+                <td colspan="1" rowspan="1"><p>m</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> s = 343 m/s × 0,004 s / 2</p>
+    </li>
+    <li>
+        <p><strong>Abstand:</strong> s = <strong>0,686 m</strong></p>
+    </li>
+    <li>
+        <p><strong>Füllstand:</strong> h = 2,2 m − 0,686 m ≈ <strong>1,51 m</strong></p>
+    </li>
+</ol>
+
+<h2>📏 Wie viel ist ein Millimeter?</h2>
+<p>Der Sensor löst <strong>1 mm</strong> auf. Wie viel Liter sind das? Du rechnest mit dem Zylindervolumen:</p>
+<ul>
+    <li>
+        <p><strong>V = π × (d / 2)² × h</strong></p>
+    </li>
+</ul>
+<p>Dabei ist V das Volumen in m³, d der Durchmesser in m, h die Höhe in m und π die Kreiszahl 3,14.</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> V = π × (0,6 m)² × 0,001 m</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> V = 0,00113 m³ ≈ <strong>1,13 L</strong> je Millimeter</p>
+    </li>
+</ol>
+
+<h2>💧 Die hydrostatische Messung</h2>
+<p>Bei der hydrostatischen Messung sitzt ein <strong>Drucksensor unten am Tank</strong>. Er misst den Druck der Wassersäule. Je höher das Wasser, desto größer der Druck:</p>
+<ul>
+    <li>
+        <p><strong>p = ρ × g × h</strong></p>
+    </li>
+</ul>
+<p>Dabei ist p der Druck in Pa, ρ (Rho) die Dichte in kg/m³, g die Fallbeschleunigung mit 9,81 m/s² und h die Füllhöhe in m.</p>
+<ol>
+    <li>
+        <p><strong>Werte:</strong> Wasser hat ρ = 1000 kg/m³, es steht h = 1,5 m hoch.</p>
+    </li>
+    <li>
+        <p><strong>Einsetzen:</strong> p = 1000 kg/m³ × 9,81 m/s² × 1,5 m</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> p = <strong>14 715 Pa ≈ 147 mbar</strong></p>
+    </li>
+</ol>
+
+<h2>⚖️ Stärken und Grenzen</h2>
+<ul>
+    <li>
+        <p><strong>Vorteile:</strong> preiswert, robust, einfach. Einsatz zum Beispiel in Wassertanks, Heizungsanlagen und Regenwasserspeichern.</p>
+    </li>
+    <li>
+        <p><strong>Grenze:</strong> Die <strong>Dichte muss bekannt sein und gleich bleiben</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Für Schüttgut ungeeignet.</strong></p>
+    </li>
+</ul>
+<p><strong>Beispiel Salzwasser:</strong> Im Tank ist Salzwasser mit ρ = 1100 kg/m³. Der Sensor ist auf Wasser eingestellt, misst 14 715 Pa und zeigt 1,5 m an. Wirklich gilt:</p>
+<ul>
+    <li>
+        <p>h = 14 715 Pa / (1100 kg/m³ × 9,81 m/s²) ≈ <strong>1,36 m</strong></p>
+    </li>
+</ul>
+
+<h2>📡 Kapazitiv und Radar</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Verfahren</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Prinzip</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Eigenschaften</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Kapazitiv</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Das Medium ändert die Kapazität, entscheidend ist die <strong>Permittivitätszahl</strong></p></td>
+                <td colspan="1" rowspan="1"><p>als Grenzschalter oder mit Stabsonde kontinuierlich, auch für Pulver, Granulat, Getreide</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Radar</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Laufzeitmessung wie Ultraschall, aber mit <strong>elektromagnetischen Wellen</strong></p></td>
+                <td colspan="1" rowspan="1"><p>kaum gestört durch Dampf und Staub, dafür teurer</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Bei <strong>staubigem Getreide</strong> sind kapazitive Sensoren oder Radar besser als Ultraschall.</p>
+
+<h2>🧲 Näherungsschalter</h2>
+<p>Näherungsschalter erkennen <strong>berührungslos</strong>, ob ein Objekt da ist. Sie liefern ein <strong>binäres Signal</strong>, zum Beispiel um Positionen zu überwachen, Werkstücke zu zählen oder Endlagen zu erkennen.</p>
+<ul>
+    <li>
+        <p><strong>Optisch:</strong> arbeiten mit Licht, meist Infrarot. Beim <strong>Lichttaster</strong> sitzen Sender und Empfänger im gleichen Gehäuse, bei der <strong>Einweglichtschranke</strong> gegenüber. Die <strong>Reflexionslichtschranke</strong> braucht einen Reflektor.</p>
+    </li>
+    <li>
+        <p><strong>Induktiv:</strong> erkennen <strong>nur Metall</strong> und sind robust gegen Staub und Öl.</p>
+    </li>
+    <li>
+        <p><strong>Kapazitiv:</strong> erkennen auch <strong>Nichtmetall</strong> wie Kunststoff, Pulver oder Flüssigkeiten.</p>
+    </li>
+</ul>
+
+<h2>🔘 Schließer und Öffner</h2>
+<ul>
+    <li>
+        <p><strong>Schließer, NO (Normally Open):</strong> ohne Objekt offen, kein Strom. Mit Objekt geschlossen.</p>
+    </li>
+    <li>
+        <p><strong>Öffner, NC (Normally Closed):</strong> ohne Objekt geschlossen, Strom fließt. Mit Objekt offen.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Öffner nimmt man bei <strong>Sicherheitsaufgaben</strong>. Reißt die Leitung, ist der Strom weg wie beim Auslösen. Die Steuerung geht in den sicheren Zustand. Das heißt <strong>drahtbruchsicher</strong>.</p>
+</blockquote>
+
+<h2>🔌 Die Zweidrahttechnik</h2>
+<p>Bei der Zweidrahttechnik liegt der Sensor <strong>in Reihe mit der Last</strong>, wie ein Schalter.</p>
+<ul>
+    <li>
+        <p><strong>BN (braun)</strong> führt zu <strong>L+</strong>.</p>
+    </li>
+    <li>
+        <p><strong>BU (blau)</strong> führt über die Last <strong>RL</strong> zu <strong>L−</strong> bzw. N.</p>
+    </li>
+    <li>
+        <p>Erkennt der <strong>Schließer</strong> ein Objekt, schaltet er die Last ein.</p>
+    </li>
+</ul>
+<p>Versorgung und Signal teilen sich zwei Adern. Deshalb fließt immer ein kleiner <strong>Reststrom</strong>.</p>
+
+<h2>🔌 Die Dreidrahttechnik</h2>
+<p>Bei der Dreidrahttechnik versorgen <strong>Braun (BN)</strong> und <strong>Blau (BU)</strong> den Sensor, <strong>Schwarz (BK)</strong> ist der Schaltausgang.</p>
+
+{{IMG3}}
+
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Typ</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Last liegt</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ausgang BK schaltet auf</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>NPN, minusschaltend</strong></p></td>
+                <td colspan="1" rowspan="1"><p>zwischen L+ und BK</p></td>
+                <td colspan="1" rowspan="1"><p>L−</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>PNP, plusschaltend</strong></p></td>
+                <td colspan="1" rowspan="1"><p>zwischen BK und L−</p></td>
+                <td colspan="1" rowspan="1"><p>L+</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>PNP oder NPN sagt nur, wohin der Ausgang schaltet.</strong> Schließer und Öffner gibt es bei beiden. In Europa ist meist PNP üblich.</p>
+
+<h2>🔌 Die Vierdrahttechnik</h2>
+<p>Bei der Vierdrahttechnik hat der Sensor <strong>zwei getrennte Ausgänge</strong>, jeder mit eigener Last:</p>
+<ul>
+    <li>
+        <p><strong>BK (schwarz):</strong> Schließer, NO</p>
+    </li>
+    <li>
+        <p><strong>WH (weiß):</strong> Öffner, NC</p>
+    </li>
+</ul>
+<p>So wählst du, ob beim Erkennen <strong>ein- oder ausgeschaltet</strong> wird. Im typischen Fall schalten beide Ausgänge plus, die Lasten liegen an L−.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein staubiges Getreidesilo braucht eine <strong>Voll-Meldung</strong>. Ultraschall scheidet aus, weil Staub den Schall stört. Passend ist ein <strong>kapazitiver Grenzschalter</strong> oder ein <strong>Vibrationsgrenzschalter</strong>, denn beide funktionieren auch bei Schüttgut. Eine hydrostatische Messung ist für Schüttgut ungeeignet, ein konduktiver Sensor braucht eine leitfähige Flüssigkeit. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p><strong>Grenzstand heißt binär, kontinuierlich heißt analog.</strong> Ultraschall und Radar messen die <strong>Laufzeit</strong>: s = c × t / 2. Hydrostatisch gilt <strong>p = ρ × g × h</strong>, die Dichte muss stimmen. Induktive Näherungsschalter erkennen nur Metall, kapazitive auch Nichtmetall. <strong>PNP schaltet plus, NPN schaltet minus.</strong></p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Kläre bei der Sensorauswahl zuerst: <strong>Grenzstand oder kontinuierlich?</strong> Dann das <strong>Medium</strong>: leitfähig, Schaum, Dampf, Staub oder Schüttgut? Bei der Laufzeitmessung nie das <strong>Teilen durch 2</strong> vergessen. Beim Anschluss gilt: Liegt die Last an L+, ist der Sensor NPN, liegt sie an L−, ist er PNP.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was unterscheidet einen Grenzstandschalter von einer kontinuierlichen Messung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Grenzstandschalter meldet binär, ob ein Füllstand erreicht ist. Die kontinuierliche Messung liefert den Füllstand im ganzen Bereich als analoges Signal, zum Beispiel 4 bis 20 mA.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Ein Ultraschallsensor sitzt 2,2 m über dem Boden, das Echo kommt nach 4 ms. Wie hoch ist der Füllstand?</summary>
+    <div data-type="detailsContent">
+        <p>✅ s = 343 m/s × 0,004 s / 2 = 0,686 m. h = 2,2 m − 0,686 m ≈ 1,51 m.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Warum zeigt ein auf Wasser eingestellter hydrostatischer Sensor bei Salzwasser einen falschen Füllstand an?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Der Druck hängt von der Dichte ab. Salzwasser ist mit 1100 kg/m³ dichter, deshalb erzeugt schon eine geringere Höhe denselben Druck. Statt angezeigter 1,5 m stehen nur rund 1,36 m im Tank.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Ein staubiges Getreidesilo braucht eine Voll-Meldung. Welcher Sensor passt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Ein kapazitiver Grenzschalter oder ein Vibrationsgrenzschalter. Ultraschall wird durch Staub gestört.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Die Last liegt zwischen BK und L+. Ist der Sensor PNP oder NPN?</summary>
+    <div data-type="detailsContent">
+        <p>✅ NPN, denn er schaltet den Ausgang BK auf L−.</p>
+    </div>
+</details>
+<p></p>
