@@ -1,0 +1,288 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie ein <strong>Spannungsteiler</strong> funktioniert und wo er eingesetzt wird.</p>
+    </li>
+    <li>
+        <p>Wie du eine Spannung mit dem <strong>Potentiometer</strong> stufenlos einstellst.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>unbelasteten Spannungsteiler</strong> mit <strong>U₂₀ = R2 / (R1 + R2) × U</strong> berechnest.</p>
+    </li>
+    <li>
+        <p>Was ein <strong>Verbraucher am Ausgang</strong> verändert und welche Rolle das <strong>Querstromverhältnis q</strong> spielt.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH baut Tim einen Prüfaufbau. Das Labornetzteil liefert <strong>30 V Gleichspannung</strong>. Eine Baugruppe braucht aber nur <strong>18 V</strong>. Tim hat zwei Widerstände mit <strong>R1 = 100 Ω</strong> und <strong>R2 = 150 Ω</strong>. Ausbilderin Frau Schneider fragt: Wie teilst du die Spannung, und bleibt es bei 18 V, wenn die Baugruppe angeschlossen ist? Genau das klärst du in dieser Lektion. Viel Spaß!</p>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2FNvsEtkGWcK-uS1982bJud-img.webp?alt=media&amp;token=ff720e3d-2049-49ff-9f81-b4cdaecede73" alt="" data-display="full-width">
+
+<h2>⚡ Was ist ein Spannungsteiler?</h2>
+<p>Ein Spannungsteiler ist eine einfache Schaltung, die eine <strong>große Spannung in kleinere Teilspannungen</strong> aufteilt. Dafür liegen Widerstände <strong>in Reihe</strong>. Die Teilspannungen ergeben zusammen die Gesamtspannung U.</p>
+<ul>
+    <li>
+        <p><strong>Einsatz:</strong> Lautstärkeregler, Sollwertgeber oder vor einem Messeingang.</p>
+    </li>
+    <li>
+        <p><strong>Grenze:</strong> Für größere Verbraucher ist er ungeeignet, denn in den Widerständen entsteht dauernd <strong>Verlustwärme</strong>.</p>
+    </li>
+</ul>
+
+<h2>🔌 Spannungsteiler mit Festwiderständen</h2>
+<p>Beim Spannungsteiler mit Festwiderständen liegen <strong>R1 und R2 in Reihe</strong>. Der Strom I fließt durch beide Widerstände, er ist überall gleich groß. Die <strong>Gesamtspannung U</strong> liegt an beiden zusammen.</p>
+<ul>
+    <li>
+        <p>An <strong>R1</strong> fällt die Teilspannung <strong>U1</strong> ab.</p>
+    </li>
+    <li>
+        <p>An <strong>R2</strong> liegt die <strong>Ausgangsspannung U₂₀</strong>. Die Null im Index steht für <strong>Leerlauf</strong>: Am Ausgang ist nichts angeschlossen.</p>
+    </li>
+</ul>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2Fb3Ng2tUuxL5RpBZa3R2gv-img.webp?alt=media&amp;token=dcffd640-a891-4b2b-b7d2-197b6972830a" alt="" data-display="full-width">
+
+<h2>📐 Die Ausgangsspannung im Leerlauf</h2>
+<p>Für die Ausgangsspannung des unbelasteten Spannungsteilers gilt die Spannungsteilerformel:</p>
+<ul>
+    <li>
+        <p><strong>U₂₀ = R2 / (R1 + R2) × U</strong></p>
+    </li>
+</ul>
+<p>Die Teilspannungen verhalten sich wie die Widerstände:</p>
+<ul>
+    <li>
+        <p><strong>U1 / U₂₀ = R1 / R2</strong></p>
+    </li>
+</ul>
+<p>Je größer R2 im Vergleich zu R1, desto größer die Ausgangsspannung.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U₂₀</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Ausgangsspannung im Leerlauf</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Gesamtspannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U1</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Teilspannung an R1</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>R1</strong></p></td>
+                <td colspan="1" rowspan="1"><p>oberer Widerstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>R2</strong></p></td>
+                <td colspan="1" rowspan="1"><p>unterer Widerstand</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🧮 Tims Spannungsteiler gerechnet</h2>
+<p>Tim setzt seine Werte R1 = 100 Ω, R2 = 150 Ω und U = 30 V ein:</p>
+<ol>
+    <li>
+        <p><strong>Einsetzen:</strong> U₂₀ = 150 Ω / (100 Ω + 150 Ω) × 30 V</p>
+    </li>
+    <li>
+        <p><strong>Ergebnis:</strong> U₂₀ = 4500 Ω·V / 250 Ω = <strong>18 V</strong>, passend für die Baugruppe.</p>
+    </li>
+    <li>
+        <p><strong>Strom:</strong> I = U / (R1 + R2) = 30 V / 250 Ω = <strong>0,12 A</strong></p>
+    </li>
+    <li>
+        <p><strong>Spannung an R1:</strong> U1 = I × R1 = 0,12 A × 100 Ω = <strong>12 V</strong></p>
+    </li>
+</ol>
+<p><strong>Kontrolle:</strong> 12 V + 18 V = 30 V. I ist der Strom in Ampere, U1 die Spannung an R1 in Volt.</p>
+
+<h2>🎚️ Spannungsteiler mit Potentiometer</h2>
+<p>Für eine <strong>einstellbare Spannung</strong> nimmst du ein <strong>Potentiometer</strong>. Es ist ein Widerstand R mit <strong>drei Anschlüssen</strong>. Der bewegliche <strong>Schleifer</strong>, im Schaltzeichen der Pfeil, teilt R in zwei Teile: <strong>R1 über dem Schleifer</strong> und <strong>R2 darunter</strong>. Es gilt R1 + R2 = R.</p>
+<p>Der Strom I fließt durch den ganzen Widerstand, und an R liegt die Gesamtspannung U. Die Ausgangsspannung U₂₀ greifst du zwischen Schleifer und unterem Anschluss ab. Verschiebst du den Schleifer, stellst du U₂₀ <strong>stufenlos</strong> ein, von <strong>0 V bis zur vollen Spannung U</strong>.</p>
+
+<h2>📈 Der unbelastete Teiler im Diagramm</h2>
+<p>Den unbelasteten Spannungsteiler kannst du auch in einem Strom-Spannungs-Diagramm darstellen. Nach rechts ist die Spannung aufgetragen, nach oben der Strom.</p>
+<ul>
+    <li>
+        <p>Die <strong>Gerade R2</strong> beginnt im Nullpunkt.</p>
+    </li>
+    <li>
+        <p>Die <strong>Gerade R1</strong> zeichnest du von der Gesamtspannung U aus nach links oben, bis zum Strom <strong>IK = U / R1</strong>. Das wäre der Strom bei kurzgeschlossenem Ausgang.</p>
+    </li>
+    <li>
+        <p>Im Schnittpunkt liegt der <strong>Arbeitspunkt A</strong>. Nur dort fließt durch beide Widerstände derselbe Strom.</p>
+    </li>
+    <li>
+        <p>Darunter liest du die Teilspannungen ab: links U₂₀, rechts U1. Zusammen ergeben sie <strong>U₂₀ + U1 = U</strong>.</p>
+    </li>
+</ul>
+
+<h2>🔀 Der belastete Spannungsteiler</h2>
+<p>Jetzt schließt Tim die Baugruppe an. Damit ist der Teiler <strong>belastet</strong>. R1, R2 und U kennst du schon. Neu ist der <strong>Lastwiderstand RL</strong>, hier die Baugruppe als Verbraucher.</p>
+<ul>
+    <li>
+        <p>Der Gesamtstrom I teilt sich am Abzweig auf: Der <strong>Querstrom Iq</strong> fließt durch R2, der <strong>Laststrom IL</strong> durch den Verbraucher. Es gilt <strong>I = IL + Iq</strong>.</p>
+    </li>
+    <li>
+        <p><strong>R2 und RL liegen parallel.</strong> An beiden liegt die Ausgangsspannung U₂, an R1 die Spannung U1.</p>
+    </li>
+    <li>
+        <p>Zusammen wirken R2 und RL wie ein <strong>Ersatzwiderstand R2L</strong>, der kleiner ist als R2 allein. Deshalb <strong>sinkt U₂</strong>.</p>
+    </li>
+</ul>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2FuuIEvLTdq9Q6c1fyRDmDa-img.webp?alt=media&amp;token=4dfcc467-e533-4fd0-891f-5ce7515464c6" alt="" data-display="full-width">
+
+<p>Für die Rechnung brauchst du drei Formeln:</p>
+<ul>
+    <li>
+        <p><strong>Ersatzwiderstand:</strong> R2L = R2 × RL / (R2 + RL)</p>
+    </li>
+    <li>
+        <p><strong>Ausgangsspannung unter Last:</strong> U₂ = R2L / (R1 + R2L) × U, also mit R2L statt R2</p>
+    </li>
+    <li>
+        <p><strong>Querstromverhältnis:</strong> q = Iq / IL = RL / R2</p>
+    </li>
+</ul>
+<p>RL und R2L sind Widerstände in Ω, U₂ ist die Spannung unter Last in V. Iq und IL sind Ströme in A, q hat <strong>keine Einheit</strong>.</p>
+
+<h2>🧮 Tims Baugruppe angeschlossen</h2>
+<p>Die Baugruppe hat <strong>RL = 150 Ω</strong>, genauso viel wie R2. Weiter gilt R1 = 100 Ω und U = 30 V.</p>
+<ol>
+    <li>
+        <p><strong>Ersatzwiderstand:</strong> R2L = 150 Ω × 150 Ω / (150 Ω + 150 Ω) = <strong>75 Ω</strong></p>
+    </li>
+    <li>
+        <p><strong>Ausgangsspannung:</strong> U₂ = 75 Ω / (100 Ω + 75 Ω) × 30 V = 75 Ω / 175 Ω × 30 V ≈ <strong>12,86 V</strong></p>
+    </li>
+    <li>
+        <p><strong>Querstromverhältnis:</strong> q = 150 Ω / 150 Ω = <strong>1</strong>. Durch R2 und die Baugruppe fließt gleich viel Strom.</p>
+    </li>
+</ol>
+<p>Statt 18 V liegen jetzt nur noch rund 12,86 V am Ausgang. Das ist deutlich weniger.</p>
+
+<h2>📊 Wie stark sinkt die Spannung?</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Fall</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">q</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">R2L</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Ausgangsspannung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Leerlauf</strong></p></td>
+                <td colspan="1" rowspan="1"><p>entfällt</p></td>
+                <td colspan="1" rowspan="1"><p>R2 = 150 Ω</p></td>
+                <td colspan="1" rowspan="1"><p>18 V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>RL = 150 Ω</strong></p></td>
+                <td colspan="1" rowspan="1"><p>1</p></td>
+                <td colspan="1" rowspan="1"><p>75 Ω</p></td>
+                <td colspan="1" rowspan="1"><p>12,86 V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>RL = 1,5 kΩ</strong></p></td>
+                <td colspan="1" rowspan="1"><p>10</p></td>
+                <td colspan="1" rowspan="1"><p>136,4 Ω</p></td>
+                <td colspan="1" rowspan="1"><p>17,31 V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Hätte die Baugruppe 1,5 kΩ, wäre q = 1500 Ω / 150 Ω = 10. U₂ läge dann bei rund 17,31 V, fast wie im Leerlauf. <strong>Je größer q ist, desto stabiler bleibt die Ausgangsspannung unter Last.</strong> Mehr Querstrom bedeutet aber auch <strong>mehr Verlustwärme</strong>.</p>
+
+<h2>⚠️ Typischer Fehler: Last vergessen</h2>
+<p>Ein typischer Fehler in Prüfungen: Die Last wird vergessen.</p>
+<ul>
+    <li>
+        <p><strong>Falsch, mit R2:</strong> U₂ = 150 Ω / (100 Ω + 150 Ω) × 30 V = 18 V. Das gilt nur im Leerlauf.</p>
+    </li>
+    <li>
+        <p><strong>Richtig, mit R2L:</strong> U₂ = 75 Ω / (100 Ω + 75 Ω) × 30 V ≈ 12,86 V</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Prüfe deshalb immer zuerst, ob am Ausgang etwas angeschlossen ist. Wenn ja, rechnest du mit dem Ersatzwiderstand R2L.</p>
+</blockquote>
+
+<h2>🔍 Steigt oder sinkt U₂?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: Tim klemmt die Baugruppe wieder ab.</strong> Die Spannung steigt wieder auf <strong>18 V</strong>, der Teiler ist im Leerlauf.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Tim schließt eine zweite, gleiche Baugruppe parallel an.</strong> Die Spannung sinkt weiter. RL ist jetzt 150 Ω × 150 Ω / 300 Ω = 75 Ω, R2L = 150 Ω × 75 Ω / 225 Ω = 50 Ω, und U₂ = 50 Ω / 150 Ω × 30 V = <strong>10 V</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Je kleiner der Lastwiderstand, desto stärker bricht die Ausgangsspannung ein.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein klassischer Sollwertgeber ist ein Potentiometer als Spannungsteiler vor einem Messeingang. Der Messeingang hat einen sehr großen Widerstand, das Querstromverhältnis q ist also groß. Dadurch bleibt die eingestellte Spannung fast so groß wie im Leerlauf. Für Tims Baugruppe mit nur 150 Ω ist der Spannungsteiler dagegen keine gute Lösung, weil die Spannung stark einbricht und in den Widerständen dauernd Verlustwärme entsteht. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein Spannungsteiler ist eine <strong>Reihenschaltung</strong>, die eine Spannung in Teilspannungen aufteilt. Im Leerlauf gilt <strong>U₂₀ = R2 / (R1 + R2) × U</strong>. Mit dem Potentiometer stellst du die Ausgangsspannung stufenlos ein. Unter Last liegen <strong>R2 und RL parallel</strong>, und die Ausgangsspannung sinkt. Ein großes Querstromverhältnis q hält die Spannung stabil, kostet aber Verlustleistung.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Lies genau, ob der Spannungsteiler <strong>unbelastet</strong> oder <strong>belastet</strong> ist. Beim belasteten Teiler zuerst den Ersatzwiderstand R2L = R2 × RL / (R2 + RL) berechnen und dann in die Spannungsteilerformel einsetzen. Die Formel liefert immer die Spannung über dem unteren Widerstand, also über R2 bzw. R2L.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wie berechnest du die Ausgangsspannung eines unbelasteten Spannungsteilers?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Mit U₂₀ = R2 / (R1 + R2) × U. Die Ausgangsspannung hängt nur vom Verhältnis der Widerstände und von der Gesamtspannung ab.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> R1 = 100 Ω, R2 = 150 Ω, U = 30 V: Wie groß sind U₂₀ und U1?</summary>
+    <div data-type="detailsContent">
+        <p>✅ U₂₀ = 150 Ω / 250 Ω × 30 V = 18 V. Der Strom beträgt 0,12 A, an R1 fallen 0,12 A × 100 Ω = 12 V ab.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Warum sinkt die Ausgangsspannung, wenn ein Verbraucher angeschlossen wird?</summary>
+    <div data-type="detailsContent">
+        <p>✅ R2 und RL liegen parallel. Ihr Ersatzwiderstand R2L ist kleiner als R2 allein, deshalb fällt an ihm ein kleinerer Anteil der Gesamtspannung ab.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Was gibt das Querstromverhältnis q an, und wie berechnest du es?</summary>
+    <div data-type="detailsContent">
+        <p>✅ q = Iq / IL = RL / R2. Je größer q, desto stabiler bleibt die Ausgangsspannung unter Last, aber desto mehr Verlustwärme entsteht. q hat keine Einheit.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was passiert mit U₂, wenn eine zweite, gleiche Baugruppe parallel angeschlossen wird?</summary>
+    <div data-type="detailsContent">
+        <p>✅ U₂ sinkt weiter. RL wird 75 Ω, R2L wird 50 Ω, und U₂ beträgt nur noch 10 V.</p>
+    </div>
+</details>
+<p></p>

@@ -1,0 +1,289 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Wie ein <strong>Kondensator</strong> aufgebaut ist und wie er Ladung speichert.</p>
+    </li>
+    <li>
+        <p>Wie du <strong>Kapazität</strong> und <strong>Ladung</strong> mit <strong>C = Q / U</strong> und für den Plattenkondensator berechnest.</p>
+    </li>
+    <li>
+        <p>Wie <strong>Laden und Entladen</strong> ablaufen und was die <strong>Zeitkonstante τ = R × C</strong> bedeutet.</p>
+    </li>
+    <li>
+        <p>Wie du Kondensatoren <strong>in Reihe und parallel</strong> schaltest und welche <strong>Energie</strong> sie speichern.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! Am Prüfstand der Muster Elektrotechnik GmbH baut Mia eine Schaltung auf. Ein Netzteil mit <strong>U₀ = 10 V</strong> lädt über einen Widerstand von <strong>R = 1 kΩ</strong> einen Kondensator mit <strong>C = 10 µF</strong>. Ausbilderin Frau Schneider warnt: Auch <strong>nach dem Ausschalten</strong> kann ein Kondensator noch geladen sein. Mia fragt: Wie viel Ladung speichert er, und wie lange dauert das Laden? Beides rechnest du in dieser Lektion aus. Viel Spaß!</p>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2FPUhYr29yKb8B7-dwKiO2g-img.webp?alt=media&amp;token=cc4e6dec-a729-4d61-acdc-9f2656da6728" alt="" data-display="full-width">
+
+<h2>🔋 Aufbau eines Kondensators</h2>
+<p>Ein Kondensator besteht aus wenigen Teilen:</p>
+<ul>
+    <li>
+        <p><strong>Zwei Platten:</strong> zwei leitende Metallfolien.</p>
+    </li>
+    <li>
+        <p><strong>Dielektrikum:</strong> ein Isolierstoff zwischen den Platten, zum Beispiel Polystyrol.</p>
+    </li>
+    <li>
+        <p><strong>Anschlussleiter:</strong> Über sie kommt der Kondensator in den Stromkreis.</p>
+    </li>
+</ul>
+<p>Liegt Spannung an, <strong>verschiebt die Quelle Elektronen</strong> von einer Platte auf die andere. Eine Platte wird positiv, die andere negativ. Durch das Dielektrikum selbst fließt <strong>kein Strom</strong>. Zwischen den Platten entsteht ein <strong>elektrisches Feld</strong>, und darin steckt die gespeicherte Energie.</p>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2FJpGZrpZ9N0CQwVSlHJPSU-img.webp?alt=media&amp;token=81f49a0e-1cac-4050-b9cb-b64c672cd6af" alt="" data-display="full-width">
+
+<h2>📐 Die Kapazität</h2>
+<p>Wie viel Ladung ein Kondensator speichert, gibt die <strong>Kapazität</strong> an:</p>
+<ul>
+    <li>
+        <p><strong>C = Q / U</strong>, umgestellt <strong>Q = C × U</strong></p>
+    </li>
+</ul>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>C</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Kapazität</p></td>
+                <td colspan="1" rowspan="1"><p>F (Farad)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Q</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Ladung</p></td>
+                <td colspan="1" rowspan="1"><p>C (Coulomb)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannung</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>1 F ist sehr groß.</strong> In der Praxis sind Mikrofarad (1 µF = 10⁻⁶ F), Nanofarad (1 nF = 10⁻⁹ F) und Pikofarad (1 pF = 10⁻¹² F) üblich.</p>
+<p><strong>Mias Kondensator:</strong> Q = C × U = 10 µF × 10 V = <strong>100 µC</strong>.</p>
+
+<h2>📏 Der Plattenkondensator</h2>
+<p>Wovon die Kapazität abhängt, siehst du am Plattenkondensator. Wichtig sind die <strong>Plattenfläche A</strong>, der <strong>Plattenabstand d</strong> und das <strong>Dielektrikum</strong>:</p>
+<ul>
+    <li>
+        <p><strong>C = ε₀ × εr × A / d</strong></p>
+    </li>
+</ul>
+<ul>
+    <li>
+        <p><strong>ε₀</strong>: elektrische Feldkonstante, 8,85 × 10⁻¹² As/(Vm)</p>
+    </li>
+    <li>
+        <p><strong>εr</strong>: Permittivitätszahl des Dielektrikums, ohne Einheit</p>
+    </li>
+    <li>
+        <p><strong>A</strong>: Plattenfläche in m²</p>
+    </li>
+    <li>
+        <p><strong>d</strong>: Plattenabstand in m</p>
+    </li>
+</ul>
+<p><strong>Beispiel:</strong> A = 200 cm² = 0,02 m², d = 1 mm = 0,001 m.</p>
+<ol>
+    <li>
+        <p><strong>Mit Luft (εr ≈ 1):</strong> C = 8,85 × 10⁻¹² As/(Vm) × 0,02 m² / 0,001 m ≈ <strong>177 pF</strong></p>
+    </li>
+    <li>
+        <p><strong>Mit Polystyrol (εr ≈ 2,5):</strong> C ≈ 2,5 × 177 pF ≈ <strong>443 pF</strong></p>
+    </li>
+</ol>
+<p>Größere Fläche, kleinerer Abstand oder ein Dielektrikum mit größerem εr ergeben eine größere Kapazität.</p>
+
+<h2>🔌 Laden und Entladen messen</h2>
+<p>Laden und Entladen untersuchst du mit einer Schaltung aus Generator G, Umschalter, Strommesser, Widerstand R = 1 kΩ und Kondensator C = 10 µF:</p>
+<ul>
+    <li>
+        <p><strong>Stellung Aufladung:</strong> Der <strong>Ladestrom</strong> fließt vom Generator über den Strommesser und R in den Kondensator. Die Quelle liefert die Ladespannung U₀.</p>
+    </li>
+    <li>
+        <p><strong>Spannung uC:</strong> Am Kondensator misst du die Kondensatorspannung uC.</p>
+    </li>
+    <li>
+        <p><strong>Stellung Entladung:</strong> Der Kondensator gibt seine Ladung über R wieder ab. Der <strong>Entladestrom</strong> fließt in Gegenrichtung.</p>
+    </li>
+    <li>
+        <p><strong>Voll geladen:</strong> Ist der Kondensator voll geladen, fließt kein Strom mehr.</p>
+    </li>
+</ul>
+
+<h2>⏱️ Die Zeitkonstante τ</h2>
+<p>Wie schnell Laden und Entladen gehen, bestimmt die <strong>Zeitkonstante τ</strong> (Tau):</p>
+<ul>
+    <li>
+        <p><strong>τ = R × C</strong></p>
+    </li>
+</ul>
+<p>τ ist die Zeitkonstante in s, R der Widerstand in Ω und C die Kapazität in F.</p>
+<p><strong>Mias Schaltung:</strong></p>
+<ol>
+    <li>
+        <p>τ = 1 kΩ × 10 µF = 1000 Ω × 0,00001 F</p>
+    </li>
+    <li>
+        <p>τ = <strong>0,01 s = 10 ms</strong></p>
+    </li>
+</ol>
+<p>Nach <strong>5τ</strong>, hier 5 × 10 ms = <strong>50 ms</strong>, ist der Kondensator praktisch voll geladen.</p>
+
+<h2>📈 Ladekurve und Entladekurve</h2>
+<p><strong>Beim Laden</strong> steigt die Spannung uC erst schnell, dann immer langsamer bis auf U₀. Der Ladestrom iC ist am Anfang am größten und sinkt dann.</p>
+<ul>
+    <li>
+        <p>Nach <strong>1τ</strong> sind <strong>63 %</strong> erreicht, bei Mia also rund <strong>6,3 V</strong>.</p>
+    </li>
+    <li>
+        <p>Nach <strong>5τ</strong> sind <strong>über 99 %</strong> erreicht, der Strom ist fast null.</p>
+    </li>
+</ul>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2F967_xbFwU2vOMbCZ7PrZJ-img.webp?alt=media&amp;token=cc6e98a5-835d-4632-bd2a-ca0cac55367b" alt="" data-display="full-width">
+
+<p><strong>Beim Entladen</strong> ist es umgekehrt: Die Spannung uC sinkt erst schnell, dann langsamer.</p>
+<ul>
+    <li>
+        <p>Nach <strong>1τ</strong> sind noch <strong>37 %</strong> übrig, bei Mia rund <strong>3,7 V</strong>.</p>
+    </li>
+    <li>
+        <p>Nach <strong>5τ</strong> ist der Kondensator praktisch entladen.</p>
+    </li>
+</ul>
+<blockquote>
+    <p>Prüfe vor dem Arbeiten, ob große Kondensatoren wirklich entladen sind. Auch nach dem Ausschalten können sie noch geladen sein.</p>
+</blockquote>
+
+<h2>🧮 Lade- und Entladekurve berechnen</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Vorgang</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formel</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Wert bei t = τ</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Laden</strong></p></td>
+                <td colspan="1" rowspan="1"><p>uC = U₀ × (1 − e^(−t/τ))</p></td>
+                <td colspan="1" rowspan="1"><p>63 % von U₀</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Entladen</strong></p></td>
+                <td colspan="1" rowspan="1"><p>uC = U₀ × e^(−t/τ)</p></td>
+                <td colspan="1" rowspan="1"><p>37 % von U₀</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>uC ist die Spannung am Kondensator in V, U₀ die Ladespannung in V, t und τ sind Zeiten in s, und e ist die eulersche Zahl, e ≈ 2,718.</p>
+<p><strong>Beispiel Laden bei t = τ:</strong> uC = 10 V × (1 − e^(−1)) = 10 V × (1 − 0,368) = <strong>6,32 V</strong>.</p>
+
+<h2>🔗 Reihen- und Parallelschaltung</h2>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Schaltung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formel</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Beispiel 2 × 10 µF</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Parallel</strong></p></td>
+                <td colspan="1" rowspan="1"><p>C = C1 + C2</p></td>
+                <td colspan="1" rowspan="1"><p>10 µF + 10 µF = 20 µF</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Reihe</strong></p></td>
+                <td colspan="1" rowspan="1"><p>1/C = 1/C1 + 1/C2</p></td>
+                <td colspan="1" rowspan="1"><p>C = 5 µF</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>C1 und C2 sind die einzelnen Kapazitäten in F, C die Gesamtkapazität in F. <strong>Merk dir:</strong> Bei Kondensatoren ist es genau umgekehrt wie bei Widerständen.</p>
+
+<h2>⚡ Energie im Kondensator</h2>
+<p>Im Feld des geladenen Kondensators steckt Energie:</p>
+<ul>
+    <li>
+        <p><strong>W = ½ × C × U²</strong></p>
+    </li>
+</ul>
+<p>W ist die Energie in Ws, C die Kapazität in F und U die Spannung in V.</p>
+<p><strong>Mias Kondensator:</strong> W = ½ × 10 µF × (10 V)² = 0,0005 Ws = <strong>0,5 mWs</strong>.</p>
+<p>Beim Entladen wird die Energie <strong>schlagartig</strong> frei, zum Beispiel im Blitzgerät einer Kamera.</p>
+
+<h2>🔍 Wie lange dauert das Laden?</h2>
+<ul>
+    <li>
+        <p><strong>Fall 1: R = 2 kΩ statt 1 kΩ.</strong> τ = 2 kΩ × 10 µF = <strong>20 ms</strong>. Voll geladen ist der Kondensator nach 5τ = <strong>100 ms</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: Ein zweiter Kondensator mit 10 µF wird parallel geschaltet.</strong> C = 20 µF, τ = 1 kΩ × 20 µF = ebenfalls <strong>20 ms</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Größeres R oder größeres C, das Laden dauert länger.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Frau Schneiders Warnung hat einen ernsten Hintergrund: Nach dem Ausschalten des Netzteils hält der Kondensator seine Ladung, wenn kein Entladeweg vorhanden ist. Erst über einen Widerstand entlädt er sich, und nach 5τ ist er praktisch leer. Bei Mias Schaltung sind das nur 50 ms, bei großen Kondensatoren und großen Widerständen kann es deutlich länger dauern. Deshalb wird vor dem Arbeiten immer gemessen. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Ein Kondensator besteht aus <strong>zwei Platten mit einem Dielektrikum</strong> dazwischen. Seine Kapazität ist <strong>C = Q / U</strong>, beim Plattenkondensator C = ε₀ × εr × A / d. Die Zeitkonstante ist <strong>τ = R × C</strong>, nach <strong>5τ</strong> ist er praktisch geladen oder entladen. <strong>Parallel</strong> addieren sich die Kapazitäten, <strong>in Reihe</strong> die Kehrwerte. Auch nach dem Ausschalten kann ein Kondensator noch geladen sein.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne alle Größen vor dem Einsetzen in Grundeinheiten um: 1 kΩ = 1000 Ω, 10 µF = 0,00001 F, 200 cm² = 0,02 m², 1 mm = 0,001 m. Merke dir die beiden Prozentwerte: Nach 1τ sind beim Laden <strong>63 %</strong> erreicht, beim Entladen sind noch <strong>37 %</strong> übrig. Und verwechsle die Regeln nicht: Kondensatoren parallel werden addiert, Widerstände in Reihe werden addiert.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Wie ist ein Kondensator aufgebaut?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Aus zwei leitenden Platten, zum Beispiel Metallfolien, mit einem Isolierstoff dazwischen, dem Dielektrikum. Über Anschlussleiter kommt er in den Stromkreis.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie viel Ladung speichert ein 10-µF-Kondensator an 10 V?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Q = C × U = 10 µF × 10 V = 100 µC.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> Wie groß ist τ bei R = 1 kΩ und C = 10 µF, und wann ist der Kondensator voll?</summary>
+    <div data-type="detailsContent">
+        <p>✅ τ = 1000 Ω × 0,00001 F = 0,01 s = 10 ms. Nach 5τ = 50 ms ist er praktisch voll geladen.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Welche Gesamtkapazität ergeben zwei 10-µF-Kondensatoren in Reihe und parallel?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Parallel: 10 µF + 10 µF = 20 µF. In Reihe: 1/C = 1/10 µF + 1/10 µF, also C = 5 µF.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Welche Energie speichert Mias Kondensator mit 10 µF an 10 V?</summary>
+    <div data-type="detailsContent">
+        <p>✅ W = ½ × 10 µF × (10 V)² = 0,0005 Ws = 0,5 mWs.</p>
+    </div>
+</details>
+<p></p>

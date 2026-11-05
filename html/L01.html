@@ -1,0 +1,229 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+    <li>
+        <p>Was eine <strong>gemischte Schaltung</strong> (Gruppenschaltung) ist und woran du Reihen- und Parallelanteile erkennst.</p>
+    </li>
+    <li>
+        <p>Die Regeln der <strong>Reihenschaltung</strong> und der <strong>Parallelschaltung</strong> als Wiederholung.</p>
+    </li>
+    <li>
+        <p>Wie du den <strong>Gesamtwiderstand</strong> Schritt für Schritt von innen nach außen berechnest.</p>
+    </li>
+    <li>
+        <p>Wie du mit dem ohmschen Gesetz den <strong>Gesamtstrom</strong> und die <strong>Teilströme</strong> bestimmst.</p>
+    </li>
+</ul>
+
+<p>👋 Herzlich willkommen! In der Ausbildungswerkstatt der Muster Elektrotechnik GmbH liegt ein Übungsboard. Darauf sind <strong>vier Widerstände gemischt verschaltet</strong>, also teils hintereinander und teils nebeneinander. Tim soll den Gesamtwiderstand später mit dem Multimeter messen, und zwar nur an der <strong>spannungsfreien</strong> Schaltung. Vorher soll Mia den Gesamtwiderstand berechnen, sagt Ausbilderin Frau Schneider. Danach kommt das Board an <strong>24 V Steuerspannung</strong>, und Mia berechnet auch den Strom. Genau diesen Weg gehst du in dieser Lektion mit. Viel Spaß!</p>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2Fzg3RdFkQbtsLgkASyaono-img.webp?alt=media&amp;token=69a9b617-63a8-42b7-9ffc-27741d9b05d8" alt="" data-display="full-width">
+
+<h2>🔌 Die Schaltung auf dem Board</h2>
+<p>Auf dem Übungsboard sind die vier Widerstände so angeordnet:</p>
+<ul>
+    <li>
+        <p><strong>R1 = 100 Ω</strong> und <strong>R2 = 220 Ω</strong> liegen nebeneinander, also <strong>parallel</strong>.</p>
+    </li>
+    <li>
+        <p><strong>R3 = 47 Ω</strong> liegt davor, <strong>in Reihe</strong> zu dieser Gruppe aus R1 und R2.</p>
+    </li>
+    <li>
+        <p><strong>R4 = 560 Ω</strong> liegt <strong>parallel zum Rest</strong>, also parallel zu R1, R2 und R3 zusammen.</p>
+    </li>
+</ul>
+<p>Eine solche Kombination aus Reihenschaltung und Parallelschaltung heißt <strong>gemischte Schaltung</strong> oder <strong>Gruppenschaltung</strong>.</p>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2F38mfJlnC9SVHNySwalelb-img.webp?alt=media&amp;token=daec2c46-f6bf-41a7-82bf-a4e877a47d29" alt="" data-display="full-width">
+
+<h2>🔁 Wiederholung: Reihe und parallel</h2>
+<p>Bevor du die gemischte Schaltung berechnest, brauchst du die beiden Grundregeln sicher im Kopf.</p>
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Merkmal</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Reihenschaltung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Parallelschaltung</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Was ist gleich?</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Überall fließt derselbe Strom</p></td>
+                <td colspan="1" rowspan="1"><p>An allen Widerständen liegt dieselbe Spannung</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Rechenregel</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Widerstände addieren: R = R1 + R2</p></td>
+                <td colspan="1" rowspan="1"><p>Kehrwerte addieren: 1/R = 1/R1 + 1/R2</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Kurzform für 2 Widerstände</strong></p></td>
+                <td colspan="1" rowspan="1"><p>entfällt</p></td>
+                <td colspan="1" rowspan="1"><p>R = R1 × R2 / (R1 + R2)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>Ergebnis</strong></p></td>
+                <td colspan="1" rowspan="1"><p>R wird größer als der größte Einzelwiderstand</p></td>
+                <td colspan="1" rowspan="1"><p>R wird kleiner als der kleinste Einzelwiderstand</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Dabei gilt: <strong>R</strong> ist der Gesamtwiderstand, <strong>R1</strong> und <strong>R2</strong> sind die Einzelwiderstände, alle in Ohm (Ω). <strong>1/R</strong> ist der Kehrwert und hat die Einheit 1/Ω.</p>
+
+<h2>🧭 Von innen nach außen</h2>
+<p>Eine gemischte Schaltung berechnest du nie auf einmal, sondern in Schritten <strong>von innen nach außen</strong>. Du fasst immer zwei Teile, die eindeutig in Reihe oder eindeutig parallel liegen, zu einem <strong>Ersatzwiderstand</strong> zusammen:</p>
+<ol>
+    <li>
+        <p><strong>R1 und R2 zu R12:</strong> R1 und R2 liegen parallel und werden zum Ersatzwiderstand R12 zusammengefasst.</p>
+    </li>
+    <li>
+        <p><strong>R3 und R12 zu R123:</strong> R3 liegt mit R12 in Reihe. Daraus wird R123.</p>
+    </li>
+    <li>
+        <p><strong>R123 und R4 zu R:</strong> R123 liegt parallel zu R4. Daraus wird der Gesamtwiderstand R.</p>
+    </li>
+</ol>
+<blockquote>
+    <p>Zeichne nach jedem Schritt das <strong>Ersatzschaltbild neu</strong>. So siehst du sofort, welche Widerstände als Nächstes in Reihe oder parallel liegen.</p>
+</blockquote>
+
+<h2>🧮 Rechenweg: Gesamtwiderstand</h2>
+<p><strong>Schritt 1: R1 und R2 sind parallel.</strong> Mia nimmt die Kurzform für zwei Widerstände:</p>
+<ul>
+    <li><p>Formel: R12 = R1 × R2 / (R1 + R2)</p></li>
+    <li><p>Einsetzen: R12 = 100 Ω × 220 Ω / (100 Ω + 220 Ω)</p></li>
+    <li><p>Ergebnis: R12 = 22 000 / 320 Ω = <strong>68,75 Ω</strong>, gerundet 69 Ω</p></li>
+</ul>
+<p>Kontrolle: 68,75 Ω ist <strong>kleiner als 100 Ω</strong>, also kleiner als der kleinste Einzelwiderstand. Das passt. R12 ersetzt R1 und R2. Mia rechnet mit dem genauen Wert weiter, damit sich keine Rundungsfehler aufsummieren.</p>
+<p><strong>Schritt 2: R3 liegt mit R12 in Reihe.</strong></p>
+<ul>
+    <li><p>R123 = R3 + R12 = 47 Ω + 68,75 Ω = <strong>115,75 Ω</strong></p></li>
+</ul>
+<p><strong>Schritt 3: R123 liegt parallel zu R4.</strong></p>
+<ul>
+    <li><p>R = R123 × R4 / (R123 + R4) = 115,75 Ω × 560 Ω / (115,75 Ω + 560 Ω)</p></li>
+    <li><p>R = 64 820 / 675,75 Ω ≈ <strong>95,9 Ω ≈ 96 Ω</strong></p></li>
+</ul>
+<p>R123 ersetzt R1 bis R3, R ist der Gesamtwiderstand der Schaltung. Tims Multimeter zeigt an der spannungsfreien Schaltung rund <strong>96 Ω</strong>. Rechnung und Messung passen.</p>
+
+<h2>⚠️ Typische Fehler</h2>
+<p>Zwei Fehler passieren bei gemischten Schaltungen besonders oft:</p>
+<ul>
+    <li>
+        <p><strong>Fehler 1: Parallele Widerstände einfach addiert.</strong> Wer R12 = 100 Ω + 220 Ω = 320 Ω rechnet, erhält am Ende einen Gesamtwiderstand von rund <strong>222 Ω</strong> statt 96 Ω.</p>
+    </li>
+    <li>
+        <p><strong>Fehler 2: Kehrwert am Ende vergessen.</strong> 1/R12 = 1/100 Ω + 1/220 Ω = 0,01455 1/Ω. Das ist erst der Kehrwert 1/R12 und nicht R12 selbst. Richtig ist R12 = 1 / 0,01455 1/Ω = <strong>68,75 Ω</strong>.</p>
+    </li>
+</ul>
+<p>Prüfe deshalb immer: Bei einer Parallelschaltung ist das Ergebnis <strong>kleiner als der kleinste Einzelwiderstand</strong>. R12 ist der Ersatzwiderstand in Ω, 1/R12 sein Kehrwert in 1/Ω.</p>
+
+<h2>⚡ Das Board an 24 V: Gesamtstrom und Teilströme</h2>
+<p>Jetzt liegt das Board an <strong>U = 24 V</strong>. Für den Gesamtstrom gilt das <strong>ohmsche Gesetz I = U / R</strong>:</p>
+<ul>
+    <li><p>I = U / R = 24 V / 95,92 Ω ≈ <strong>250 mA</strong></p></li>
+</ul>
+<p>Am Knotenpunkt teilt sich der Strom auf. Weil R4 parallel zum Rest liegt, liegen an R4 die <strong>vollen 24 V</strong>. Das Gleiche gilt für den anderen Zweig mit R123:</p>
+<ul>
+    <li><p>I4 = U / R4 = 24 V / 560 Ω ≈ <strong>42,9 mA</strong></p></li>
+    <li><p>I123 = U / R123 = 24 V / 115,75 Ω ≈ <strong>207,3 mA</strong></p></li>
+</ul>
+<p><strong>Kontrolle:</strong> 42,9 mA + 207,3 mA = 250,2 mA ≈ I. Die Teilströme ergeben zusammen wieder den Gesamtstrom.</p>
+
+<img src="https://files.mspotcdn.de/schools%2FsnIukBBfCbITjtz7EsZ5%2Fcontentimg%2Fj7vRCypV1bUenm5jNQDvK%2F66uKxOxCMnOLxf3DGEmhc-img.webp?alt=media&amp;token=6a91c1d7-c1be-4706-8b16-827018bf3b38" alt="" data-display="full-width">
+
+<div class="table-wrapper">
+    <table style="min-width: 460px">
+        <tbody>
+            <tr>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Formelzeichen</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Bedeutung</span></p></th>
+                <th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)">Einheit</span></p></th>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Gesamtstrom</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>I4, I123</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Teilströme</p></td>
+                <td colspan="1" rowspan="1"><p>A</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>U</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Spannung der Quelle</p></td>
+                <td colspan="1" rowspan="1"><p>V</p></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1"><p><strong>R, R4, R123</strong></p></td>
+                <td colspan="1" rowspan="1"><p>Widerstände</p></td>
+                <td colspan="1" rowspan="1"><p>Ω</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>🔍 Größer oder kleiner?</h2>
+<p>Zwei Änderungen am Board zeigen, wie empfindlich der Gesamtwiderstand auf Umbauten reagiert:</p>
+<ul>
+    <li>
+        <p><strong>Fall 1: Tim lötet R4 ab.</strong> Dann bleibt nur noch R123 übrig, also <strong>115,75 Ω</strong>. Der Gesamtwiderstand wird <strong>größer</strong>.</p>
+    </li>
+    <li>
+        <p><strong>Fall 2: R4 bleibt, aber über R1 kommt eine Drahtbrücke.</strong> Dann wird R12 = 0 Ω. Übrig bleiben R3 = 47 Ω parallel zu R4 = 560 Ω: 47 Ω × 560 Ω / (47 Ω + 560 Ω) ≈ <strong>43,4 Ω</strong>. Der Gesamtwiderstand wird <strong>kleiner</strong>.</p>
+    </li>
+</ul>
+<p><strong>Merksatz:</strong> Fällt ein paralleler Zweig weg, steigt der Widerstand. Eine Brücke macht ihn kleiner.</p>
+
+<details class="details">
+    <summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Bevor Tim misst, schaltet er das Board spannungsfrei, denn Widerstände misst du mit dem Multimeter nie unter Spannung. Mia hat vorher 95,9 Ω berechnet, das Multimeter zeigt rund 96 Ω. Weicht die Messung deutlich ab, lohnt sich ein Blick auf die Fälle von oben: Ein zu großer Wert deutet auf einen unterbrochenen Parallelzweig hin, ein zu kleiner auf eine ungewollte Brücke, etwa durch eine Lötzinnbrücke. 💪</p>
+    </div>
+</details>
+<details class="details">
+    <summary>💡 <strong>Merke</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Eine <strong>gemischte Schaltung</strong> kombiniert Reihenschaltung und Parallelschaltung. In Reihe addierst du die Widerstände, R wird größer. Parallel addierst du die Kehrwerte und bildest am Ende wieder den Kehrwert, R wird kleiner. Fasse <strong>von innen nach außen</strong> zusammen und zeichne jedes Mal das Ersatzschaltbild neu. Mit dem Gesamtwiderstand berechnest du über <strong>I = U / R</strong> den Gesamtstrom.</p>
+    </div>
+</details>
+<details class="details">
+    <summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary>
+    <div data-type="detailsContent">
+        <p>Rechne mit den <strong>genauen Zwischenwerten</strong> weiter (68,75 Ω statt 69 Ω) und runde erst das Endergebnis. Mache nach jedem Parallelschritt die Plausibilitätsprobe: Ist das Ergebnis kleiner als der kleinste Einzelwiderstand? Bei Strömen gilt die Probe am Knotenpunkt: Die Teilströme müssen zusammen den Gesamtstrom ergeben.</p>
+    </div>
+</details>
+
+<h2>❓ Übungsfragen – Selbstcheck</h2>
+<details class="details">
+    <summary><strong>Frage 1:</strong> Was versteht man unter einer gemischten Schaltung?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Eine Kombination aus Reihenschaltung und Parallelschaltung in einer Schaltung. Man nennt sie auch Gruppenschaltung.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 2:</strong> Wie groß ist R12, wenn R1 = 100 Ω und R2 = 220 Ω parallel liegen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ R12 = 100 Ω × 220 Ω / (100 Ω + 220 Ω) = 22 000 / 320 Ω = 68,75 Ω. Das ist kleiner als 100 Ω und damit plausibel.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 3:</strong> In welcher Reihenfolge fasst du die Widerstände des Übungsboards zusammen?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Von innen nach außen: zuerst R1 parallel R2 zu R12, dann R3 in Reihe mit R12 zu R123 = 115,75 Ω, zuletzt R123 parallel R4 zum Gesamtwiderstand R ≈ 95,9 Ω.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 4:</strong> Welcher Strom fließt durch R4, wenn die Schaltung an 24 V liegt?</summary>
+    <div data-type="detailsContent">
+        <p>✅ An R4 liegt die volle Spannung von 24 V. I4 = 24 V / 560 Ω ≈ 42,9 mA. Durch den anderen Zweig fließen rund 207,3 mA, zusammen rund 250 mA Gesamtstrom.</p>
+    </div>
+</details>
+<details class="details">
+    <summary><strong>Frage 5:</strong> Was passiert mit dem Gesamtwiderstand, wenn R4 abgelötet wird?</summary>
+    <div data-type="detailsContent">
+        <p>✅ Er wird größer, denn ein paralleler Zweig fällt weg. Es bleibt nur R123 = 115,75 Ω übrig.</p>
+    </div>
+</details>
+<p></p>
