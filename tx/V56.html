@@ -1,0 +1,134 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was ein <strong>elektrischer Widerstand</strong> ist und wie er sich von einem <strong>Verbraucher</strong> unterscheidet</p></li>
+<li><p>Wie du mit dem <strong>ohmschen Gesetz</strong> I = U / R rechnest und <strong>U-I-Kennlinien</strong> liest</p></li>
+<li><p>Wie du den <strong>Leiterwiderstand</strong> R = ρ · l / A einer Leitung berechnest</p></li>
+<li><p>Wie die <strong>Temperatur</strong> den Widerstand verändert: <strong>Kaltleiter (PTC)</strong> und <strong>Heißleiter (NTC)</strong></p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> braucht Tim für ein Gerät eine <strong>Verlängerungsleitung</strong>. Sie ist <strong>50 m</strong> lang und hat Kupferadern mit <strong>1,5 mm²</strong> Querschnitt. Ausbilder Herr Krause gibt ihm gleich einen Rat mit: „Roll die Leitung immer ganz von der Trommel ab, sonst kann sie zu warm werden.“ Mia wundert sich: Warum wird eine Leitung überhaupt warm? Und wie groß ist eigentlich ihr <strong>Widerstand</strong>? Genau diese Fragen klärst du jetzt Schritt für Schritt. Am Ende kannst du Tims Leitung selbst durchrechnen.</p>
+{{IMG1}}
+<h2>💡 Verbraucher und Widerstand: die Grundbegriffe</h2>
+<p>Bevor du rechnest, brauchst du zwei Begriffe sauber auseinander:</p>
+<ul>
+<li><p><strong>Verbraucher:</strong> Ein Verbraucher <strong>wandelt elektrische Energie um</strong>, zum Beispiel eine Lampe in Licht oder ein Motor in Bewegung.</p></li>
+<li><p><strong>Widerstand:</strong> Ein Widerstand <strong>begrenzt den Strom</strong>. Je größer der Widerstand, desto kleiner ist der Strom.</p></li>
+</ul>
+<p>Das <strong>Formelzeichen</strong> des Widerstands ist <strong>R</strong>, die <strong>Einheit</strong> ist das <strong>Ohm</strong>. Geschrieben wird sie mit dem griechischen Buchstaben <strong>Ω (Omega)</strong>. Im Schaltplan zeichnest du einen Widerstand als <strong>schmales Rechteck</strong>.</p>
+<p>Wichtig für die Praxis: <strong>Viele Verbraucher wirken im Stromkreis wie ein Widerstand.</strong> Und auch <strong>jede Leitung</strong> hat einen kleinen Widerstand. Genau deshalb kann Tims Verlängerungsleitung warm werden.</p>
+<h2>🔌 Gleiche Spannung, anderer Widerstand</h2>
+<p>Wie stark der Widerstand den Strom beeinflusst, siehst du an zwei Stromkreisen. Beide liegen an der <strong>gleichen Spannung von 6 V</strong>:</p>
+<ul>
+<li><p><strong>Linker Stromkreis:</strong> R = 1 kΩ, also <strong>1000 Ω</strong></p></li>
+<li><p><strong>Rechter Stromkreis:</strong> R = <strong>0,5 Ω</strong></p></li>
+</ul>
+<p>Den Strom berechnest du mit dem ohmschen Gesetz <strong>I = U / R</strong>:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Stromkreis</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Rechnung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Ergebnis</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Links: großer Widerstand</strong></p></td><td colspan="1" rowspan="1"><p>I = 6 V / 1000 Ω</p></td><td colspan="1" rowspan="1"><p><strong>6 mA</strong> (0,006 A), sehr kleiner Strom</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rechts: kleiner Widerstand</strong></p></td><td colspan="1" rowspan="1"><p>I = 6 V / 0,5 Ω</p></td><td colspan="1" rowspan="1"><p><strong>12 A</strong>, großer Strom</p></td></tr>
+</tbody></table></div>
+<p>Der Unterschied ist gewaltig: Bei gleicher Spannung fließt rechts <strong>2000-mal</strong> so viel Strom wie links. Daraus folgt die wichtigste Regel:</p>
+<blockquote><p>Je kleiner der Widerstand, desto größer der Strom.</p></blockquote>
+<h2>⚡ Das ohmsche Gesetz</h2>
+<p>Das <strong>ohmsche Gesetz</strong> ist die <strong>wichtigste Formel der Elektrotechnik</strong>. Du brauchst es in fast jeder Prüfung, also sitzt es am besten im Schlaf.</p>
+<p><strong>I = U / R</strong></p>
+<ul>
+<li><p><strong>I</strong> = Stromstärke in <strong>Ampere (A)</strong></p></li>
+<li><p><strong>U</strong> = Spannung in <strong>Volt (V)</strong></p></li>
+<li><p><strong>R</strong> = Widerstand in <strong>Ohm (Ω)</strong></p></li>
+</ul>
+<p>Die Stromstärke ist also die Spannung geteilt durch den Widerstand. Du kannst die Formel nach jeder Größe umstellen:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gesucht</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Formel</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiel</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Stromstärke I</strong></p></td><td colspan="1" rowspan="1"><p>I = U / R</p></td><td colspan="1" rowspan="1"><p>12 V / 4 Ω = 3 A</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Spannung U</strong></p></td><td colspan="1" rowspan="1"><p>U = R · I</p></td><td colspan="1" rowspan="1"><p>4 Ω · 3 A = 12 V</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Widerstand R</strong></p></td><td colspan="1" rowspan="1"><p>R = U / I</p></td><td colspan="1" rowspan="1"><p>12 V / 3 A = 4 Ω</p></td></tr>
+</tbody></table></div>
+<p>Was bedeutet <strong>1 Ω</strong> anschaulich? Ein Widerstand von 1 Ω liegt vor, wenn bei <strong>1 V Spannung genau 1 A</strong> fließt.</p>
+<h2>📈 U-I-Kennlinien lesen</h2>
+<p>Den Zusammenhang zwischen Spannung und Strom kannst du auch in einem <strong>Diagramm</strong> darstellen, der <strong>U-I-Kennlinie</strong>:</p>
+<ul>
+<li><p><strong>Waagerecht</strong> (x-Achse) ist die <strong>Spannung U in Volt</strong> aufgetragen.</p></li>
+<li><p><strong>Senkrecht</strong> (y-Achse) ist die <strong>Stromstärke I in Ampere</strong> aufgetragen.</p></li>
+<li><p>Die <strong>steile Gerade</strong> gehört zu einem Widerstand von <strong>2 Ω</strong>.</p></li>
+<li><p>Die <strong>flachere Gerade</strong> gehört zu einem Widerstand von <strong>4 Ω</strong>.</p></li>
+</ul>
+<p>Beide Kennlinien sind <strong>Geraden durch den Nullpunkt</strong>. Das bedeutet: <strong>Doppelte Spannung ergibt doppelten Strom.</strong> Strom und Spannung sind proportional. Je steiler die Gerade, desto kleiner ist der Widerstand.</p>
+{{IMG2}}
+<p><strong>Ablesebeispiele:</strong></p>
+<ul>
+<li><p>Bei <strong>R = 2 Ω</strong> und <strong>U = 15 V</strong>: I = 15 V / 2 Ω = <strong>7,5 A</strong>. Genau diesen Wert liest du an der Hilfslinie bei 15 V ab.</p></li>
+<li><p>Beim größeren Widerstand <strong>R = 4 Ω</strong> brauchst du für einen ähnlich großen Strom mehr Spannung: Bei <strong>U = 20 V</strong> fließen I = 20 V / 4 Ω = <strong>5 A</strong>.</p></li>
+</ul>
+<p>Zur Kontrolle: Bei 10 V fließen durch 2 Ω genau 5 A, durch 4 Ω nur 2,5 A. Der doppelte Widerstand halbiert bei gleicher Spannung den Strom.</p>
+<h2>🧪 Der spezifische Widerstand ρ</h2>
+<p>Wovon hängt der Widerstand einer Leitung ab? Zuerst vom <strong>Werkstoff</strong>. Jeder Werkstoff hat einen <strong>spezifischen Widerstand</strong>, Formelzeichen <strong>ρ (Rho)</strong>.</p>
+<p>ρ gibt den Widerstand eines Drahtes mit <strong>1 m Länge</strong> und <strong>1 mm² Querschnitt</strong> bei <strong>20 °C</strong> an. Die Einheit ist <strong>Ω · mm² / m</strong>.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Werkstoff</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>ρ in Ω · mm² / m (bei 20 °C)</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bewertung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Silber</strong></p></td><td colspan="1" rowspan="1"><p>0,016</p></td><td colspan="1" rowspan="1"><p>leitet am besten, aber teuer</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Kupfer</strong></p></td><td colspan="1" rowspan="1"><p>0,0178</p></td><td colspan="1" rowspan="1"><p>fast so gut wie Silber, viel billiger</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Aluminium</strong></p></td><td colspan="1" rowspan="1"><p>0,028</p></td><td colspan="1" rowspan="1"><p>leitet schlechter als Kupfer</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wolfram</strong></p></td><td colspan="1" rowspan="1"><p>0,055</p></td><td colspan="1" rowspan="1"><p>deutlich größerer Widerstand</p></td></tr>
+</tbody></table></div>
+<p>Es gilt: <strong>Je kleiner ρ, desto besser leitet der Werkstoff.</strong> Silber leitet am besten, Kupfer fast genauso gut und ist viel billiger. Deshalb bestehen Leitungen meist aus <strong>Kupfer</strong>.</p>
+<h2>📏 Der Leiterwiderstand: R = ρ · l / A</h2>
+<p>Neben dem Werkstoff hängt der Widerstand eines Leiters von seinen <strong>Maßen</strong> ab. Die Formel lautet:</p>
+<p><strong>R = ρ · l / A</strong></p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Größe</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einheit in der Formel</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Wirkung auf R</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Länge l</strong></p></td><td colspan="1" rowspan="1"><p>m</p></td><td colspan="1" rowspan="1"><p>Länger: R größer (l steht im Zähler)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Querschnitt A</strong></p></td><td colspan="1" rowspan="1"><p>mm²</p></td><td colspan="1" rowspan="1"><p>Dicker: R kleiner (A steht im Nenner)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Werkstoff ρ</strong></p></td><td colspan="1" rowspan="1"><p>Ω · mm² / m</p></td><td colspan="1" rowspan="1"><p>Wert aus der Tabelle</p></td></tr>
+</tbody></table></div>
+<p>Ein <strong>dünner, langer Draht aus Wolfram</strong> hat deshalb einen großen Widerstand: großes ρ, großes l, kleines A. Genau so ein Draht <strong>glüht in der Glühlampe</strong>.</p>
+<h2>🧮 Rechenbeispiel: Tims Verlängerungsleitung</h2>
+<p>Jetzt rechnest du Tims Leitung durch. Gegeben: Leitungslänge 50 m, Kupfer (ρ = 0,0178 Ω · mm² / m), Querschnitt A = 1,5 mm².</p>
+<ol>
+<li><p><strong>Leiterlänge bestimmen:</strong> Der Strom fließt durch die eine Ader <strong>hin</strong> und durch die andere <strong>zurück</strong>. Also gilt l = 2 · 50 m = <strong>100 m</strong>.</p></li>
+<li><p><strong>Werte einsetzen:</strong> R = 0,0178 Ω · mm²/m · 100 m / 1,5 mm²</p></li>
+<li><p><strong>Rechnen:</strong> 0,0178 · 100 = 1,78. Dann 1,78 / 1,5 ≈ <strong>1,19 Ω</strong>.</p></li>
+</ol>
+<p>Das klingt nach wenig. Doch bei großem Strom <strong>fällt an der Leitung Spannung ab</strong>, und sie <strong>erwärmt sich</strong>. Fließen zum Beispiel 10 A, dann fallen an der Leitung U = R · I = 1,19 Ω · 10 A ≈ 11,9 V ab. Diese Energie wird in der Leitung in Wärme umgewandelt.</p>
+{{IMG3}}
+<p>Ist die Leitung auf der Trommel <strong>aufgerollt</strong>, kann die Wärme nicht entweichen. Die Windungen heizen sich gegenseitig auf. Deshalb gilt Herrn Krauses Regel: <strong>Trommel immer ganz abrollen.</strong> Das ist der Grund für Spannungsfall und Wärme in einer Leitung.</p>
+<h2>🌡️ Widerstand und Temperatur</h2>
+<p>Der Widerstand hängt auch von der <strong>Temperatur</strong> ab. Dabei unterscheidest du zwei Gruppen:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Kaltleiter (PTC)</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Heißleiter (NTC)</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wenn es wärmer wird</strong></p></td><td colspan="1" rowspan="1"><p>R steigt</p></td><td colspan="1" rowspan="1"><p>R sinkt</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Temperaturbeiwert α</strong></p></td><td colspan="1" rowspan="1"><p>positiv</p></td><td colspan="1" rowspan="1"><p>negativ</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Leitet besser</strong></p></td><td colspan="1" rowspan="1"><p>im kalten Zustand</p></td><td colspan="1" rowspan="1"><p>im warmen Zustand</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Beispiele</strong></p></td><td colspan="1" rowspan="1"><p>alle Metalle, z. B. Kupfer</p></td><td colspan="1" rowspan="1"><p>Temperaturfühler</p></td></tr>
+</tbody></table></div>
+<p><strong>PTC</strong> steht für einen positiven Temperaturkoeffizienten, <strong>NTC</strong> für einen negativen. Heißleiter werden auch <strong>Warmleiter</strong> genannt. Ausgangswert für alle Rechnungen ist der Widerstand bei <strong>20 °C</strong>, kurz <strong>R₂₀</strong>.</p>
+<h2>🔥 Rechenbeispiel: die warme Motorwicklung</h2>
+<p>Wie stark sich der Widerstand ändert, berechnest du mit zwei Formeln:</p>
+<ul>
+<li><p><strong>ΔR = α · R₂₀ · Δϑ</strong> (Widerstandsänderung)</p></li>
+<li><p><strong>Rϑ = R₂₀ + ΔR</strong> (warmer Widerstand)</p></li>
+</ul>
+<p>Dabei ist <strong>Δϑ</strong> die <strong>Temperaturänderung in Kelvin</strong> und α der Temperaturbeiwert in 1/K.</p>
+<p><strong>Aufgabe:</strong> Die Kupferwicklung eines Motors hat bei 20 °C einen Widerstand von <strong>R₂₀ = 10 Ω</strong>. Im Betrieb wird sie <strong>70 °C</strong> warm. Für Kupfer gilt <strong>α = 0,0039 1/K</strong>.</p>
+<ol>
+<li><p><strong>Temperaturänderung:</strong> Δϑ = 70 °C − 20 °C = <strong>50 K</strong></p></li>
+<li><p><strong>Widerstandsänderung:</strong> ΔR = 0,0039 1/K · 10 Ω · 50 K = <strong>1,95 Ω</strong></p></li>
+<li><p><strong>Warmer Widerstand:</strong> Rϑ = 10 Ω + 1,95 Ω = <strong>11,95 Ω</strong></p></li>
+</ol>
+<p>Die warme Wicklung hat also fast 20 % mehr Widerstand als die kalte. Weil Kupfer ein Kaltleiter ist, steigt sein Widerstand mit der Temperatur.</p>
+<h2>🔍 Was passiert mit R? Länge und Querschnitt verändern</h2>
+<p>Mit der Formel R = ρ · l / A kannst du Veränderungen sofort abschätzen, ohne neu zu rechnen:</p>
+<ul>
+<li><p><strong>Fall 1: Leitung doppelt so lang.</strong> Die Länge l steht im <strong>Zähler</strong>. Der Widerstand wird <strong>doppelt so groß</strong>. Bei Tims Leitung wären das rund 2,37 Ω.</p></li>
+<li><p><strong>Fall 2: doppelter Querschnitt.</strong> Der Querschnitt A steht im <strong>Nenner</strong>. Der Widerstand wird nur <strong>halb so groß</strong>. Mit 3 mm² hätte die 50-m-Leitung rund 0,59 Ω.</p></li>
+</ul>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Tim schließt das Gerät an die 50-m-Verlängerungsleitung an und rollt sie diesmal komplett von der Trommel ab. Mia rechnet nach: 100 m Leiterlänge, Kupfer, 1,5 mm² ergeben rund 1,19 Ω. Bei hohem Strom fällt daran Spannung ab und die Leitung erwärmt sich. Abgerollt kann die Wärme entweichen, aufgerollt staut sie sich. 💪 Herrn Krauses Regel hat also einen klaren physikalischen Grund.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Ein <strong>Widerstand begrenzt den Strom</strong>, Einheit <strong>Ohm (Ω)</strong>. Das <strong>ohmsche Gesetz</strong> lautet <strong>I = U / R</strong>. Der <strong>Leiterwiderstand</strong> ist <strong>R = ρ · l / A</strong>: lang und dünn bedeutet großer Widerstand. Bei <strong>Kaltleitern</strong> wie Kupfer steigt der Widerstand mit der Temperatur, bei <strong>Heißleitern</strong> sinkt er.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker bei Leitungen: <strong>Hin- und Rückleiter mitrechnen!</strong> Eine 50 m lange Leitung hat 100 m Leiterlänge. Achte außerdem auf die Einheiten: l in <strong>m</strong>, A in <strong>mm²</strong>, ρ in <strong>Ω · mm² / m</strong>. Und bei Temperaturaufgaben ist Δϑ immer die <strong>Differenz zu 20 °C</strong> in Kelvin.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> An einem Widerstand von 1 kΩ liegen 6 V. Wie groß ist der Strom?</summary><div data-type="detailsContent"><p>✅ I = U / R = 6 V / 1000 Ω = 0,006 A = 6 mA.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Welcher Strom fließt laut U-I-Kennlinie bei 15 V durch einen Widerstand von 2 Ω?</summary><div data-type="detailsContent"><p>✅ I = 15 V / 2 Ω = 7,5 A.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Wie groß ist der Widerstand einer 50 m langen Kupferleitung mit 1,5 mm² Querschnitt (ρ = 0,0178 Ω · mm²/m)?</summary><div data-type="detailsContent"><p>✅ Leiterlänge l = 2 · 50 m = 100 m (hin und zurück). R = 0,0178 · 100 / 1,5 ≈ 1,19 Ω.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was passiert mit dem Widerstand, wenn der Querschnitt einer Leitung verdoppelt wird?</summary><div data-type="detailsContent"><p>✅ Er halbiert sich, weil A in der Formel R = ρ · l / A im Nenner steht.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Eine Kupferwicklung hat bei 20 °C 10 Ω (α = 0,0039 1/K). Wie groß ist ihr Widerstand bei 70 °C?</summary><div data-type="detailsContent"><p>✅ Δϑ = 50 K. ΔR = 0,0039 · 10 Ω · 50 = 1,95 Ω. Rϑ = 10 Ω + 1,95 Ω = 11,95 Ω.</p></div></details>
+<p></p>

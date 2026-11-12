@@ -1,0 +1,101 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was ein <strong>Signal</strong> ist und wie sich <strong>analoge</strong>, <strong>digitale</strong> und <strong>binäre</strong> Signale unterscheiden</p></li>
+<li><p>Welche <strong>sechs Darstellungsarten</strong> es für Verknüpfungen gibt</p></li>
+<li><p>Wie die Grundfunktionen <strong>UND</strong>, <strong>ODER</strong> und <strong>NICHT</strong> mit <strong>Funktionsgleichung</strong>, <strong>Wertetabelle</strong> und <strong>Logikplan</strong> funktionieren</p></li>
+<li><p>Wie du die Verknüpfungen <strong>pneumatisch</strong>, als <strong>Relaisschaltung</strong> und in der <strong>SPS</strong> erkennst</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> steht eine kleine <strong>pneumatische Presse</strong>. Mia soll damit <strong>Bleche prägen</strong>. Ausbilder Herr Krause erklärt: Die Presse hat <strong>zwei Taster</strong>, einen links und einen rechts. Der Zylinder fährt nur aus, wenn <strong>beide gleichzeitig</strong> gedrückt sind. So sind Mias Hände sicher außerhalb der Presse. Mia fragt: „Wie merkt die Steuerung, dass ich beide Taster drücke?“ Dafür muss sie wissen, was <strong>Signale</strong> sind und wie man sie <strong>verknüpft</strong>.</p>
+{{IMG1}}
+<h2>📶 Was ist ein Signal?</h2>
+<p>Ein <strong>Signal</strong> ist eine <strong>Information</strong>, zum Beispiel: Taster gedrückt, Werkstück erkannt oder Schlitten in Position. Signale kommen von <strong>Tastern</strong>, <strong>Schaltern</strong> und <strong>Sensoren</strong>.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Signalart</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Kennzeichen</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiel am Maschinenschlitten</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Analog</strong></p></td><td colspan="1" rowspan="1"><p>stufenlos, jeder Wert in einem Bereich möglich</p></td><td colspan="1" rowspan="1"><p>Messuhr</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Digital</strong></p></td><td colspan="1" rowspan="1"><p>ändert sich in festen Stufen</p></td><td colspan="1" rowspan="1"><p>Glasmaßstab mit Lesekopf</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Binär</strong></p></td><td colspan="1" rowspan="1"><p>besonderes digitales Signal mit nur zwei Werten: 0 oder 1 (aus oder ein)</p></td><td colspan="1" rowspan="1"><p>Grenztaster BG1 und BG2</p></td></tr>
+</tbody></table></div>
+<h2>📈 Analog, digital, binär am Maschinenschlitten</h2>
+<p><strong>Analoges Signal:</strong> Der Schlitten fährt auf und ab. Eine <strong>Messuhr</strong> tastet ihn ab, ihr Zeiger bewegt sich mit, und du kannst <strong>jede Position</strong> ablesen. Im Diagramm über dem Schlittenweg steigt das Signal beim Auffahren gleichmäßig an und fällt beim Abfahren wieder ab, <strong>ohne Sprünge</strong>. Analog heißt: stufenlos, jeder Zwischenwert ist möglich.</p>
+<p><strong>Digitales Signal:</strong> Am Schlitten sitzt ein <strong>Glasmaßstab</strong> (inkremental) mit sehr feinen Strichen. Ein <strong>Lesekopf</strong> fährt mit und <strong>zählt die Striche</strong>, an denen er vorbeikommt. Der Abstand zwischen zwei Strichen ist die <strong>Grundeinheit</strong>, also der kleinste Schritt, den das System erkennen kann. Im Diagramm entsteht deshalb eine <strong>Treppe</strong>. Digital heißt: Der Wert ändert sich in festen Stufen.</p>
+<p><strong>Binäres Signal:</strong> Oben und unten am Schlitten sitzen zwei <strong>Grenztaster BG1 und BG2</strong>. Ein <strong>Schaltnocken</strong> am Schlitten betätigt sie, wenn der Schlitten in der oberen oder unteren <strong>Endlage</strong> ist. Ein betätigter Grenztaster liefert <strong>1</strong>, dazwischen, auf dem Weg s, liefern beide <strong>0</strong>. Solche Grenztaster findest du an vielen Maschinen an den Endlagen von Schlitten und Tischen. Genau solche binären Signale liefern auch Mias zwei Taster an der Presse.</p>
+<h2>🗂️ Sechs Darstellungsarten</h2>
+<p>Binäre Signale kann eine Steuerung miteinander verknüpfen. Die drei <strong>Grundfunktionen</strong> sind <strong>UND</strong>, <strong>ODER</strong> und <strong>NICHT</strong>. Jede lässt sich auf sechs Arten darstellen:</p>
+<ul>
+<li><p><strong>Theorie:</strong> Funktionsgleichung (mathematisch), Wertetabelle (alle Kombinationen), Logikplan (grafisch)</p></li>
+<li><p><strong>Praxis:</strong> pneumatischer Schaltplan, Relaisschaltung, SPS-Funktionsplan</p></li>
+</ul>
+<h2>🔗 Die UND-Verknüpfung</h2>
+<p>Der Ausgang <strong>A ist nur dann 1</strong>, wenn <strong>E1 und E2 gleichzeitig 1</strong> sind.</p>
+{{IMG2}}
+<ul>
+<li><p><strong>Funktionsgleichung:</strong> E1 · E2 = A (gesprochen: E1 UND E2 ist gleich A). Als Zeichen für UND steht hier der <strong>Punkt</strong>, oft auch ein Zeichen wie ein <strong>Dach</strong> (∧).</p></li>
+<li><p><strong>Logikplan:</strong> Im Kästchen steht das UND-Zeichen <strong>&amp;</strong>. Links gehen die 2 Eingangssignale E1 und E2 hinein, rechts kommt A heraus.</p></li>
+</ul>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>E2</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>E1</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>A (UND)</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>0</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>0</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>0</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><strong>1</strong></p></td></tr>
+</tbody></table></div>
+<p><strong>UND in der Technik:</strong></p>
+<ul>
+<li><p><strong>Pneumatisch:</strong> Zwei Wegeventile liegen <strong>hintereinander</strong>. Die Druckluft kommt nur zu A, wenn beide betätigt sind. Einfacher geht es mit einem <strong>Zweidruckventil</strong>.</p></li>
+<li><p><strong>Relaisschaltung:</strong> Zwei <strong>Schließer</strong> (BG1, BG2) liegen <strong>in Reihe</strong>. Nur wenn beide geschlossen sind, zieht das Relais <strong>KF1</strong> an.</p></li>
+<li><p><strong>SPS:</strong> Ein UND-Baustein verknüpft die Eingänge <strong>E0.0</strong> und <strong>E0.1</strong>. Sein Ausgang <strong>A0.0</strong> wird nur dann eingeschaltet.</p></li>
+</ul>
+<h2>🔀 Die ODER-Verknüpfung</h2>
+<p>Hier ist <strong>A = 1</strong>, sobald <strong>mindestens ein Eingang 1</strong> ist. Beispiel: Eine <strong>Hupe</strong> ertönt, wenn Sensor 1 <strong>oder</strong> Sensor 2 eine Störung meldet.</p>
+{{IMG3}}
+<ul>
+<li><p><strong>Funktionsgleichung:</strong> E1 + E2 = A (gesprochen: E1 ODER E2 ist gleich A). <strong>Achtung:</strong> Das Plus bedeutet hier ODER, es wird nichts zusammengerechnet. Oft steht dafür auch ein <strong>V-Zeichen</strong> (∨).</p></li>
+<li><p><strong>Logikplan:</strong> Im Kästchen steht <strong>≥1</strong>. Das heißt: Mindestens ein Eingang muss 1 sein.</p></li>
+</ul>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>E2</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>E1</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>A (ODER)</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p><strong>0</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>1</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>0</p></td><td colspan="1" rowspan="1"><p>1</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>1</p></td></tr>
+</tbody></table></div>
+<p><strong>ODER in der Technik:</strong></p>
+<ul>
+<li><p><strong>Pneumatisch:</strong> Jedes der beiden Wegeventile kann die Luft zu A schicken. Einfacher geht es mit einem <strong>Wechselventil</strong>: Es lässt die Luft von E1 oder E2 durch und sperrt dabei die andere Seite.</p></li>
+<li><p><strong>Relaisschaltung:</strong> Zwei Schließer liegen <strong>parallel</strong>. Schon einer genügt, damit das Relais KF1 anzieht.</p></li>
+<li><p><strong>SPS:</strong> Der ODER-Baustein trägt das Zeichen <strong>≥1</strong> im Kästchen.</p></li>
+</ul>
+<h2>🚫 Die NICHT-Verknüpfung</h2>
+<p>Die NICHT-Verknüpfung <strong>kehrt das Signal um</strong>: Aus 0 wird 1, aus 1 wird 0.</p>
+<ul>
+<li><p><strong>Funktionsgleichung:</strong> Ein <strong>Strich über E1</strong> (E1 nicht ist gleich A). Der Strich kann auch über A stehen (E1 ist gleich nicht A).</p></li>
+<li><p><strong>Wertetabelle:</strong> E1 = 0 ergibt A = 1, E1 = 1 ergibt A = 0.</p></li>
+<li><p><strong>Logikplan:</strong> Ein <strong>kleiner Kreis</strong> zeigt die Umkehrung an. Er steht entweder am Eingang oder am Ausgang des Kästchens mit der 1.</p></li>
+</ul>
+<p><strong>NICHT in der Technik:</strong></p>
+<ul>
+<li><p><strong>Pneumatisch:</strong> Ein Wegeventil, das in Ruhestellung <strong>offen</strong> ist. Wird es betätigt, sperrt es die Luft.</p></li>
+<li><p><strong>Relaisschaltung:</strong> Der Schließer BG1 schaltet das Relais. Sein Kontakt A ist aber ein <strong>Öffner</strong>. Drückst du BG1, öffnet A, und das Signal ist 0.</p></li>
+<li><p><strong>SPS:</strong> Wieder kennzeichnet der <strong>kleine Kreis</strong> die Umkehrung, zum Beispiel am Eingang E0.0 oder am Ausgang A0.0.</p></li>
+</ul>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Verknüpfung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Logikplan</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Pneumatik</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Relais</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>UND</strong></p></td><td colspan="1" rowspan="1"><p>&amp;</p></td><td colspan="1" rowspan="1"><p>Zweidruckventil</p></td><td colspan="1" rowspan="1"><p>Schließer in Reihe</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>ODER</strong></p></td><td colspan="1" rowspan="1"><p>≥1</p></td><td colspan="1" rowspan="1"><p>Wechselventil</p></td><td colspan="1" rowspan="1"><p>Schließer parallel</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>NICHT</strong></p></td><td colspan="1" rowspan="1"><p>1 mit kleinem Kreis</p></td><td colspan="1" rowspan="1"><p>Wegeventil, in Ruhestellung offen</p></td><td colspan="1" rowspan="1"><p>Kontakt als Öffner</p></td></tr>
+</tbody></table></div>
+<h2>✏️ Welche Verknüpfung passt?</h2>
+<p><strong>Fall 1:</strong> Mias Presse soll nur auslösen, wenn der linke <strong>und</strong> der rechte Taster gedrückt sind.</p>
+<p><strong>Lösung:</strong> <strong>UND-Verknüpfung</strong>. Nur wenn beide Eingänge 1 sind, fährt der Zylinder aus.</p>
+<p><strong>Fall 2:</strong> Eine Warnleuchte soll leuchten, solange die Schutztür <strong>nicht</strong> geschlossen ist.</p>
+<p><strong>Lösung:</strong> <strong>NICHT-Verknüpfung</strong>. Meldet der Türsensor 1 für „geschlossen“, wird daraus 0 für die Leuchte. Ist die Tür offen (0), leuchtet die Leuchte (1).</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Und Mias Frage? Die beiden Taster an der Presse liefern binäre Signale. Die Steuerung verknüpft sie mit einer <strong>UND-Verknüpfung</strong>: Drückt Mia nur den linken Taster, ist A = 0 und der Zylinder bleibt stehen. Erst wenn beide Taster 1 melden, wird A = 1 und der Zylinder fährt aus. 💪 Beide Hände sind dabei sicher außerhalb der Presse.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>1. <strong>Signalarten:</strong> analog stufenlos, digital gestuft, binär nur 0 oder 1. 2. <strong>UND:</strong> A = 1, wenn alle Eingänge 1 sind. 3. <strong>ODER:</strong> A = 1, wenn mindestens ein Eingang 1 ist. 4. <strong>NICHT:</strong> kehrt das Signal um, im Logikplan am kleinen Kreis erkennbar.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker: Wertetabelle ausfüllen oder Logikplan zuordnen. Merke die Zeichen: <strong>&amp;</strong> = UND, <strong>≥1</strong> = ODER, <strong>kleiner Kreis</strong> = NICHT. Und Vorsicht: In der Funktionsgleichung bedeutet <strong>+</strong> ODER und <strong>·</strong> UND, gerechnet wird dabei nichts. Bei Relais: <strong>Reihe = UND</strong>, <strong>parallel = ODER</strong>.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was unterscheidet ein binäres von einem analogen Signal?</summary><div data-type="detailsContent"><p>✅ Ein analoges Signal ändert sich stufenlos und kann jeden Wert in einem Bereich annehmen (zum Beispiel Messuhr). Ein binäres Signal kennt nur zwei Werte, 0 und 1 (zum Beispiel Grenztaster).</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Warum zeigt das Signal eines Glasmaßstabs im Diagramm eine Treppe?</summary><div data-type="detailsContent"><p>✅ Der Lesekopf zählt die Striche. Der Abstand zwischen zwei Strichen ist die Grundeinheit, kleinere Schritte erkennt das System nicht. Das Signal ist digital und ändert sich in festen Stufen.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> In welcher Zeile der Wertetabelle ist bei ODER der Ausgang A = 0?</summary><div data-type="detailsContent"><p>✅ Nur wenn beide Eingänge 0 sind (E1 = 0, E2 = 0). In allen anderen Zeilen ist A = 1.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wie wird eine UND-Verknüpfung als Relaisschaltung und pneumatisch umgesetzt?</summary><div data-type="detailsContent"><p>✅ Relais: zwei Schließer in Reihe, nur wenn beide geschlossen sind, zieht KF1 an. Pneumatisch: zwei Wegeventile hintereinander oder ein Zweidruckventil.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Eine Warnleuchte soll leuchten, solange eine Schutztür nicht geschlossen ist. Welche Verknüpfung brauchst du?</summary><div data-type="detailsContent"><p>✅ Eine NICHT-Verknüpfung: Der Türsensor meldet 1 für geschlossen, daraus wird 0 für die Leuchte. Ist die Tür offen, wird aus 0 eine 1, und die Leuchte leuchtet.</p></div></details>
+<p></p>

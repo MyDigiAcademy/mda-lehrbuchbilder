@@ -1,0 +1,87 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was <strong>Sperrventile</strong> tun und welche Arten es gibt</p></li>
+<li><p>Wie das <strong>Rückschlagventil</strong> als <strong>Einbahnstraße</strong> für Druckluft funktioniert</p></li>
+<li><p>Wie du mit dem <strong>Wechselventil</strong> eine <strong>ODER-Funktion</strong> aufbaust, z. B. für eine Tür mit Tastern auf zwei Seiten</p></li>
+<li><p>Wie ein <strong>Schnellentlüftungsventil</strong> den <strong>Rückhub</strong> eines Zylinders beschleunigt</p></li>
+</ul>
+<p>👋 In der <strong>Muster Maschinenbau GmbH</strong> bekommt eine Anlage eine neue <strong>pneumatische Schiebetür</strong>. Mia und Tim stehen davor: Links und rechts der Tür gibt es Taster. Ausbilder Herr Krause erklärt die Vorgabe: Die Tür soll sich <strong>von beiden Seiten</strong> öffnen und schließen lassen, und dafür soll <strong>ein Taster genügen</strong>. Wie verknüpfst du zwei Taster so, dass jeder von beiden die Tür bewegt, ohne dass die Druckluft dabei verloren geht?</p>
+{{IMG1}}
+<h2>🚧 Was machen Sperrventile?</h2>
+<p><strong>Sperrventile</strong> sperren den Durchfluss, und zwar <strong>abhängig von der Strömungsrichtung</strong> oder von den <strong>anliegenden Signalen</strong>. In der Pneumatik begegnen dir vier wichtige Sperrventile:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Sperrventil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Funktion</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Typischer Einsatz</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rückschlagventil</strong></p></td><td colspan="1" rowspan="1"><p>Lässt Luft nur in eine Richtung durch</p></td><td colspan="1" rowspan="1"><p>Druckluftbehälter, Drosselrückschlagventil</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wechselventil</strong></p></td><td colspan="1" rowspan="1"><p>ODER-Funktion</p></td><td colspan="1" rowspan="1"><p>Eine Funktion von zwei Stellen auslösen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zweidruckventil</strong></p></td><td colspan="1" rowspan="1"><p>UND-Funktion</p></td><td colspan="1" rowspan="1"><p>Start nur, wenn zwei Bedingungen erfüllt sind</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Schnellentlüftungsventil</strong></p></td><td colspan="1" rowspan="1"><p>Entlüftet einen Zylinder direkt</p></td><td colspan="1" rowspan="1"><p>Schneller Rückhub</p></td></tr>
+</tbody></table></div>
+<p>Das <strong>Zweidruckventil</strong> kennst du bereits aus dem Thema Wegeventile: Es gibt nur dann ein Signal weiter, wenn an <strong>beiden Eingängen</strong> Druck anliegt. In dieser Lektion geht es um die anderen drei.</p>
+<h2>➡️ Das Rückschlagventil: die Einbahnstraße</h2>
+<p>Das <strong>Rückschlagventil</strong> hat zwei Anschlüsse, <strong>A</strong> und <strong>B</strong>. Im Inneren sitzt ein <strong>Sperrelement</strong> (z. B. eine Kugel oder ein Kegel), das von einer <strong>Feder</strong> gegen einen <strong>Sitz</strong> gedrückt wird. Im Schaltzeichen erkennst du Kugel, Sitz und Feder wieder. Das Ventil funktioniert wie eine <strong>Einbahnstraße</strong>:</p>
+<ul>
+<li><p><strong>Von A nach B: frei.</strong> Die Luft drückt das Sperrelement vom Sitz weg, die Feder wird zusammengedrückt, und die Luft strömt durch.</p></li>
+<li><p><strong>Von B nach A: gesperrt.</strong> Feder und Luftdruck pressen das Sperrelement in den Sitz. Der Weg ist zu, es gibt <strong>keine Rückströmung</strong>.</p></li>
+</ul>
+<p>Rückschlagventile findest du zum Beispiel am <strong>Druckluftbehälter</strong>, damit die gespeicherte Luft nicht zum Verdichter zurückströmt, oder im <strong>Drosselrückschlagventil</strong>, wo es die freie Strömungsrichtung bildet.</p>
+<h2>🔀 Das Wechselventil: die ODER-Funktion</h2>
+<p>Das <strong>Wechselventil</strong> hat <strong>zwei Eingänge</strong>, <strong>P1</strong> und <strong>P2</strong>, und <strong>einen Ausgang A</strong>. Im Schaltzeichen findest du die gleichen Bezeichnungen. Innen liegt eine bewegliche <strong>Kugel</strong>.</p>
+{{IMG2}}
+<ul>
+<li><p><strong>Druck an P1:</strong> Die Luft schiebt die Kugel nach rechts. Die Kugel verschließt den Eingang <strong>P2</strong>, die Luft strömt zu <strong>A</strong>.</p></li>
+<li><p><strong>Druck an P2:</strong> Genau umgekehrt. Die Kugel wandert nach links und verschließt <strong>P1</strong>, die Luft strömt zu A.</p></li>
+</ul>
+<p>Die Kugel verschließt also immer den Eingang, an dem <strong>kein Druck</strong> anliegt. Es reicht ein Signal an <strong>P1 oder an P2</strong>, damit A Druck bekommt. Das ist eine <strong>ODER-Funktion</strong>. Du brauchst sie immer dann, wenn eine Funktion <strong>von zwei verschiedenen Stellen</strong> ausgelöst werden soll.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Signal an P1</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Signal an P2</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Wechselventil (ODER): A</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Zweidruckventil (UND): A</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>nein</p></td><td colspan="1" rowspan="1"><p>nein</p></td><td colspan="1" rowspan="1"><p>kein Druck</p></td><td colspan="1" rowspan="1"><p>kein Druck</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>ja</p></td><td colspan="1" rowspan="1"><p>nein</p></td><td colspan="1" rowspan="1"><p><strong>Druck</strong></p></td><td colspan="1" rowspan="1"><p>kein Druck</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>nein</p></td><td colspan="1" rowspan="1"><p>ja</p></td><td colspan="1" rowspan="1"><p><strong>Druck</strong></p></td><td colspan="1" rowspan="1"><p>kein Druck</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>ja</p></td><td colspan="1" rowspan="1"><p>ja</p></td><td colspan="1" rowspan="1"><p><strong>Druck</strong></p></td><td colspan="1" rowspan="1"><p><strong>Druck</strong></p></td></tr>
+</tbody></table></div>
+<h2>🚪 Die Schiebetür: von zwei Stellen bedienen</h2>
+<p>Zurück zur Schiebetür. Sie wird von einem <strong>kolbenstangenlosen Zylinder MM1</strong> bewegt. Der Vorteil: Er braucht <strong>wenig Platz</strong>, weil keine Kolbenstange herausragt. Der Schaltplan ist so aufgebaut:</p>
+<ul>
+<li><p>Vorn an der Anlage sitzen <strong>vier Taster</strong>: <strong>SJ1</strong> und <strong>SJ3</strong> links, <strong>SJ2</strong> und <strong>SJ4</strong> rechts. Jeder Taster ist ein <strong>3/2-Wegeventil mit Druckknopf</strong>.</p></li>
+<li><p>Das <strong>5/2-Wegeventil QM1</strong> steuert den Zylinder MM1. Es wird von beiden Seiten mit Druckluft geschaltet.</p></li>
+<li><p><strong>SJ1 und SJ2</strong> wirken über das Wechselventil <strong>KH1</strong> auf die eine Seite von QM1.</p></li>
+<li><p><strong>SJ3 und SJ4</strong> wirken über das Wechselventil <strong>KH2</strong> auf die andere Seite von QM1.</p></li>
+<li><p>Die Druckluft kommt aus der Versorgung <strong>GQA0</strong>.</p></li>
+</ul>
+<p>So funktioniert es: Drückt Mia links <strong>SJ1</strong>, gelangt das Signal über <strong>KH1</strong> zu <strong>QM1</strong>, und die Tür fährt in die eine Richtung. Drückt Tim auf der anderen Seite <strong>SJ2</strong>, passiert genau dasselbe. Für die Gegenrichtung gilt das Gleiche mit SJ3, SJ4 und KH2.</p>
+<h2>❓ Warum braucht man hier überhaupt Wechselventile?</h2>
+<p>Man könnte auf die Idee kommen, die Leitungen von SJ1 und SJ2 einfach mit einem T-Stück zusammenzuführen. Das funktioniert aber nicht: Ein <strong>nicht betätigtes 3/2-Wegeventil</strong> ist in Ruhestellung <strong>entlüftet</strong>. Drückt Mia SJ1, würde die Luft über die Verbindungsleitung zu SJ2 strömen und dort über dessen <strong>offene Entlüftung</strong> ins Freie entweichen. Am Wegeventil QM1 käme kein ausreichendes Signal an.</p>
+<p>Das <strong>Wechselventil sperrt diesen Weg</strong>: Die Kugel verschließt den Eingang, an dem kein Druck anliegt, und das Signal geht nur zum Ausgang A.</p>
+<blockquote><p>Mehrere Taster für dieselbe Funktion: Das Wechselventil verhindert, dass die Luft über den anderen Taster entweicht.</p></blockquote>
+<h2>💨 Das Schnellentlüftungsventil</h2>
+<p>Das <strong>Schnellentlüftungsventil</strong> hat <strong>drei Anschlüsse</strong>:</p>
+<ul>
+<li><p><strong>Anschluss 1</strong> kommt vom Wegeventil.</p></li>
+<li><p><strong>Anschluss 2</strong> führt zum Zylinder.</p></li>
+<li><p><strong>Anschluss 3</strong> ist die Entlüftung ins Freie.</p></li>
+</ul>
+{{IMG3}}
+<p>Im Inneren sitzt eine bewegliche <strong>Manschette</strong>:</p>
+<ul>
+<li><p><strong>Vorhub:</strong> Die Luft strömt von <strong>1 nach 2</strong> in den Zylinder. Dabei verschließt die Manschette die Entlüftung 3.</p></li>
+<li><p><strong>Rückhub:</strong> Der Kolben drückt die Luft zurück. Die Manschette verschließt jetzt Anschluss 1, und die Luft entweicht <strong>von 2 direkt nach 3</strong> ins Freie. Sie muss nicht erst durch Schlauch und Wegeventil zurück.</p></li>
+</ul>
+<p>Das Besondere: Das Ventil schaltet <strong>ganz ohne Steuersignal</strong>, nur durch die <strong>Strömung der Luft</strong>.</p>
+<h2>🛠️ Schnellentlüftung am Zylinder</h2>
+<p>Im Schaltplan sitzt das Schnellentlüftungsventil <strong>direkt am Zylinder</strong>, an der <strong>Kolbenseite</strong>. Gesteuert wird der Zylinder hier über ein elektrisch betätigtes Wegeventil mit Federrückstellung.</p>
+<ul>
+<li><p>Fährt der Zylinder <strong>ein</strong>, entweicht die Luft der Kolbenseite <strong>sofort am Zylinder</strong>.</p></li>
+<li><p>Der <strong>Rückhub wird deutlich schneller</strong>.</p></li>
+<li><p>Das lohnt sich vor allem bei <strong>großen Zylindern</strong> und <strong>langen Schläuchen</strong>, weil dort viel Luft durch lange Wege zurückströmen müsste.</p></li>
+</ul>
+<p>Wichtig für die Montage: <strong>Je näher das Ventil am Zylinder sitzt, desto besser wirkt es.</strong></p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Nach dem Einbau testen Mia und Tim die Schiebetür. Mia drückt links SJ1: Die Tür fährt auf. Tim drückt rechts SJ4: Die Tür fährt zu. Kein Taster beeinflusst den anderen, und es zischt nirgends Luft aus einer Entlüftung. 💪 Zwei Wechselventile, KH1 und KH2, machen aus vier einfachen Tastern eine Bedienung von beiden Seiten.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Das <strong>Rückschlagventil</strong> lässt Luft nur in eine Richtung durch. Das <strong>Wechselventil</strong> gibt das Signal von <strong>P1 oder P2</strong> an A weiter (ODER). Bei mehreren Tastern für dieselbe Funktion verhindert es, dass die Luft entweicht. Das <strong>Schnellentlüftungsventil</strong> direkt am Zylinder macht den Rückhub schneller.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Merksatz für die Prüfung: <strong>Wechselventil heißt ODER, Zweidruckventil heißt UND.</strong> Wird gefragt, welches Ventil eine Funktion „von zwei Stellen“ auslöst, ist es das Wechselventil. Muss eine Funktion zwei Bedingungen gleichzeitig erfüllen, etwa Taster und Schutzgitter, ist es das Zweidruckventil.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Ein Zylinder soll von zwei Stellen aus starten, egal welcher Taster gedrückt wird. Welches Ventil nimmst du?</summary><div data-type="detailsContent"><p>✅ Ein Wechselventil. Es bildet eine ODER-Funktion: Ein Signal an P1 oder an P2 reicht für Druck an A.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Druckluft soll in einen Speicher strömen, aber nie zurück. Welches Ventil nimmst du?</summary><div data-type="detailsContent"><p>✅ Ein Rückschlagventil. Es lässt die Luft nur in eine Richtung durch und sperrt die Rückströmung.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was passiert, wenn du zwei Taster ohne Wechselventil direkt zusammenschaltest?</summary><div data-type="detailsContent"><p>✅ Die Luft des betätigten Tasters strömt zum nicht betätigten Taster und entweicht dort über dessen offene Entlüftung. Das Wegeventil bekommt kein ausreichendes Signal.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wodurch schaltet ein Schnellentlüftungsventil um?</summary><div data-type="detailsContent"><p>✅ Ohne Steuersignal, nur durch die Strömung der Luft. Beim Rückhub verschließt die Manschette Anschluss 1, die Luft entweicht von 2 direkt nach 3.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Warum setzt man das Schnellentlüftungsventil möglichst nah an den Zylinder?</summary><div data-type="detailsContent"><p>✅ Je kürzer der Weg der Abluft, desto schneller entweicht sie. Das Ventil wirkt dann am besten, besonders bei großen Zylindern und langen Schläuchen.</p></div></details>
+<p></p>

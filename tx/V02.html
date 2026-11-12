@@ -1,0 +1,85 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was eine <strong>Messabweichung</strong> ist und wie du sie <strong>berechnest</strong></p></li>
+<li><p>Wie sich <strong>systematische</strong> und <strong>zufällige Messabweichungen</strong> unterscheiden</p></li>
+<li><p>Welche <strong>typischen Ursachen</strong> es gibt: Temperatur, Messkraft, Abnutzung, Schmutz, Kippfehler, <strong>Parallaxe</strong></p></li>
+<li><p>Wie du Messabweichungen mit <strong>Vergleichsmessung</strong> und <strong>Wiederholmessung</strong> erkennst und klein hältst</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> hat Tim gerade eine Welle aus Stahl gedreht. Laut Zeichnung soll sie <strong>80 mm</strong> dick sein. Tim misst sofort nach dem Drehen mit der <strong>Bügelmessschraube</strong> und liest <strong>80,02 mm</strong> ab. Zu groß, denkt er. Ausbilder Herr Krause misst dieselbe Welle am nächsten Morgen und erhält genau <strong>80,00 mm</strong>. Hat einer von beiden falsch gemessen? Und woher kommt der Unterschied?</p>
+{{IMG1}}
+<h2>📐 Was ist eine Messabweichung?</h2>
+<p>Kein Messgerät und keine Messung ist perfekt. Die <strong>Messabweichung</strong> ist der <strong>Unterschied zwischen dem Messwert und dem richtigen Wert</strong> des Werkstücks:</p>
+<blockquote><p>Messabweichung = Messwert minus richtiger Wert</p></blockquote>
+<p><strong>Rechenweg für Tims Welle:</strong></p>
+<ol>
+<li><p>Messwert (Welle noch warm): <strong>80,02 mm</strong></p></li>
+<li><p>Richtiger Wert bei der Bezugstemperatur 20 °C: <strong>80,00 mm</strong></p></li>
+<li><p>Messabweichung: 80,02 mm minus 80,00 mm = <strong>+0,02 mm</strong></p></li>
+</ol>
+<p>Das Vorzeichen zeigt die Richtung: <strong>Plus</strong> heißt, der Messwert ist zu groß. Tims Messwert liegt also <strong>zwei Hundertstel</strong> Millimeter zu hoch.</p>
+<p>Der Grund: Die Welle war nach dem Drehen noch <strong>warm</strong>, und Stahl <strong>dehnt sich bei Wärme aus</strong>. Deshalb wird in der Messtechnik bei der <strong>Bezugstemperatur von 20 °C</strong> gemessen. Zeichnungsmaße gelten immer für diese Temperatur.</p>
+<p><strong>Wie viel macht die Wärme aus?</strong> Die Längenänderung berechnest du mit Δl = l · α · Δt. Für Stahl ist der Längenausdehnungskoeffizient α ungefähr 0,000012 1/K. War Tims Welle etwa 40 °C warm, also 20 K wärmer als die Bezugstemperatur, ergibt sich: Δl = 80 mm · 0,000012 1/K · 20 K = <strong>0,0192 mm ≈ 0,02 mm</strong>. Genau diese Abweichung hat Tim abgelesen.</p>
+<h2>⚖️ Zwei Arten von Messabweichungen</h2>
+<p>Messabweichungen teilt man in <strong>zwei Gruppen</strong> ein:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Systematische Messabweichung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Zufällige Messabweichung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Verhalten</strong></p></td><td colspan="1" rowspan="1"><p>Unter gleichen Bedingungen immer <strong>gleicher Betrag, gleiche Richtung</strong></p></td><td colspan="1" rowspan="1"><p><strong>Schwankt</strong> in Größe und Richtung, nicht vorhersehbar</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Erfassbar?</strong></p></td><td colspan="1" rowspan="1"><p>Ja, lässt sich erfassen</p></td><td colspan="1" rowspan="1"><p>Nur als Streuung erkennbar</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Korrigierbar?</strong></p></td><td colspan="1" rowspan="1"><p><strong>Ja</strong></p></td><td colspan="1" rowspan="1"><p><strong>Nein</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Typische Ursachen</strong></p></td><td colspan="1" rowspan="1"><p>Wärme, gleichbleibend hohe Messkraft, Abnutzung, Abweichungen im Messgerät</p></td><td colspan="1" rowspan="1"><p>Schmutz, Grat, schwankende Messkraft, Kippfehler, Parallaxe</p></td></tr>
+</tbody></table></div>
+<p>Wichtig für die Prüfung: <strong>Systematische Abweichungen lassen sich korrigieren</strong>, bei <strong>zufälligen</strong> Abweichungen ist das <strong>nicht möglich</strong>.</p>
+<h2>🌡️ Systematisch: Temperatur und Messkraft</h2>
+<p><strong>1. Werkstücktemperatur:</strong> Ist das Werkstück <strong>wärmer als 20 °C</strong>, ist es größer. Du erhältst einen <strong>zu großen Messwert</strong>. Genau das ist Tim passiert: Die Welle hatte zum Beispiel 40 °C statt 20 °C. Die Abweichung f ist bei gleicher Temperatur immer gleich groß und gleich gerichtet, also systematisch.</p>
+<p><strong>2. Gleichbleibend hohe Messkraft:</strong> Drückst du zu fest, <strong>verformt sich ein dünnwandiges Werkstück</strong>, zum Beispiel ein Ring. Der Messwert wird <strong>zu klein</strong>. Abhilfe schafft die <strong>Ratsche</strong> der Bügelmessschraube: Sie rutscht durch, sobald eine bestimmte Kraft erreicht ist, und sorgt so immer für <strong>dieselbe, kleine Messkraft</strong>.</p>
+{{IMG2}}
+<h2>📏 Systematisch: Abnutzung und Maßstäbe</h2>
+<p>Weitere systematische Ursachen liegen am <strong>Messgerät selbst</strong>:</p>
+<ul>
+<li><p><strong>Abgenutzte Messflächen:</strong> Sind die Messschnäbel eines Messschiebers abgenutzt, misst du <strong>außen zu kleine</strong> und <strong>innen zu große</strong> Werte. Die Abweichung tritt bei jeder Messung in gleicher Richtung auf.</p></li>
+<li><p><strong>Verschiedene Maßstäbe:</strong> Legst du zwei verschiedene Maßstäbe nebeneinander, stimmen ihre <strong>Teilungen nicht genau überein</strong>. Diese Abweichung f <strong>wiederholt sich bei jeder Messung</strong> mit demselben Maßstab.</p></li>
+</ul>
+<h2>⚙️ Systematisch: im Inneren des Messgeräts</h2>
+<ul>
+<li><p><strong>Steigung der Messspindel:</strong> Die Bügelmessschraube misst über ein feines <strong>Gewinde</strong> an der Messspindel. Weicht dessen <strong>Steigung</strong> ab, verfälscht das <strong>jeden Messwert</strong> ein wenig.</p></li>
+<li><p><strong>Übersetzung der Messuhr:</strong> In einer Messuhr überträgt ein <strong>Getriebe</strong> die Bewegung des Messbolzens auf den Zeiger. Kleine Abweichungen dieser Übersetzung bewirken, dass die Anzeige <strong>je nach Stellung des Messbolzens</strong> unterschiedlich abweicht.</p></li>
+</ul>
+<p>Solche Abweichungen siehst du dem Messgerät von außen nicht an. Du findest sie nur durch eine <strong>regelmäßige Prüfung deiner Messgeräte</strong> (Prüfmittelüberwachung).</p>
+<h2>🎲 Zufällig: Flächen und Messkraft</h2>
+<p>Jetzt zu den <strong>zufälligen</strong> Messabweichungen. Sie fallen bei jeder Messung anders aus:</p>
+<ul>
+<li><p><strong>Grat, Späne, Schmutz oder Fett</strong> auf der Messfläche liegen bei jeder Messung an einer anderen Stelle und unterschiedlich dick.</p></li>
+<li><p><strong>Formabweichungen</strong> wie eine leicht <strong>ovale Bohrung</strong> führen dazu, dass jede Messung je nach Messrichtung anders ausfällt.</p></li>
+<li><p><strong>Schwankende Messkraft:</strong> Drehst du die Messspindel mal kräftig und mal locker an, verformt sich das Werkstück unterschiedlich stark. Deine <strong>Messwerte streuen</strong>.</p></li>
+</ul>
+<p>Beachte den Unterschied zur Messkraft oben: Eine <strong>gleichbleibend</strong> hohe Messkraft wirkt systematisch, eine <strong>schwankende</strong> Messkraft wirkt zufällig.</p>
+<h2>✋ Zufällig: Handhabung des Messschiebers</h2>
+<ul>
+<li><p><strong>Kippfehler:</strong> Drückst du den Schieber zu fest, <strong>kippt er durch das Spiel in seiner Führung</strong>. Dieser Kippfehler hängt von der Messkraft und vom Führungsspiel ab.</p></li>
+<li><p><strong>Unsicheres Ansetzen bei Innenmessungen:</strong> Setzt du den Messschieber leicht <strong>schräg</strong> oder nicht an der <strong>tiefsten Stelle</strong> an, misst du <strong>zu wenig</strong>.</p></li>
+</ul>
+<h2>👁️ Zufällig: Parallaxe</h2>
+<p>Eine letzte Ursache betrifft deine <strong>Augen</strong>. Schaust du <strong>schräg</strong> auf die Skala einer Messuhr, siehst du den Zeiger an der falschen Stelle. Dieser Ablesefehler heißt <strong>Parallaxe</strong>.</p>
+<ul>
+<li><p>Lies deshalb immer <strong>senkrecht von vorne</strong> ab.</p></li>
+<li><p><strong>Digitale Anzeigen</strong> sind von der Parallaxe <strong>nicht betroffen</strong>.</p></li>
+</ul>
+<h2>🔎 Messabweichungen erkennen und verringern</h2>
+{{IMG3}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Art</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Erkennen</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Verringern</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Systematisch</strong></p></td><td colspan="1" rowspan="1"><p><strong>Vergleichsmessung</strong> mit einem genaueren Messgerät oder einem <strong>Endmaß</strong></p></td><td colspan="1" rowspan="1"><p>Anzeige vor dem Messen <strong>auf null stellen</strong>, Werkstücke <strong>bei 20 °C</strong> messen, Messgeräte regelmäßig prüfen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zufällig</strong></p></td><td colspan="1" rowspan="1"><p><strong>Wiederholmessung:</strong> mehrmals an derselben Stelle, mit derselben Messeinrichtung, demselben Verfahren und derselben Person</p></td><td colspan="1" rowspan="1"><p>Messflächen säubern, Ratsche nutzen, sorgfältig ansetzen, senkrecht ablesen</p></td></tr>
+</tbody></table></div>
+<p>Bei der <strong>Wiederholmessung</strong> zeigt dir die <strong>Streuung der Werte</strong>, wie groß die zufällige Abweichung ist. Je enger die Werte beieinander liegen, desto zuverlässiger misst du.</p>
+<p>Außerdem hat jedes Messgerät eine <strong>Fehlergrenze G</strong>. Sie ist die <strong>größte zulässige Messabweichung</strong> des Geräts. Liegt die Abweichung bei der Prüfung des Messgeräts darüber, darf es nicht mehr verwendet werden.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia misst eine Bohrung <strong>fünfmal hintereinander</strong> und erhält jedes Mal einen etwas anderen Wert. Die Werte streuen mal nach oben, mal nach unten: eine <strong>zufällige</strong> Messabweichung. Ein alter Messschieber zeigt dagegen bei jeder Außenmessung <strong>0,02 mm zu wenig</strong> an. Das ist <strong>systematisch</strong>, denn die Messflächen sind abgenutzt. Der Messschieber muss geprüft und ersetzt werden. Und Tim misst seine Welle jetzt nicht mehr sofort, sondern erst nach dem <strong>Abkühlen auf 20 °C</strong>. 💪</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>Messabweichung = Messwert minus richtiger Wert.</strong> Systematische Abweichungen sind <strong>gleichbleibend und korrigierbar</strong> (Wärme, Messkraft, Abnutzung). Zufällige Abweichungen <strong>schwanken</strong> (Schmutz, Kippfehler, Parallaxe). Gegen systematische Abweichungen helfen <strong>Vergleichsmessung und Nullstellen</strong>, zufällige erkennst du durch <strong>Wiederholmessung</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker: <strong>„Welche Messabweichungen lassen sich korrigieren?“</strong> Nur die systematischen. Achte auch auf das Vorzeichen: Ein warmes Werkstück liefert einen zu großen Messwert, die Abweichung ist positiv. Und: Parallaxe gibt es nur bei Zeigern und Skalen, nicht bei Digitalanzeigen.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Ein Messwert beträgt 50,03 mm, der richtige Wert 50,00 mm. Wie groß ist die Messabweichung?</summary><div data-type="detailsContent"><p>✅ 50,03 mm minus 50,00 mm = +0,03 mm. Der Messwert ist um 3 Hundertstel Millimeter zu groß.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Warum misst man Werkstücke bei 20 °C?</summary><div data-type="detailsContent"><p>✅ 20 °C ist die Bezugstemperatur, für die die Zeichnungsmaße gelten. Ein wärmeres Werkstück hat sich ausgedehnt und liefert einen zu großen Messwert.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Wozu dient die Ratsche an der Bügelmessschraube?</summary><div data-type="detailsContent"><p>✅ Sie sorgt immer für dieselbe, kleine Messkraft. So verformen sich dünnwandige Werkstücke nicht und die Messwerte streuen nicht durch unterschiedlich starkes Andrehen.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was ist Parallaxe und wie vermeidest du sie?</summary><div data-type="detailsContent"><p>✅ Ein Ablesefehler durch schrägen Blick auf Zeiger und Skala. Du vermeidest sie, indem du senkrecht von vorne abliest oder ein Gerät mit Digitalanzeige nutzt.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Wie erkennst du eine systematische, wie eine zufällige Messabweichung?</summary><div data-type="detailsContent"><p>✅ Systematische Abweichungen durch eine Vergleichsmessung mit einem genaueren Messgerät oder Endmaß. Zufällige Abweichungen durch Wiederholmessungen an derselben Stelle unter gleichen Bedingungen: Die Streuung zeigt ihre Größe.</p></div></details>
+<p></p>

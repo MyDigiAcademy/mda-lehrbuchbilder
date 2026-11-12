@@ -1,0 +1,86 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was eine <strong>Steuerung</strong> ist und warum sie nach dem Prinzip <strong>Eingabe, Verarbeitung, Ausgabe</strong> arbeitet</p></li>
+<li><p>Wie eine Steuerung aus <strong>Steuerteil</strong>, <strong>Schnittstelle</strong> und <strong>Energieteil</strong> aufgebaut ist</p></li>
+<li><p>Wie du die <strong>Signale</strong> an einer <strong>Sortieranlage</strong> vom Sensor bis zur Weiche verfolgst</p></li>
+<li><p>Welches <strong>Bauteil</strong> welche Aufgabe hat und zu welchem Teil der Steuerung es gehört</p></li>
+</ul>
+<p>👋 In der Montage der <strong>Muster Maschinenbau GmbH</strong> laufen <strong>lange und kurze Werkstücke</strong> gemischt über ein Förderband. Bisher hat ein Kollege sie von Hand getrennt. Jetzt soll eine <strong>Sortieranlage</strong> sie automatisch auf <strong>zwei Bahnen</strong> verteilen. Tim zeigt Mia die <strong>drei Sensoren</strong> und den <strong>Pneumatikzylinder</strong> an der Weiche. Mia fragt: „Woher weiß die Anlage, wohin ein Werkstück gehört?“ Die Antwort steckt in der <strong>Steuerung</strong>. Mia und Tim verfolgen ihre Signale Schritt für Schritt.</p>
+{{IMG1}}
+<h2>🧠 Was ist eine Steuerung?</h2>
+<p>Eine Steuerung arbeitet immer in drei Schritten:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Schritt</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was passiert?</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Sortieranlage</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Signaleingabe</strong></p></td><td colspan="1" rowspan="1"><p>Taster oder Sensoren melden Zustände.</p></td><td colspan="1" rowspan="1"><p>Drei Sensoren erkennen das Werkstück.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Signalverarbeitung</strong></p></td><td colspan="1" rowspan="1"><p>Die Signale werden nach festen Regeln verknüpft. Hier wird entschieden, was als Nächstes passiert.</p></td><td colspan="1" rowspan="1"><p>Lang oder kurz?</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Signalausgabe</strong></p></td><td colspan="1" rowspan="1"><p>Ein Befehl geht an die Maschine.</p></td><td colspan="1" rowspan="1"><p>„Zylinder ausfahren“, Weiche umstellen</p></td></tr>
+</tbody></table></div>
+<p><strong>Wichtig:</strong> Eine Steuerung prüft <strong>nicht</strong>, ob das Ergebnis stimmt. Es gibt <strong>keine Rückmeldung</strong>, der Wirkungsablauf ist <strong>offen</strong>. Genau darin unterscheidet sie sich von einer <strong>Regelung</strong>, deren Wirkungsablauf geschlossen ist.</p>
+<h2>🏗️ Aufbau einer Steuerung</h2>
+<p>Jede Steuerung besteht aus zwei Hauptteilen und einer Verbindung dazwischen:</p>
+<blockquote><p>Steuerteil → Schnittstelle → Energieteil</p></blockquote>
+<ul>
+<li><p><strong>Steuerteil:</strong> Nimmt Informationen auf und verarbeitet sie. Hier sitzen die Signaleingabe (Taster, Sensoren) und die Signalverarbeitung, also die eigentliche Steuerung, heute meist eine <strong>SPS</strong> (speicherprogrammierbare Steuerung).</p></li>
+<li><p><strong>Schnittstelle:</strong> Das ist die <strong>Signalausgabe</strong>. Sie leitet die Befehle aus dem Steuerteil an das Energieteil weiter.</p></li>
+<li><p><strong>Energieteil:</strong> Setzt den Befehl in Bewegung um. Es besteht aus zwei Gruppen:</p></li>
+</ul>
+<ol>
+<li><p><strong>Schaltgeräte</strong> wie <strong>Ventile</strong>, <strong>Relais</strong> und <strong>Schütze</strong> schalten die Energie, also Druckluft, Öl oder Strom.</p></li>
+<li><p><strong>Antriebselemente</strong> wie <strong>Zylinder</strong>, <strong>Motoren</strong> oder <strong>Magnete</strong> führen die Bewegung aus. An der Sortieranlage ist das ein Pneumatikzylinder.</p></li>
+</ol>
+<h2>🏭 Die Sortieranlage im Überblick</h2>
+<ul>
+<li><p><strong>Steuerstrecke:</strong> In der Mitte werden die Werkstücke von unten nach oben geschoben. <strong>W1</strong> ist lang, <strong>W2</strong> ist kurz. Oben teilt sich die Bahn in <strong>Bahn 1</strong> und <strong>Bahn 2</strong>.</p></li>
+<li><p><strong>Energieteil (rot hinterlegt):</strong> Ventil und Pneumatikzylinder. Der Zylinder schwenkt die <strong>Sortierweiche</strong> hin und her.</p></li>
+<li><p><strong>Steuerteil (blau hinterlegt):</strong> Sensoren und Signalverarbeitung.</p></li>
+</ul>
+<h2>📡 Signaleingabe: die Sensoren</h2>
+<p>An der Steuerstrecke sitzen drei Sensoren: <strong>BG1</strong>, <strong>BG2</strong> und <strong>BG3</strong>. Sie sind die <strong>Signalgeber</strong>: Jeder meldet, ob gerade ein Werkstück vor ihm liegt oder nicht.</p>
+{{IMG2}}
+<ul>
+<li><p>Ihre Signale gehen als <strong>Eingangssignale E1, E2 und E3</strong> an die Steuerung.</p></li>
+<li><p><strong>Belegt = 1</strong>, <strong>frei = 0</strong>.</p></li>
+<li><p><strong>W1 lang:</strong> Ein langes Werkstück bedeckt <strong>BG1 und BG3 gleichzeitig</strong>.</p></li>
+<li><p><strong>W2 kurz:</strong> Ein kurzes Werkstück ist dafür zu kurz und bedeckt <strong>nie beide gleichzeitig</strong>.</p></li>
+<li><p>Der mittlere Sensor <strong>BG2</strong> wird von jedem Werkstück bedeckt, ob lang oder kurz.</p></li>
+</ul>
+<h2>⚙️ Signalverarbeitung und Signalausgabe</h2>
+<p>Die Eingangssignale kommen als <strong>Steuersignale</strong> im Steuerteil an. Die Signalverarbeitung <strong>verknüpft E1 und E3</strong>:</p>
+<ul>
+<li><p><strong>E1 = 1 und E3 = 1</strong> gleichzeitig: Es liegt ein <strong>langes Werkstück</strong> vor.</p></li>
+<li><p><strong>Nur einer der beiden ist 1 oder keiner:</strong> Das Werkstück ist <strong>kurz</strong>.</p></li>
+</ul>
+<p>Diese Verknüpfung erledigen die <strong>Steuerelemente</strong> im Steuerteil, heute meist eine <strong>SPS</strong>. Das Ergebnis geht als <strong>Ausgangssignal A1 oder A2</strong> hinaus. Das ist die <strong>Signalausgabe</strong>, also die <strong>Schnittstelle zum Energieteil</strong>.</p>
+<h2>💨 Das Energieteil</h2>
+<ol>
+<li><p><strong>Schaltgerät:</strong> Die Ausgangssignale schalten ein <strong>pneumatisches Wegeventil</strong>. Es gibt die Druckluft frei.</p></li>
+<li><p><strong>Antriebselement:</strong> Die Druckluft bewegt den <strong>Pneumatikzylinder</strong>.</p></li>
+<li><p><strong>Sortierweiche:</strong> Der Zylinder schwenkt die Weiche nach links oder rechts, also auf Bahn 1 oder Bahn 2.</p></li>
+</ol>
+<p>Die <strong>Energie</strong> für diese Bewegung kommt aus der <strong>Druckluft</strong>. Die Signale aus dem Steuerteil sind dagegen nur <strong>schwach</strong>: Sie geben den Befehl, die Kraft liefert erst das Energieteil.</p>
+<h2>🔁 Der Ablauf im Überblick</h2>
+{{IMG3}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Schritt</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>W1 lang</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>W2 kurz</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Sensoren</strong></p></td><td colspan="1" rowspan="1"><p>BG1 und BG3 belegt</p></td><td colspan="1" rowspan="1"><p>nie BG1 und BG3 zugleich</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Eingangssignale</strong></p></td><td colspan="1" rowspan="1"><p>E1 = 1 und E3 = 1</p></td><td colspan="1" rowspan="1"><p>E1 und E3 nicht beide 1</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Verknüpfung</strong></p></td><td colspan="1" rowspan="1"><p>erfüllt</p></td><td colspan="1" rowspan="1"><p>nicht erfüllt</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Weiche</strong></p></td><td colspan="1" rowspan="1"><p>Ventil schaltet, Zylinder stellt auf Bahn 1</p></td><td colspan="1" rowspan="1"><p>Bahn 2</p></td></tr>
+</tbody></table></div>
+<blockquote><p>Eingabe → Verarbeitung → Ausgabe: Nach diesem Prinzip arbeitet jede Steuerung, vom einfachen Taster bis zur großen Fertigungsanlage.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Ein langes Werkstück W1 läuft ein. Sobald es BG1 und BG3 zugleich bedeckt, melden die Sensoren E1 = 1 und E3 = 1. Die SPS erkennt: Verknüpfung erfüllt. Über das Ausgangssignal schaltet das Wegeventil, der Pneumatikzylinder schwenkt die Weiche, und das Werkstück läuft auf Bahn 1. 💪 Ein kurzes Werkstück W2 bedeckt nie beide Sensoren gleichzeitig und läuft auf Bahn 2.</p></div></details>
+<h2>✏️ Wohin gehört das Bauteil?</h2>
+<p><strong>Bauteil 1:</strong> der Sensor BG2.</p>
+<p><strong>Lösung:</strong> Er gehört zum <strong>Steuerteil</strong> und sorgt für die <strong>Signaleingabe</strong>.</p>
+<p><strong>Bauteil 2:</strong> das Wegeventil, das die Druckluft zum Zylinder schaltet.</p>
+<p><strong>Lösung:</strong> Es gehört zum <strong>Energieteil</strong>. Es ist das <strong>Schaltgerät</strong> und gibt die Druckluft frei.</p>
+<blockquote><p>Das Steuerteil verarbeitet Signale, das Energieteil erzeugt die Bewegung.</p></blockquote>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>1. <strong>Prinzip:</strong> Eingabe, Verarbeitung, Ausgabe. 2. <strong>Ohne Rückmeldung:</strong> offener Wirkungsablauf. 3. <strong>Steuerteil:</strong> Signale aufnehmen und verknüpfen, die Signalausgabe ist die Schnittstelle. 4. <strong>Energieteil:</strong> Ventile, Relais oder Schütze schalten die Energie für Zylinder und Motoren.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Häufige Aufgabe: Bauteile dem <strong>Steuerteil</strong> oder dem <strong>Energieteil</strong> zuordnen. Sensoren, Taster und SPS gehören zum Steuerteil. <strong>Ventile, Relais, Schütze</strong> sind Schaltgeräte im Energieteil, <strong>Zylinder, Motoren, Magnete</strong> sind Antriebselemente im Energieteil. Und: Steuerung = <strong>offener</strong>, Regelung = <strong>geschlossener</strong> Wirkungsablauf.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Nach welchem Prinzip arbeitet jede Steuerung?</summary><div data-type="detailsContent"><p>✅ Eingabe, Verarbeitung, Ausgabe: Signale aufnehmen, nach festen Regeln verknüpfen und einen Befehl an die Maschine ausgeben.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Worin unterscheidet sich eine Steuerung von einer Regelung?</summary><div data-type="detailsContent"><p>✅ Die Steuerung hat keine Rückmeldung, ihr Wirkungsablauf ist offen. Bei der Regelung wird das Ergebnis gemessen und zurückgemeldet, der Wirkungsablauf ist geschlossen.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Woran erkennt die Steuerung ein langes Werkstück?</summary><div data-type="detailsContent"><p>✅ Ein langes Werkstück bedeckt BG1 und BG3 gleichzeitig. Nur wenn E1 = 1 und E3 = 1 sind, ist die Verknüpfung erfüllt und die Weiche wird auf Bahn 1 gestellt.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was ist die Schnittstelle zwischen Steuerteil und Energieteil?</summary><div data-type="detailsContent"><p>✅ Die Signalausgabe. Sie leitet die Befehle, an der Sortieranlage die Ausgangssignale A1 und A2, an das Energieteil weiter.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Ordne zu: Pneumatikzylinder, Wegeventil, Sensor BG2.</summary><div data-type="detailsContent"><p>✅ Pneumatikzylinder: Energieteil, Antriebselement. Wegeventil: Energieteil, Schaltgerät. Sensor BG2: Steuerteil, Signaleingabe.</p></div></details>
+<p></p>

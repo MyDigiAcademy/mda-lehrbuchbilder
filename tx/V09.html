@@ -1,0 +1,90 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie ein <strong>Biegewerkzeug</strong> mit <strong>Oberwange</strong> und <strong>Unterwange</strong> aufgebaut ist</p></li>
+<li><p>Was der <strong>Biegeradius</strong> und der <strong>Mindestbiegeradius</strong> sind und warum die <strong>Walzrichtung</strong> zählt</p></li>
+<li><p>Warum ein Blech <strong>zurückfedert</strong> und was der <strong>Rückfederungsfaktor k<sub>R</sub></strong> aussagt</p></li>
+<li><p>Wie du den <strong>Überbiegungswinkel α<sub>1</sub></strong> und den <strong>Stempelradius r<sub>1</sub></strong> berechnest</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> soll Mia <strong>20 Laschen</strong> für eine Schutzabdeckung biegen. Sie bekommt Zuschnitte aus <strong>2 mm dickem Stahlblech</strong>, Werkstoff <strong>DC04</strong>, ein weiches Tiefziehblech. Laut Zeichnung soll jede Lasche um <strong>45°</strong> gebogen werden, mit einem <strong>Innenradius von 5 mm</strong>. Mia biegt eine Probe genau auf 45°. Doch als sie nachmisst, ist der Winkel etwas kleiner. Herr Krause lächelt: Das Blech ist <strong>zurückgefedert</strong>. Wie weit muss Mia also biegen, und welchen Radius braucht das Werkzeug?</p>
+{{IMG1}}
+<h2>🛠️ Das Biegewerkzeug</h2>
+<p>Das Biegewerkzeug besteht aus <strong>zwei Teilen</strong>, die das Blech zwischen sich halten:</p>
+<ul>
+<li><p><strong>Oberwange:</strong> Sie liegt oben und <strong>klemmt das Blech fest</strong>.</p></li>
+<li><p><strong>Unterwange:</strong> Auf ihr liegt das Blech. Ihre <strong>Rundung gibt den Radius</strong> der Biegung vor.</p></li>
+<li><p><strong>Werkstück:</strong> ein Blech mit der <strong>Dicke s</strong>.</p></li>
+<li><p><strong>Biegekraft F:</strong> Sie drückt den <strong>freien Schenkel</strong> um die Rundung der Unterwange herum.</p></li>
+</ul>
+<p>Im Moment der stärksten Biegung liegt der Schenkel weiter umgebogen als am Ende. Sobald die Kraft nachlässt, bewegt er sich ein Stück zurück. Genau darum geht es weiter unten bei der Rückfederung.</p>
+<h2>⭕ Biegeradius und Mindestbiegeradius</h2>
+<p>Der <strong>Biegeradius r<sub>2</sub></strong> ist der <strong>Radius an der Innenseite</strong> des fertig gebogenen Werkstücks. Bei Mia sind das <strong>5 mm</strong>. In der Zeichnung steht er als <strong>R5</strong> am Bogen.</p>
+<ul>
+<li><p><strong>Kleiner Biegeradius:</strong> enge, scharfe Biegung.</p></li>
+<li><p><strong>Großer Biegeradius:</strong> sanfte Biegung.</p></li>
+</ul>
+<p>Aber Vorsicht: Du darfst <strong>nicht beliebig eng</strong> biegen. Unterschreitest du den <strong>Mindestbiegeradius</strong>, wird der Werkstoff außen zu stark gedehnt und <strong>reißt</strong>.</p>
+<p>Wie groß der Mindestbiegeradius ist, liest du in einer Tabelle ab. Er hängt vom <strong>Werkstoff</strong> und von der <strong>Blechdicke</strong> ab:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Werkstoff</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Mindestbiegeradius Blech</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiel s = 2 mm</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Stahl</strong></p></td><td colspan="1" rowspan="1"><p>1 × Blechdicke</p></td><td colspan="1" rowspan="1"><p>2 mm</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Kupfer</strong></p></td><td colspan="1" rowspan="1"><p>1,5 × Blechdicke</p></td><td colspan="1" rowspan="1"><p>3 mm</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Aluminium</strong></p></td><td colspan="1" rowspan="1"><p>2 × Blechdicke</p></td><td colspan="1" rowspan="1"><p>4 mm</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Cu-Zn-Legierung (Messing)</strong></p></td><td colspan="1" rowspan="1"><p>2,5 × Blechdicke</p></td><td colspan="1" rowspan="1"><p>5 mm</p></td></tr>
+</tbody></table></div>
+<p>Genauere Werte, zum Beispiel für bestimmte Stahlsorten, findest du in ausführlicheren Tabellen.</p>
+<p>Auch die <strong>Walzrichtung</strong> spielt eine Rolle: Lege die <strong>Biegekante möglichst quer zur Walzrichtung</strong>. Biegst du parallel dazu, brauchst du einen <strong>größeren Radius</strong>.</p>
+<p><strong>Und bei Mia?</strong> Ihr Stahlblech ist 2 mm dick, der Mindestbiegeradius beträgt also r<sub>min</sub> = 1 · 2 mm = <strong>2 mm</strong>. Der geforderte Radius von 5 mm ist damit kein Problem.</p>
+<h2>↩️ Die Rückfederung</h2>
+<p>Beim Biegen wird das Blech zum Teil nur <strong>elastisch</strong> verformt. Lässt die Biegekraft nach, <strong>federt der Schenkel um diesen Anteil zurück</strong>. Genau das hat Mia bei ihrer Probe erlebt. Ganz verhindern kannst du die Rückfederung nicht, du kannst sie aber <strong>ausgleichen</strong>:</p>
+<ul>
+<li><p>Du biegst am Werkzeug auf einen <strong>größeren Winkel</strong>. Das ist der <strong>Überbiegungswinkel α<sub>1</sub></strong>.</p></li>
+<li><p>Nach dem Zurückfedern hat das Werkstück dann genau den gewünschten <strong>Endwinkel α<sub>2</sub></strong>.</p></li>
+<li><p>Auch die <strong>Rundung federt etwas auf</strong>. Deshalb ist der <strong>Stempelradius r<sub>1</sub></strong> am Werkzeug etwas <strong>kleiner</strong> als der <strong>Biegeradius r<sub>2</sub></strong> am Werkstück.</p></li>
+</ul>
+{{IMG2}}
+<h2>📐 Der Rückfederungsfaktor k<sub>R</sub></h2>
+<p>Wie stark ein Werkstück zurückfedert, beschreibt der <strong>Rückfederungsfaktor k<sub>R</sub></strong>. Er ist das Verhältnis von <strong>Endwinkel zu Werkzeugwinkel</strong>:</p>
+<p><strong>k<sub>R</sub> = α<sub>2</sub> / α<sub>1</sub></strong></p>
+<p>Weil das Werkstück immer etwas zurückfedert, ist <strong>k<sub>R</sub> immer kleiner als 1</strong>. Ein Wert von 0,99 bedeutet zum Beispiel: Nach dem Zurückfedern bleiben <strong>99 %</strong> des Winkels übrig.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gesucht</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Formel</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rückfederungsfaktor</strong></p></td><td colspan="1" rowspan="1"><p>k<sub>R</sub> = α<sub>2</sub> / α<sub>1</sub></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Überbiegungswinkel</strong></p></td><td colspan="1" rowspan="1"><p>α<sub>1</sub> = α<sub>2</sub> / k<sub>R</sub></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Stempelradius</strong></p></td><td colspan="1" rowspan="1"><p>r<sub>1</sub> = k<sub>R</sub> · (r<sub>2</sub> + 0,5 · s) − 0,5 · s</p></td></tr>
+</tbody></table></div>
+<p>Merk dir: Weil k<sub>R</sub> kleiner als 1 ist, wird <strong>α<sub>1</sub> größer als α<sub>2</sub></strong> und <strong>r<sub>1</sub> kleiner als r<sub>2</sub></strong>.</p>
+<h2>📊 k<sub>R</sub> aus der Tabelle ablesen</h2>
+<p>Den Rückfederungsfaktor musst du nicht selbst ermitteln. Er wurde in <strong>Versuchen</strong> bestimmt und steht für viele Werkstoffe in einer Tabelle. So gehst du vor:</p>
+<ol>
+<li><p><strong>Oben</strong> suchst du die Spalte für das <strong>Verhältnis r<sub>2</sub> : s</strong>. Bei Mia: 5 mm : 2 mm = <strong>2,5</strong>.</p></li>
+<li><p><strong>Links</strong> suchst du die Zeile für den <strong>Werkstoff</strong>, hier DC04.</p></li>
+<li><p>Im <strong>Schnittpunkt</strong> liest du k<sub>R</sub> ab: <strong>0,99</strong>.</p></li>
+</ol>
+{{IMG3}}
+<p><strong>Tabelle: Rückfederungsfaktoren k<sub>R</sub> nach Verhältnis r<sub>2</sub> : s</strong></p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Werkstoff</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>1</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>1,6</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>2,5</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>4</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>6,3</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>10</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>16</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>25</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>DC04</strong></p></td><td colspan="1" rowspan="1"><p>0,99</p></td><td colspan="1" rowspan="1"><p>0,99</p></td><td colspan="1" rowspan="1"><p><strong>0,99</strong></p></td><td colspan="1" rowspan="1"><p>0,98</p></td><td colspan="1" rowspan="1"><p>0,97</p></td><td colspan="1" rowspan="1"><p>0,97</p></td><td colspan="1" rowspan="1"><p>0,96</p></td><td colspan="1" rowspan="1"><p>0,94</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>X12CrNi18-8</strong></p></td><td colspan="1" rowspan="1"><p>0,99</p></td><td colspan="1" rowspan="1"><p>0,98</p></td><td colspan="1" rowspan="1"><p><strong>0,97</strong></p></td><td colspan="1" rowspan="1"><p>0,95</p></td><td colspan="1" rowspan="1"><p>0,93</p></td><td colspan="1" rowspan="1"><p>0,89</p></td><td colspan="1" rowspan="1"><p>0,84</p></td><td colspan="1" rowspan="1"><p>0,76</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>CuZn33F29</strong></p></td><td colspan="1" rowspan="1"><p>0,97</p></td><td colspan="1" rowspan="1"><p>0,97</p></td><td colspan="1" rowspan="1"><p>0,96</p></td><td colspan="1" rowspan="1"><p>0,95</p></td><td colspan="1" rowspan="1"><p>0,94</p></td><td colspan="1" rowspan="1"><p>0,93</p></td><td colspan="1" rowspan="1"><p>0,89</p></td><td colspan="1" rowspan="1"><p>0,86</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>EN AW-AlCu4Mg1</strong></p></td><td colspan="1" rowspan="1"><p>0,98</p></td><td colspan="1" rowspan="1"><p>0,98</p></td><td colspan="1" rowspan="1"><p>0,98</p></td><td colspan="1" rowspan="1"><p>0,98</p></td><td colspan="1" rowspan="1"><p>0,97</p></td><td colspan="1" rowspan="1"><p>0,97</p></td><td colspan="1" rowspan="1"><p>0,96</p></td><td colspan="1" rowspan="1"><p>0,95</p></td></tr>
+</tbody></table></div>
+<p>Du siehst auch: <strong>Je größer das Verhältnis r<sub>2</sub> : s, desto kleiner wird k<sub>R</sub></strong>. Große Radien federn also <strong>stärker</strong> zurück.</p>
+<h2>🧮 Mias Rechnung Schritt für Schritt</h2>
+<ol>
+<li><p><strong>Verhältnis bilden:</strong> r<sub>2</sub> : s = 5 mm : 2 mm = <strong>2,5</strong>. Damit findest du die richtige Spalte.</p></li>
+<li><p><strong>Tabelle:</strong> Für DC04 liest du <strong>k<sub>R</sub> = 0,99</strong> ab.</p></li>
+<li><p><strong>Überbiegungswinkel:</strong> α<sub>1</sub> = 45° / 0,99 = <strong>45,45°</strong>.</p></li>
+<li><p><strong>Stempelradius:</strong> r<sub>1</sub> = 0,99 · (5 mm + 0,5 · 2 mm) − 0,5 · 2 mm. In der Klammer stehen 6 mm, mal 0,99 ergibt 5,94 mm. Minus 1 mm ergibt <strong>r<sub>1</sub> = 4,94 mm</strong>.</p></li>
+</ol>
+<p>Mia biegt also auf <strong>45,45°</strong>, mit einem Stempelradius von <strong>4,94 mm</strong>. Nach dem Zurückfedern hat jede Lasche genau 45° und einen Innenradius von 5 mm.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia soll dieselbe Lasche auch aus <strong>nichtrostendem Stahl X12CrNi18-8</strong> biegen. Blechdicke, Radius und Winkel bleiben gleich. Das Verhältnis ist wieder <strong>2,5</strong>, in der Zeile für den nichtrostenden Stahl steht <strong>k<sub>R</sub> = 0,97</strong>. Überbiegungswinkel: 45° / 0,97 = <strong>46,39°</strong>. Stempelradius: 0,97 · 6 mm − 1 mm = <strong>4,82 mm</strong>. 💪 Der Edelstahl federt also stärker zurück und muss weiter überbogen werden.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Der <strong>Biegeradius r<sub>2</sub></strong> ist der Innenradius am Werkstück. Der <strong>Mindestbiegeradius</strong> darf nicht unterschritten werden. Biege möglichst <strong>quer zur Walzrichtung</strong>. Wegen der Rückfederung biegst du am Werkzeug auf <strong>α<sub>1</sub> = α<sub>2</sub> / k<sub>R</sub></strong>. Der Stempelradius ist <strong>r<sub>1</sub> = k<sub>R</sub> · (r<sub>2</sub> + 0,5 · s) − 0,5 · s</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Prüfe dein Ergebnis immer mit der Faustregel: <strong>α<sub>1</sub> muss größer</strong> als der Endwinkel sein, <strong>r<sub>1</sub> muss kleiner</strong> als der Biegeradius sein. Kommt etwas anderes heraus, hast du falsch umgestellt. Und vergiss nicht, zuerst das <strong>Verhältnis r<sub>2</sub> : s</strong> zu bilden, sonst liest du in der falschen Spalte ab.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was passiert, wenn du den Mindestbiegeradius unterschreitest?</summary><div data-type="detailsContent"><p>✅ Der Werkstoff wird außen am Bogen zu stark gedehnt und reißt.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Wie groß ist der Mindestbiegeradius für ein 2 mm dickes Aluminiumblech?</summary><div data-type="detailsContent"><p>✅ Für Aluminium gilt 2 × Blechdicke, also 2 · 2 mm = 4 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Warum ist der Rückfederungsfaktor k<sub>R</sub> immer kleiner als 1?</summary><div data-type="detailsContent"><p>✅ Weil das Blech teilweise elastisch verformt wird und nach dem Biegen immer etwas zurückfedert. Der Endwinkel α<sub>2</sub> ist deshalb immer kleiner als der Werkzeugwinkel α<sub>1</sub>.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Ein Blech aus DC04 (s = 2 mm, r<sub>2</sub> = 5 mm) soll auf 45° gebogen werden. Wie groß ist der Überbiegungswinkel?</summary><div data-type="detailsContent"><p>✅ r<sub>2</sub> : s = 2,5, laut Tabelle k<sub>R</sub> = 0,99. α<sub>1</sub> = 45° / 0,99 = 45,45°.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Wie groß ist der Stempelradius für dieselbe Lasche aus X12CrNi18-8 (k<sub>R</sub> = 0,97)?</summary><div data-type="detailsContent"><p>✅ r<sub>1</sub> = 0,97 · (5 mm + 1 mm) − 1 mm = 5,82 mm − 1 mm = 4,82 mm.</p></div></details>
+<p></p>

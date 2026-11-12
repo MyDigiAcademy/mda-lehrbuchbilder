@@ -1,0 +1,74 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie <strong>Volumenstrom Q</strong> und <strong>Geschwindigkeit v</strong> eines Hydraulikzylinders zusammenhängen und wie du v <strong>berechnest</strong></p></li>
+<li><p>Was eine <strong>Drossel</strong> von einer <strong>Blende</strong> unterscheidet und welche Rolle die <strong>Öltemperatur</strong> spielt</p></li>
+<li><p>Warum ein Zylinder mit <strong>Drosselventil</strong> bei steigender <strong>Last</strong> langsamer wird</p></li>
+<li><p>Wie das <strong>Stromregelventil</strong> mit <strong>Druckwaage</strong> den Volumenstrom konstant hält</p></li>
+</ul>
+<p>👋 Mia hat am <strong>Hydraulik-Übungsstand</strong> der <strong>Muster Maschinenbau GmbH</strong> ein <strong>Drosselventil</strong> vor den Zylinder gebaut. Ausbilder Herr Krause misst die Zeit: <strong>Ohne Last</strong> braucht der Zylinder <strong>4 Sekunden</strong> zum Ausfahren. Dann hängt Herr Krause eine <strong>Last</strong> an. Jetzt braucht der Zylinder <strong>6 Sekunden</strong>, obwohl Mia an der Drossel nichts verstellt hat. Wie kann das sein? Bei einem <strong>Vorschub</strong> an einer Maschine wäre das ein echtes Problem. Zuerst klärst du, was die Geschwindigkeit eines Zylinders bestimmt.</p>
+{{IMG1}}
+<h2>🧮 Volumenstrom und Geschwindigkeit</h2>
+<p>Die Geschwindigkeit hängt davon ab, <strong>wie viel Öl pro Zeit</strong> in den Zylinder fließt. Je mehr Öl hineinströmt, desto schneller schiebt es den Kolben. Diese Ölmenge pro Zeit heißt <strong>Volumenstrom Q</strong>.</p>
+<blockquote><p>Geschwindigkeit v = Volumenstrom Q : Kolbenfläche A</p></blockquote>
+<p><strong>Beispiel:</strong> In den Zylinder fließen <strong>Q = 100 cm³/s</strong>. Der Kolben hat eine Fläche von <strong>A = 20 cm²</strong>.</p>
+<ol>
+<li><p>Formel: v = Q : A</p></li>
+<li><p>Einsetzen: v = 100 cm³/s : 20 cm²</p></li>
+<li><p>Ergebnis: v = <strong>5 cm/s</strong></p></li>
+</ol>
+<p>Die Einheiten passen: cm³ geteilt durch cm² ergibt cm, also cm/s. Fließt nur halb so viel Öl, also 50 cm³/s, fährt der Kolben nur noch mit 2,5 cm/s.</p>
+<p><strong>Stromventile</strong> verändern den <strong>Volumenstrom</strong> und damit die <strong>Geschwindigkeit</strong>. Weil sich Öl <strong>kaum zusammendrücken</strong> lässt, klappt das in der Hydraulik viel <strong>genauer</strong> als in der Pneumatik. Dort federt die Luft, und der Zylinder ruckelt leichter.</p>
+<h2>🔩 Drossel und Blende</h2>
+<p>Den Volumenstrom verkleinerst du mit einer <strong>Engstelle</strong>. Es gibt zwei Formen:</p>
+{{IMG2}}
+<ul>
+<li><p><strong>Drossel:</strong> eine <strong>lange, enge</strong> Stelle. Bei der <strong>Nadeldrossel</strong> stellst du mit der Nadel ein, wie eng sie ist. Der Durchfluss hängt davon ab, wie <strong>zähflüssig</strong> das Öl ist. Wird das Öl <strong>warm</strong>, wird es dünner, und es fließt <strong>mehr</strong> durch. Die Drossel ist also <strong>temperaturabhängig</strong>.</p></li>
+<li><p><strong>Blende:</strong> eine <strong>kurze, scharfkantige</strong> Öffnung in einer dünnen Scheibe. Hier spielt die Zähigkeit <strong>kaum eine Rolle</strong>. Die Blende arbeitet auch bei warmem Öl fast gleich, sie ist <strong>fast temperaturunabhängig</strong>.</p></li>
+</ul>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Drossel</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Blende</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Form</strong></p></td><td colspan="1" rowspan="1"><p>Lang und eng</p></td><td colspan="1" rowspan="1"><p>Kurz, scharfkantig</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Einfluss der Öltemperatur</strong></p></td><td colspan="1" rowspan="1"><p>Groß: warmes Öl, mehr Durchfluss</p></td><td colspan="1" rowspan="1"><p>Kaum</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Grund</strong></p></td><td colspan="1" rowspan="1"><p>Durchfluss hängt von der Zähigkeit ab</p></td><td colspan="1" rowspan="1"><p>Zähigkeit spielt kaum eine Rolle</p></td></tr>
+</tbody></table></div>
+<h2>📐 Stromventile im Schaltplan</h2>
+<ul>
+<li><p><strong>Drosselventil, einstellbar:</strong> Engstelle zwischen zwei gebogenen Linien, der <strong>schräge Pfeil</strong> zeigt, dass es einstellbar ist.</p></li>
+<li><p><strong>Drosselrückschlagventil:</strong> In einer Richtung muss das Öl <strong>durch die Drossel</strong>. In der Gegenrichtung fließt es <strong>frei über das Rückschlagventil</strong>.</p></li>
+<li><p><strong>Stromregelventil mit Druckwaage:</strong> Der <strong>zusätzliche Pfeil in Strömungsrichtung</strong> steht für die eingebaute Regelung, die <strong>Druckwaage</strong>.</p></li>
+</ul>
+<h2>📉 Drosselventil am Zylinder: Was passiert unter Last?</h2>
+<p>In Mias Schaltung fließt der Volumenstrom Q durch die Drossel zum Zylinder. Daneben zeigt eine <strong>Kennlinie</strong>, wie sich Last und Geschwindigkeit über den <strong>Weg s</strong> des Kolbens verändern.</p>
+{{IMG3}}
+<ul>
+<li><p>Vor der Drossel misst ein Manometer den Druck <strong>p1</strong>, dahinter den Druck <strong>p2</strong>.</p></li>
+<li><p>Wie viel Öl durch die Drossel fließt, hängt vom <strong>Druckunterschied p1 minus p2</strong> ab: <strong>p1 minus p2 bestimmt Q</strong>.</p></li>
+<li><p>Am Zylinder wirkt die <strong>Last F</strong>, er fährt mit der <strong>Geschwindigkeit v</strong>.</p></li>
+</ul>
+<p><strong>Steigt die Last F, steigt auch p2.</strong> In der Kennlinie siehst du das an der schwarzen Kurve für F und p2. Weil p1 gleich bleibt, wird der <strong>Druckunterschied kleiner</strong>, und es fließt <strong>weniger Öl</strong>. Die rote Kurve zeigt: <strong>Q und v sinken</strong> genau dort, wo die Last am größten ist. Der Zylinder fährt <strong>ungleichmäßig</strong>. Das überschüssige Öl der Pumpe fließt über das <strong>Druckbegrenzungsventil</strong> zum Tank.</p>
+<p>Genau das ist bei Mias Zylinder passiert: Mit Last wurde der Druckunterschied an der Drossel kleiner, und der Zylinder brauchte 6 statt 4 Sekunden.</p>
+<h2>📈 Die Lösung: das Stromregelventil</h2>
+<p>Baut man statt des Drosselventils ein <strong>Stromregelventil</strong> ein, sieht die Kennlinie anders aus. Die Manometer zeigen den Druck <strong>p1</strong> vor dem Ventil und <strong>p3</strong> am Zylinder. Am Zylinder wirken wieder die Last F und die Geschwindigkeit v. Die schwarze Kurve zeigt weiterhin die <strong>schwankende Last</strong>, doch die rote Linie für <strong>Q und v bleibt waagerecht</strong>. Der Zylinder fährt <strong>gleichmäßig</strong>, egal wie groß die Last ist.</p>
+<h2>⚖️ Das Geheimnis: die Druckwaage</h2>
+<p>Im Inneren des Stromregelventils arbeiten zwei Teile zusammen:</p>
+<ol>
+<li><p><strong>Messdrossel:</strong> An ihr stellst du ein, <strong>wie viel Öl fließen soll</strong>.</p></li>
+<li><p><strong>Druckwaage:</strong> ein <strong>Regelkolben mit Feder</strong>, der vor der Messdrossel sitzt.</p></li>
+</ol>
+<p><strong>So regelt die Druckwaage:</strong> Steigt die Last, öffnet die Druckwaage etwas weiter. Sinkt die Last, drosselt sie stärker. So bleibt der <strong>Druckunterschied an der Messdrossel immer gleich</strong> und damit auch der <strong>Volumenstrom Q</strong>.</p>
+<p>Typisch ist das Stromregelventil für <strong>Vorschübe</strong>, zum Beispiel an einer <strong>Bohreinheit</strong>. Dort soll der Vorschub gleich bleiben, auch wenn der Bohrer mal mehr, mal weniger Kraft braucht.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Ventil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Verhalten bei steigender Last</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einsatz</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Drosselventil</strong></p></td><td colspan="1" rowspan="1"><p>Q und v sinken</p></td><td colspan="1" rowspan="1"><p>Einfach und günstig, wenn Gleichmäßigkeit egal ist</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Stromregelventil</strong></p></td><td colspan="1" rowspan="1"><p>Q und v bleiben konstant</p></td><td colspan="1" rowspan="1"><p>Vorschübe mit schwankender Kraft</p></td></tr>
+</tbody></table></div>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia tauscht das Drosselventil gegen ein <strong>Stromregelventil mit Druckwaage</strong>. Herr Krause misst erneut: ohne Last 4 Sekunden, mit Last ebenfalls 4 Sekunden. 💪 Die Druckwaage gleicht den höheren Lastdruck aus, der Druckunterschied an der Messdrossel und damit der Volumenstrom bleiben gleich.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Geschwindigkeit <strong>v = Q : A</strong>. Eine <strong>Drossel</strong> hängt von der Öltemperatur ab, eine <strong>Blende</strong> kaum. Beim <strong>Drosselventil</strong> sinkt die Geschwindigkeit, wenn die Last steigt. Das <strong>Stromregelventil</strong> hält den Volumenstrom mit der <strong>Druckwaage</strong> konstant.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Häufige Frage: <strong>„Warum ist die Geschwindigkeit beim Drosselventil lastabhängig?“</strong> Weil der Durchfluss vom Druckunterschied an der Drossel abhängt und dieser bei steigender Last kleiner wird. Im Schaltzeichen erkennst du das Stromregelventil am <strong>zusätzlichen Pfeil in Strömungsrichtung</strong>.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Ein Spannzylinder soll etwas langsamer fahren, die Gleichmäßigkeit ist egal. Welches Stromventil nimmst du?</summary><div data-type="detailsContent"><p>✅ Ein einfaches Drosselventil reicht aus.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Ein Vorschubzylinder soll immer gleich schnell fahren, obwohl die Schnittkraft schwankt. Welches Ventil brauchst du?</summary><div data-type="detailsContent"><p>✅ Ein Stromregelventil mit Druckwaage. Es hält den Volumenstrom und damit die Geschwindigkeit konstant.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Q = 100 cm³/s, A = 20 cm². Wie schnell fährt der Kolben aus?</summary><div data-type="detailsContent"><p>✅ v = Q : A = 100 cm³/s : 20 cm² = 5 cm/s.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Warum fließt durch eine Drossel bei warmem Öl mehr Öl, durch eine Blende aber kaum mehr?</summary><div data-type="detailsContent"><p>✅ Warmes Öl ist dünnflüssiger. Bei der langen, engen Drossel hängt der Durchfluss von der Zähigkeit ab, bei der kurzen, scharfkantigen Blende spielt sie kaum eine Rolle.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was macht die Druckwaage, wenn die Last am Zylinder steigt?</summary><div data-type="detailsContent"><p>✅ Sie öffnet etwas weiter. So bleibt der Druckunterschied an der Messdrossel gleich, und der Volumenstrom bleibt konstant.</p></div></details>
+<p></p>

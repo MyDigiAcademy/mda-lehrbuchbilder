@@ -1,0 +1,76 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie sich <strong>Umfangs-Planschleifen</strong> und <strong>Längs-Rundschleifen</strong> unterscheiden</p></li>
+<li><p>Welche <strong>Zerspanungsgrößen</strong> beim Schleifen wichtig sind: <strong>v<sub>c</sub>, v<sub>w</sub>, f, a<sub>p</sub></strong> und <strong>n<sub>H</sub></strong></p></li>
+<li><p>Wie die <strong>Formeln</strong> zusammenhängen und was das <strong>Geschwindigkeitsverhältnis q</strong> aussagt</p></li>
+<li><p>Wie du <strong>Scheibendrehzahl</strong> und <strong>Werkstückgeschwindigkeit</strong> Schritt für Schritt berechnest</p></li>
+</ul>
+<p>👋 Tim soll in der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> eine <strong>Welle rundschleifen</strong>. Die Schleifscheibe hat einen Durchmesser von <strong>d<sub>s</sub> = 300 mm</strong> und soll mit einer Schnittgeschwindigkeit von <strong>v<sub>c</sub> = 40 m/s</strong> laufen. Ausbilder Herr Krause gibt außerdem vor: Das <strong>Geschwindigkeitsverhältnis q</strong> soll <strong>70</strong> betragen. Tim fragt sich: Welche <strong>Drehzahl</strong> stelle ich an der Scheibe ein, und wie schnell muss sich die <strong>Welle</strong> drehen?</p>
+{{IMG1}}
+<h2>🛠️ Zwei wichtige Schleifverfahren</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Umfangs-Planschleifen</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Längs-Rundschleifen</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Erzeugte Fläche</strong></p></td><td colspan="1" rowspan="1"><p>Ebene Flächen</p></td><td colspan="1" rowspan="1"><p>Zylindrische Flächen, z. B. Wellen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Scheibe</strong></p></td><td colspan="1" rowspan="1"><p>Arbeitet mit ihrem Umfang</p></td><td colspan="1" rowspan="1"><p>Arbeitet mit ihrem Umfang</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Werkstück</strong></p></td><td colspan="1" rowspan="1"><p>Fährt auf dem Tisch hin und her</p></td><td colspan="1" rowspan="1"><p>Dreht sich und bewegt sich zusätzlich längs an der Scheibe entlang</p></td></tr>
+</tbody></table></div>
+<h2>🏎️ Schnitt- und Werkstückgeschwindigkeit</h2>
+<p>Beim Schleifen unterscheidet man zwei Geschwindigkeiten, die in <strong>unterschiedlichen Einheiten</strong> angegeben werden:</p>
+<ul>
+<li><p><strong>Schnittgeschwindigkeit v<sub>c</sub>:</strong> die <strong>Umfangsgeschwindigkeit der Schleifscheibe</strong>. Sie gibt an, wie schnell ein Korn am Rand der Scheibe läuft. Beim Schleifen wird sie in <strong>m/s</strong> angegeben.</p></li>
+<li><p><strong>Werkstückgeschwindigkeit v<sub>w</sub>:</strong> die Geschwindigkeit des Werkstücks. Beim <strong>Planschleifen</strong> ist das die Geschwindigkeit des <strong>Tisches</strong>, beim <strong>Rundschleifen</strong> die <strong>Umfangsgeschwindigkeit der Welle</strong>. Sie wird in <strong>m/min</strong> angegeben.</p></li>
+</ul>
+<h2>↔️ Vorschub, Zustellung und Hubzahl</h2>
+<ul>
+<li><p><strong>Vorschub f:</strong> der Weg, um den Scheibe und Werkstück <strong>seitlich versetzt</strong> werden. Beim Planschleifen ist das der <strong>Quervorschub in mm je Hub</strong>, beim Rundschleifen der <strong>Längsvorschub in mm je Umdrehung</strong> des Werkstücks. Die zugehörige Vorschubgeschwindigkeit heißt v<sub>f</sub>.</p></li>
+<li><p><strong>Zustelltiefe a<sub>p</sub>:</strong> Sie gibt an, wie tief die Scheibe bei einem Durchgang eingreift, und bestimmt damit, <strong>wie viel Werkstoff auf einmal</strong> abgetragen wird.</p></li>
+<li><p><strong>Hubzahl n<sub>H</sub></strong> (nur beim Planschleifen): Sie gibt an, wie viele <strong>Hübe pro Minute</strong> der Tisch macht. Ein Hub ist eine Fahrt über die Länge <strong>L</strong> des Hubwegs.</p></li>
+</ul>
+{{IMG2}}
+<h2>🧮 Die Formeln</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Größe</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Formel</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Schnittgeschwindigkeit</strong></p></td><td colspan="1" rowspan="1"><p>v<sub>c</sub> = π · d<sub>s</sub> · n<sub>s</sub></p></td><td colspan="1" rowspan="1"><p>d<sub>s</sub> = Scheibendurchmesser, n<sub>s</sub> = Scheibendrehzahl</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Planschleifen</strong></p></td><td colspan="1" rowspan="1"><p>v<sub>w</sub> = L · n<sub>H</sub></p></td><td colspan="1" rowspan="1"><p>L = Hubweg, n<sub>H</sub> = Hubzahl</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rundschleifen</strong></p></td><td colspan="1" rowspan="1"><p>v<sub>w</sub> = π · d<sub>1</sub> · n</p></td><td colspan="1" rowspan="1"><p>d<sub>1</sub> = Werkstückdurchmesser, n = Werkstückdrehzahl</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Verhältnis q</strong></p></td><td colspan="1" rowspan="1"><p>q = v<sub>c</sub> / v<sub>w</sub></p></td><td colspan="1" rowspan="1"><p>Beide in derselben Einheit!</p></td></tr>
+</tbody></table></div>
+<p>Weil v<sub>c</sub> in m/s und v<sub>w</sub> in m/min angegeben wird, musst du für q immer erst umrechnen. Dabei gilt: <strong>m/s · 60 = m/min</strong> und <strong>m/min : 60 = m/s</strong>. Rechnest du v<sub>c</sub> = π · d<sub>s</sub> · n<sub>s</sub> mit n<sub>s</sub> in 1/min, erhältst du m/min; für m/s teilst du durch 60.</p>
+<h2>📊 Was sagt q aus?</h2>
+<p>Das Geschwindigkeitsverhältnis q zeigt, wie schnell die Scheibe im Vergleich zum Werkstück läuft:</p>
+<ul>
+<li><p><strong>q groß:</strong> Das Werkstück läuft im Vergleich zur Scheibe <strong>langsam</strong>. Jedes Korn nimmt nur einen <strong>dünnen Span</strong> ab. Die Oberfläche wird <strong>glatter</strong>, es entsteht aber <strong>mehr Wärme</strong>, und die Scheibe <strong>wirkt härter</strong>.</p></li>
+<li><p><strong>q klein:</strong> Die Späne werden <strong>dicker</strong>. Du erreichst <strong>mehr Abtrag</strong>, die Oberfläche wird <strong>rauer</strong>, und die Scheibe <strong>wirkt weicher</strong>.</p></li>
+</ul>
+<p>Passende <strong>Richtwerte für q</strong> findest du in <strong>Tabellen</strong>, abhängig von Verfahren und Werkstoff.</p>
+<blockquote><p>Großes q: glatte Oberfläche. Kleines q: mehr Abtrag.</p></blockquote>
+<h2>✏️ Schritt 1: Drehzahl der Schleifscheibe</h2>
+<p><strong>Gegeben:</strong> v<sub>c</sub> = 40 m/s, d<sub>s</sub> = 300 mm = 0,3 m</p>
+<p><strong>Gesucht:</strong> n<sub>s</sub></p>
+<ol>
+<li><p>Formel umstellen: <strong>n<sub>s</sub> = v<sub>c</sub> / (π · d<sub>s</sub>)</strong></p></li>
+<li><p>Einheit anpassen: 40 m/s · 60 s/min = <strong>2400 m/min</strong></p></li>
+<li><p>Nenner berechnen: π · 0,3 m ≈ 0,9425 m</p></li>
+<li><p>Einsetzen: n<sub>s</sub> = 2400 m/min / 0,9425 m ≈ <strong>2546 1/min</strong></p></li>
+</ol>
+{{IMG3}}
+<p>Diese Drehzahl stellt Tim ein. Hat die Maschine nur <strong>feste Drehzahlstufen</strong>, nimmt er die <strong>nächstkleinere</strong> Stufe. So wird die zulässige Schnittgeschwindigkeit der Scheibe nicht überschritten.</p>
+<h2>✏️ Schritt 2: Werkstückgeschwindigkeit</h2>
+<p><strong>Gegeben:</strong> v<sub>c</sub> = 40 m/s, q = 70</p>
+<p><strong>Gesucht:</strong> v<sub>w</sub></p>
+<ol>
+<li><p>Formel umstellen: aus q = v<sub>c</sub> / v<sub>w</sub> wird <strong>v<sub>w</sub> = v<sub>c</sub> / q</strong></p></li>
+<li><p>Einsetzen: v<sub>w</sub> = 40 m/s / 70 ≈ <strong>0,571 m/s</strong></p></li>
+<li><p>Umrechnen: 0,571 m/s · 60 s/min ≈ <strong>34,29 m/min</strong></p></li>
+</ol>
+<p>So schnell bewegt sich die <strong>Oberfläche der Welle</strong>. Kennt man den Wellendurchmesser d<sub>1</sub>, lässt sich daraus mit n = v<sub>w</sub> / (π · d<sub>1</sub>) die Werkstückdrehzahl berechnen.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>Fall 1:</strong> Tim verdoppelt die Werkstückgeschwindigkeit, v<sub>c</sub> bleibt gleich. Dann <strong>halbiert sich q</strong> von 70 auf <strong>35</strong>. Tim trägt mehr ab, aber die Oberfläche wird rauer. <strong>Fall 2:</strong> Mia spannt eine Scheibe mit <strong>d<sub>s</sub> = 400 mm</strong> auf und lässt die Drehzahl bei 2546 1/min. Dann gilt: v<sub>c</sub> = π · 0,4 m · 2546 1/min ≈ 3199 m/min, geteilt durch 60 ≈ <strong>53 m/s</strong>. Das ist <strong>nur erlaubt, wenn die Scheibe dafür zugelassen ist</strong>, denn bei zu hoher Umfangsgeschwindigkeit kann eine Schleifscheibe zerspringen.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Beim <strong>Planschleifen</strong> fährt das Werkstück hin und her, beim <strong>Rundschleifen</strong> dreht es sich. <strong>v<sub>c</sub> = π · d<sub>s</sub> · n<sub>s</sub></strong>, angegeben in m/s: dafür durch 60 teilen. <strong>q = v<sub>c</sub> / v<sub>w</sub></strong>, beide in derselben Einheit. <strong>Großes q</strong> ergibt eine glattere Oberfläche, <strong>kleines q</strong> mehr Abtrag. Größere Scheibe bei gleicher Drehzahl bedeutet höhere Schnittgeschwindigkeit.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Die häufigste Fehlerquelle sind die <strong>Einheiten</strong>: v<sub>c</sub> in m/s, v<sub>w</sub> in m/min, Durchmesser in mm. Rechne vor dem Einsetzen alles auf <strong>Meter und Minute</strong> um. Und bei festen Drehzahlstufen immer die <strong>nächstkleinere</strong> Stufe wählen.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was ist der Unterschied zwischen v<sub>c</sub> und v<sub>w</sub> beim Rundschleifen?</summary><div data-type="detailsContent"><p>✅ v<sub>c</sub> ist die Umfangsgeschwindigkeit der Schleifscheibe (in m/s), v<sub>w</sub> die Umfangsgeschwindigkeit der Welle (in m/min).</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Eine Schleifscheibe mit d<sub>s</sub> = 250 mm soll mit v<sub>c</sub> = 35 m/s laufen. Welche Drehzahl stellst du ein?</summary><div data-type="detailsContent"><p>✅ 35 m/s · 60 = 2100 m/min. n<sub>s</sub> = 2100 m/min / (π · 0,25 m) ≈ 2674 1/min.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> v<sub>c</sub> = 30 m/s, v<sub>w</sub> = 18 m/min. Wie groß ist q?</summary><div data-type="detailsContent"><p>✅ 30 m/s · 60 = 1800 m/min. q = 1800 m/min / 18 m/min = 100.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wie wirkt sich ein kleineres q auf das Schleifergebnis aus?</summary><div data-type="detailsContent"><p>✅ Die Späne werden dicker, der Abtrag steigt, die Oberfläche wird rauer, und die Scheibe wirkt weicher.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Ein Planschleiftisch fährt einen Hubweg von L = 0,4 m mit n<sub>H</sub> = 30 Hüben pro Minute. Wie groß ist v<sub>w</sub>?</summary><div data-type="detailsContent"><p>✅ v<sub>w</sub> = L · n<sub>H</sub> = 0,4 m · 30 1/min = 12 m/min.</p></div></details>
+<p></p>

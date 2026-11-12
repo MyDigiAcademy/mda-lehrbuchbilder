@@ -1,0 +1,98 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was <strong>GRAFCET</strong> ist und warum die Ablaufbeschreibung nach <strong>DIN EN 60848</strong> <strong>technikunabhängig</strong> ist</p></li>
+<li><p>Wie <strong>Anfangsschritt</strong>, <strong>Schritt</strong>, <strong>Transition</strong>, <strong>Aktion</strong> und <strong>Wirkverbindung</strong> dargestellt werden</p></li>
+<li><p>Wie sich <strong>Strukturteil</strong> und <strong>Wirkungsteil</strong> unterscheiden und wann eine <strong>Transition schaltet</strong></p></li>
+<li><p>Wie du aus <strong>Zuordnungsliste</strong> und <strong>Funktionsbeschreibung</strong> den GRAFCET einer <strong>Pressvorrichtung</strong> erstellst</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> bauen die Auszubildenden Mia und Tim eine <strong>pneumatische Pressvorrichtung</strong> auf. Ausbilder Herr Krause gibt Mia eine <strong>Funktionsbeschreibung</strong> und eine Liste aller <strong>Sensoren und Ventile</strong>. Ihre Aufgabe: den Ablauf der Vorrichtung zeichnen. Mia fragt sich, wie man einen Ablauf so darstellt, dass ihn später auch der Programmierer der Steuerung ohne Rückfragen versteht. Die Antwort lautet: <strong>GRAFCET</strong>.</p>
+{{IMG1}}
+<h2>📐 Was ist GRAFCET?</h2>
+<p><strong>GRAFCET</strong> ist eine <strong>genormte grafische Sprache</strong>, mit der du den Ablauf einer Steuerung beschreibst. Die Regeln dafür stehen in der Norm <strong>DIN EN 60848</strong>. Der Name steht für eine grafische Darstellung von Schritten und Übergängen, und genau so ist GRAFCET aufgebaut.</p>
+<ul>
+<li><p><strong>In Schritten:</strong> Der Ablauf wird in einzelne <strong>Schritte</strong> zerlegt, die <strong>nacheinander</strong> ablaufen. Jeder Schritt beschreibt einen Zustand der Anlage, zum Beispiel „Schiebezylinder fährt aus“.</p></li>
+<li><p><strong>Technikunabhängig:</strong> Ob den Ablauf später eine <strong>pneumatische Steuerung</strong>, eine <strong>Relaissteuerung</strong> oder eine <strong>SPS</strong> (speicherprogrammierbare Steuerung) ausführt, der GRAFCET bleibt gleich.</p></li>
+<li><p><strong>Grundlage fürs Programm:</strong> Der GRAFCET ist die gemeinsame Sprache zwischen Konstruktion, Instandhaltung und Programmierung. Aus ihm entsteht das spätere <strong>Steuerungsprogramm</strong>.</p></li>
+</ul>
+<p>Für dich als Industriemechaniker bedeutet das: Wer einen GRAFCET lesen kann, versteht den Ablauf einer Anlage, ohne das Programm oder die Verdrahtung zu kennen. Das hilft bei Inbetriebnahme, Fehlersuche und Instandhaltung.</p>
+<h2>🧩 Die Elemente eines GRAFCET</h2>
+<p>Jeder GRAFCET wird aus wenigen Grundelementen aufgebaut. Du solltest jedes davon sicher erkennen und zeichnen können:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Element</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Darstellung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Anfangsschritt</strong></p></td><td colspan="1" rowspan="1"><p>Quadrat mit <strong>doppeltem Rahmen</strong>, meist Nummer 0</p></td><td colspan="1" rowspan="1"><p>Startpunkt des Ablaufs, die Anlage wartet in der <strong>Grundstellung</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Transition</strong></p></td><td colspan="1" rowspan="1"><p>Kurzer <strong>Querstrich</strong> auf der Verbindungslinie</p></td><td colspan="1" rowspan="1"><p>Übergang zum nächsten Schritt; rechts daneben steht die <strong>Transitionsbedingung</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Schritt</strong></p></td><td colspan="1" rowspan="1"><p><strong>Quadrat mit Nummer</strong></p></td><td colspan="1" rowspan="1"><p>Zustand im Ablauf, z. B. Schritt 1, Schritt 2</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Aktion</strong></p></td><td colspan="1" rowspan="1"><p><strong>Rechteck rechts am Schritt</strong></p></td><td colspan="1" rowspan="1"><p>Was in diesem Schritt passiert, z. B. MB1 = Ventilspule MB1 einschalten</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wirkverbindung</strong></p></td><td colspan="1" rowspan="1"><p>Linie zwischen den Elementen</p></td><td colspan="1" rowspan="1"><p>Verbindet alles <strong>von oben nach unten</strong>; geht eine Linie nach oben, bekommt sie einen <strong>Pfeil</strong></p></td></tr>
+</tbody></table></div>
+<p>So liest du den Anfang eines GRAFCET: Im <strong>Anfangsschritt 0</strong> wartet die Anlage. Darunter folgt eine Transition mit der Bedingung <strong>SF1</strong> (Starttaster). Ist diese Bedingung erfüllt, wird <strong>Schritt 1</strong> aktiv. Am Schritt 1 hängt rechts die Aktion <strong>MB1</strong>: Die Ventilspule MB1 wird eingeschaltet. Danach folgt wieder eine Transition, zum Beispiel mit der Bedingung <strong>BG2</strong>, und darunter Schritt 2.</p>
+<p>Wichtig ist die Laufrichtung: Wirkverbindungen laufen grundsätzlich <strong>von oben nach unten</strong>. Nur wenn eine Linie <strong>nach oben</strong> führt, etwa zurück zum Anfangsschritt, wird sie mit einem <strong>Pfeil</strong> gekennzeichnet.</p>
+<h2>🔀 Strukturteil und Wirkungsteil</h2>
+<p>Ein GRAFCET besteht aus <strong>zwei Teilen</strong>, die du klar auseinanderhalten musst:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Teil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Inhalt</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Frage, die er beantwortet</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Strukturteil</strong></p></td><td colspan="1" rowspan="1"><p><strong>Schritte</strong>, <strong>Transitionen</strong> und <strong>Wirkverbindungen</strong></p></td><td colspan="1" rowspan="1"><p>Wie ist der Ablauf aufgebaut?</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wirkungsteil</strong></p></td><td colspan="1" rowspan="1"><p><strong>Aktionen</strong> und <strong>Transitionsbedingungen</strong></p></td><td colspan="1" rowspan="1"><p>Was passiert in jedem Schritt, und wann geht es weiter?</p></td></tr>
+</tbody></table></div>
+<p>Der Strukturteil ist also das „Gerüst“ des Ablaufs. Der Wirkungsteil füllt dieses Gerüst mit Leben: Er sagt, welche Ventile, Motoren oder Leuchten angesteuert werden und welche Signale den Ablauf weiterschalten.</p>
+<p>Die wichtigste Regel im GRAFCET ist die <strong>Schaltregel</strong>:</p>
+<blockquote><p>Eine Transition schaltet nur, wenn der Schritt davor aktiv ist UND ihre Bedingung erfüllt ist.</p></blockquote>
+<p>Schaltet die Transition, wird der <strong>nachfolgende Schritt aktiv</strong> und der <strong>vorherige Schritt inaktiv</strong>. Beispiel: Ist Schritt 0 aktiv und Mia drückt den Starttaster SF1, wird Schritt 1 aktiv und Schritt 0 inaktiv. Drückt Mia SF1, während ein ganz anderer Schritt aktiv ist, passiert an dieser Transition nichts.</p>
+<h2>📋 Die Zuordnungsliste der Pressvorrichtung</h2>
+<p>Bevor Mia zeichnet, braucht sie die <strong>Zuordnungsliste</strong>. Sie legt fest, welches <strong>Kürzel</strong> welches <strong>Bauteil</strong> meint. Links stehen die <strong>Eingänge</strong> (Signalgeber), rechts die <strong>Ausgänge</strong> (angesteuerte Bauteile).</p>
+{{IMG2}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Eingang</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Ausgang</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>SF1</strong></p></td><td colspan="1" rowspan="1"><p>Starttaster</p></td><td colspan="1" rowspan="1"><p>MB1</p></td><td colspan="1" rowspan="1"><p>Schiebezylinder ausfahren</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>BG1</strong></p></td><td colspan="1" rowspan="1"><p>Schiebezylinder eingefahren</p></td><td colspan="1" rowspan="1"><p>MB4</p></td><td colspan="1" rowspan="1"><p>Schiebezylinder einfahren</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>BG2</strong></p></td><td colspan="1" rowspan="1"><p>Schiebezylinder ausgefahren</p></td><td colspan="1" rowspan="1"><p>MB2</p></td><td colspan="1" rowspan="1"><p>Presszylinder ausfahren</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>BG3</strong></p></td><td colspan="1" rowspan="1"><p>Presszylinder ausgefahren</p></td><td colspan="1" rowspan="1"><p>MB3</p></td><td colspan="1" rowspan="1"><p>Presszylinder einfahren</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>BG4</strong></p></td><td colspan="1" rowspan="1"><p>Presszylinder eingefahren</p></td><td colspan="1" rowspan="1"><p>PF1</p></td><td colspan="1" rowspan="1"><p>Meldeleuchte</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>BG5</strong></p></td><td colspan="1" rowspan="1"><p>Werkstück positioniert (liegt unter der Presse)</p></td><td colspan="1" rowspan="1"><p></p></td><td colspan="1" rowspan="1"><p></p></td></tr>
+</tbody></table></div>
+<p>Die Sensoren melden also die <strong>Endlagen</strong> beider Zylinder und die Lage des Werkstücks, die Ventilspulen steuern die Zylinderbewegungen.</p>
+<h2>⚙️ Die Funktionsbeschreibung</h2>
+<p>So soll die Pressvorrichtung arbeiten:</p>
+<ol>
+<li><p><strong>Start mit SF1:</strong> aber nur, wenn <strong>beide Zylinder eingefahren</strong> sind.</p></li>
+<li><p><strong>Schiebezylinder fährt aus:</strong> Er schiebt das Werkstück unter die Presse, bis <strong>BG5</strong> es meldet.</p></li>
+<li><p><strong>Presszylinder fährt aus:</strong> Er drückt das Werkstück <strong>3 Sekunden</strong> lang in die Form.</p></li>
+<li><p><strong>Presszylinder, dann Schiebezylinder ein:</strong> Zuerst fährt der Presszylinder ein. Wenn er oben ist, fährt auch der Schiebezylinder zurück in die Grundstellung.</p></li>
+<li><p><strong>Meldeleuchte PF1:</strong> Sind beide Zylinder eingefahren, leuchtet PF1 <strong>2 Sekunden</strong> lang. Der Vorgang ist abgeschlossen.</p></li>
+</ol>
+<p>Bevor du weiterliest, lohnt es sich, den GRAFCET mit Zuordnungsliste und Funktionsbeschreibung einmal selbst auf ein Blatt zu zeichnen.</p>
+<h2>✏️ Die Lösung Schritt für Schritt</h2>
+<p>Mia übersetzt die Funktionsbeschreibung jetzt in Schritte, Aktionen und Transitionsbedingungen:</p>
+{{IMG3}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Schritt</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Aktion</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was passiert</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Transitionsbedingung zum nächsten Schritt</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>0 (Anfangsschritt)</strong></p></td><td colspan="1" rowspan="1"><p>keine</p></td><td colspan="1" rowspan="1"><p>Anlage wartet in der Grundstellung</p></td><td colspan="1" rowspan="1"><p><strong>SF1 · BG1 · BG4</strong> (Start und beide Zylinder eingefahren)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>1</strong></p></td><td colspan="1" rowspan="1"><p>MB1</p></td><td colspan="1" rowspan="1"><p>Schiebezylinder fährt aus</p></td><td colspan="1" rowspan="1"><p><strong>BG5</strong> (Werkstück positioniert)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>2</strong></p></td><td colspan="1" rowspan="1"><p>MB2</p></td><td colspan="1" rowspan="1"><p>Presszylinder fährt aus, 3 s halten</p></td><td colspan="1" rowspan="1"><p><strong>3s/BG3</strong> (3 Sekunden, nachdem BG3 = 1 geworden ist)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>3</strong></p></td><td colspan="1" rowspan="1"><p>MB3</p></td><td colspan="1" rowspan="1"><p>Presszylinder fährt ein</p></td><td colspan="1" rowspan="1"><p><strong>BG4</strong> (Presszylinder eingefahren)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>4</strong></p></td><td colspan="1" rowspan="1"><p>MB4</p></td><td colspan="1" rowspan="1"><p>Schiebezylinder fährt ein</p></td><td colspan="1" rowspan="1"><p><strong>BG1 · BG4</strong> (beide Zylinder eingefahren)</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>5</strong></p></td><td colspan="1" rowspan="1"><p>PF1</p></td><td colspan="1" rowspan="1"><p>Meldeleuchte leuchtet</p></td><td colspan="1" rowspan="1"><p><strong>2s/X5</strong> (2 Sekunden nach Aktivierung von Schritt 5), dann zurück zu Schritt 0</p></td></tr>
+</tbody></table></div>
+<p>Einige Details der Lösung solltest du genau verstehen:</p>
+<ul>
+<li><p><strong>Der Punkt „·“ steht für UND.</strong> Die Starttransition SF1 · BG1 · BG4 bedeutet: Starttaster gedrückt UND Schiebezylinder eingefahren UND Presszylinder eingefahren. Nur dann startet die Anlage.</p></li>
+<li><p><strong>Zeitbedingung 3s/BG3:</strong> Die 3 Sekunden beginnen erst, wenn BG3 den Wert 1 annimmt, also wenn die Presse wirklich unten ist. So ist die <strong>Haltezeit</strong> sicher eingehalten, egal wie lange das Ausfahren dauert.</p></li>
+<li><p><strong>Zeitbedingung 2s/X5:</strong> X5 ist der Zustand von Schritt 5. Die Bedingung wird 2 Sekunden, nachdem Schritt 5 aktiv geworden ist, erfüllt. Die Leuchte PF1 leuchtet also genau 2 Sekunden.</p></li>
+<li><p><strong>Rücksprung mit Pfeil:</strong> Nach Schritt 5 führt die Wirkverbindung nach oben zurück zum Anfangsschritt 0. Weil sie nach oben läuft, bekommt sie einen <strong>Pfeil</strong>.</p></li>
+<li><p><strong>BG2 wird nicht gebraucht:</strong> Das Weiterschalten nach Schritt 1 erfolgt über BG5 (Werkstück positioniert), nicht über die Endlage des Schiebezylinders.</p></li>
+<li><p><strong>Ventile behalten ihre Stellung:</strong> Die Ventile sind so ausgeführt, dass sie ihre Schaltstellung auch <strong>ohne Signal</strong> beibehalten. Deshalb bleibt der Schiebezylinder ausgefahren, obwohl MB1 nur in Schritt 1 angesteuert wird.</p></li>
+</ul>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia testet den fertigen Ablauf an der Pressvorrichtung: Sie drückt SF1, doch nichts passiert. Mit dem GRAFCET in der Hand prüft sie die Starttransition SF1 · BG1 · BG4 und stellt fest: BG4 meldet 0, der Presszylinder hängt noch halb ausgefahren. Nachdem Tim den Druckluftanschluss korrigiert hat, fährt der Zylinder ein, BG4 meldet 1, und der Ablauf startet sauber. 💪 Der GRAFCET hat die Fehlersuche auf eine einzige Bedingung eingegrenzt.</p></div></details>
+<h2>🔍 Was passiert jetzt? Zwei Fälle</h2>
+<p><strong>Fall 1:</strong> Schritt 2 ist aktiv, und BG3 meldet gerade 1. Hier passiert zunächst <strong>noch nichts</strong>. Die Transition 3s/BG3 ist erst erfüllt, wenn BG3 seit 3 Sekunden den Wert 1 hat. Erst dann schaltet sie, und <strong>Schritt 3</strong> wird aktiv.</p>
+<p><strong>Fall 2:</strong> Schritt 0 ist aktiv, Mia drückt SF1, aber der Presszylinder ist noch ausgefahren. Die Bedingung SF1 · BG1 · BG4 ist <strong>nicht erfüllt</strong>, denn <strong>BG4 = 0</strong>. Die Anlage startet nicht.</p>
+<p>Merksatz zu beiden Fällen: Eine Transition schaltet nur bei <strong>vollständig erfüllter Bedingung</strong>.</p>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>GRAFCET beschreibt Steuerungsabläufe <strong>genormt (DIN EN 60848)</strong> und <strong>technikunabhängig</strong>. Der <strong>Strukturteil</strong> besteht aus Schritten, Transitionen und Wirkverbindungen. Der <strong>Wirkungsteil</strong> enthält die Aktionen und die Transitionsbedingungen. Eine Transition schaltet nur, wenn der <strong>Schritt davor aktiv</strong> und die <strong>Bedingung erfüllt</strong> ist.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Typische Prüfungsaufgabe: Aus Zuordnungsliste und Funktionsbeschreibung einen GRAFCET zeichnen oder einen gegebenen GRAFCET auswerten. Achte auf den <strong>doppelten Rahmen</strong> beim Anfangsschritt, den <strong>Pfeil</strong> bei Rücksprüngen nach oben, das <strong>UND-Zeichen „·“</strong> in Bedingungen und auf <strong>Zeitbedingungen</strong> wie 3s/BG3: Die Zeit läuft erst ab, wenn das genannte Signal 1 wird.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Woran erkennst du den Anfangsschritt in einem GRAFCET?</summary><div data-type="detailsContent"><p>✅ Am doppelten Rahmen. Er hat meist die Nummer 0, und in ihm wartet die Anlage in der Grundstellung.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Welche Elemente gehören zum Strukturteil, welche zum Wirkungsteil?</summary><div data-type="detailsContent"><p>✅ Strukturteil: Schritte, Transitionen und Wirkverbindungen. Wirkungsteil: Aktionen und Transitionsbedingungen.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Wann schaltet eine Transition?</summary><div data-type="detailsContent"><p>✅ Nur wenn der Schritt davor aktiv ist und ihre Bedingung vollständig erfüllt ist. Dann wird der nächste Schritt aktiv und der vorherige inaktiv.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was bedeutet die Transitionsbedingung 3s/BG3?</summary><div data-type="detailsContent"><p>✅ Die Bedingung ist 3 Sekunden, nachdem BG3 den Wert 1 angenommen hat, erfüllt. Die Haltezeit beginnt also erst, wenn der Presszylinder ausgefahren ist.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Schritt 0 ist aktiv, SF1 wird gedrückt, BG1 = 1, BG4 = 0. Startet die Pressvorrichtung?</summary><div data-type="detailsContent"><p>✅ Nein. Die Bedingung SF1 · BG1 · BG4 ist nicht erfüllt, weil BG4 = 0 ist. Der Presszylinder ist noch nicht eingefahren.</p></div></details>
+<p></p>

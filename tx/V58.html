@@ -1,0 +1,89 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Warum in der <strong>Parallelschaltung</strong> an jedem Widerstand <strong>dieselbe Spannung</strong> liegt</p></li>
+<li><p>Wie sich der <strong>Strom</strong> an den <strong>Knotenpunkten</strong> in <strong>Teilströme</strong> aufteilt</p></li>
+<li><p>Wie du den <strong>Gesamtwiderstand</strong> über die <strong>Kehrwerte</strong> oder mit der <strong>Formel für zwei Widerstände</strong> berechnest</p></li>
+<li><p>Wie du eine <strong>komplette Beispielaufgabe</strong> löst und mit dem <strong>ohmschen Gesetz</strong> die Probe machst</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> baut Tim ein kleines <strong>Prüfbrett</strong>. Er schließt zwei Widerstände mit <strong>48 Ω</strong> und <strong>72 Ω</strong> an ein <strong>Netzteil mit 24 V</strong> an. Diesmal schaltet er sie nicht hintereinander, sondern <strong>nebeneinander</strong>. Mia schaut ihm über die Schulter und fragt: „Fließt jetzt mehr oder weniger Strom als mit nur einem Widerstand? Und wie viel genau?“ Um das zu beantworten, schauen sich die beiden die <strong>Parallelschaltung</strong> genauer an.</p>
+{{IMG1}}
+<h2>🔀 Aufbau der Parallelschaltung</h2>
+<p>Auf Tims Prüfbrett liegen die Widerstände <strong>R₁ = 48 Ω</strong> und <strong>R₂ = 72 Ω</strong> nebeneinander, <strong>jeder in einem eigenen Zweig</strong>. Beide hängen an derselben Spannungsquelle mit <strong>U = 24 V</strong>.</p>
+<ul>
+<li><p>Der <strong>Gesamtstrom I</strong> fließt von der Quelle zum <strong>linken Knotenpunkt</strong>.</p></li>
+<li><p>Zwischen den Knotenpunkten hat der Strom <strong>zwei Wege</strong>: durch R₁ oder durch R₂.</p></li>
+<li><p>Vom <strong>rechten Knotenpunkt</strong> fließt er wieder zur Quelle zurück.</p></li>
+</ul>
+<p>Das ist der entscheidende Unterschied zur <strong>Reihenschaltung</strong>: Dort gibt es nur <strong>einen einzigen Weg</strong> für den Strom, hier gibt es <strong>zwei Zweige nebeneinander</strong>.</p>
+<h2>⚡ Regel 1: Überall die gleiche Spannung</h2>
+<p>Am Widerstand R₁ liegt die Spannung <strong>U₁</strong>. Sie ist genauso groß wie die Spannung der Quelle. Auch an R₂ liegt die volle Spannung, U₂ ist gleich U. Für die Parallelschaltung gilt also:</p>
+<p><strong>U = U₁ = U₂</strong></p>
+<p>Bei Tims Prüfbrett bekommt <strong>jeder Widerstand die vollen 24 V</strong>. Das gilt <strong>egal, wie viele Widerstände</strong> du parallel schaltest.</p>
+<p>Ein Beispiel aus dem Alltag: Alle <strong>Geräte an den Steckdosen</strong> der Werkstatt hängen <strong>parallel am Netz</strong>. Deshalb bekommt jedes Gerät die volle Netzspannung, egal ob daneben noch andere Geräte laufen.</p>
+<h2>🔱 Regel 2: Der Strom teilt sich auf</h2>
+<p>Der <strong>Gesamtstrom I</strong> kommt aus der Quelle und erreicht den linken Knotenpunkt. Dort <strong>teilt er sich auf</strong>:</p>
+<ul>
+<li><p>Ein Teil fließt als <strong>Teilstrom I₁</strong> durch den Widerstand R₁.</p></li>
+<li><p>Der andere Teil fließt als <strong>Teilstrom I₂</strong> durch R₂.</p></li>
+</ul>
+<p>Am rechten Knotenpunkt fließen beide Teilströme wieder zusammen. Deshalb gilt:</p>
+<p><strong>I = I₁ + I₂</strong></p>
+<p>Der <strong>Gesamtstrom</strong> ist also <strong>immer größer als jeder einzelne Teilstrom</strong>. Was in einen Knotenpunkt hineinfließt, fließt auch wieder heraus.</p>
+{{IMG2}}
+<h2>📐 Wie groß sind die Teilströme?</h2>
+<p>Die Teilströme berechnest du mit dem <strong>ohmschen Gesetz</strong> I = U / R. Weil an jedem Zweig dieselbe Spannung liegt, gilt:</p>
+<ul>
+<li><p><strong>I₁ = U / R₁</strong></p></li>
+<li><p><strong>I₂ = U / R₂</strong></p></li>
+</ul>
+<p>Daraus folgt eine wichtige Regel:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Widerstand im Zweig</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Teilstrom</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Kleiner Widerstand</strong></p></td><td colspan="1" rowspan="1"><p>großer Strom</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Großer Widerstand</strong></p></td><td colspan="1" rowspan="1"><p>kleiner Strom</p></td></tr>
+</tbody></table></div>
+<p>Der Strom nimmt also <strong>bevorzugt den leichteren Weg</strong>. Er fließt aber durch <strong>beide</strong> Zweige, nur eben unterschiedlich stark.</p>
+<h2>🧩 Regel 3: Der Gesamtwiderstand wird kleiner</h2>
+<p>Der Gesamtwiderstand einer Parallelschaltung ist <strong>immer kleiner als der kleinste Einzelwiderstand</strong>. Das klingt zunächst seltsam, ist aber logisch: <strong>Jeder zusätzliche Zweig ist ein weiterer Weg</strong> für den Strom. Es fließt mehr Strom, also ist der Widerstand insgesamt kleiner.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fall</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Formel</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Hinweis</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Allgemein</strong></p></td><td colspan="1" rowspan="1"><p>1/R = 1/R₁ + 1/R₂ + …</p></td><td colspan="1" rowspan="1"><p>Für jeden Zweig kommt ein Bruch dazu.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Genau zwei Widerstände</strong></p></td><td colspan="1" rowspan="1"><p>R = (R₁ · R₂) / (R₁ + R₂)</p></td><td colspan="1" rowspan="1"><p>„Produkt durch Summe“</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Zum Vergleich: Reihe</strong></p></td><td colspan="1" rowspan="1"><p>R = R₁ + R₂</p></td><td colspan="1" rowspan="1"><p>Gesamtwiderstand wird größer.</p></td></tr>
+</tbody></table></div>
+<p><strong>Nicht verwechseln:</strong> Bei der Reihenschaltung addierst du die Widerstände einfach, und der Gesamtwiderstand wird größer. Bei der Parallelschaltung addierst du die <strong>Kehrwerte</strong>, und der Gesamtwiderstand wird kleiner.</p>
+<p>Bei der allgemeinen Formel darfst du am Ende nicht vergessen, den <strong>Kehrwert</strong> zu bilden. Das Ergebnis der Bruchsumme ist zunächst 1/R, nicht R.</p>
+<h2>🧮 Rechnung: die Teilströme auf Tims Prüfbrett</h2>
+<p><strong>Gegeben:</strong> U = 24 V, R₁ = 48 Ω, R₂ = 72 Ω</p>
+<p><strong>Gesucht:</strong> I₁, I₂, I und der Gesamtwiderstand R</p>
+<ol>
+<li><p><strong>Teilstrom durch R₁:</strong> I₁ = U / R₁ = 24 V / 48 Ω = <strong>0,50 A</strong></p></li>
+<li><p><strong>Teilstrom durch R₂:</strong> I₂ = U / R₂ = 24 V / 72 Ω ≈ <strong>0,33 A</strong></p></li>
+<li><p><strong>Gesamtstrom:</strong> I = I₁ + I₂ = 0,50 A + 0,33 A = <strong>0,83 A</strong></p></li>
+</ol>
+<p>Du siehst: Durch den <strong>größeren Widerstand</strong> R₂ fließt der <strong>kleinere Strom</strong>. Und der Gesamtstrom ist größer als jeder Teilstrom.</p>
+<h2>🧮 Rechnung: der Gesamtwiderstand</h2>
+<p>Für genau zwei Widerstände setzt du in die Formel „Produkt durch Summe“ ein:</p>
+<ol>
+<li><p><strong>Einsetzen:</strong> R = (48 Ω · 72 Ω) / (48 Ω + 72 Ω)</p></li>
+<li><p><strong>Zähler und Nenner ausrechnen:</strong> 48 · 72 = <strong>3456 Ω²</strong>, 48 + 72 = <strong>120 Ω</strong></p></li>
+<li><p><strong>Teilen:</strong> R = 3456 Ω² / 120 Ω = <strong>28,8 Ω</strong></p></li>
+</ol>
+{{IMG3}}
+<p><strong>Plausibilitätscheck:</strong> 28,8 Ω ist <strong>kleiner als der kleinste Einzelwiderstand</strong> mit 48 Ω, genau wie erwartet.</p>
+<p><strong>Probe mit dem ohmschen Gesetz:</strong> I = U / R = 24 V / 28,8 Ω ≈ <strong>0,83 A</strong>. Das ist genau der Gesamtstrom aus der Summe der Teilströme. Die Rechnung stimmt.</p>
+<p>Zum Vergleich mit der allgemeinen Formel: 1/R = 1/48 Ω + 1/72 Ω ≈ 0,0208 1/Ω + 0,0139 1/Ω = 0,0347 1/Ω. Der Kehrwert ergibt R ≈ 28,8 Ω. Beide Wege führen zum selben Ergebnis.</p>
+<blockquote><p>Mehr Zweige, mehr Wege, mehr Strom. Und damit ein kleinerer Gesamtwiderstand.</p></blockquote>
+<h2>🔍 Was passiert, wenn …?</h2>
+<p><strong>Frage 1: Tim schaltet einen dritten Widerstand parallel dazu.</strong> Der <strong>Gesamtstrom steigt</strong>, weil es einen weiteren Weg gibt. Der <strong>Gesamtwiderstand sinkt</strong>. An jedem Widerstand liegen weiterhin 24 V, die beiden bisherigen Teilströme bleiben gleich.</p>
+<p><strong>Frage 2: Zwei Widerstände mit je 100 Ω liegen parallel.</strong> R = (100 Ω · 100 Ω) / (100 Ω + 100 Ω) = 10000 Ω² / 200 Ω = <strong>50 Ω</strong>. Bei <strong>zwei gleichen Widerständen halbiert sich</strong> also der Widerstand. Allgemein gilt: Bei n gleichen Widerständen ist der Gesamtwiderstand der Einzelwiderstand geteilt durch n.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Tim misst an seinem Prüfbrett nach: An beiden Widerständen zeigt das Messgerät 24 V. Im Zweig von R₁ fließen 0,50 A, im Zweig von R₂ etwa 0,33 A, vor dem Knotenpunkt insgesamt etwa 0,83 A. Mia hat damit ihre Antwort: Mit zwei parallelen Widerständen fließt <strong>mehr</strong> Strom als mit nur einem. 💪 Genau so verhalten sich auch die Geräte an den Werkstattsteckdosen.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>In der Parallelschaltung liegt an <strong>jedem Widerstand dieselbe Spannung</strong>: U = U₁ = U₂. Der <strong>Strom teilt sich auf</strong>, der Gesamtstrom ist die <strong>Summe der Teilströme</strong>: I = I₁ + I₂. Jeden Teilstrom berechnest du mit <strong>U / R</strong>: kleiner Widerstand bedeutet großen Strom. Der <strong>Gesamtwiderstand</strong> ist <strong>kleiner als der kleinste Einzelwiderstand</strong>.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker: <strong>Reihen- und Parallelschaltung verwechseln.</strong> Wenn dein Gesamtwiderstand bei einer Parallelschaltung größer ist als ein Einzelwiderstand, hast du falsch gerechnet. Bei zwei Widerständen nimmst du <strong>„Produkt durch Summe“</strong>, bei mehr Widerständen die Kehrwertformel und vergisst am Ende den Kehrwert nicht. Mach immer die <strong>Probe</strong>: U / R muss den Gesamtstrom ergeben.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Welche Spannung liegt an R₂, wenn eine Parallelschaltung an 24 V angeschlossen ist?</summary><div data-type="detailsContent"><p>✅ Die vollen 24 V. In der Parallelschaltung gilt U = U₁ = U₂.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Durch welchen Zweig fließt der größere Strom: durch 48 Ω oder durch 72 Ω?</summary><div data-type="detailsContent"><p>✅ Durch den kleineren Widerstand mit 48 Ω (0,50 A gegenüber etwa 0,33 A bei 24 V).</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Berechne den Gesamtwiderstand von 48 Ω und 72 Ω parallel.</summary><div data-type="detailsContent"><p>✅ R = (48 · 72) / (48 + 72) = 3456 / 120 = 28,8 Ω. Das ist kleiner als 48 Ω.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Zwei Widerstände mit je 100 Ω liegen parallel. Wie groß ist der Gesamtwiderstand?</summary><div data-type="detailsContent"><p>✅ R = (100 · 100) / (100 + 100) = 50 Ω. Bei zwei gleichen Widerständen halbiert sich der Widerstand.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Was passiert mit Gesamtstrom und Gesamtwiderstand, wenn ein weiterer Widerstand parallel geschaltet wird?</summary><div data-type="detailsContent"><p>✅ Der Gesamtstrom steigt, weil es einen zusätzlichen Weg gibt. Der Gesamtwiderstand sinkt.</p></div></details>
+<p></p>

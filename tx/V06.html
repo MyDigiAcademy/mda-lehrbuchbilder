@@ -1,0 +1,93 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was eine <strong>Passung</strong> ist und wie sie entsteht</p></li>
+<li><p>Wie sich <strong>Spielpassung</strong>, <strong>Übermaßpassung</strong> und <strong>Übergangspassung</strong> unterscheiden</p></li>
+<li><p>Wie du <strong>Höchstspiel, Mindestspiel, Höchstübermaß</strong> und <strong>Mindestübermaß</strong> Schritt für Schritt berechnest</p></li>
+<li><p>Wie die Passungssysteme <strong>Einheitsbohrung</strong> und <strong>Einheitswelle</strong> aufgebaut sind und wann du welches nutzt</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> soll Mia eine Welle in eine Buchse fügen. Die Bohrung der Buchse hat <strong>20H7</strong>, die Welle <strong>20s6</strong>. Beide Teile hat sie geprüft, beide sind gut. Trotzdem bekommt sie die Welle <strong>von Hand nicht hinein</strong>. Ausbilder Herr Krause zeigt nur auf die kleine <strong>Handpresse</strong>. Hat Mia etwas falsch gemacht? Die Antwort steckt in der <strong>Passung</strong>.</p>
+{{IMG1}}
+<h2>🔗 Was ist eine Passung?</h2>
+<p>Fügst du ein <strong>Innenteil</strong> (zum Beispiel eine Welle) und ein <strong>Außenteil</strong> (zum Beispiel eine Bohrung) mit <strong>gleichem Nennmaß</strong> zusammen, entsteht eine <strong>Passung</strong>. Sie ergibt sich aus den <strong>Toleranzen beider Teile</strong>.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Passungsart</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Verhältnis Welle zu Bohrung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Folge</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Spielpassung</strong></p></td><td colspan="1" rowspan="1"><p>Welle ist <strong>immer kleiner</strong> als die Bohrung</p></td><td colspan="1" rowspan="1"><p>Es bleibt Spiel, Teile sind <strong>beweglich</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Übermaßpassung</strong> (Presspassung)</p></td><td colspan="1" rowspan="1"><p>Welle ist <strong>immer größer</strong> als die Bohrung</p></td><td colspan="1" rowspan="1"><p>Teile werden <strong>mit Kraft gefügt</strong> und sitzen fest</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Übergangspassung</strong></p></td><td colspan="1" rowspan="1"><p>Hängt von den <strong>Istmaßen</strong> ab</p></td><td colspan="1" rowspan="1"><p>Entweder <strong>Spiel oder Übermaß</strong></p></td></tr>
+</tbody></table></div>
+<h2>📏 Kenngrößen von Passungen</h2>
+<p>Für jede Passung gibt es Kenngrößen. Die <strong>Bohrungstoleranz T<sub>B</sub></strong> und die <strong>Wellentoleranz T<sub>W</sub></strong> kennst du schon. Dazu kommen:</p>
+<ul>
+<li><p><strong>Höchstspiel P<sub>SH</sub>:</strong> größte Bohrung trifft auf kleinste Welle. P<sub>SH</sub> = G<sub>oB</sub> minus G<sub>uW</sub></p></li>
+<li><p><strong>Mindestspiel P<sub>SM</sub>:</strong> kleinste Bohrung trifft auf größte Welle (bei Spielpassung). P<sub>SM</sub> = G<sub>uB</sub> minus G<sub>oW</sub></p></li>
+<li><p><strong>Höchstübermaß P<sub>ÜH</sub>:</strong> das größte Übermaß. P<sub>ÜH</sub> = G<sub>uB</sub> minus G<sub>oW</sub></p></li>
+<li><p><strong>Mindestübermaß P<sub>ÜM</sub>:</strong> das kleinste Übermaß. P<sub>ÜM</sub> = G<sub>oB</sub> minus G<sub>uW</sub></p></li>
+</ul>
+<p>Ein <strong>Minuszeichen</strong> im Ergebnis bedeutet immer: Die Welle ist größer als die Bohrung, es liegt <strong>Übermaß</strong> vor.</p>
+<h2>🧮 Beispiel: Spielpassung</h2>
+<p>Nennmaß <strong>40 mm</strong>. Die Welle ist mit <strong>40 −0,01 / −0,02</strong> bemaßt, die Bohrung mit <strong>40 +0,02 / 0</strong>.</p>
+{{IMG2}}
+<ol>
+<li><p><strong>Welle:</strong> 39,98 mm bis 39,99 mm</p></li>
+<li><p><strong>Bohrung:</strong> 40,00 mm bis 40,02 mm</p></li>
+<li><p><strong>Höchstspiel</strong> = Höchstmaß der Bohrung minus Mindestmaß der Welle = 40,02 minus 39,98 = <strong>0,04 mm</strong></p></li>
+<li><p><strong>Mindestspiel</strong> = Mindestmaß der Bohrung minus Höchstmaß der Welle = 40,00 minus 39,99 = <strong>0,01 mm</strong></p></li>
+</ol>
+<p>Das Spiel liegt also immer <strong>zwischen 0,01 mm und 0,04 mm</strong>. Beide Werte sind positiv: eine echte Spielpassung.</p>
+<h2>🔨 Beispiel: Übermaßpassung</h2>
+<p>Wieder Nennmaß <strong>40 mm</strong>. Die Welle ist mit <strong>40 +0,02 / +0,01</strong> bemaßt, die Bohrung mit <strong>40 0 / −0,02</strong>.</p>
+<ol>
+<li><p><strong>Welle:</strong> 40,01 mm bis 40,02 mm</p></li>
+<li><p><strong>Bohrung:</strong> 39,98 mm bis 40,00 mm</p></li>
+<li><p><strong>Höchstübermaß</strong> = Mindestmaß der Bohrung minus Höchstmaß der Welle = 39,98 minus 40,02 = <strong>−0,04 mm</strong></p></li>
+<li><p><strong>Mindestübermaß</strong> = Höchstmaß der Bohrung minus Mindestmaß der Welle = 40,00 minus 40,01 = <strong>−0,01 mm</strong></p></li>
+</ol>
+<p>Das <strong>Minuszeichen</strong> zeigt: Die Welle ist <strong>immer größer</strong> als die Bohrung. Die Teile fügst du nur <strong>mit Kraft</strong>.</p>
+<h2>⚖️ Übergangspassung</h2>
+<p>Bei der Übergangspassung <strong>überschneiden sich die Toleranzen</strong> von Bohrung und Welle. Es gibt deshalb zwei Grenzfälle:</p>
+<ul>
+<li><p><strong>Große Bohrung trifft auf kleine Welle:</strong> Es entsteht das <strong>Höchstspiel</strong> P<sub>SH</sub> = G<sub>oB</sub> minus G<sub>uW</sub>.</p></li>
+<li><p><strong>Kleine Bohrung trifft auf große Welle:</strong> Es entsteht das <strong>Höchstübermaß</strong> P<sub>ÜH</sub> = G<sub>uB</sub> minus G<sub>oW</sub>.</p></li>
+</ul>
+<p>Welcher Fall eintritt, entscheiden die <strong>Istmaße</strong> der beiden Teile.</p>
+<h2>📊 Beispiel aus der Tabelle: 20H7/n6</h2>
+<p>Die Abmaße liest du aus der <strong>Passungstabelle</strong> ab:</p>
+<ul>
+<li><p>20 mm liegt in der Zeile <strong>über 18 bis 24 mm</strong>.</p></li>
+<li><p>Bohrung <strong>H7:</strong> <strong>+21 µm</strong> und <strong>0 µm</strong>.</p></li>
+<li><p>Welle <strong>n6:</strong> <strong>+28 µm</strong> und <strong>+15 µm</strong>. Die Spalte gehört zu den <strong>Übergangspassungen</strong>.</p></li>
+</ul>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Grenzmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bohrung 20H7</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Welle 20n6</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Höchstmaß</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>oB</sub> = <strong>20,021 mm</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>oW</sub> = <strong>20,028 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Mindestmaß</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>uB</sub> = <strong>20,000 mm</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>uW</sub> = <strong>20,015 mm</strong></p></td></tr>
+</tbody></table></div>
+<p><strong>Rechnung Schritt für Schritt:</strong></p>
+<ol>
+<li><p><strong>Höchstspiel</strong> P<sub>SH</sub> = 20,021 minus 20,015 = <strong>+0,006 mm</strong></p></li>
+<li><p><strong>Höchstübermaß</strong> P<sub>ÜH</sub> = 20,000 minus 20,028 = <strong>−0,028 mm</strong></p></li>
+</ol>
+<p>Weil <strong>Spiel und Übermaß möglich</strong> sind, ist 20H7/n6 eine <strong>Übergangspassung</strong>.</p>
+<h2>🏗️ Passungssystem Einheitsbohrung</h2>
+<p>Damit nicht jede Passung neu erfunden wird, gibt es zwei <strong>Passungssysteme</strong>. Beim System <strong>Einheitsbohrung</strong> haben <strong>alle Bohrungen das Grundabmaß H</strong>. Die Bohrung beginnt also immer an der Nulllinie. Die Passung entsteht durch die <strong>Wahl der Welle</strong>:</p>
+{{IMG3}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Grundabmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einheitsbohrung (Welle wählen)</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einheitswelle (Bohrung wählen)</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Spielpassungen</strong></p></td><td colspan="1" rowspan="1"><p>a bis h</p></td><td colspan="1" rowspan="1"><p>A bis H</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Übergangspassungen</strong></p></td><td colspan="1" rowspan="1"><p>js bis n</p></td><td colspan="1" rowspan="1"><p>JS bis N</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Übermaßpassungen</strong></p></td><td colspan="1" rowspan="1"><p>p bis zc</p></td><td colspan="1" rowspan="1"><p>P bis ZC</p></td></tr>
+</tbody></table></div>
+<p>Im <strong>Maschinenbau</strong> ist die Einheitsbohrung <strong>am häufigsten</strong>. Der Vorteil: Du brauchst nur <strong>Reibahlen und Lehrdorne für H-Bohrungen</strong>. Wellen lassen sich auf der Drehmaschine leicht auf jedes beliebige Maß fertigen.</p>
+<h2>🏗️ Passungssystem Einheitswelle</h2>
+<p>Beim System <strong>Einheitswelle</strong> haben <strong>alle Wellen das Grundabmaß h</strong>. Die Welle endet also immer an der Nulllinie. Jetzt entscheidet die <strong>Bohrung</strong> über die Passungsart (siehe Tabelle oben).</p>
+<p>Die Einheitswelle nutzt man, wenn auf einer <strong>langen, glatten Welle mehrere Teile</strong> mit unterschiedlichen Passungen sitzen. Die Welle braucht dann <strong>keine Absätze</strong> für jede Passung, und gezogener Blankstahl kann direkt verwendet werden.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Eine Bohrung <strong>30H7</strong> und eine Welle <strong>30f7</strong> ergeben eine <strong>Spielpassung</strong>: Die f-Welle liegt unter der Nulllinie, die H-Bohrung darüber. Mias Passung <strong>20H7/s6</strong> ist dagegen eine <strong>Übermaßpassung</strong>: Die s-Welle ist immer größer als die Bohrung. Mia hat also nichts falsch gemacht. Ihre Welle muss <strong>eingepresst</strong> werden, genau dafür steht die Handpresse bereit. 💪</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>Spielpassung:</strong> Welle immer kleiner. <strong>Übermaßpassung:</strong> Welle immer größer. <strong>Übergangspassung:</strong> beides möglich. <strong>Höchstspiel = G<sub>oB</sub> minus G<sub>uW</sub></strong>, <strong>Höchstübermaß = G<sub>uB</sub> minus G<sub>oW</sub></strong>, ein Minus bedeutet Übermaß. Bei der <strong>Einheitsbohrung</strong> hat jede Bohrung ein H, bei der <strong>Einheitswelle</strong> jede Welle ein h.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker: <strong>Passungsart bestimmen.</strong> Rechne Höchstspiel und Höchstübermaß aus. Sind beide Ergebnisse positiv, ist es eine Spielpassung. Sind beide negativ, eine Übermaßpassung. Ist eines positiv und eines negativ, eine Übergangspassung. Und vergiss nicht, µm aus der Tabelle in mm umzurechnen.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was ist der Unterschied zwischen Spiel- und Übermaßpassung?</summary><div data-type="detailsContent"><p>✅ Bei der Spielpassung ist die Welle immer kleiner als die Bohrung, die Teile sind beweglich. Bei der Übermaßpassung ist die Welle immer größer, die Teile werden mit Kraft gefügt und sitzen fest.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Bohrung 40,00 bis 40,02 mm, Welle 39,98 bis 39,99 mm. Berechne Höchst- und Mindestspiel.</summary><div data-type="detailsContent"><p>✅ Höchstspiel 40,02 minus 39,98 = 0,04 mm. Mindestspiel 40,00 minus 39,99 = 0,01 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Warum ist 20H7/n6 eine Übergangspassung?</summary><div data-type="detailsContent"><p>✅ Höchstspiel 20,021 minus 20,015 = +0,006 mm, Höchstübermaß 20,000 minus 20,028 = −0,028 mm. Es kann also Spiel oder Übermaß entstehen, je nach Istmaßen.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Welche Wellen-Grundabmaße ergeben im System Einheitsbohrung eine Übermaßpassung?</summary><div data-type="detailsContent"><p>✅ p bis zc. Mit a bis h entstehen Spielpassungen, mit js bis n Übergangspassungen.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Wann setzt man das System Einheitswelle ein?</summary><div data-type="detailsContent"><p>✅ Wenn auf einer langen, glatten Welle mehrere Teile mit unterschiedlichen Passungen sitzen. Die Welle braucht dann keine Absätze, die Passung entsteht über die Bohrungen.</p></div></details>
+<p></p>

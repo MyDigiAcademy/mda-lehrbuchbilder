@@ -1,0 +1,92 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie sich <strong>Strom</strong> und <strong>Spannung</strong> in einer <strong>Reihenschaltung</strong> verhalten</p></li>
+<li><p>Wie du den <strong>Gesamtwiderstand</strong> einer Reihenschaltung berechnest</p></li>
+<li><p>Wie du <strong>Strom</strong> und <strong>Teilspannungen</strong> in einer typischen Prüfungsaufgabe Schritt für Schritt ermittelst</p></li>
+<li><p>Wie du dein Ergebnis mit der <strong>Spannungssumme</strong> sicher <strong>kontrollierst</strong></p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> gibt Ausbilder Herr Krause Mia und Tim eine Übungsaufgabe aus der Prüfungsvorbereitung: Zwei Widerstände mit <strong>30 Ω</strong> und <strong>80 Ω</strong> sind hintereinander geschaltet, die Schaltung liegt an <strong>230 V</strong>. Gesucht sind der <strong>Strom</strong> und die <strong>Spannungen an beiden Widerständen</strong>. Herr Krause betont dabei: „So etwas wird nur gerechnet. Aufbauen und anschließen darf eine Schaltung an 230 V nur eine <strong>Elektrofachkraft</strong>.“ Solche Aufgaben kommen in Prüfungen sehr häufig vor. Damit Mia und Tim sie sicher lösen, schauen sie sich zuerst an, wie eine Reihenschaltung funktioniert.</p>
+{{IMG1}}
+<h2>🔗 Aufbau einer Reihenschaltung</h2>
+<p>In einer <strong>Reihenschaltung</strong> liegen mehrere Widerstände <strong>hintereinander in einer einzigen Leitung, ohne Abzweig</strong>. Als Beispiel dient eine Schaltung mit drei Widerständen <strong>R₁</strong>, <strong>R₂</strong> und <strong>R₃</strong>. Jedes schmale Rechteck im Schaltplan ist das <strong>genormte Schaltzeichen für einen Widerstand</strong>.</p>
+<ul>
+<li><p>Der <strong>Strom I</strong> kommt von der Spannungsquelle, fließt durch alle Widerstände und wieder zur Quelle zurück.</p></li>
+<li><p>Durch jeden Widerstand fließt ein Strom: <strong>I₁</strong>, <strong>I₂</strong> und <strong>I₃</strong>.</p></li>
+<li><p>An jedem Widerstand liegt eine <strong>Teilspannung</strong>: <strong>U₁</strong>, <strong>U₂</strong> und <strong>U₃</strong>.</p></li>
+<li><p>Die Quelle liefert die <strong>Gesamtspannung U</strong> für die ganze Schaltung.</p></li>
+</ul>
+{{IMG2}}
+<h2>➡️ Regel 1: Der Strom ist überall gleich</h2>
+<p>In der Reihenschaltung ist der Strom an jeder Stelle <strong>gleich groß</strong>:</p>
+<p><strong>I = I₁ = I₂ = I₃</strong></p>
+<p>Der Grund ist einfach: Der Strom hat <strong>nur einen einzigen Weg</strong>. Er kann sich nicht aufteilen und muss durch alle Widerstände <strong>nacheinander</strong> fließen. Deshalb misst du mit einem Strommesser an jeder Stelle der Schaltung denselben Wert.</p>
+<p>Daraus folgt eine wichtige Eigenschaft: Wird die Leitung an <strong>einer</strong> Stelle unterbrochen, fließt <strong>nirgends</strong> mehr Strom. Das kennst du von einer alten <strong>Lichterkette</strong>: Ist eine Lampe defekt, bleiben alle dunkel.</p>
+<h2>⚡ Regel 2: Die Spannung teilt sich auf</h2>
+<p>Die <strong>Gesamtspannung</strong> teilt sich auf die einzelnen Widerstände auf. Die Teilspannungen ergeben zusammen wieder die Gesamtspannung:</p>
+<p><strong>U = U₁ + U₂ + U₃</strong></p>
+<p>Jede <strong>Teilspannung</strong> berechnest du mit dem <strong>ohmschen Gesetz</strong>, zum Beispiel:</p>
+<p><strong>U₁ = I · R₁</strong>, entsprechend U₂ = I · R₂ und U₃ = I · R₃.</p>
+<p>Weil der Strom überall gleich ist, gilt: <strong>Am größeren Widerstand fällt die größere Spannung ab.</strong> Die Spannungen verhalten sich deshalb wie die Widerstände:</p>
+<p><strong>U₁ / U₂ = R₁ / R₂</strong></p>
+<p>Ist R₂ doppelt so groß wie R₁, liegt an R₂ auch die <strong>doppelte Spannung</strong>. Man spricht deshalb auch von einem <strong>Spannungsteiler</strong>.</p>
+<h2>➕ Regel 3: Der Gesamtwiderstand ist die Summe</h2>
+<p>Den Widerstand der ganzen Schaltung bestimmst du, indem du alle Einzelwiderstände <strong>addierst</strong>:</p>
+<p><strong>R = R₁ + R₂ + R₃</strong></p>
+<p>Daraus ergeben sich zwei wichtige Folgerungen:</p>
+<ul>
+<li><p>Der Gesamtwiderstand ist <strong>immer größer als der größte Einzelwiderstand</strong>.</p></li>
+<li><p>Je <strong>mehr</strong> Widerstände du in Reihe schaltest, desto <strong>größer</strong> wird R und desto <strong>kleiner</strong> wird der Strom.</p></li>
+</ul>
+<p>Genau das nutzt man beim <strong>Vorwiderstand</strong>: Eine <strong>LED</strong> bekommt einen Widerstand in Reihe, damit der Strom nicht zu groß wird und die LED nicht zerstört wird.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Größe</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Regel in der Reihenschaltung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Formel</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Strom</strong></p></td><td colspan="1" rowspan="1"><p>überall gleich</p></td><td colspan="1" rowspan="1"><p>I = I₁ = I₂ = I₃</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Spannung</strong></p></td><td colspan="1" rowspan="1"><p>teilt sich auf</p></td><td colspan="1" rowspan="1"><p>U = U₁ + U₂ + U₃</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Widerstand</strong></p></td><td colspan="1" rowspan="1"><p>wird addiert</p></td><td colspan="1" rowspan="1"><p>R = R₁ + R₂ + R₃</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Spannungsverhältnis</strong></p></td><td colspan="1" rowspan="1"><p>wie die Widerstände</p></td><td colspan="1" rowspan="1"><p>U₁ / U₂ = R₁ / R₂</p></td></tr>
+</tbody></table></div>
+<h2>📋 Die Prüfungsaufgabe von Mia und Tim</h2>
+<p>Jetzt geht es an die Aufgabe von Herrn Krause. Zuerst sortierst du, was gegeben und was gesucht ist:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gegeben</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gesucht</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p>R₁ = 30 Ω</p></td><td colspan="1" rowspan="1"><p>Stromstärke I</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>R₂ = 80 Ω</p></td><td colspan="1" rowspan="1"><p>Teilspannung U₁</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p>U = 230 V</p></td><td colspan="1" rowspan="1"><p>Teilspannung U₂</p></td></tr>
+</tbody></table></div>
+<p>Die Reihenfolge ist bei solchen Aufgaben immer gleich: erst <strong>Gesamtwiderstand</strong>, dann <strong>Strom</strong>, dann <strong>Teilspannungen</strong>, zum Schluss <strong>Kontrolle</strong>.</p>
+<h2>🧮 Schritt 1 und 2: Gesamtwiderstand und Strom</h2>
+<ol>
+<li><p><strong>Gesamtwiderstand:</strong> R = R₁ + R₂ = 30 Ω + 80 Ω = <strong>110 Ω</strong></p></li>
+<li><p><strong>Strom</strong> mit dem ohmschen Gesetz: I = U / R = 230 V / 110 Ω ≈ <strong>2,091 A</strong></p></li>
+</ol>
+<p>Rechne mit <strong>drei Nachkommastellen</strong> weiter. Rundest du hier zu früh, stimmt die Kontrolle am Ende nicht mehr genau. Dieser Strom von 2,091 A <strong>fließt durch beide Widerstände</strong>.</p>
+<h2>🧮 Schritt 3 und 4: Teilspannungen und Kontrolle</h2>
+<ol>
+<li><p><strong>Teilspannung an R₁:</strong> U₁ = I · R₁ = 2,091 A · 30 Ω ≈ <strong>62,7 V</strong></p></li>
+<li><p><strong>Teilspannung an R₂:</strong> U₂ = I · R₂ = 2,091 A · 80 Ω ≈ <strong>167,3 V</strong></p></li>
+<li><p><strong>Kontrolle:</strong> U₁ + U₂ = 62,7 V + 167,3 V = <strong>230 V</strong>. Das ist genau die Gesamtspannung, die Rechnung stimmt.</p></li>
+</ol>
+{{IMG3}}
+<p>Außerdem passt die zweite Kontrolle: Am <strong>größeren Widerstand R₂</strong> fällt auch die <strong>größere Spannung</strong> ab. Das Verhältnis stimmt ebenfalls: 167,3 V / 62,7 V ≈ 2,67 und 80 Ω / 30 Ω ≈ 2,67.</p>
+<p><strong>Der direkte Weg ohne Strom:</strong> Du kannst eine Teilspannung auch ohne den Umweg über den Strom berechnen. Es gilt:</p>
+<p><strong>U₁ = U · R₁ / R</strong></p>
+<p>Eingesetzt: U₁ = 230 V · 30 Ω / 110 Ω ≈ <strong>62,7 V</strong>. Das Ergebnis ist dasselbe. Diese Spannungsteilerformel ist praktisch, wenn in der Prüfung nur nach einer Teilspannung gefragt wird.</p>
+<blockquote><p>Erst R, dann I, dann die Teilspannungen. Und zum Schluss immer die Summe prüfen.</p></blockquote>
+<h2>🔍 Was passiert mit dem Strom?</h2>
+<p>Mit den drei Regeln kannst du Veränderungen an der Schaltung sofort beurteilen. Herr Krause stellt zwei Fälle:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Fall</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Was passiert</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Begründung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Fall 1:</strong> dritter Widerstand in Reihe</p></td><td colspan="1" rowspan="1"><p>R wird größer, I wird kleiner</p></td><td colspan="1" rowspan="1"><p>Der Gesamtwiderstand steigt, die Spannung bleibt gleich.</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Fall 2:</strong> R₂ brennt durch</p></td><td colspan="1" rowspan="1"><p>Kein Strom mehr, auch nicht durch R₁</p></td><td colspan="1" rowspan="1"><p>Der Stromkreis ist unterbrochen, es gibt nur einen Weg.</p></td></tr>
+</tbody></table></div>
+<p>Der Merksatz dazu: <strong>In der Reihenschaltung gibt es nur einen Strom für alle Widerstände.</strong></p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia und Tim lösen die Aufgabe gemeinsam auf dem Arbeitsblatt: R = 110 Ω, I ≈ 2,091 A, U₁ ≈ 62,7 V, U₂ ≈ 167,3 V. Tim hatte zuerst mit 2,1 A gerechnet und kam bei der Kontrolle auf 231 V. Mit drei Nachkommastellen passt die Summe genau auf 230 V. 💪 Herr Krause ist zufrieden: Die Kontrolle hat den Rundungsfehler sofort sichtbar gemacht.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Der <strong>Strom</strong> ist in der Reihenschaltung <strong>überall gleich</strong>. Die <strong>Teilspannungen</strong> ergeben zusammen die <strong>Gesamtspannung</strong>. Der <strong>Gesamtwiderstand</strong> ist die <strong>Summe aller Widerstände</strong>. Am <strong>größeren Widerstand</strong> fällt die <strong>größere Spannung</strong> ab. Kontrolliere deine Rechnung immer mit der Summe.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker: <strong>„Welche Spannung liegt an R₁?“</strong> Rechne sauber in der Reihenfolge R, I, U₁, U₂ und runde den Strom nicht zu früh, mindestens drei Nachkommastellen. Mach am Ende immer die <strong>Summenprobe</strong> U₁ + U₂ = U. Und denk daran: Fällt in einer Reihenschaltung ein Bauteil aus, fließt <strong>überhaupt kein Strom</strong> mehr.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Warum ist der Strom in einer Reihenschaltung überall gleich groß?</summary><div data-type="detailsContent"><p>✅ Weil der Strom nur einen einzigen Weg hat. Er kann sich nicht aufteilen und muss nacheinander durch alle Widerstände fließen.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Drei Widerstände mit 10 Ω, 20 Ω und 30 Ω liegen in Reihe. Wie groß ist der Gesamtwiderstand?</summary><div data-type="detailsContent"><p>✅ R = 10 Ω + 20 Ω + 30 Ω = 60 Ω. Er ist größer als der größte Einzelwiderstand.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> R₁ = 30 Ω und R₂ = 80 Ω liegen in Reihe an 230 V. Wie groß ist der Strom?</summary><div data-type="detailsContent"><p>✅ R = 110 Ω. I = 230 V / 110 Ω ≈ 2,091 A.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Berechne in derselben Schaltung U₁ ohne den Strom.</summary><div data-type="detailsContent"><p>✅ U₁ = U · R₁ / R = 230 V · 30 Ω / 110 Ω ≈ 62,7 V. Kontrolle: U₂ = 230 V − 62,7 V = 167,3 V.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> In einer Reihenschaltung aus zwei Widerständen brennt R₂ durch. Was passiert mit dem Strom durch R₁?</summary><div data-type="detailsContent"><p>✅ Es fließt gar kein Strom mehr, auch nicht durch R₁. Der Stromkreis ist unterbrochen.</p></div></details>
+<p></p>

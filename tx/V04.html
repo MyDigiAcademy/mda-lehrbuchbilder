@@ -1,0 +1,87 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Warum es <strong>Toleranzen</strong> gibt und was <strong>Nennmaß</strong>, <strong>Istmaß</strong> und <strong>Abmaße</strong> bedeuten</p></li>
+<li><p>Welche <strong>Begriffe und Kurzzeichen</strong> an <strong>Bohrung</strong> und <strong>Welle</strong> gelten</p></li>
+<li><p>Wie sich <strong>Allgemeintoleranzen</strong>, <strong>frei gewählte Toleranzen</strong> und <strong>ISO-Toleranzen</strong> unterscheiden</p></li>
+<li><p>Wie du <strong>Höchstmaß, Mindestmaß</strong> und <strong>Toleranz</strong> berechnest, auch mit der ISO-Tabelle</p></li>
+</ul>
+<p>👋 Mia soll in der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> eine Welle für eine Lagerbuchse drehen. Auf der Zeichnung steht <strong>Ø 20 h6</strong>. Mia fragt Tim: „Muss die Welle jetzt genau <strong>20,000 mm</strong> haben?“ Tim lacht: Das muss sie nicht. Aber welche Maße sind für die Welle erlaubt? Genau das klärst du in dieser Lektion.</p>
+{{IMG1}}
+<h2>🤔 Warum es Toleranzen gibt</h2>
+<p><strong>Kein Werkstück lässt sich exakt auf das Maß fertigen.</strong> Jedes <strong>Istmaß</strong>, also das tatsächlich am Werkstück vorhandene Maß, weicht etwas ab. Deshalb legt der Konstrukteur eine <strong>Toleranz</strong> fest: Sie ist der <strong>zulässige Bereich, in dem das Istmaß liegen darf</strong>.</p>
+<p>Das Maß, das in der Zeichnung steht, heißt <strong>Nennmaß</strong>. Es ist der Bezugswert, von dem aus die erlaubten Abweichungen angegeben werden.</p>
+<blockquote><p>Je kleiner die Toleranz, desto aufwendiger und teurer ist die Fertigung. Deshalb gilt: so eng wie nötig, nicht enger.</p></blockquote>
+<h2>🕳️ Begriffe an der Bohrung</h2>
+<p>Die Begriffe lassen sich gut an einer Bohrung erklären. Für Bohrungen (Innenmaße) werden <strong>Großbuchstaben</strong> verwendet:</p>
+<ul>
+<li><p><strong>Nulllinie:</strong> entspricht dem <strong>Nennmaß N</strong>.</p></li>
+<li><p><strong>Oberes Abmaß ES:</strong> um wie viel die Bohrung höchstens vom Nennmaß abweichen darf. Im Beispiel liegt es über der Nulllinie.</p></li>
+<li><p><strong>Unteres Abmaß EI:</strong> die kleinste zulässige Abweichung. Im Beispiel liegt es unter der Nulllinie.</p></li>
+<li><p><strong>Höchstmaß G<sub>oB</sub></strong> = N + ES</p></li>
+<li><p><strong>Mindestmaß G<sub>uB</sub></strong> = N + EI</p></li>
+<li><p><strong>Toleranz T<sub>B</sub></strong> = ES minus EI, also der Abstand der beiden Grenzmaße (G<sub>oB</sub> minus G<sub>uB</sub>).</p></li>
+</ul>
+{{IMG2}}
+<p>Wichtig: Das untere Abmaß wird immer <strong>mit seinem Vorzeichen</strong> addiert. Ist EI negativ, wird das Mindestmaß kleiner als das Nennmaß.</p>
+<h2>🧮 Beispiel: Bohrung 20 +0,2 / −0,1</h2>
+<p>Eine Bohrung ist mit <strong>20 +0,2 / −0,1</strong> bemaßt. Gegeben sind also N = 20 mm, ES = +0,2 mm und EI = −0,1 mm.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gesucht</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Rechnung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Ergebnis</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Höchstmaß G<sub>oB</sub></strong></p></td><td colspan="1" rowspan="1"><p>20 mm + 0,2 mm</p></td><td colspan="1" rowspan="1"><p><strong>20,2 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Mindestmaß G<sub>uB</sub></strong></p></td><td colspan="1" rowspan="1"><p>20 mm + (−0,1 mm)</p></td><td colspan="1" rowspan="1"><p><strong>19,9 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Toleranz T<sub>B</sub></strong></p></td><td colspan="1" rowspan="1"><p>20,2 mm minus 19,9 mm (oder 0,2 mm minus (−0,1 mm))</p></td><td colspan="1" rowspan="1"><p><strong>0,3 mm</strong></p></td></tr>
+</tbody></table></div>
+<p>Jede Bohrung <strong>von 19,9 mm bis 20,2 mm</strong> ist also in Ordnung.</p>
+<h2>⚙️ Begriffe an der Welle</h2>
+<p>Bei der Welle (Außenmaß) funktioniert alles genauso. Nur die <strong>Kurzzeichen werden klein geschrieben</strong>:</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Begriff</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bohrung</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Welle</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Oberes Abmaß</strong></p></td><td colspan="1" rowspan="1"><p>ES</p></td><td colspan="1" rowspan="1"><p>es</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Unteres Abmaß</strong></p></td><td colspan="1" rowspan="1"><p>EI</p></td><td colspan="1" rowspan="1"><p>ei</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Höchstmaß</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>oB</sub> = N + ES</p></td><td colspan="1" rowspan="1"><p>G<sub>oW</sub> = N + es</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Mindestmaß</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>uB</sub> = N + EI</p></td><td colspan="1" rowspan="1"><p>G<sub>uW</sub> = N + ei</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Toleranz</strong></p></td><td colspan="1" rowspan="1"><p>T<sub>B</sub> = ES minus EI</p></td><td colspan="1" rowspan="1"><p>T<sub>W</sub> = es minus ei</p></td></tr>
+</tbody></table></div>
+<p>Merk dir: <strong>Großbuchstaben für Bohrungen, Kleinbuchstaben für Wellen.</strong></p>
+<h2>📋 Drei Arten von Toleranzen</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Art</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Kennzeichen</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiel</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Allgemeintoleranzen</strong></p></td><td colspan="1" rowspan="1"><p>Gelten <strong>automatisch</strong> für alle Maße <strong>ohne eigene Angabe</strong></p></td><td colspan="1" rowspan="1"><p>ISO 2768-m: bei 20 mm sind ± 0,2 mm erlaubt</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Frei gewählte Toleranzen</strong></p></td><td colspan="1" rowspan="1"><p>Der Konstrukteur schreibt die Abmaße <strong>direkt an das Maß</strong></p></td><td colspan="1" rowspan="1"><p>20 +0,2 / −0,1</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>ISO-Toleranzen</strong></p></td><td colspan="1" rowspan="1"><p>Angabe mit einer <strong>Toleranzklasse</strong>, genormt</p></td><td colspan="1" rowspan="1"><p>20H7</p></td></tr>
+</tbody></table></div>
+<p>Der Vorteil der ISO-Toleranzen: Weil sie genormt sind, <strong>passen auch Teile verschiedener Hersteller zueinander</strong>.</p>
+<h2>🔤 Aufbau der Toleranzklasse</h2>
+{{IMG3}}
+<p>Am Beispiel <strong>Ø 20H7</strong> (Bohrung) und <strong>Ø 20h6</strong> (Welle):</p>
+<ul>
+<li><p><strong>20:</strong> das <strong>Nennmaß</strong> in mm.</p></li>
+<li><p><strong>Buchstabe (H oder h):</strong> das <strong>Grundabmaß</strong>. Es legt fest, <strong>wo die Toleranz zur Nulllinie liegt</strong> (Lage). Großes H steht für eine Bohrung, kleines h für eine Welle.</p></li>
+<li><p><strong>Zahl dahinter (7 oder 6):</strong> der <strong>Toleranzgrad</strong>. Er legt fest, <strong>wie groß die Toleranz ist</strong>. Je <strong>kleiner die Zahl</strong>, desto <strong>enger die Toleranz</strong>.</p></li>
+</ul>
+<h2>📊 Abmaße aus der Tabelle ablesen</h2>
+<p>Die Abmaße einer Toleranzklasse liest du aus einer <strong>Tabelle der ISO-Toleranzen</strong> ab:</p>
+<ol>
+<li><p><strong>Zeile suchen:</strong> 20 mm liegt im Nennmaßbereich <strong>über 18 bis 24 mm</strong>.</p></li>
+<li><p><strong>Spalte H7:</strong> dort stehen <strong>+21</strong> und <strong>0</strong>.</p></li>
+<li><p><strong>Spalte h6:</strong> dort stehen <strong>0</strong> und <strong>−13</strong>.</p></li>
+<li><p><strong>Einheit beachten:</strong> Die Werte sind in <strong>µm</strong> angegeben. Teile durch 1.000, um mm zu erhalten: 21 µm = 0,021 mm, 13 µm = 0,013 mm.</p></li>
+</ol>
+<h2>✏️ Grenzmaße von Bohrung und Welle berechnen</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Grenzmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bohrung 20H7</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Welle 20h6</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Höchstmaß</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>oB</sub> = 20 + 0,021 = <strong>20,021 mm</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>oW</sub> = 20 + 0 = <strong>20,000 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Mindestmaß</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>uB</sub> = 20 + 0 = <strong>20,000 mm</strong></p></td><td colspan="1" rowspan="1"><p>G<sub>uW</sub> = 20 minus 0,013 = <strong>19,987 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Toleranz</strong></p></td><td colspan="1" rowspan="1"><p>T<sub>B</sub> = 0,021 mm (21 µm)</p></td><td colspan="1" rowspan="1"><p>T<sub>W</sub> = 0,013 mm (13 µm)</p></td></tr>
+</tbody></table></div>
+<p>Für Mias Welle gilt also: Jedes Istmaß <strong>von 19,987 mm bis 20,000 mm</strong> ist gut. Genau 20,000 mm muss sie nicht treffen, darf aber auch nicht darüber liegen. Die Toleranz beträgt nur <strong>13 µm</strong>, also 0,013 mm.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Eine Bohrung <strong>20H7</strong> misst <strong>20,025 mm</strong>. Sie ist größer als das Höchstmaß von 20,021 mm und damit <strong>Ausschuss</strong>. Mias Welle <strong>20h6</strong> misst <strong>19,990 mm</strong>. Sie liegt zwischen 19,987 mm und 20,000 mm und ist damit <strong>gut</strong>. 💪 Mia weiß jetzt: Gut ist alles zwischen Mindestmaß und Höchstmaß.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p><strong>Höchstmaß = Nennmaß + oberes Abmaß</strong>, <strong>Mindestmaß = Nennmaß + unteres Abmaß</strong>. <strong>Toleranz = Höchstmaß minus Mindestmaß</strong>. Großbuchstaben (ES, EI) für Bohrungen, Kleinbuchstaben (es, ei) für Wellen. Es gibt Allgemeintoleranzen, frei gewählte Toleranzen und ISO-Toleranzen. In der Toleranzklasse steht der <strong>Buchstabe für die Lage</strong>, die <strong>Zahl für die Größe</strong> der Toleranz.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Häufigster Fehler: das <strong>Vorzeichen</strong> beim unteren Abmaß. Bei 20 +0,2 / −0,1 ist das Mindestmaß 19,9 mm, nicht 20,1 mm. Und: Werte aus der ISO-Tabelle sind in <strong>µm</strong>. Vor dem Addieren immer in mm umrechnen (13 µm = 0,013 mm).</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was ist eine Toleranz und warum gibt es sie?</summary><div data-type="detailsContent"><p>✅ Die Toleranz ist der zulässige Bereich, in dem das Istmaß liegen darf. Es gibt sie, weil sich kein Werkstück exakt auf das Nennmaß fertigen lässt.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Berechne Höchstmaß, Mindestmaß und Toleranz für 20 +0,2 / −0,1.</summary><div data-type="detailsContent"><p>✅ Höchstmaß 20 + 0,2 = 20,2 mm, Mindestmaß 20 + (−0,1) = 19,9 mm, Toleranz 20,2 minus 19,9 = 0,3 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Was bedeuten Buchstabe und Zahl in der Toleranzklasse 20H7?</summary><div data-type="detailsContent"><p>✅ 20 ist das Nennmaß in mm. H ist das Grundabmaß (Lage der Toleranz zur Nulllinie, Großbuchstabe für Bohrung). 7 ist der Toleranzgrad (Größe der Toleranz).</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Welche Grenzmaße hat eine Welle 20h6, wenn die Tabelle 0 und −13 µm angibt?</summary><div data-type="detailsContent"><p>✅ Höchstmaß 20,000 mm, Mindestmaß 20 minus 0,013 = 19,987 mm.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Eine Bohrung 20H7 misst 20,025 mm. Ist sie gut?</summary><div data-type="detailsContent"><p>✅ Nein. Das Höchstmaß liegt bei 20,021 mm, die Bohrung ist zu groß und damit Ausschuss.</p></div></details>
+<p></p>

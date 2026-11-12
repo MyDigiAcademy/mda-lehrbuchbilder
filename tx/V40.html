@@ -1,0 +1,86 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was <strong>Härte</strong> ist und welche drei <strong>Prüfverfahren</strong> es gibt</p></li>
+<li><p>Wie du die <strong>Brinellhärte</strong> berechnest und das <strong>Kurzzeichen HBW</strong> liest</p></li>
+<li><p>Wie du die <strong>Vickershärte</strong> aus den Eindruckdiagonalen berechnest</p></li>
+<li><p>Wie die Prüfung nach <strong>Rockwell</strong> in vier Schritten abläuft und wann du <strong>HRC</strong> oder <strong>HRBW</strong> nimmst</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> hat Tim <strong>20 Bolzen gehärtet</strong>. Jetzt müssen sie geprüft werden. Auf der Zeichnung steht: <strong>Härte 58 bis 62 HRC</strong>. Mia fragt sich, wie man Härte überhaupt misst. Dafür gibt es eigene <strong>Prüfverfahren</strong> mit <strong>genormten Prüfkörpern</strong>.</p>
+{{IMG1}}
+<h2>🔎 Was ist Härte?</h2>
+<p>Härteprüfungen gehören in vielen Betrieben zur <strong>Qualitätskontrolle</strong>. Sie zeigen, ob eine <strong>Wärmebehandlung gelungen</strong> ist und ob ein Bauteil seiner Aufgabe gewachsen ist. Weil nur ein winziger Eindruck entsteht, bleibt das Teil meist <strong>verwendbar</strong>.</p>
+<blockquote><p>Härte ist der Widerstand eines Werkstoffs gegen das Eindringen eines härteren Prüfkörpers. Je kleiner der Eindruck, desto härter der Werkstoff.</p></blockquote>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Verfahren</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Prüfkörper</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gemessen wird</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Brinell</strong></p></td><td colspan="1" rowspan="1"><p>Kugel</p></td><td colspan="1" rowspan="1"><p>Durchmesser des Eindrucks</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Vickers</strong></p></td><td colspan="1" rowspan="1"><p>Diamantpyramide</p></td><td colspan="1" rowspan="1"><p>Diagonalen des Eindrucks</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rockwell</strong></p></td><td colspan="1" rowspan="1"><p>Kegel oder Kugel</p></td><td colspan="1" rowspan="1"><p>Eindringtiefe</p></td></tr>
+</tbody></table></div>
+<h2>⚪ Härteprüfung nach Brinell</h2>
+<p>Der Prüfkörper ist eine <strong>Kugel aus Hartmetall</strong> mit dem Durchmesser <strong>D</strong>. Sie wird mit der <strong>Prüfkraft F</strong> in die Probe gedrückt. In der Draufsicht auf die Probenoberfläche bleibt ein <strong>runder Kugeleindruck</strong>. Du misst zwei senkrecht zueinander liegende Durchmesser <strong>d<sub>1</sub></strong> und <strong>d<sub>2</sub></strong> und bildest den <strong>Mittelwert d</strong>.</p>
+<p>Daraus berechnest du die <strong>Brinellhärte HBW</strong>:</p>
+<blockquote><p>HBW = 0,102 · 2 · F / (π · D · (D − √(D² − d²)))</p></blockquote>
+<ul>
+<li><p>Das <strong>W</strong> steht für die Kugel aus <strong>Hartmetall</strong>, also <strong>Wolframcarbid</strong>.</p></li>
+<li><p>Kraft und Kugel müssen zusammenpassen. Für <strong>Stahl</strong> gilt: <strong>0,102 · F / D² = 30</strong>.</p></li>
+<li><p>Brinell eignet sich für <strong>weiche bis mittelharte Werkstoffe</strong>, etwa ungehärteten Stahl, Gusseisen oder Aluminium.</p></li>
+</ul>
+<h2>🧮 Beispiel: Brinellhärte berechnen</h2>
+<p><strong>Gegeben:</strong> D = 10 mm, F = 29 420 N, d<sub>1</sub> = 3,64 mm, d<sub>2</sub> = 3,68 mm</p>
+<ol>
+<li><p><strong>Mittelwert:</strong> d = (3,64 mm + 3,68 mm) : 2 = <strong>3,66 mm</strong></p></li>
+<li><p><strong>Wurzel:</strong> √(10² − 3,66²) mm = √(100 − 13,40) mm = <strong>9,306 mm</strong></p></li>
+<li><p><strong>Nenner:</strong> π · 10 mm · (10 − 9,306) mm = π · 10 mm · 0,694 mm = <strong>21,80 mm²</strong></p></li>
+<li><p><strong>Zähler:</strong> 0,102 · 2 · 29 420 ≈ <strong>6002</strong></p></li>
+<li><p><strong>Ergebnis:</strong> HBW = 6002 : 21,80 ≈ <strong>275</strong></p></li>
+</ol>
+{{IMG2}}
+<h2>🏷️ Kurzzeichen Brinell: 275 HBW 10/3000/20</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Teil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bedeutung</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>275</strong></p></td><td colspan="1" rowspan="1"><p>Härtewert</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>HBW</strong></p></td><td colspan="1" rowspan="1"><p>Härte nach Brinell, gemessen mit Hartmetallkugel</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>10</strong></p></td><td colspan="1" rowspan="1"><p>Kugeldurchmesser 10 mm</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>3000</strong></p></td><td colspan="1" rowspan="1"><p>Kennzahl der Prüfkraft: 3000 · 9,807 = 29 420 N</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>20</strong></p></td><td colspan="1" rowspan="1"><p>Einwirkdauer 20 s</p></td></tr>
+</tbody></table></div>
+<p><strong>Achtung:</strong> 3000 ist <strong>nicht</strong> die Prüfkraft in Newton, sondern eine Kennzahl. Erst mal 9,807 ergibt sich die Kraft in N. Fehlt die Zeitangabe, gilt eine Einwirkdauer von <strong>10 bis 15 s</strong>.</p>
+<h2>💎 Härteprüfung nach Vickers</h2>
+<p>Das Prinzip ist ähnlich wie bei Brinell. Der Prüfkörper ist aber eine <strong>Pyramide aus Diamant</strong> mit einem <strong>Spitzenwinkel von 136°</strong>. Sie wird mit der Prüfkraft F in die Probe gedrückt. Zurück bleibt ein <strong>quadratischer Pyramideneindruck</strong>. Du misst die beiden <strong>Diagonalen d<sub>1</sub> und d<sub>2</sub></strong> und bildest den Mittelwert d.</p>
+<blockquote><p>HV = 0,189 · F / d²</p></blockquote>
+<p><strong>Beispiel:</strong> F = 98,07 N, d<sub>1</sub> = 0,282 mm, d<sub>2</sub> = 0,286 mm</p>
+<ol>
+<li><p><strong>Mittelwert:</strong> d = (0,282 mm + 0,286 mm) : 2 = <strong>0,284 mm</strong></p></li>
+<li><p><strong>Einsetzen:</strong> HV = 0,189 · 98,07 / 0,284² ≈ <strong>230</strong></p></li>
+</ol>
+<p>Die Vickershärte ist eine <strong>reine Zahl ohne Einheit</strong>. Weil <strong>d im Quadrat</strong> steht, wirken sich kleine Messfehler stark aus. Miss deshalb sorgfältig.</p>
+<p><strong>Kurzzeichen 230 HV 10/20:</strong> 230 ist der Härtewert, HV heißt Härte nach Vickers, 10 ist die Kennzahl der Prüfkraft (10 · 9,807 = 98,07 N), 20 ist die Einwirkdauer in Sekunden. Vickers eignet sich für <strong>alle Werkstoffe</strong>, auch für sehr harte Stähle und dünne Schichten.</p>
+<h2>📏 Härteprüfung nach Rockwell (HRC)</h2>
+<p>Bei Rockwell wird die <strong>Eindringtiefe</strong> gemessen. Der Prüfkörper bei <strong>HRC</strong> ist ein <strong>Diamantkegel mit 120° Spitzenwinkel</strong>. Der Ablauf in vier Schritten:</p>
+<ol>
+<li><p><strong>Prüfvorkraft 98 N aufbringen:</strong> Der Kegel dringt ein kleines Stück ein. Die Vorkraft legt eine <strong>Bezugsebene</strong> fest, damit kleine Unebenheiten der Oberfläche nicht stören.</p></li>
+<li><p><strong>Messuhr auf 0 stellen:</strong> Die Eindringtiefe unter Vorkraft ist der Nullpunkt.</p></li>
+<li><p><strong>Zusätzliche Prüfkraft 1373 N aufbringen:</strong> Zusammen ergibt das eine Prüfgesamtkraft von 98 N + 1373 N = <strong>1471 N</strong>. Der Kegel dringt tiefer ein.</p></li>
+<li><p><strong>Zusätzliche Prüfkraft wegnehmen:</strong> Die Vorkraft bleibt. Jetzt wird die <strong>bleibende Eindringtiefe h</strong> gemessen. Das Gerät zeigt die Härte direkt an, z. B. <strong>60 HRC</strong>.</p></li>
+</ol>
+{{IMG3}}
+<p>Aus der bleibenden Eindringtiefe h ergibt sich die Härte:</p>
+<blockquote><p>HRC = 100 − h / 0,002 mm</p></blockquote>
+<p><strong>Beispiel:</strong> h = 0,08 mm. Dann gilt: 0,08 mm : 0,002 mm = 40, also HRC = 100 − 40 = <strong>60 HRC</strong>.</p>
+<h2>⚙️ HRC und HRBW</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Verfahren</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Prüfkörper</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Prüfgesamtkraft</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Einsatz</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>HRC</strong></p></td><td colspan="1" rowspan="1"><p>Diamantkegel 120°</p></td><td colspan="1" rowspan="1"><p>1471 N</p></td><td colspan="1" rowspan="1"><p>gehärtete Stähle</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>HRBW</strong></p></td><td colspan="1" rowspan="1"><p>Hartmetallkugel Ø 1,5875 mm</p></td><td colspan="1" rowspan="1"><p>980,7 N</p></td><td colspan="1" rowspan="1"><p>weichere Werkstoffe</p></td></tr>
+</tbody></table></div>
+<p>Im Kurzzeichen <strong>60 HRBW</strong> ist 60 der Härtewert, HR steht für Rockwell, B für die Skala und W für die Hartmetallkugel. Der große <strong>Vorteil von Rockwell</strong>: Es geht <strong>schnell</strong>, und der Härtewert ist <strong>sofort ablesbar</strong>. Das ist gut für die Fertigung.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia prüft Tims gehärtete Bolzen nach <strong>Rockwell HRC</strong>, denn die Zeichnung verlangt 58 bis 62 HRC. Das Gerät zeigt <strong>60 HRC</strong>: Die Bolzen liegen im Toleranzbereich und sind in Ordnung. 💪 Für ein Kurzzeichen wie <strong>350 HBW 10/3000</strong> weiß sie jetzt: Kugel 10 mm, Prüfkraft 3000 · 9,807 = 29 420 N, Einwirkdauer 10 bis 15 s, weil keine Zeit angegeben ist.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Härte ist der <strong>Widerstand gegen das Eindringen</strong> eines härteren Prüfkörpers. <strong>Brinell HBW:</strong> Hartmetallkugel, Eindruckdurchmesser messen; Kraft-Kennzahl · 9,807 = Prüfkraft in N. <strong>Vickers HV:</strong> Diamantpyramide, Diagonalen messen. <strong>Rockwell HRC:</strong> bleibende Eindringtiefe, Diamantkegel, für gehärtete Stähle.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Klassiker: Im Kurzzeichen <strong>275 HBW 10/3000/20</strong> ist 3000 <strong>keine Kraft in Newton</strong>, sondern die Kennzahl. Rechne immer mal 9,807. Und: Bei Vickers geht d <strong>im Quadrat</strong> in die Formel ein, deshalb immer zuerst sauber den Mittelwert bilden.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was misst du bei Brinell, Vickers und Rockwell?</summary><div data-type="detailsContent"><p>✅ Brinell: Durchmesser des Kugeleindrucks. Vickers: Diagonalen des Pyramideneindrucks. Rockwell: bleibende Eindringtiefe.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Was bedeutet das Kurzzeichen 230 HV 10/20?</summary><div data-type="detailsContent"><p>✅ Härtewert 230 nach Vickers, Prüfkraft 10 · 9,807 = 98,07 N, Einwirkdauer 20 s.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Bei einer HRC-Prüfung beträgt die bleibende Eindringtiefe h = 0,08 mm. Wie groß ist die Härte?</summary><div data-type="detailsContent"><p>✅ HRC = 100 − 0,08 mm : 0,002 mm = 100 − 40 = 60 HRC.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Wozu dient die Prüfvorkraft von 98 N bei Rockwell?</summary><div data-type="detailsContent"><p>✅ Sie legt eine Bezugsebene fest. So stören kleine Unebenheiten der Oberfläche die Messung nicht.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Für welche Werkstoffe eignet sich Brinell, für welche Vickers?</summary><div data-type="detailsContent"><p>✅ Brinell für weiche bis mittelharte Werkstoffe wie ungehärteten Stahl, Gusseisen oder Aluminium. Vickers für alle Werkstoffe, auch sehr harte Stähle und dünne Schichten.</p></div></details>
+<p></p>

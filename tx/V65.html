@@ -1,0 +1,102 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Wie sich <strong>Steuern</strong> (offener Wirkungsablauf) und <strong>Regeln</strong> (geschlossener Wirkungsablauf) unterscheiden</p></li>
+<li><p>Welche Größen der <strong>Regelkreis</strong> hat und wie du die <strong>Regeldifferenz e = w − x</strong> berechnest</p></li>
+<li><p>Wie die <strong>Drehzahlregelung</strong> an der Spindel einer <strong>CNC-Drehmaschine</strong> funktioniert</p></li>
+<li><p>Wie <strong>Zweipunktregler</strong>, <strong>P-</strong>, <strong>I-</strong>, <strong>PI-</strong> und <strong>PID-Regler</strong> arbeiten</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> dreht Tim eine <strong>Welle</strong> auf der <strong>CNC-Drehmaschine</strong>. Im Programm stehen <strong>1.200 1/min</strong>. Beim <strong>Schruppen</strong> nimmt der Drehmeißel immer dickere Späne ab. Mia wundert sich: Die Anzeige zeigt trotzdem weiter 1.200 1/min. Warum wird die Spindel nicht langsamer? Ausbilder Herr Krause lächelt: „Weil die Drehzahl <strong>geregelt</strong> wird.“ Was steckt dahinter?</p>
+{{IMG1}}
+<h2>🔀 Steuern oder Regeln?</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Steuern</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Regeln</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Prinzip</strong></p></td><td colspan="1" rowspan="1"><p>Wert vorgeben, Maschine führt aus</p></td><td colspan="1" rowspan="1"><p>Messen, vergleichen, stellen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Rückmeldung</strong></p></td><td colspan="1" rowspan="1"><p>Keine, das Ergebnis wird nicht zurückgemeldet</p></td><td colspan="1" rowspan="1"><p>Ja, das Ergebnis wirkt auf sich selbst zurück</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wirkungsablauf</strong></p></td><td colspan="1" rowspan="1"><p><strong>offen</strong></p></td><td colspan="1" rowspan="1"><p><strong>geschlossen</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Beispiel</strong></p></td><td colspan="1" rowspan="1"><p>Drehzahl am Getriebe der Säulenbohrmaschine einstellen. Sinkt sie unter Last, gleicht das niemand aus.</p></td><td colspan="1" rowspan="1"><p>Drehzahl der CNC-Spindel wird laufend gemessen und nachgestellt.</p></td></tr>
+</tbody></table></div>
+<blockquote><p>Regeln heißt messen, vergleichen und stellen, immer wieder im Kreis.</p></blockquote>
+<h2>🎚️ Festwertregelung und Folgeregelung</h2>
+<ul>
+<li><p><strong>Festwertregelung:</strong> Der <strong>Sollwert bleibt gleich</strong>. Die Regelung hält ihn konstant, zum Beispiel die Drehzahl der Spindel oder die Temperatur im Härteofen.</p></li>
+<li><p><strong>Folgeregelung:</strong> Der <strong>Sollwert ändert sich</strong> ständig nach einem vorgegebenen Verlauf. Beispiel: Die Position des Drehmeißels folgt genau der Kontur aus dem CNC-Programm.</p></li>
+</ul>
+<h2>🔄 Der Regelkreis und seine Größen</h2>
+<p>Jeder Regelkreis besteht aus denselben Bausteinen und Größen:</p>
+{{IMG2}}
+<ul>
+<li><p><strong>Regelstrecke:</strong> Der Teil der Anlage, in dem eine Größe beeinflusst werden soll, zum Beispiel die Spindel mit ihrem Antrieb.</p></li>
+<li><p><strong>Regelgröße x:</strong> Die Größe, die geregelt wird, hier die Drehzahl.</p></li>
+<li><p><strong>Messeinrichtung:</strong> Erfasst die Regelgröße fortlaufend. Ihr Messwert heißt <strong>Istwert</strong> der Regelgröße.</p></li>
+<li><p><strong>Führungsgröße w:</strong> Gibt den <strong>Sollwert</strong> vor, also den Wert, den die Regelgröße haben soll.</p></li>
+<li><p><strong>Vergleichsstelle:</strong> Der kleine Kreis im Schema. Hier entsteht die <strong>Regeldifferenz e = w − x</strong>.</p></li>
+<li><p><strong>Regeleinrichtung:</strong> Wertet e aus und bildet daraus die <strong>Stellgröße y</strong>. Mit ihr <strong>greift sie in die Regelstrecke ein</strong>.</p></li>
+<li><p><strong>Störgröße z:</strong> Wirkt <strong>von außen</strong> und verändert die Regelgröße ungewollt, zum Beispiel eine höhere Schnittkraft.</p></li>
+</ul>
+<h2>🧮 Regeldifferenz berechnen</h2>
+<p>Für Tims Welle gilt:</p>
+<ul>
+<li><p>Führungsgröße: <strong>w = 1.200 1/min</strong></p></li>
+<li><p>Durch den dicken Span sinkt die Drehzahl kurz auf <strong>x = 1.140 1/min</strong>.</p></li>
+</ul>
+<p><strong>Rechnung:</strong> e = w − x = 1.200 1/min − 1.140 1/min = <strong>60 1/min</strong></p>
+<ul>
+<li><p><strong>e positiv:</strong> Die Spindel ist zu langsam, der Regler <strong>erhöht</strong> die Stellgröße y.</p></li>
+<li><p><strong>e = 0:</strong> Der Sollwert ist erreicht.</p></li>
+<li><p><strong>e negativ:</strong> Die Spindel ist zu schnell, der Regler <strong>nimmt</strong> die Stellgröße <strong>zurück</strong>.</p></li>
+</ul>
+<h2>⚙️ Drehzahlregelung an der Spindel</h2>
+<p>So sieht der Regelkreis an der Drehmaschine konkret aus:</p>
+{{IMG3}}
+<ul>
+<li><p><strong>Regelstrecke:</strong> Die <strong>Arbeitsspindel</strong> trägt das Spannfutter. Ein <strong>Motor</strong> treibt sie über einen <strong>Zahnriemen</strong> an. Spindel und Antrieb bilden die Regelstrecke.</p></li>
+<li><p><strong>Messeinrichtung:</strong> Am linken Ende der Spindel sitzt der <strong>Tachogenerator</strong>. Er erfasst laufend die Drehzahl.</p></li>
+<li><p><strong>x: Drehzahl-Istwert</strong> (Regelgröße), das Signal vom Tachogenerator.</p></li>
+<li><p><strong>w: Drehzahl-Sollwert</strong> (Führungsgröße), vorgegeben von der <strong>CNC-Steuerung</strong> aus dem Programm.</p></li>
+<li><p><strong>Vergleichsstelle:</strong> Hier entsteht die Regeldifferenz.</p></li>
+<li><p><strong>y: Stellgröße</strong> an den Motor, gebildet vom <strong>Drehzahlregler</strong>. Läuft die Spindel zu langsam, bekommt der Motor mehr Energie.</p></li>
+<li><p><strong>z: Bremse</strong>, sie steht für die Störgröße und belastet die Spindel wie eine große Schnittkraft. Genau das passiert beim Schruppen von Tims Welle.</p></li>
+</ul>
+<h2>🔌 Unstetige und stetige Regler</h2>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Gruppe</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Arbeitsweise</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Beispiel</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Unstetig</strong></p></td><td colspan="1" rowspan="1"><p>Nur wenige <strong>feste Schaltzustände</strong>, keine Zwischenstufen</p></td><td colspan="1" rowspan="1"><p>Zweipunktregler (Ein, Aus): Thermostat am Härteofen</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Stetig</strong></p></td><td colspan="1" rowspan="1"><p>Stellgröße <strong>stufenlos</strong>, je nach Größe der Abweichung, so viel wie nötig</p></td><td colspan="1" rowspan="1"><p>Ventil öffnet nur so weit wie nötig, Drehzahlregelung der Spindel</p></td></tr>
+</tbody></table></div>
+<h2>🌡️ Der Zweipunktregler</h2>
+<p>Am Beispiel eines <strong>Ofens</strong>:</p>
+<ul>
+<li><p><strong>Stellgröße</strong> ist der <strong>Heizstrom</strong>. Er ist entweder <strong>ein oder aus</strong>.</p></li>
+<li><p><strong>Regelgröße</strong> ist die <strong>Temperatur</strong>. Erreicht sie die <strong>obere Grenztemperatur</strong>, schaltet der Regler aus.</p></li>
+<li><p>Fällt sie auf die <strong>untere Grenztemperatur</strong>, schaltet er wieder ein.</p></li>
+<li><p>Der Abstand zwischen beiden Grenzen heißt <strong>Schaltdifferenz</strong>.</p></li>
+</ul>
+<p>Die Temperatur <strong>pendelt</strong> deshalb ständig um den Sollwert, der als mittlere Temperatur zwischen den beiden Grenzen liegt.</p>
+<h2>📈 P-, I-, D-, PI- und PID-Regler</h2>
+<p><strong>P-Regler (Proportionalregler):</strong> Ändert sich die Regelgröße sprunghaft, entsteht eine Regelabweichung e. Die Stellgröße springt <strong>sofort</strong> auf einen neuen Wert, der <strong>proportional</strong> zur Abweichung ist: doppelte Abweichung, doppelte Stellgröße (Sprungantwort). Vorteil: Er reagiert <strong>schnell</strong>. Nachteil: Es bleibt immer eine kleine <strong>bleibende Regelabweichung</strong>.</p>
+<p><strong>I-Regler (Integralregler):</strong> Seine Stellgröße ändert sich, <strong>solange eine Regelabweichung besteht</strong>. Je größer die Abweichung, desto schneller steigt sie: Eine große Abweichung e1 ergibt eine steile Linie (1), eine kleinere Abweichung e2 eine flachere Linie (2). Er stellt so lange nach, bis die Abweichung <strong>ganz verschwunden</strong> ist, ist dafür aber <strong>langsam</strong>.</p>
+<p><strong>PI-Regler:</strong> Kombination aus beiden: <strong>schnell</strong> durch den P-Anteil und <strong>genau</strong> durch den I-Anteil.</p>
+<p><strong>D-Anteil:</strong> Reagiert auf die <strong>Geschwindigkeit</strong>, mit der sich die Regelgröße ändert. Bei einem Sprung gibt er sofort einen <strong>kurzen, kräftigen Stoß</strong>, danach nichts mehr. Deshalb wird er <strong>nie allein</strong> eingesetzt.</p>
+<p><strong>PID-Regler:</strong> Vereint alle drei Anteile. Zuerst greift der <strong>D-Anteil</strong> schnell ein, dann hält der <strong>P-Anteil</strong> dagegen, und der <strong>I-Anteil</strong> beseitigt die restliche Abweichung vollständig.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Regler</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Stärke</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Schwäche</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>P</strong></p></td><td colspan="1" rowspan="1"><p>reagiert sofort</p></td><td colspan="1" rowspan="1"><p>bleibende Regelabweichung</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>I</strong></p></td><td colspan="1" rowspan="1"><p>keine bleibende Abweichung</p></td><td colspan="1" rowspan="1"><p>langsam</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>D</strong></p></td><td colspan="1" rowspan="1"><p>reagiert auf Änderungen mit kurzem Stoß</p></td><td colspan="1" rowspan="1"><p>nie allein einsetzbar</p></td></tr>
+</tbody></table></div>
+<blockquote><p>PI-Regler: schnell und genau. PID-Regler: zuerst D, dann P, dann I.</p></blockquote>
+<h2>✏️ Welcher Regler passt?</h2>
+<p><strong>Fall 1:</strong> Ein Härteofen schaltet seine Heizung nur ein und aus.</p>
+<p><strong>Lösung:</strong> Ein <strong>unstetiger Zweipunktregler</strong>. Die Temperatur pendelt um den Sollwert.</p>
+<p><strong>Fall 2:</strong> Eine Spindel soll ihre Drehzahl schnell und ohne bleibende Abweichung halten.</p>
+<p><strong>Lösung:</strong> Ein <strong>stetiger Regler mit I-Anteil</strong>, also ein <strong>PI-</strong> oder <strong>PID-Regler</strong>.</p>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Und Tims Spindel? Beim dicken Span bremst die Schnittkraft (Störgröße z) die Spindel auf 1.140 1/min. Der Tachogenerator meldet den Istwert, die Vergleichsstelle bildet e = 60 1/min, der Drehzahlregler erhöht die Stellgröße am Motor. 💪 Nach kurzer Zeit dreht die Spindel wieder mit 1.200 1/min, und auf der Anzeige ist davon kaum etwas zu sehen.</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>1. <strong>Steuern</strong> ist ein offener, <strong>Regeln</strong> ein geschlossener Wirkungsablauf. 2. Im Regelkreis gilt: <strong>e = w − x</strong>. 3. Die <strong>Stellgröße y</strong> gleicht die Wirkung der <strong>Störgröße z</strong> aus. 4. <strong>Reglerarten:</strong> Zweipunktregler schaltet ein und aus, P ist schnell, I ist genau, D reagiert auf Änderungen.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Lerne die <strong>Buchstaben</strong> sicher: x Regelgröße (Istwert), w Führungsgröße (Sollwert), e Regeldifferenz, y Stellgröße, z Störgröße. Typische Frage: Welcher Regler hat eine bleibende Regelabweichung? Antwort: der <strong>P-Regler</strong>. Welcher beseitigt sie? Ein Regler mit <strong>I-Anteil</strong>.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was unterscheidet Steuern von Regeln?</summary><div data-type="detailsContent"><p>✅ Beim Steuern wird ein Wert vorgegeben und ausgeführt, ohne Rückmeldung (offener Wirkungsablauf). Beim Regeln wird laufend gemessen, mit dem Sollwert verglichen und nachgestellt (geschlossener Wirkungsablauf).</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Der Sollwert beträgt 1.200 1/min, die Spindel dreht nur mit 1.140 1/min. Wie groß ist die Regeldifferenz und wie reagiert der Regler?</summary><div data-type="detailsContent"><p>✅ e = w − x = 1.200 1/min − 1.140 1/min = 60 1/min. Die Regeldifferenz ist positiv, die Spindel ist zu langsam, also erhöht der Regler die Stellgröße.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Welche Aufgabe hat der Tachogenerator in der Drehzahlregelung?</summary><div data-type="detailsContent"><p>✅ Er ist die Messeinrichtung und erfasst laufend die Drehzahl. Sein Signal ist der Drehzahl-Istwert, also die Regelgröße x.</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Was ist die Schaltdifferenz beim Zweipunktregler?</summary><div data-type="detailsContent"><p>✅ Der Abstand zwischen oberer und unterer Grenztemperatur. Oben schaltet der Regler aus, unten wieder ein, die Temperatur pendelt um den Sollwert.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Warum kombiniert man P- und I-Regler zum PI-Regler?</summary><div data-type="detailsContent"><p>✅ Der P-Anteil reagiert schnell, hinterlässt aber eine bleibende Regelabweichung. Der I-Anteil beseitigt sie vollständig, ist aber langsam. Zusammen ist der Regler schnell und genau.</p></div></details>
+<p></p>

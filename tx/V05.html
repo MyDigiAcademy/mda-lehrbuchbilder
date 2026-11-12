@@ -1,0 +1,77 @@
+<h2>🎯 Das lernst du in dieser Lektion</h2>
+<ul>
+<li><p>Was die <strong>Nulllinie</strong> zeigt und wie du <strong>Toleranzzonen</strong> darüber und darunter liest</p></li>
+<li><p>Wie die <strong>Grundabmaße von A bis ZC</strong> (Bohrungen) und <strong>a bis zc</strong> (Wellen) angeordnet sind</p></li>
+<li><p>Welche besondere Rolle die Toleranzzonen <strong>H</strong> und <strong>h</strong> spielen</p></li>
+<li><p>Wie du die Toleranzzonen von <strong>14H7</strong> und <strong>14h6</strong> bestimmst und berechnest</p></li>
+</ul>
+<p>👋 In der Lehrwerkstatt der <strong>Muster Maschinenbau GmbH</strong> baut Mia eine <strong>Buchse</strong> und einen <strong>Bolzen</strong>. Die Bohrung der Buchse ist mit <strong>14H7</strong> bemaßt, der Bolzen mit <strong>14h6</strong>. Tim hat schon die Toleranztabelle herausgesucht. Beide wissen: Der Buchstabe zeigt die <strong>Lage</strong>, die Zahl die <strong>Größe</strong> der Toleranz. Doch wo genau liegen die beiden Toleranzzonen? Über oder unter 14 mm?</p>
+{{IMG1}}
+<h2>📈 Nulllinie und Abmaße</h2>
+<p>Toleranzzonen werden in einem Schaubild dargestellt. Das Prinzip ist immer gleich, egal welches Nennmaß:</p>
+<ul>
+<li><p>Die <strong>waagerechte Nulllinie</strong> steht für das <strong>Nennmaß</strong>.</p></li>
+<li><p><strong>Senkrecht</strong> sind die <strong>Abmaße in µm</strong> aufgetragen.</p></li>
+<li><p>Liegt eine Zone <strong>über der Nulllinie</strong>, ist das Maß <strong>größer</strong> als das Nennmaß (Plus). Die Zahlen am Rand zeigen, um wie viele µm.</p></li>
+<li><p>Liegt sie <strong>unter der Nulllinie</strong>, ist das Maß <strong>kleiner</strong> als das Nennmaß (Minus).</p></li>
+</ul>
+<p>In den üblichen Darstellungen, zum Beispiel für das Nennmaß 25 mm, sind die <strong>blauen Felder Toleranzzonen für Bohrungen</strong> und die <strong>gelben Felder Toleranzzonen für Wellen</strong>. So erkennst du auf einen Blick, ob ein Teil größer oder kleiner als das Nennmaß sein darf.</p>
+<h2>🔠 Grundabmaße von A bis ZC</h2>
+<p>Der Buchstabe in der Toleranzklasse steht für das <strong>Grundabmaß</strong>. Das ist das Abmaß, das der <strong>Nulllinie am nächsten</strong> liegt. So bestimmt der Buchstabe die <strong>Lage der Toleranzzone</strong>.</p>
+{{IMG2}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bauteil</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Buchstaben</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Lage zur Nulllinie</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Bohrungen</strong></p></td><td colspan="1" rowspan="1"><p>Großbuchstaben <strong>A bis ZC</strong></p></td><td colspan="1" rowspan="1"><p><strong>A bis H über</strong> der Nulllinie (Bohrung größer als Nennmaß), ab K meist darunter</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Wellen</strong></p></td><td colspan="1" rowspan="1"><p>Kleinbuchstaben <strong>a bis zc</strong></p></td><td colspan="1" rowspan="1"><p>Genau <strong>spiegelbildlich</strong>: <strong>a bis h unter</strong> der Nulllinie, ab k darüber</p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Sonderfall</strong></p></td><td colspan="1" rowspan="1"><p><strong>H und h</strong></p></td><td colspan="1" rowspan="1"><p>Liegen <strong>direkt an der Nulllinie</strong></p></td></tr>
+</tbody></table></div>
+<p>Zwischen H und K liegt außerdem <strong>JS</strong> (bei Wellen js): Diese Zone liegt symmetrisch zur Nulllinie, also halb darüber und halb darunter.</p>
+<p>Je weiter ein Buchstabe vom H entfernt ist, desto weiter liegt die Zone von der Nulllinie weg. Eine A-Bohrung ist also deutlich größer als das Nennmaß, eine a-Welle deutlich kleiner.</p>
+<h2>🎯 Toleranzzonen H und h</h2>
+<p>Weil H und h in der Praxis so wichtig sind, schauen wir sie genauer an. Die Nulllinie entspricht wieder dem <strong>Nennmaß N</strong>.</p>
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Merkmal</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>H-Toleranzzone (Bohrung)</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>h-Toleranzzone (Welle)</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Abmaß gleich null</strong></p></td><td colspan="1" rowspan="1"><p>Unteres Abmaß <strong>EI = 0</strong></p></td><td colspan="1" rowspan="1"><p>Oberes Abmaß <strong>es = 0</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Folge</strong></p></td><td colspan="1" rowspan="1"><p><strong>Mindestmaß G<sub>u</sub> = Nennmaß N</strong></p></td><td colspan="1" rowspan="1"><p><strong>Höchstmaß G<sub>o</sub> = Nennmaß N</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Bedeutung</strong></p></td><td colspan="1" rowspan="1"><p>Bohrung darf größer werden, aber <strong>nie kleiner</strong></p></td><td colspan="1" rowspan="1"><p>Welle darf kleiner werden, aber <strong>nie größer</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Lage der Zone</strong></p></td><td colspan="1" rowspan="1"><p>Über der Nulllinie, beginnt direkt an ihr</p></td><td colspan="1" rowspan="1"><p>Unter der Nulllinie, endet direkt an ihr</p></td></tr>
+</tbody></table></div>
+<p>H und h sind deshalb die Grundlage der beiden <strong>Passungssysteme</strong>: <strong>Einheitsbohrung</strong> (alle Bohrungen mit H) und <strong>Einheitswelle</strong> (alle Wellen mit h).</p>
+<h2>📊 Abmaße aus der Tabelle</h2>
+<p>Zurück zu Mias Aufgabe. Die Abmaße liest du aus der <strong>Toleranztabelle</strong> ab:</p>
+<ol>
+<li><p><strong>Zeile suchen:</strong> 14 mm liegt im Bereich <strong>über 10 bis 18 mm</strong>.</p></li>
+<li><p><strong>Spalte H7:</strong> <strong>+18 µm</strong> und <strong>0 µm</strong>.</p></li>
+<li><p><strong>Spalte h6:</strong> <strong>0 µm</strong> und <strong>−11 µm</strong>.</p></li>
+</ol>
+<h2>🧮 Wo liegen die Toleranzzonen?</h2>
+<p>Jetzt rechnest du die Grenzmaße aus. Vorher wandelst du µm in mm um: 18 µm = 0,018 mm, 11 µm = 0,011 mm.</p>
+{{IMG3}}
+<div class="table-wrapper"><table style="min-width: 420px"><tbody>
+<tr><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Grenzmaß</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Bohrung 14H7 (+18 / 0 µm)</span></span></p></th><th colspan="1" rowspan="1"><p><span style="color: var(--ccp-gray-200)"><span>Welle 14h6 (0 / −11 µm)</span></span></p></th></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Höchstmaß G<sub>o</sub></strong></p></td><td colspan="1" rowspan="1"><p>14 + 0,018 = <strong>14,018 mm</strong></p></td><td colspan="1" rowspan="1"><p>14 + 0 = <strong>14,000 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Mindestmaß G<sub>u</sub></strong></p></td><td colspan="1" rowspan="1"><p>14 + 0 = <strong>14,000 mm</strong></p></td><td colspan="1" rowspan="1"><p>14 minus 0,011 = <strong>13,989 mm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Toleranz</strong></p></td><td colspan="1" rowspan="1"><p><strong>18 µm</strong></p></td><td colspan="1" rowspan="1"><p><strong>11 µm</strong></p></td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Lage</strong></p></td><td colspan="1" rowspan="1"><p><strong>Über der Nulllinie</strong>, beginnt direkt an ihr</p></td><td colspan="1" rowspan="1"><p><strong>Unter der Nulllinie</strong>, endet direkt an ihr</p></td></tr>
+</tbody></table></div>
+<p>Die Bohrung darf also bis zu <strong>0,018 mm größer</strong> sein als 14 mm, aber nie kleiner. Der Bolzen darf bis zu <strong>0,011 mm kleiner</strong> sein, aber nie größer. Die Zone von h6 ist mit 11 µm kleiner als die von H7 mit 18 µm, weil der <strong>Toleranzgrad 6 feiner</strong> ist als 7.</p>
+<h2>🔧 Was Buchstabe und Zahl verändern</h2>
+<p>Am Beispiel des Nennmaßes <strong>25 mm</strong> siehst du, wie Buchstabe und Zahl zusammenwirken:</p>
+<ul>
+<li><p><strong>H und h:</strong> Alle Zonen liegen <strong>direkt an der Nulllinie</strong>.</p></li>
+<li><p><strong>G und g:</strong> Die Zonen rücken <strong>ein Stück von der Nulllinie weg</strong>.</p></li>
+<li><p><strong>F und f:</strong> Der <strong>Abstand ist noch größer</strong>.</p></li>
+</ul>
+<p>Je weiter der Buchstabe von H entfernt ist, desto weiter liegt die Zone von der Nulllinie weg. Bei Bohrungen (F, G) liegen die Zonen darüber, bei Wellen (f, g) darunter.</p>
+<p>Die <strong>Zahl</strong> von <strong>7 bis 10</strong> verändert dagegen <strong>nur die Größe der Zone</strong>, nicht ihre Lage. Je größer die Zahl, desto größer die Toleranz.</p>
+<blockquote><p>Der Buchstabe bestimmt, wo die Zone liegt. Die Zahl bestimmt, wie groß sie ist.</p></blockquote>
+<details class="details"><summary>🟢 <strong>Praxisbeispiel</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Mia misst die Bohrung <strong>14H7</strong> und erhält <strong>13,995 mm</strong>. Die Bohrung ist <strong>kleiner als das Nennmaß</strong>, bei H ist das nicht erlaubt. Sie muss <strong>nachgearbeitet</strong> werden, zum Beispiel durch Aufreiben. Tim fragt sich, wo die Zone einer Welle mit dem Grundabmaß <strong>f</strong> liegt: <strong>unter der Nulllinie</strong>. Eine f-Welle ist immer etwas kleiner als das Nennmaß. 💪</p></div></details>
+<details class="details"><summary>💡 <strong>Merke</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Die <strong>Nulllinie</strong> steht für das Nennmaß: darüber größer, darunter kleiner. <strong>Großbuchstaben</strong> gelten für Bohrungen, <strong>Kleinbuchstaben</strong> für Wellen, der Buchstabe legt die <strong>Lage</strong> fest. Bei <strong>H</strong> ist das Mindestmaß gleich dem Nennmaß, bei <strong>h</strong> das Höchstmaß. <strong>14H7</strong> reicht von 14,000 bis 14,018 mm, <strong>14h6</strong> von 13,989 bis 14,000 mm.</p></div></details>
+<details class="details"><summary>📝 <strong>Prüfungstipp</strong> (aufklappen)</summary><div data-type="detailsContent"><p>Merksatz für die Lage: <strong>A bis H über, a bis h unter der Nulllinie.</strong> Und: Bei H ist EI = 0, bei h ist es = 0. Wer das sicher kann, findet in jeder Passungsaufgabe sofort das richtige Grenzmaß.</p></div></details>
+<h2>❓ Übungsfragen: Selbstcheck</h2>
+<details class="details"><summary><strong>Frage 1:</strong> Was bedeutet es, wenn eine Toleranzzone über der Nulllinie liegt?</summary><div data-type="detailsContent"><p>✅ Das Maß ist größer als das Nennmaß. Die Zahlen am Rand zeigen, um wie viele µm.</p></div></details>
+<details class="details"><summary><strong>Frage 2:</strong> Was ist das Grundabmaß?</summary><div data-type="detailsContent"><p>✅ Das Abmaß, das der Nulllinie am nächsten liegt. Es wird durch den Buchstaben angegeben und legt die Lage der Toleranzzone fest.</p></div></details>
+<details class="details"><summary><strong>Frage 3:</strong> Welches Abmaß ist bei H, welches bei h gleich null?</summary><div data-type="detailsContent"><p>✅ Bei H ist das untere Abmaß EI = 0 (Mindestmaß = Nennmaß). Bei h ist das obere Abmaß es = 0 (Höchstmaß = Nennmaß).</p></div></details>
+<details class="details"><summary><strong>Frage 4:</strong> Berechne die Grenzmaße der Welle 14h6 (0 / −11 µm).</summary><div data-type="detailsContent"><p>✅ Höchstmaß 14,000 mm, Mindestmaß 14 minus 0,011 = 13,989 mm. Die Toleranz beträgt 11 µm.</p></div></details>
+<details class="details"><summary><strong>Frage 5:</strong> Eine Bohrung 14H7 misst 14,012 mm. Ist sie gut?</summary><div data-type="detailsContent"><p>✅ Ja. Sie liegt zwischen dem Mindestmaß 14,000 mm und dem Höchstmaß 14,018 mm.</p></div></details>
+<p></p>
